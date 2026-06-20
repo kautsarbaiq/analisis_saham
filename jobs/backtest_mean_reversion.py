@@ -67,8 +67,8 @@ def run() -> None:
         all_pos = all(s > 0 for s in fold_spreads)
         validated = bool(res["spread"] > 0 and res["t_stat"] > 2 and early_ok and all_pos)
         if validated:
-            note = (f"edge KONSISTEN: pooled +{res['spread']:.2f}% (t {res['t_stat']}), "
-                    f"positif di 3/3 periode termasuk OOS terlama")
+            note = (f"raw OOS konsisten +{res['spread']:.2f}% (3/3 periode termasuk OOS terlama); "
+                    f"DIAGNOSTIK: ~sebagian rotasi sektor (edge sector-neutral ~0), kecil & melemah")
         else:
             note = (f"belum lolos: pooled {res['spread']:+.2f}% (t {res['t_stat']}); "
                     f"per-periode {[round(s,2) for s in fold_spreads]} "

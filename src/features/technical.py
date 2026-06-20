@@ -74,4 +74,9 @@ def indicators(df: pd.DataFrame) -> pd.DataFrame:
     out["score_oversold"] = _clip((60 - out["rsi14"]) / 40 * 100)    # RSI 20 -> 100, 60 -> 0
     out["score_below_ma"] = _clip((out["sma20"] - c) / out["sma20"] * 1000)  # 10% di bawah -> 100
     out["mr_score"] = (out["score_rev"] + out["score_oversold"] + out["score_below_ma"]) / 3
+
+    # --- Faktor LOW-VOLATILITY (anomali low-vol; vol rendah -> skor tinggi) ---
+    out["ret1d"] = c.pct_change(1, fill_method=None)
+    out["vol63"] = out["ret1d"].rolling(63).std() * (252 ** 0.5)      # volatilitas tahunan
+    out["lowvol_score"] = _clip((0.55 - out["vol63"]) / (0.55 - 0.15) * 100)  # 15% -> 100, 55% -> 0
     return out

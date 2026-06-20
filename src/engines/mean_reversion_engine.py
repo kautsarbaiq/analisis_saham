@@ -1,11 +1,14 @@
-"""Mean-Reversion Engine — engine TERVALIDASI pertama (lihat jobs/backtest_mean_reversion.py).
+"""Mean-Reversion Engine — engine TERVALIDASI (raw walk-forward OOS).
 
-Skor mr_score (oversold-ness) terbukti punya edge kecil tapi konsisten out-of-sample
-(Q4 oversold memantul di 3/3 periode 5 tahun). Karena lolos gerbang `validation`,
-inilah engine pertama yang BOLEH menyetir skor prediktif composite.
+Skor = mr_score (reversal + RSI oversold + jarak di bawah SMA20). Lolos RAW
+walk-forward (positif di 3/3 periode 5 th, termasuk OOS terlama) — gerbang yang
+tepat untuk screener LONG-ONLY.
 
-Edge realistis & kecil (+0.18-0.24% per 5-10 hari) dan melemah dari waktu ke waktu —
-ditampilkan apa adanya, bukan dijanjikan besar.
+DIAGNOSTIK JUJUR (dari uji sector-neutral): ~sebagian besar edge ini adalah ROTASI
+SEKTOR, bukan alpha murni — saat dinetralkan per sektor, edge gabungan menyusut ~0.
+Komponen `below_ma` adalah yang paling 'bersih' (paling tahan netralisasi) tapi tetap
+marginal & rapuh. Jadi: edge KECIL, sebagian sektoral, MELEMAH dari waktu ke waktu.
+Cocok sebagai 1 input long-only, BUKAN mesin uang.
 """
 from __future__ import annotations
 
@@ -20,19 +23,19 @@ def _r(x, nd=1):
 
 
 def score(symbol: str, prices_df: pd.DataFrame) -> EngineScore:
-    """Skor mean-reversion (0..100, tinggi = oversold/menarik utk pantulan)."""
+    """Skor mean-reversion (0..100, tinggi = tertekan -> kandidat pantulan)."""
     ind = indicators(prices_df)
     row = ind.iloc[-1]
     have = pd.notna(row["mr_score"])
 
     components = {
-        "reversal": _r(row["score_rev"]),
-        "oversold": _r(row["score_oversold"]),
-        "below_ma": _r(row["score_below_ma"]),
+        "below_ma": _r(row["score_below_ma"]),      # komponen paling bersih (tahan sector-neutral)
+        "oversold": _r(row["score_oversold"]),       # sebagian rotasi sektor
+        "reversal": _r(row["score_rev"]),            # sebagian rotasi sektor
         "ret_1m_pct": _r(row["ret21"], 2),
         "rsi14": _r(row["rsi14"]),
     }
-    sc = float(row["mr_score"]) if have else 50.0
+    sc = float(row["mr_score"]) if have else 0.0
 
     return EngineScore(
         symbol=symbol,
