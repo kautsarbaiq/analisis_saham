@@ -23,7 +23,7 @@ class EngineScore:
     confidence : "low" jika sample_size < MIN_SAMPLE_SIZE.
     """
     symbol: str
-    asof: date
+    as_of: date
     engine: str
     score: float
     components: dict = field(default_factory=dict)
@@ -35,7 +35,7 @@ class EngineScore:
 class Prediction:
     """Forecast probabilistik yang disimpan untuk diaudit Track Record."""
     symbol: str
-    asof: date
+    as_of: date
     horizon_days: int
     prob_up: float            # P(naik > threshold)
     ci_low: float
@@ -53,7 +53,7 @@ class Prediction:
 class CompositeScore:
     """Skor gabungan akhir (Lapisan 6) yang ditampilkan ke user."""
     symbol: str
-    asof: date
+    as_of: date
     market: Market
     total: float                       # 0..100
     breakdown: dict[str, float]        # kontribusi tiap engine

@@ -27,7 +27,31 @@ def init_schema(con: "duckdb.DuckDBPyConnection") -> None:
 def upsert_df(con, table: str, df, key_cols: list[str]) -> int:
     """UPSERT DataFrame ke `table` berdasarkan key_cols (idempotent).
 
-    TODO(impl): DELETE baris dengan key yang sama lalu INSERT, atau pakai
-    MERGE/ON CONFLICT. Kembalikan jumlah baris ter-update.
+    Strategi: DELETE baris yang key-nya muncul di df, lalu INSERT BY NAME.
+    Dijalankan dalam transaksi agar atomic. Kolom df yang tidak ada di tabel
+    diabaikan; kolom tabel yang tidak ada di df diisi NULL/default (INSERT BY NAME).
+
+    Kembalikan jumlah baris yang ditulis.
     """
-    raise NotImplementedError("Implementasi di Fase 0.")
+    if df is None or len(df) == 0:
+        return 0
+
+    con.register("_upsert_src", df)
+    try:
+        con.execute("BEGIN")
+        # Hapus baris lama dengan key yang sama (idempotency).
+        match = " AND ".join(f"t.{k} = s.{k}" for k in key_cols)
+        con.execute(
+            f"DELETE FROM {table} AS t "
+            f"WHERE EXISTS (SELECT 1 FROM _upsert_src AS s WHERE {match})"
+        )
+        # Sisipkan data baru; cocokkan kolom berdasarkan nama.
+        con.execute(f"INSERT INTO {table} BY NAME SELECT * FROM _upsert_src")
+        con.execute("COMMIT")
+    except Exception:
+        con.execute("ROLLBACK")
+        raise
+    finally:
+        con.unregister("_upsert_src")
+
+    return len(df)

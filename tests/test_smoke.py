@@ -9,7 +9,7 @@ from __future__ import annotations
 def test_types_importable():
     from src.types import CompositeScore, EngineScore, Prediction
 
-    s = EngineScore(symbol="AAPL", asof=__import__("datetime").date(2026, 1, 1),
+    s = EngineScore(symbol="AAPL", as_of=__import__("datetime").date(2026, 1, 1),
                     engine="technical", score=50.0)
     assert 0 <= s.score <= 100
     assert s.confidence == "normal"

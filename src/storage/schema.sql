@@ -52,30 +52,30 @@ CREATE TABLE IF NOT EXISTS features (
 -- 5) Skor per engine (Lapisan 5).
 CREATE TABLE IF NOT EXISTS engine_scores (
     symbol      VARCHAR NOT NULL,
-    asof        DATE    NOT NULL,
+    as_of       DATE    NOT NULL,
     engine      VARCHAR NOT NULL,
     score       DOUBLE,
     sample_size INTEGER,
     confidence  VARCHAR,
     components  JSON,
-    PRIMARY KEY (symbol, asof, engine)
+    PRIMARY KEY (symbol, as_of, engine)
 );
 
 -- 6) Composite score (Lapisan 6).
 CREATE TABLE IF NOT EXISTS composite_scores (
     symbol     VARCHAR NOT NULL,
-    asof       DATE    NOT NULL,
+    as_of      DATE    NOT NULL,
     market     VARCHAR,
     total      DOUBLE,
     breakdown  JSON,
     confidence VARCHAR,
-    PRIMARY KEY (symbol, asof)
+    PRIMARY KEY (symbol, as_of)
 );
 
 -- 7) Prediksi (untuk Track Record). realized_* diisi setelah horizon lewat.
 CREATE TABLE IF NOT EXISTS predictions (
     symbol          VARCHAR NOT NULL,
-    asof            DATE    NOT NULL,
+    as_of           DATE    NOT NULL,
     horizon_days    INTEGER NOT NULL,
     prob_up         DOUBLE,
     ci_low          DOUBLE,
@@ -86,5 +86,5 @@ CREATE TABLE IF NOT EXISTS predictions (
     confidence      VARCHAR,
     realized_return DOUBLE,          -- NULL sampai dievaluasi
     was_correct     BOOLEAN,
-    PRIMARY KEY (symbol, asof, horizon_days)
+    PRIMARY KEY (symbol, as_of, horizon_days)
 );
