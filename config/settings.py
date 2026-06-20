@@ -49,13 +49,15 @@ BACKTEST_TRAIN_RATIO = 0.6
 WALK_FORWARD_FOLDS = 5
 
 # Bobot composite score (Lapisan 6). Dijumlahkan jadi 1.0.
-# CATATAN: bobot ini adalah HIPOTESIS AWAL. Wajib dioptimasi via backtest, bukan ditebak.
+# CATATAN: bobot ini HIPOTESIS AWAL; hanya engine yang LULUS backtest (tabel
+# `validation`) yang benar-benar diberi bobot di composite. Saat ini hanya
+# `mean_reversion` yang tervalidasi -> ia menyetir skor prediktif.
 SCORE_WEIGHTS = {
     "fundamental": 0.30,
-    "technical": 0.25,
+    "mean_reversion": 0.25,
     "sentiment": 0.20,
     "bandarmology": 0.15,
-    "quant": 0.10,
+    "technical": 0.10,
 }
 
 # Regime detection: window untuk menilai kondisi pasar.

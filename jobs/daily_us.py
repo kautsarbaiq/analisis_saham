@@ -11,7 +11,7 @@ import json
 import pandas as pd
 
 from config.universe import US_UNIVERSE, all_symbols
-from src.engines import fundamental_engine, technical_engine
+from src.engines import fundamental_engine, mean_reversion_engine, technical_engine
 from src.ingestion import fundamentals, prices
 from src.scoring import composite
 from src.storage import db
@@ -45,6 +45,8 @@ def _score_all(con, symbols: list[str]) -> None:
 
         te = technical_engine.score(sym, pdf)
         engine_list.append(te)
+
+        engine_list.append(mean_reversion_engine.score(sym, pdf))
 
         fdf = con.execute(
             "SELECT period, metric, value FROM fundamentals WHERE symbol = ?", [sym]
