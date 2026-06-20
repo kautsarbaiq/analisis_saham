@@ -65,4 +65,13 @@ def indicators(df: pd.DataFrame) -> pd.DataFrame:
     )
 
     out["tech_score"] = (out["score_trend"] + out["score_mom"] + out["score_rsi"]) / 3
+
+    # --- Sinyal MEAN-REVERSION (a-priori; fokus 'oversold', kebalikan momentum) ---
+    # Konstruksi sengaja BERBEDA dari tech_score: menargetkan saham tertekan yang
+    # cenderung memantul, bukan kekuatan tren. Diuji terpisah & out-of-sample.
+    out["ret21"] = c.pct_change(21, fill_method=None) * 100          # ~1 bulan, %
+    out["score_rev"] = _clip(50 - out["ret21"] * 2.5)                # turun 20% -> 100
+    out["score_oversold"] = _clip((60 - out["rsi14"]) / 40 * 100)    # RSI 20 -> 100, 60 -> 0
+    out["score_below_ma"] = _clip((out["sma20"] - c) / out["sma20"] * 1000)  # 10% di bawah -> 100
+    out["mr_score"] = (out["score_rev"] + out["score_oversold"] + out["score_below_ma"]) / 3
     return out
