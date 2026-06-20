@@ -137,11 +137,15 @@ def watchlist() -> list[dict]:
     try:
         pmap = _engine_map(con, "technical")
         fmap = _engine_map(con, "fundamental")
-        for s in symbols():
-            df = _load(con, s)
+        # Satu query untuk semua harga (jauh lebih cepat utk universe 500+).
+        big = con.execute(
+            "SELECT symbol, date, open, high, low, close, adj_close, volume "
+            "FROM prices ORDER BY symbol, date"
+        ).df()
+        for s, df in big.groupby("symbol", sort=False):
             if df.empty:
                 continue
-            m = _metrics(df)
+            m = _metrics(df.reset_index(drop=True))
             m["symbol"] = s
             p = pmap.get(s)
             if p:
@@ -156,6 +160,8 @@ def watchlist() -> list[dict]:
             out.append(m)
     finally:
         con.close()
+    # Screener: fundamental tertinggi dulu (None paling akhir).
+    out.sort(key=lambda m: (m.get("fundamental") is None, -(m.get("fundamental") or 0)))
     return out
 
 
