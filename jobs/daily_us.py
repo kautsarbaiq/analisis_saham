@@ -11,8 +11,8 @@ import json
 import pandas as pd
 
 from config.universe import US_UNIVERSE, all_symbols
-from src.engines import technical_engine
-from src.ingestion import prices
+from src.engines import fundamental_engine, technical_engine
+from src.ingestion import fundamentals, prices
 from src.scoring import composite
 from src.storage import db
 
@@ -41,14 +41,26 @@ def _score_all(con, symbols: list[str]) -> None:
         if len(pdf) < 30:
             continue
 
-        es = technical_engine.score(sym, pdf)
-        es_rows.append({
-            "symbol": es.symbol, "as_of": es.as_of, "engine": es.engine,
-            "score": es.score, "sample_size": es.sample_size,
-            "confidence": es.confidence, "components": json.dumps(es.components),
-        })
+        engine_list = []
 
-        cs = composite.combine(sym, es.as_of, [es], validated_engines=validated)
+        te = technical_engine.score(sym, pdf)
+        engine_list.append(te)
+
+        fdf = con.execute(
+            "SELECT period, metric, value FROM fundamentals WHERE symbol = ?", [sym]
+        ).df()
+        if len(fdf):
+            fe = fundamental_engine.score(sym, fdf, float(pdf["close"].iloc[-1]))
+            engine_list.append(fe)
+
+        for es in engine_list:
+            es_rows.append({
+                "symbol": es.symbol, "as_of": es.as_of, "engine": es.engine,
+                "score": es.score, "sample_size": es.sample_size,
+                "confidence": es.confidence, "components": json.dumps(es.components),
+            })
+
+        cs = composite.combine(sym, te.as_of, engine_list, validated_engines=validated)
         cs_rows.append({
             "symbol": cs.symbol, "as_of": cs.as_of, "market": cs.market,
             "total": cs.total, "breakdown": json.dumps(cs.breakdown),
@@ -65,8 +77,8 @@ def _score_all(con, symbols: list[str]) -> None:
           f"(engine tervalidasi: {validated or 'belum ada'})")
 
 
-def run(period: str = "2y") -> None:
-    """Jalankan pipeline harian US (Fase 0 harga + Fase 1 skor teknikal)."""
+def run(period: str = "2y", with_fundamentals: bool = True) -> None:
+    """Jalankan pipeline harian US (harga + fundamental + skor teknikal & fundamental)."""
     con = db.connect()
     db.init_schema(con)
 
@@ -81,6 +93,14 @@ def run(period: str = "2y") -> None:
     ).fetchone()
     print(f"[daily_us] tertulis {written} baris. "
           f"DB sekarang: {summary[0]} simbol, {summary[1]} baris, {summary[2]}..{summary[3]}")
+
+    if with_fundamentals:
+        us = [s for s in symbols if not s.upper().endswith(".JK")]
+        print(f"[daily_us] menarik fundamental SEC EDGAR {len(us)} simbol...")
+        fdf = fundamentals.fetch(us)
+        if len(fdf):
+            db.upsert_df(con, "fundamentals", fdf, ["symbol", "period", "metric"])
+            print(f"[daily_us] fundamental: {len(fdf)} titik metrik tersimpan")
 
     _score_all(con, symbols)
 
