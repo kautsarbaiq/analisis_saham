@@ -111,6 +111,25 @@ def _engine_map(con, engine: str) -> dict:
     return out
 
 
+def _composite_map(con) -> dict:
+    """Skor prediktif composite terbaru per simbol (dari composite_scores)."""
+    try:
+        rows = con.execute(
+            "SELECT symbol, total, breakdown, confidence FROM composite_scores "
+            "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1"
+        ).fetchall()
+    except Exception:
+        return {}
+    out = {}
+    for sym, total, bd, conf in rows:
+        try:
+            b = json.loads(bd) if bd else {}
+        except Exception:
+            b = {}
+        out[sym] = {"total": _safe(total), "breakdown": b, "confidence": conf}
+    return out
+
+
 def validation() -> list[dict]:
     """Vonis backtest per engine (apakah skornya punya edge terukur)."""
     con = _con()
@@ -137,6 +156,8 @@ def watchlist() -> list[dict]:
     try:
         pmap = _engine_map(con, "technical")
         fmap = _engine_map(con, "fundamental")
+        mmap = _engine_map(con, "mean_reversion")
+        cmap = _composite_map(con)
         # Satu query untuk semua harga (jauh lebih cepat utk universe 500+).
         big = con.execute(
             "SELECT symbol, date, open, high, low, close, adj_close, volume "
@@ -157,11 +178,20 @@ def watchlist() -> list[dict]:
                 m["fundamental"] = f["score"]
                 m["fundamental_conf"] = f["confidence"]
                 m["fundamental_comp"] = f["components"]
+            mm = mmap.get(s)
+            if mm:
+                m["mr"] = mm["score"]
+                m["mr_comp"] = mm["components"]
+            c = cmap.get(s)
+            if c:
+                m["composite"] = c["total"]
+                m["composite_conf"] = c["confidence"]
+                m["composite_breakdown"] = c["breakdown"]
             out.append(m)
     finally:
         con.close()
-    # Screener: fundamental tertinggi dulu (None paling akhir).
-    out.sort(key=lambda m: (m.get("fundamental") is None, -(m.get("fundamental") or 0)))
+    # Screener: urut skor PREDIKTIF (composite) tertinggi dulu (None paling akhir).
+    out.sort(key=lambda m: (m.get("composite") is None, -(m.get("composite") or 0)))
     return out
 
 

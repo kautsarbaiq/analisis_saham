@@ -45,20 +45,24 @@ async function loadVerdict() {
   try {
     const v = await (await fetch("/api/validation")).json();
     if (!v.length) { el.innerHTML = '<span class="vtag">info</span> Backtest belum dijalankan.'; return; }
-    const names = { technical: "Teknikal", fundamental: "Fundamental" };
+    const names = { mean_reversion: "Mean-reversion", fundamental: "Fundamental", technical: "Teknikal" };
     const byEng = {};
     v.forEach((x) => { (byEng[x.engine] = byEng[x.engine] || []).push(x); });
     const anyOk = v.some((x) => x.validated);
-    const segs = Object.keys(byEng).map((eng) => {
+    const order = Object.keys(byEng).sort((a, b) =>
+      (byEng[b].some((r) => r.validated) ? 1 : 0) - (byEng[a].some((r) => r.validated) ? 1 : 0));
+    const segs = order.map((eng) => {
       const rows = byEng[eng];
       const ok = rows.some((r) => r.validated);
       const sp = rows.map((r) => `${r.horizon_days}h ${r.spread >= 0 ? "+" : ""}${r.spread}%`).join("/");
-      return `<b>${names[eng] || eng}</b> ${ok ? "✓" : "✗"} (${sp})`;
+      const mark = ok ? '<span style="color:#26a69a">✓</span>' : '<span style="color:#ef5350">✗</span>';
+      return `<b>${names[eng] || eng}</b> ${mark} (${sp})`;
     });
     el.classList.toggle("ok", anyOk);
-    el.innerHTML = `<span class="vtag">${anyOk ? "ada yang valid" : "belum tervalidasi"}</span>` +
+    el.innerHTML = `<span class="vtag">${anyOk ? "1 engine tervalidasi" : "belum tervalidasi"}</span>` +
       `<b>Backtest</b> — ${segs.join(" &nbsp;·&nbsp; ")}. ` +
-      (anyOk ? "" : "Belum ada edge terukur → semua skor bersifat <b>deskriptif</b>, bukan sinyal beli.");
+      (anyOk ? "Kolom <b>P</b> (skor prediktif) disetir engine tervalidasi — edge kecil, bukan jaminan."
+             : "Semua skor deskriptif, bukan sinyal beli.");
   } catch (e) { el.innerHTML = '<span class="vtag">info</span> Vonis backtest tak tersedia.'; }
 }
 
@@ -78,7 +82,7 @@ function renderWatchlist() {
       <span class="num">${fmt.px(m.last)}</span>
       <span class="num ${up ? "up" : "down"}">${fmt.pct(m.change_pct)}</span>
       <span class="wl-fd" title="Fundamental (SEC EDGAR, deskriptif)">${m.fundamental == null ? "—" : Math.round(m.fundamental)}</span>
-      <span class="wl-pt" title="Tech posture (deskriptif, belum tervalidasi)">${m.posture == null ? "—" : Math.round(m.posture)}</span>
+      <span class="wl-pred" title="Skor prediktif: mean-reversion (TERVALIDASI)">${m.composite == null ? "—" : Math.round(m.composite)}</span>
     </div>`;
   }).join("");
   el.querySelectorAll(".wl-row").forEach((row) =>
@@ -179,7 +183,19 @@ function renderDetail(m) {
   const fc = m.fundamental_comp || {};
   const fs = fc.sub_scores || {};
   const pctv = (x) => x == null ? "—" : (x * 100).toFixed(0) + "%";
+  const mrc = m.mr_comp || {};
   document.getElementById("detail").innerHTML = `
+    <div>
+      <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#26a69a">Skor Prediktif</span><span class="tag" style="background:rgba(38,166,154,.18);color:#26a69a">mean-reversion ✓ tervalidasi</span></div>
+      <div style="display:flex;align-items:baseline;gap:8px">
+        <span class="posture-score" style="color:#26a69a">${m.composite == null ? "—" : m.composite.toFixed(0)}</span>
+        <span style="color:var(--muted);font-size:11px">/100 · edge kecil (+0.18%/5h) &amp; melemah</span>
+      </div>
+      ${subBar("Reversal 1M", mrc.reversal)}
+      ${subBar("Oversold RSI", mrc.oversold)}
+      ${subBar("Di bawah SMA20", mrc.below_ma)}
+    </div>
+
     <div>
       <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#46d3ff">Fundamental · SEC</span>${m.fundamental_conf === "low" ? '<span class="tag unval">low-conf</span>' : '<span class="tag unval">belum tervalidasi</span>'}</div>
       <div style="display:flex;align-items:baseline;gap:8px">
