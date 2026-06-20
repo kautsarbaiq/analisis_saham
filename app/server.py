@@ -31,6 +31,11 @@ def api_watchlist() -> list[dict]:
     return service.watchlist()
 
 
+@app.get("/api/validation")
+def api_validation() -> list[dict]:
+    return service.validation()
+
+
 @app.get("/api/ohlc/{symbol}")
 def api_ohlc(symbol: str) -> dict:
     data = service.ohlc(symbol.upper())

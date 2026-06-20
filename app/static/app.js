@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", boot);
 async function boot() {
   startClock();
   await loadWatchlist();
+  loadVerdict();
   initChart();
   if (WL.length) selectSymbol(WL[0].symbol);
 
@@ -39,6 +40,28 @@ async function loadWatchlist() {
   renderWatchlist();
 }
 
+async function loadVerdict() {
+  const el = document.getElementById("verdict");
+  try {
+    const v = await (await fetch("/api/validation")).json();
+    const tech = v.filter((x) => x.engine === "technical");
+    if (!tech.length) { el.innerHTML = '<span class="vtag">info</span> Backtest belum dijalankan.'; return; }
+    const ok = tech.some((x) => x.validated);
+    const parts = tech.map((x) => `${x.horizon_days}h: spread ${x.spread >= 0 ? "+" : ""}${x.spread}% (t ${x.t_stat})`).join(" · ");
+    el.classList.toggle("ok", ok);
+    el.innerHTML = `<span class="vtag">${ok ? "tervalidasi" : "belum tervalidasi"}</span>` +
+      `<b>Backtest skor teknikal</b> — ${parts}. ` +
+      (ok ? "Edge positif terukur." : "Belum ada edge positif → skor dipakai sebagai <b>posture deskriptif</b>, bukan sinyal beli.");
+  } catch (e) { el.innerHTML = '<span class="vtag">info</span> Vonis backtest tak tersedia.'; }
+}
+
+function subBar(label, val) {
+  const v = val == null ? 0 : Math.max(0, Math.min(100, val));
+  return `<div class="subrow"><span class="sk">${label}</span>` +
+    `<div class="bar"><div class="fill" style="left:0;width:${v}%;background:#d2a24a"></div></div>` +
+    `<span class="sv">${val == null ? "—" : val.toFixed(0)}</span></div>`;
+}
+
 function renderWatchlist() {
   const el = document.getElementById("wl-rows");
   el.innerHTML = WL.map((m) => {
@@ -47,7 +70,7 @@ function renderWatchlist() {
       <span class="wl-sym">${m.symbol}</span>
       <span class="num">${fmt.px(m.last)}</span>
       <span class="num ${up ? "up" : "down"}">${fmt.pct(m.change_pct)}</span>
-      <span class="wl-spark">${sparkSVG(m.spark, up)}</span>
+      <span class="wl-pt" title="Tech posture (deskriptif, belum tervalidasi)">${m.posture == null ? "—" : Math.round(m.posture)}</span>
     </div>`;
   }).join("");
   el.querySelectorAll(".wl-row").forEach((row) =>
@@ -144,7 +167,19 @@ function renderDetail(m) {
 
   const stat = (k, v, cls = "") => `<div class="stat"><div class="k">${k}</div><div class="v ${cls}">${v}</div></div>`;
 
+  const pc = m.posture_comp || {};
   document.getElementById("detail").innerHTML = `
+    <div>
+      <div class="posture-hd"><span class="blk-hd" style="margin:0">Tech Posture</span><span class="tag unval">belum tervalidasi</span></div>
+      <div style="display:flex;align-items:baseline;gap:8px">
+        <span class="posture-score">${m.posture == null ? "—" : m.posture.toFixed(0)}</span>
+        <span style="color:var(--muted);font-size:11px">/100 · deskriptif, bukan sinyal beli</span>
+      </div>
+      ${subBar("Tren", pc.trend)}
+      ${subBar("Momentum 3M", pc.momentum_3m)}
+      ${subBar("Postur RSI", pc.rsi_posture)}
+    </div>
+
     <div>
       <div class="blk-hd">Harga · ${m.date}</div>
       <div class="stat-grid" style="margin-top:8px">

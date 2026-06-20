@@ -8,6 +8,7 @@ Semua output sudah JSON-safe (NaN -> None).
 """
 from __future__ import annotations
 
+import json
 import math
 
 import duckdb
@@ -89,17 +90,62 @@ def _metrics(df: pd.DataFrame) -> dict:
     }
 
 
+def _posture_map(con) -> dict:
+    """Skor teknikal DESKRIPTIF terbaru per simbol (dari engine_scores)."""
+    try:
+        rows = con.execute(
+            "SELECT symbol, score, confidence, components FROM engine_scores "
+            "WHERE engine = 'technical' "
+            "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1"
+        ).fetchall()
+    except Exception:
+        return {}
+    out = {}
+    for sym, score, conf, comp in rows:
+        try:
+            c = json.loads(comp) if comp else {}
+        except Exception:
+            c = {}
+        out[sym] = {"score": _safe(score), "confidence": conf, "components": c}
+    return out
+
+
+def validation() -> list[dict]:
+    """Vonis backtest per engine (apakah skornya punya edge terukur)."""
+    con = _con()
+    try:
+        rows = con.execute(
+            "SELECT engine, horizon_days, top_mean, bottom_mean, spread, t_stat, "
+            "validated, note FROM validation ORDER BY engine, horizon_days"
+        ).fetchall()
+    except Exception:
+        return []
+    finally:
+        con.close()
+    return [{
+        "engine": r[0], "horizon_days": r[1], "top_mean": _safe(r[2]),
+        "bottom_mean": _safe(r[3]), "spread": _safe(r[4]), "t_stat": _safe(r[5]),
+        "validated": bool(r[6]), "note": r[7],
+    } for r in rows]
+
+
 def watchlist() -> list[dict]:
-    """Metrik ringkas semua simbol untuk panel watchlist."""
+    """Metrik ringkas + posture teknikal semua simbol untuk panel watchlist."""
     con = _con()
     out: list[dict] = []
     try:
+        pmap = _posture_map(con)
         for s in symbols():
             df = _load(con, s)
             if df.empty:
                 continue
             m = _metrics(df)
             m["symbol"] = s
+            p = pmap.get(s)
+            if p:
+                m["posture"] = p["score"]
+                m["posture_conf"] = p["confidence"]
+                m["posture_comp"] = p["components"]
             out.append(m)
     finally:
         con.close()
