@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PROJECT BANDAR — TERMINAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">◢ PROJECT&nbsp;BANDAR<span class="brand-sub">TERMINAL</span></div>
+    <div class="cmd">
+      <span class="cmd-prompt">CMD</span>
+      <input id="cmd" placeholder="Ketik simbol lalu Enter — mis. NVDA" autocomplete="off" spellcheck="false" />
+      <span class="cmd-go">GO ⏎</span>
+    </div>
+    <div class="status">
+      <span class="live"><i class="dot"></i> US · EOD</span>
+      <span id="clock">--:--:--</span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="panel watchlist">
+      <div class="panel-hd">Watchlist <span id="wl-count" class="hd-tag"></span></div>
+      <div class="wl-head"><span>SYM</span><span class="num">LAST</span><span class="num">CHG%</span><span class="spark-h">30D</span></div>
+      <div id="wl-rows" class="wl-rows"></div>
+    </section>
+
+    <section class="panel chart">
+      <div class="panel-hd chart-hd">
+        <span id="c-sym" class="c-sym">—</span>
+        <span id="c-ohlc" class="c-ohlc"></span>
+        <span class="grow"></span>
+        <span class="legend"><i class="sw sw-sma20"></i>SMA20 <i class="sw sw-sma50"></i>SMA50</span>
+      </div>
+      <div id="chart" class="chart-area"></div>
+    </section>
+
+    <section class="panel detail">
+      <div class="panel-hd">Analytics</div>
+      <div id="detail" class="detail-body"><div class="hint">Memuat data…</div></div>
+    </section>
+  </main>
+
+  <footer class="statusbar">
+    <span>SRC · yfinance → DuckDB</span>
+    <span id="sb-asof"></span>
+    <span class="disclaimer">⚠ ALAT ANALISIS &amp; EDUKASI — BUKAN NASIHAT INVESTASI</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
