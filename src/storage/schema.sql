@@ -88,3 +88,19 @@ CREATE TABLE IF NOT EXISTS predictions (
     was_correct     BOOLEAN,
     PRIMARY KEY (symbol, as_of, horizon_days)
 );
+
+-- 8) Vonis backtest per engine: apakah skornya PUNYA EDGE TERUKUR?
+--    Sebuah engine hanya diberi bobot di composite bila validated = TRUE.
+CREATE TABLE IF NOT EXISTS validation (
+    engine       VARCHAR NOT NULL,
+    horizon_days INTEGER NOT NULL,
+    as_of        DATE,
+    n_obs        INTEGER,
+    top_mean     DOUBLE,            -- mean fwd return kuantil skor tertinggi (%)
+    bottom_mean  DOUBLE,            -- mean fwd return kuantil skor terendah (%)
+    spread       DOUBLE,            -- top - bottom (edge); harus > 0 utk valid
+    t_stat       DOUBLE,
+    validated    BOOLEAN,
+    note         VARCHAR,
+    PRIMARY KEY (engine, horizon_days)
+);
