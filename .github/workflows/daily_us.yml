@@ -1,0 +1,30 @@
+# Scheduler GRATIS untuk pipeline harian US (GitHub Actions).
+# Tidak butuh server nyala 24 jam — inilah kunci hemat $0.
+name: daily-us
+
+on:
+  schedule:
+    # 21:00 UTC ~ 04:00 WIB (setelah US market close). Sesuaikan bila perlu.
+    - cron: "0 21 * * 1-5"
+  workflow_dispatch: {}   # tombol "run manual" di tab Actions
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Jalankan pipeline harian US
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python jobs/daily_us.py
+      # TODO: commit/persist data/bandar.duckdb (artifact atau ke storage eksternal),
+      #       karena runner GitHub bersifat ephemeral.

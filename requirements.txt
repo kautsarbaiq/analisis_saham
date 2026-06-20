@@ -1,0 +1,37 @@
+# === Core data & komputasi ===
+pandas>=2.2
+numpy>=1.26
+duckdb>=1.0            # database analitik file-based (backtest cepat)
+pyarrow>=16.0          # interop parquet/duckdb
+
+# === Ingestion: harga & fundamental ===
+yfinance>=0.2.40       # harga US & IDX (.JK), fundamental ringkas
+pandas-datareader>=0.10  # Stooq, FRED
+requests>=2.32         # SEC EDGAR, GDELT, API lain
+feedparser>=6.0        # RSS berita
+
+# === NLP / sentimen (gratis, lokal) ===
+vaderSentiment>=3.3    # sentimen cepat (baseline)
+# transformers>=4.40   # FinBERT (opsional, berat — aktifkan saat Fase 2)
+# torch                # backend FinBERT (opsional)
+
+# === Engine teknikal ===
+pandas-ta>=0.3.14b     # indikator teknikal
+
+# === Backtesting & statistik ===
+scikit-learn>=1.5      # model probabilistik (logistic / gradient boosting)
+scipy>=1.13            # statistik, confidence interval
+
+# === Delivery ===
+streamlit>=1.36        # dashboard
+plotly>=5.22           # grafik interaktif
+python-telegram-bot>=21 # alert (atau pakai requests langsung ke Bot API)
+
+# === Util ===
+python-dotenv>=1.0     # baca .env
+pydantic>=2.7          # validasi config & skema data
+loguru>=0.7            # logging
+
+# === Dev / test ===
+pytest>=8.0
+ruff>=0.5              # linter + formatter
