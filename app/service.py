@@ -90,13 +90,14 @@ def _metrics(df: pd.DataFrame) -> dict:
     }
 
 
-def _posture_map(con) -> dict:
-    """Skor teknikal DESKRIPTIF terbaru per simbol (dari engine_scores)."""
+def _engine_map(con, engine: str) -> dict:
+    """Skor DESKRIPTIF terbaru per simbol untuk satu engine (dari engine_scores)."""
     try:
         rows = con.execute(
             "SELECT symbol, score, confidence, components FROM engine_scores "
-            "WHERE engine = 'technical' "
-            "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1"
+            "WHERE engine = ? "
+            "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1",
+            [engine],
         ).fetchall()
     except Exception:
         return {}
@@ -134,7 +135,8 @@ def watchlist() -> list[dict]:
     con = _con()
     out: list[dict] = []
     try:
-        pmap = _posture_map(con)
+        pmap = _engine_map(con, "technical")
+        fmap = _engine_map(con, "fundamental")
         for s in symbols():
             df = _load(con, s)
             if df.empty:
@@ -146,6 +148,11 @@ def watchlist() -> list[dict]:
                 m["posture"] = p["score"]
                 m["posture_conf"] = p["confidence"]
                 m["posture_comp"] = p["components"]
+            f = fmap.get(s)
+            if f:
+                m["fundamental"] = f["score"]
+                m["fundamental_conf"] = f["confidence"]
+                m["fundamental_comp"] = f["components"]
             out.append(m)
     finally:
         con.close()

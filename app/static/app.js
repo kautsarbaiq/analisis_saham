@@ -44,14 +44,21 @@ async function loadVerdict() {
   const el = document.getElementById("verdict");
   try {
     const v = await (await fetch("/api/validation")).json();
-    const tech = v.filter((x) => x.engine === "technical");
-    if (!tech.length) { el.innerHTML = '<span class="vtag">info</span> Backtest belum dijalankan.'; return; }
-    const ok = tech.some((x) => x.validated);
-    const parts = tech.map((x) => `${x.horizon_days}h: spread ${x.spread >= 0 ? "+" : ""}${x.spread}% (t ${x.t_stat})`).join(" · ");
-    el.classList.toggle("ok", ok);
-    el.innerHTML = `<span class="vtag">${ok ? "tervalidasi" : "belum tervalidasi"}</span>` +
-      `<b>Backtest skor teknikal</b> — ${parts}. ` +
-      (ok ? "Edge positif terukur." : "Belum ada edge positif → skor dipakai sebagai <b>posture deskriptif</b>, bukan sinyal beli.");
+    if (!v.length) { el.innerHTML = '<span class="vtag">info</span> Backtest belum dijalankan.'; return; }
+    const names = { technical: "Teknikal", fundamental: "Fundamental" };
+    const byEng = {};
+    v.forEach((x) => { (byEng[x.engine] = byEng[x.engine] || []).push(x); });
+    const anyOk = v.some((x) => x.validated);
+    const segs = Object.keys(byEng).map((eng) => {
+      const rows = byEng[eng];
+      const ok = rows.some((r) => r.validated);
+      const sp = rows.map((r) => `${r.horizon_days}h ${r.spread >= 0 ? "+" : ""}${r.spread}%`).join("/");
+      return `<b>${names[eng] || eng}</b> ${ok ? "✓" : "✗"} (${sp})`;
+    });
+    el.classList.toggle("ok", anyOk);
+    el.innerHTML = `<span class="vtag">${anyOk ? "ada yang valid" : "belum tervalidasi"}</span>` +
+      `<b>Backtest</b> — ${segs.join(" &nbsp;·&nbsp; ")}. ` +
+      (anyOk ? "" : "Belum ada edge terukur → semua skor bersifat <b>deskriptif</b>, bukan sinyal beli.");
   } catch (e) { el.innerHTML = '<span class="vtag">info</span> Vonis backtest tak tersedia.'; }
 }
 
@@ -70,6 +77,7 @@ function renderWatchlist() {
       <span class="wl-sym">${m.symbol}</span>
       <span class="num">${fmt.px(m.last)}</span>
       <span class="num ${up ? "up" : "down"}">${fmt.pct(m.change_pct)}</span>
+      <span class="wl-fd" title="Fundamental (SEC EDGAR, deskriptif)">${m.fundamental == null ? "—" : Math.round(m.fundamental)}</span>
       <span class="wl-pt" title="Tech posture (deskriptif, belum tervalidasi)">${m.posture == null ? "—" : Math.round(m.posture)}</span>
     </div>`;
   }).join("");
@@ -168,7 +176,30 @@ function renderDetail(m) {
   const stat = (k, v, cls = "") => `<div class="stat"><div class="k">${k}</div><div class="v ${cls}">${v}</div></div>`;
 
   const pc = m.posture_comp || {};
+  const fc = m.fundamental_comp || {};
+  const fs = fc.sub_scores || {};
+  const pctv = (x) => x == null ? "—" : (x * 100).toFixed(0) + "%";
   document.getElementById("detail").innerHTML = `
+    <div>
+      <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#46d3ff">Fundamental · SEC</span>${m.fundamental_conf === "low" ? '<span class="tag unval">low-conf</span>' : '<span class="tag unval">belum tervalidasi</span>'}</div>
+      <div style="display:flex;align-items:baseline;gap:8px">
+        <span class="posture-score" style="color:#46d3ff">${m.fundamental == null ? "—" : m.fundamental.toFixed(0)}</span>
+        <span style="color:var(--muted);font-size:11px">/100 · deskriptif</span>
+      </div>
+      ${subBar("Quality", fs.quality)}
+      ${subBar("Profitability", fs.profitability)}
+      ${subBar("Growth", fs.growth)}
+      ${subBar("Health", fs.health)}
+      <div class="stat-grid" style="margin-top:8px">
+        ${stat("Piotroski", fc.piotroski == null ? "—" : fc.piotroski + "/9")}
+        ${stat("Altman Z", fc.altman_z == null ? "—" : fc.altman_z)}
+        ${stat("ROE", pctv(fc.roe))}
+        ${stat("Net margin", pctv(fc.net_margin))}
+        ${stat("Rev growth", pctv(fc.rev_growth), (fc.rev_growth || 0) >= 0 ? "up" : "down")}
+        ${stat("EPS growth", pctv(fc.eps_growth), (fc.eps_growth || 0) >= 0 ? "up" : "down")}
+      </div>
+    </div>
+
     <div>
       <div class="posture-hd"><span class="blk-hd" style="margin:0">Tech Posture</span><span class="tag unval">belum tervalidasi</span></div>
       <div style="display:flex;align-items:baseline;gap:8px">

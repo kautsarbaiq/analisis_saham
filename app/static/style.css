@@ -58,13 +58,14 @@ body {
 .hd-tag { color:var(--muted); letter-spacing:0; font-size:10px; }
 
 /* ---------- Watchlist ---------- */
-.wl-head, .wl-row { display:grid; grid-template-columns:46px 1fr 58px 38px; align-items:center;
-  gap:6px; padding:0 12px; }
+.wl-head, .wl-row { display:grid; grid-template-columns:42px 1fr 54px 32px 32px; align-items:center;
+  gap:5px; padding:0 12px; }
 .wl-head { height:24px; color:var(--muted); font-size:11px; letter-spacing:1px;
   border-bottom:1px solid var(--border); }
-.wl-pt { justify-self:end; font-size:11px; font-variant-numeric:tabular-nums;
-  padding:1px 5px; border-radius:3px; min-width:30px; text-align:center;
-  background:rgba(255,176,0,.10); color:#d2a24a; }
+.wl-pt, .wl-fd { justify-self:end; font-size:11px; font-variant-numeric:tabular-nums;
+  padding:1px 4px; border-radius:3px; min-width:28px; text-align:center; }
+.wl-pt { background:rgba(255,176,0,.10); color:#d2a24a; }
+.wl-fd { background:rgba(70,211,255,.10); color:#46d3ff; }
 .wl-rows { overflow-y:auto; }
 .wl-row { height:34px; cursor:pointer; border-bottom:1px solid rgba(27,37,49,.5); }
 .wl-row:hover { background:rgba(255,255,255,.03); }
