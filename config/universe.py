@@ -27,6 +27,15 @@ def _load_sp500() -> list[str]:
         return [r["symbol"].strip().upper() for r in csv.DictReader(f) if r.get("symbol")]
 
 
+def load_sectors() -> dict[str, str]:
+    """Peta ticker -> sektor GICS (dari sp500.csv). Untuk sector-neutralization."""
+    if not _SP500_FILE.exists():
+        return {}
+    with open(_SP500_FILE) as f:
+        return {r["symbol"].strip().upper(): (r.get("sector") or "?").strip()
+                for r in csv.DictReader(f) if r.get("symbol")}
+
+
 US_UNIVERSE: list[str] = _load_sp500() or _FALLBACK_US
 
 # --- IDX: ditambahkan di Fase 3 (suffix .JK untuk yfinance) ---

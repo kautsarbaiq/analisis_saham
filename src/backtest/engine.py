@@ -75,3 +75,50 @@ def quantile_test(panel: pd.DataFrame, n_quantiles: int = 5) -> dict:
         "bottom_win": round(float((bot > 0).mean()), 3),
         "t_stat": round(welch_t(top.to_numpy(), bot.to_numpy()), 3),
     }
+
+
+def sector_neutralize(panel: pd.DataFrame, sectors: dict[str, str]) -> pd.DataFrame:
+    """Hilangkan komponen SEKTOR dari skor: demean per (tanggal, sektor).
+
+    Menjawab "apakah edge ini faktor nyata atau cuma taruhan sektor?". Setelah
+    netralisasi, skor mengukur posisi RELATIF dalam sektornya, bukan sektor mana.
+    """
+    p = panel.copy()
+    p["sector"] = p["symbol"].map(lambda s: sectors.get(s, "?"))
+    grp = p.groupby([p["date"], p["sector"]])["score"].transform("mean")
+    p["score"] = p["score"] - grp + p["score"].mean()
+    return p
+
+
+def walk_forward_quantile(panel: pd.DataFrame, n_folds: int = 3,
+                          n_quantiles: int = 5, t_threshold: float = 2.0) -> dict:
+    """Uji rigor: quantile test pooled + per-PERIODE (walk-forward lintas waktu).
+
+    validated HANYA jika: pooled signifikan (t>threshold) DAN spread positif di
+    SEMUA periode termasuk yang TERLAMA (out-of-sample sejati). Mencegah edge yang
+    cuma artefak satu rezim. Catatan: t pooled menggelembung krn observasi tumpang-
+    tindih; konsistensi antar-periode adalah bukti yang lebih bermakna.
+    """
+    if panel.empty:
+        return {"validated": False, "pooled": {}, "folds": []}
+    p = panel.copy()
+    p["date"] = pd.to_datetime(p["date"])
+    pooled = quantile_test(p, n_quantiles)
+
+    dts = p["date"].sort_values().unique()
+    cuts = [dts[0]] + [dts[len(dts) * k // n_folds] for k in range(1, n_folds)] + [dts[-1]]
+    folds = []
+    for k in range(n_folds):
+        lo, hi = cuts[k], cuts[k + 1]
+        fr = quantile_test(p[(p["date"] >= lo) & (p["date"] <= hi)], n_quantiles)
+        folds.append({"k": k + 1, "lo": str(pd.Timestamp(lo).date()),
+                      "hi": str(pd.Timestamp(hi).date()),
+                      "spread": fr.get("spread"), "t": fr.get("t_stat"), "n": fr.get("n_obs")})
+
+    fs = [f["spread"] for f in folds if f["spread"] is not None]
+    validated = bool(
+        pooled.get("spread", 0) > 0 and pooled.get("t_stat", 0) > t_threshold
+        and len(fs) == n_folds and all(s > 0 for s in fs)
+    )
+    return {"validated": validated, "pooled": pooled, "folds": folds,
+            "early_spread": fs[0] if fs else None}

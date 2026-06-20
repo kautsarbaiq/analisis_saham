@@ -1,13 +1,13 @@
-"""Backtest engine fundamental — point-in-time, anti look-ahead.
+"""Backtest engine fundamental — point-in-time, RIGOR penuh.
 
-Untuk tiap tanggal sampel (bulanan) & tiap simbol: hitung skor fundamental HANYA
-dari filing yang `filed_at <= tanggal` (point-in-time), lalu ukur return ke depan.
-Quantile test lintas-simbol menilai: apakah saham fundamental-bagus outperform?
+Dua uji jujur:
+  1. RAW: skor fundamental apa adanya.
+  2. SECTOR-NEUTRAL: skor di-demean per (tanggal, sektor) -> menjawab "ini faktor
+     quality nyata, atau cuma taruhan sektor (mis. tech)?".
+Keduanya lewat walk-forward (pooled + per-periode OOS). VALIDATED = lolos uji
+SECTOR-NEUTRAL (lebih ketat & jujur): edge harus bertahan setelah sektor dibuang.
 
-GERBANG KEJUJURAN (penting): dengan universe 15 saham, skor fundamental nyaris
-konstan per simbol -> N efektif ~= jumlah simbol, JAUH lebih kecil dari N mentah.
-Maka validated butuh `n_symbols >= MIN_SYMBOLS`; di bawah itu hasilnya UNDERPOWERED
-dan otomatis ditolak (apa pun spread-nya). Ini memotivasi perluasan universe (S&P 500).
+Anti look-ahead: skor pakai filing `filed_at <= tanggal`.
 """
 from __future__ import annotations
 
@@ -15,23 +15,18 @@ from datetime import date
 
 import pandas as pd
 
-from src.backtest.engine import quantile_test
+from config.universe import US_UNIVERSE, load_sectors
+from src.backtest.engine import sector_neutralize, walk_forward_quantile
 from src.features.fundamental import compute
 from src.storage import db
 
 HORIZON = 21
-SAMPLE_STEP = 21          # ~bulanan (hari perdagangan)
-MIN_SYMBOLS = 30          # ambang power minimal agar vonis dipercaya
-N_QUANTILES = 3           # universe kecil -> tertil, bukan kuintil
+SAMPLE_STEP = 21
 
 
-def run() -> None:
-    con = db.connect()
-    db.init_schema(con)
-
-    syms = [r[0] for r in con.execute("SELECT DISTINCT symbol FROM fundamentals").fetchall()]
+def _build_panel(con) -> pd.DataFrame:
     rows = []
-    for s in syms:
+    for s in US_UNIVERSE:
         ps = con.execute("SELECT date, close FROM prices WHERE symbol = ? ORDER BY date", [s]).df()
         if len(ps) < HORIZON + 5:
             continue
@@ -39,47 +34,58 @@ def run() -> None:
         fdf = con.execute(
             "SELECT period, metric, value, filed_at FROM fundamentals WHERE symbol = ?", [s]
         ).df()
+        if fdf.empty:
+            continue
         fdf["filed_at"] = pd.to_datetime(fdf["filed_at"])
         closes = ps["close"].to_numpy()
         dates = ps["date"].to_numpy()
-
         for i in range(0, len(ps) - HORIZON, SAMPLE_STEP):
             d = pd.Timestamp(dates[i])
-            fwd = (closes[i + HORIZON] / closes[i] - 1.0) * 100
             avail = fdf.loc[fdf["filed_at"] <= d, ["period", "metric", "value"]]
             if avail.empty:
                 continue
             res = compute(s, avail, float(closes[i]))
             if not res or res.get("score") is None:
                 continue
-            rows.append({"symbol": s, "date": d, "score": res["score"], "fwd": fwd})
+            rows.append({"symbol": s, "date": d, "score": res["score"],
+                         "fwd": (closes[i + HORIZON] / closes[i] - 1.0) * 100})
+    return pd.DataFrame(rows)
 
-    panel = pd.DataFrame(rows)
-    n_symbols = panel["symbol"].nunique() if not panel.empty else 0
-    res = quantile_test(panel, n_quantiles=N_QUANTILES) if not panel.empty else {}
 
-    print(f"\n=== BACKTEST ENGINE FUNDAMENTAL · {n_symbols} simbol · {len(panel)} obs point-in-time ===")
-    if not res:
-        print("Tidak cukup data."); con.close(); return
-    for b in res["buckets"]:
-        print(f"  Q{b['q']}  mean_fwd={b['mean_fwd']:+.2f}%  win={b['win_rate']*100:4.1f}%  n={b['n']}")
-    print(f"  >> top={res['top_mean']:+.2f}%  bottom={res['bottom_mean']:+.2f}%  "
-          f"spread={res['spread']:+.2f}%  t={res['t_stat']}")
+def _report(label: str, res: dict) -> None:
+    p = res["pooled"]
+    print(f"\n[{label}] pooled spread={p.get('spread'):+.2f}% t={p.get('t_stat')} | per-periode:")
+    for f in res["folds"]:
+        tag = " (OOS terlama)" if f["k"] == 1 else ""
+        print(f"   periode {f['k']} [{f['lo']}..{f['hi']}] spread={f['spread']:+.2f}% t={f['t']}{tag}")
+    print(f"   >> {'VALID ✓' if res['validated'] else 'TOLAK ✗'}")
 
-    underpowered = n_symbols < MIN_SYMBOLS
-    validated = bool(res["spread"] > 0 and res["t_stat"] > 2.0 and not underpowered)
-    if underpowered:
-        note = (f"UNDERPOWERED: hanya {n_symbols} simbol (<{MIN_SYMBOLS}); skor "
-                f"fundamental nyaris konstan/simbol -> N efektif kecil. Spread "
-                f"{res['spread']:+.2f}% TIDAK dapat dipercaya. Perluas universe dulu.")
-    else:
-        note = "edge positif terukur" if validated else f"tidak ada edge (spread {res['spread']:+.2f}%)"
-    print(f"  >> VONIS: {'VALID ✓' if validated else 'TOLAK ✗'} — {note}")
+
+def run() -> None:
+    con = db.connect(); db.init_schema(con)
+    panel = _build_panel(con)
+    n_sym = panel["symbol"].nunique() if not panel.empty else 0
+    print(f"=== BACKTEST FUNDAMENTAL · {n_sym} simbol · {len(panel)} obs point-in-time · {HORIZON}h ===")
+    if panel.empty:
+        con.close(); return
+
+    raw = walk_forward_quantile(panel, n_folds=3, n_quantiles=5)
+    neu = walk_forward_quantile(sector_neutralize(panel, load_sectors()), n_folds=3, n_quantiles=5)
+    _report("RAW", raw)
+    _report("SECTOR-NEUTRAL", neu)
+
+    validated = neu["validated"]  # uji jujur: harus bertahan tanpa sektor
+    p = neu["pooled"]
+    note = (f"sector-neutral LOLOS walk-forward (pooled +{p['spread']:.2f}%, positif 3/3 periode)"
+            if validated else
+            f"sector-neutral TOLAK (pooled {p.get('spread'):+.2f}%); edge raw mungkin sebagian taruhan sektor")
+    print(f"\n>> VONIS FUNDAMENTAL (basis sector-neutral): {'VALID ✓' if validated else 'TOLAK ✗'} — {note}")
 
     db.upsert_df(con, "validation", pd.DataFrame([{
         "engine": "fundamental", "horizon_days": HORIZON, "as_of": date.today(),
-        "n_obs": int(len(panel)), "top_mean": res["top_mean"], "bottom_mean": res["bottom_mean"],
-        "spread": res["spread"], "t_stat": res["t_stat"], "validated": validated, "note": note,
+        "n_obs": int(p.get("n_obs", 0)), "top_mean": p.get("top_mean"),
+        "bottom_mean": p.get("bottom_mean"), "spread": p.get("spread"),
+        "t_stat": p.get("t_stat"), "validated": validated, "note": note,
     }]), ["engine", "horizon_days"])
     con.close()
 
