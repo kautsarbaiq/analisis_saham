@@ -23,9 +23,12 @@ scikit-learn>=1.5      # model probabilistik (logistic / gradient boosting)
 scipy>=1.13            # statistik, confidence interval
 
 # === Delivery ===
-streamlit>=1.36        # dashboard
-plotly>=5.22           # grafik interaktif
+fastapi>=0.111          # backend API (serve JSON ke dashboard Bloomberg-style)
+uvicorn[standard]>=0.30 # ASGI server
+jinja2>=3.1             # render template HTML dashboard
 python-telegram-bot>=21 # alert (atau pakai requests langsung ke Bot API)
+# Frontend: HTML/CSS custom + TradingView lightweight-charts (via CDN, tanpa pip).
+# streamlit dilepas: UI ala Bloomberg butuh kontrol layout/tema penuh.
 
 # === Util ===
 python-dotenv>=1.0     # baca .env
