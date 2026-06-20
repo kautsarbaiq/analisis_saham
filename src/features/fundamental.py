@@ -118,7 +118,8 @@ def compute(symbol: str, fundamentals_df: pd.DataFrame, price: float | None = No
     op_margin = _safe_div(_g(cur, "operating_income"), rev)
     current_ratio = _safe_div(_g(cur, "assets_current"), _g(cur, "liabilities_current"))
     debt_to_equity = _safe_div(_g(cur, "liabilities"), eq)
-    rev_growth = (_safe_div(rev, _g(prev, "revenue")) - 1) if (prev is not None and _g(prev, "revenue")) else None
+    _rg = _safe_div(rev, _g(prev, "revenue")) if prev is not None else None
+    rev_growth = (_rg - 1) if _rg is not None else None
     eps_c, eps_p = _g(cur, "eps_diluted"), (_g(prev, "eps_diluted") if prev is not None else None)
     eps_growth = (eps_c / eps_p - 1) if (eps_c is not None and eps_p and eps_p > 0) else None
 
