@@ -55,7 +55,7 @@ class CompositeScore:
     symbol: str
     as_of: date
     market: Market
-    total: float                       # 0..100
+    total: float | None                # 0..100; None = belum ada engine tervalidasi
     breakdown: dict[str, float]        # kontribusi tiap engine
     predictions: list[Prediction] = field(default_factory=list)
     confidence: Confidence = "normal"

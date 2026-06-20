@@ -1,35 +1,77 @@
 """Backtesting Engine (Lapisan 4) — lapisan kejujuran sistem.
 
-Metodologi & jebakan: docs/05_backtesting.md. Mencegah look-ahead, survivorship,
-overfitting, dan mengukur edge SETELAH biaya transaksi.
+Uji utama Fase 1: QUANTILE TEST — apakah saham ber-skor tinggi benar-benar
+outperform yang ber-skor rendah pada return ke depan? Jika tidak terukur, skor
+belum boleh dipercaya (docs/05_backtesting.md).
+
+Anti-bias yang diterapkan:
+  - look-ahead: skor pada T hanya pakai data <= T; fwd return pakai T+horizon.
+  - histori penuh: baris dengan SMA200 belum terbentuk dibuang (skor belum stabil).
+  - survivorship: CATATAN — universe = saham yang masih hidup; backtest ini
+    cenderung optimistis. Ditandai jujur di output runner.
 """
 from __future__ import annotations
 
-from typing import Callable
+import numpy as np
+import pandas as pd
+
+from src.backtest.metrics import welch_t
+from src.features.technical import indicators
 
 
-def walk_forward(signal_fn: Callable, prices, folds: int | None = None):
-    """Validasi walk-forward: latih di masa lalu, uji di masa depan yang belum dilihat.
+def forward_return(close: pd.Series, horizon: int) -> pd.Series:
+    """Return % dari T ke T+horizon (target prediksi)."""
+    return (close.shift(-horizon) / close - 1.0) * 100
 
-    TODO(impl, Fase 1):
-      - bagi timeline jadi `folds` segmen geser-maju.
-      - tiap fold: bangkitkan sinyal hanya dgn data <= titik keputusan (anti look-ahead).
-      - kumpulkan return out-of-sample.
+
+def build_panel(
+    prices_by_symbol: dict[str, pd.DataFrame],
+    horizon: int = 5,
+    score_col: str = "tech_score",
+) -> pd.DataFrame:
+    """Bangun panel (symbol, date, score, fwd) dari banyak saham — siap quantile test."""
+    frames = []
+    for sym, df in prices_by_symbol.items():
+        ind = indicators(df)
+        ind["fwd"] = forward_return(ind["close"], horizon)
+        sub = ind.loc[ind["sma200"].notna(), ["date", score_col, "fwd"]].copy()
+        sub = sub.dropna(subset=[score_col, "fwd"])
+        sub["symbol"] = sym
+        frames.append(sub.rename(columns={score_col: "score"}))
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
+
+
+def quantile_test(panel: pd.DataFrame, n_quantiles: int = 5) -> dict:
+    """Bagi observasi ke kuantil skor; bandingkan return ke depan tiap kuantil.
+
+    Kembalikan ringkasan terukur: mean fwd return per kuantil, spread top-bottom,
+    win-rate tiap ujung, dan statistik t Welch (top vs bottom).
     """
-    raise NotImplementedError("Implementasi di Fase 1.")
+    if panel.empty:
+        return {}
+    p = panel.copy()
+    p["q"] = pd.qcut(p["score"], n_quantiles, labels=False, duplicates="drop")
 
+    buckets = []
+    for q, grp in p.groupby("q"):
+        buckets.append({
+            "q": int(q),
+            "mean_fwd": round(float(grp["fwd"].mean()), 3),
+            "win_rate": round(float((grp["fwd"] > 0).mean()), 3),
+            "n": int(len(grp)),
+        })
 
-def quantile_test(scores, forward_returns, n_quantiles: int = 5):
-    """Uji apakah skor memisahkan kinerja: bandingkan return quantile teratas vs terbawah.
-
-    Inti DoD Fase 1: skor-tinggi harus outperform skor-rendah secara terukur.
-    """
-    raise NotImplementedError("Implementasi di Fase 1.")
-
-
-def evaluate_signal(signal_events, prices, cost_bps: float = 10.0):
-    """Hitung metrik sebuah sinyal SETELAH biaya transaksi (slippage+fee).
-
-    Kembalikan: win_rate, avg_return, sharpe, max_drawdown, profit_factor, N.
-    """
-    raise NotImplementedError("Implementasi di Fase 1.")
+    qmax, qmin = p["q"].max(), p["q"].min()
+    top = p.loc[p["q"] == qmax, "fwd"]
+    bot = p.loc[p["q"] == qmin, "fwd"]
+    return {
+        "n_obs": int(len(p)),
+        "n_quantiles": int(p["q"].nunique()),
+        "buckets": buckets,
+        "top_mean": round(float(top.mean()), 3),
+        "bottom_mean": round(float(bot.mean()), 3),
+        "spread": round(float(top.mean() - bot.mean()), 3),
+        "top_win": round(float((top > 0).mean()), 3),
+        "bottom_win": round(float((bot > 0).mean()), 3),
+        "t_stat": round(welch_t(top.to_numpy(), bot.to_numpy()), 3),
+    }
