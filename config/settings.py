@@ -53,11 +53,12 @@ WALK_FORWARD_FOLDS = 5
 # `validation`) yang benar-benar diberi bobot di composite. Saat ini hanya
 # `mean_reversion` yang tervalidasi -> ia menyetir skor prediktif.
 SCORE_WEIGHTS = {
-    "fundamental": 0.30,
     "mean_reversion": 0.25,
-    "sentiment": 0.20,
-    "bandarmology": 0.15,
-    "technical": 0.10,
+    "fundamental": 0.25,
+    "event_drift": 0.20,
+    "sentiment": 0.15,
+    "bandarmology": 0.10,
+    "technical": 0.05,
 }
 
 # Regime detection: window untuk menilai kondisi pasar.

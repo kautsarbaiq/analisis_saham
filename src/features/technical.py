@@ -79,4 +79,12 @@ def indicators(df: pd.DataFrame) -> pd.DataFrame:
     out["ret1d"] = c.pct_change(1, fill_method=None)
     out["vol63"] = out["ret1d"].rolling(63).std() * (252 ** 0.5)      # volatilitas tahunan
     out["lowvol_score"] = _clip((0.55 - out["vol63"]) / (0.55 - 0.15) * 100)  # 15% -> 100, 55% -> 0
+
+    # --- EVENT-DRIFT (PEAD proxy): kejutan harga pada hari ber-VOLUME tinggi =
+    # proxy "ada berita". Hipotesis: gerakan news-driven cenderung lanjut (drift),
+    # beda dari noise yg mean-revert. Skor tinggi = baru ada dorongan positif.
+    out["vol_ratio"] = out["volume"] / out["volume"].rolling(20).mean()
+    _hv = (out["vol_ratio"] > 1.5).astype(float)
+    out["event_ret"] = (out["ret1d"] * _hv).rolling(10).sum() * 100   # net % gerak hari hi-vol, 10h
+    out["event_drift_score"] = _clip(50 + out["event_ret"] * 3)       # +16% net -> 100
     return out

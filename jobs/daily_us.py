@@ -10,8 +10,8 @@ import json
 
 import pandas as pd
 
-from config.universe import US_UNIVERSE, all_symbols
-from src.engines import fundamental_engine, mean_reversion_engine, technical_engine
+from config.universe import US_UNIVERSE, all_symbols, load_sectors
+from src.engines import event_study, fundamental_engine, mean_reversion_engine, technical_engine
 from src.ingestion import fundamentals, prices
 from src.scoring import composite
 from src.storage import db
@@ -29,40 +29,56 @@ def _validated_engines(con) -> set[str]:
 
 
 def _score_all(con, symbols: list[str]) -> None:
-    """Hitung engine_scores (teknikal) + composite_scores untuk tiap simbol."""
-    validated = _validated_engines(con)
-    es_rows, cs_rows = [], []
+    """Hitung engine_scores + composite_scores (dua-pass utk sector-relative).
 
+    Pass 1: skor per-simbol semua engine (event_drift masih MENTAH).
+    Antara: event_drift di-sector-neutralkan cross-sectional (edge-nya tervalidasi
+            hanya sebagai alpha dalam-sektor).
+    Pass 2: composite atas engine tervalidasi.
+    """
+    validated = _validated_engines(con)
+    sectors = load_sectors()
+
+    per_symbol: dict[str, dict] = {}
     for sym in symbols:
         pdf = con.execute(
             "SELECT date, open, high, low, close, adj_close, volume "
             "FROM prices WHERE symbol = ? ORDER BY date", [sym]
         ).df()
-        if len(pdf) < 30:
+        if len(pdf) < 220:
             continue
 
-        engine_list = []
-
-        te = technical_engine.score(sym, pdf)
-        engine_list.append(te)
-
-        engine_list.append(mean_reversion_engine.score(sym, pdf))
-
+        el = [technical_engine.score(sym, pdf),
+              mean_reversion_engine.score(sym, pdf),
+              event_study.score(sym, pdf)]
         fdf = con.execute(
             "SELECT period, metric, value FROM fundamentals WHERE symbol = ?", [sym]
         ).df()
         if len(fdf):
-            fe = fundamental_engine.score(sym, fdf, float(pdf["close"].iloc[-1]))
-            engine_list.append(fe)
+            el.append(fundamental_engine.score(sym, fdf, float(pdf["close"].iloc[-1])))
+        per_symbol[sym] = {"el": el, "as_of": el[0].as_of}
 
-        for es in engine_list:
+    # --- Sector-neutralize event_drift (demean per sektor, rescale 0..100) ---
+    sec_vals: dict[str, list] = {}
+    for sym, d in per_symbol.items():
+        raw = next(e.score for e in d["el"] if e.engine == "event_drift")
+        sec_vals.setdefault(sectors.get(sym, "?"), []).append(raw)
+    sec_mean = {s: sum(v) / len(v) for s, v in sec_vals.items()}
+    for sym, d in per_symbol.items():
+        sec = sectors.get(sym, "?")
+        for e in d["el"]:
+            if e.engine == "event_drift":
+                e.score = round(max(0.0, min(100.0, 50 + (e.score - sec_mean[sec]))), 2)
+
+    es_rows, cs_rows = [], []
+    for sym, d in per_symbol.items():
+        for es in d["el"]:
             es_rows.append({
                 "symbol": es.symbol, "as_of": es.as_of, "engine": es.engine,
                 "score": es.score, "sample_size": es.sample_size,
                 "confidence": es.confidence, "components": json.dumps(es.components),
             })
-
-        cs = composite.combine(sym, te.as_of, engine_list, validated_engines=validated)
+        cs = composite.combine(sym, d["as_of"], d["el"], validated_engines=validated)
         cs_rows.append({
             "symbol": cs.symbol, "as_of": cs.as_of, "market": cs.market,
             "total": cs.total, "breakdown": json.dumps(cs.breakdown),
@@ -73,7 +89,7 @@ def _score_all(con, symbols: list[str]) -> None:
         db.upsert_df(con, "engine_scores", pd.DataFrame(es_rows), ["symbol", "as_of", "engine"])
     if cs_rows:
         cs_df = pd.DataFrame(cs_rows)
-        cs_df["total"] = pd.to_numeric(cs_df["total"], errors="coerce")  # None -> NaN -> NULL
+        cs_df["total"] = pd.to_numeric(cs_df["total"], errors="coerce")
         db.upsert_df(con, "composite_scores", cs_df, ["symbol", "as_of"])
     print(f"[daily_us] skor: {len(es_rows)} engine_scores, {len(cs_rows)} composite_scores "
           f"(engine tervalidasi: {validated or 'belum ada'})")
