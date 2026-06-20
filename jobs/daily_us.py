@@ -84,7 +84,7 @@ def run(period: str = "2y", with_fundamentals: bool = True) -> None:
 
     symbols = all_symbols() or US_UNIVERSE
     print(f"[daily_us] menarik harga {len(symbols)} simbol (period={period})...")
-    df = prices.fetch(symbols, period=period)
+    df = prices.fetch_bulk(symbols, period=period)
     written = db.upsert_df(con, "prices", df, ["symbol", "date"])
 
     summary = con.execute(

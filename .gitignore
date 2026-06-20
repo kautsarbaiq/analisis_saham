@@ -6,6 +6,7 @@ data/
 *.duckdb
 *.parquet
 *.csv
+!config/sp500.csv
 
 # Python
 __pycache__/

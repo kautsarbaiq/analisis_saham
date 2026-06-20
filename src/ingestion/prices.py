@@ -101,6 +101,49 @@ def fetch(
     return out
 
 
+def fetch_bulk(symbols: list[str], period: str = "2y", chunk: int = 120) -> pd.DataFrame:
+    """Tarik OHLCV banyak simbol via yf.download ter-batch + threaded (cepat).
+
+    Untuk universe besar (S&P 500) ini jauh lebih cepat daripada fetch() per-simbol.
+    Simbol yang gagal/kosong dilewati (delisting, ticker tak valid).
+    """
+    available_at = datetime.now(timezone.utc).replace(tzinfo=None)
+    frames: list[pd.DataFrame] = []
+
+    for i in range(0, len(symbols), chunk):
+        batch = symbols[i:i + chunk]
+        try:
+            data = yf.download(batch, period=period, auto_adjust=False,
+                               group_by="ticker", threads=True, progress=False)
+        except Exception as exc:  # noqa: BLE001
+            print(f"[prices] bulk batch {i // chunk + 1} gagal: {exc}")
+            continue
+
+        for sym in batch:
+            try:
+                if isinstance(data.columns, pd.MultiIndex):
+                    if sym not in data.columns.get_level_values(0):
+                        continue
+                    sub = data[sym]
+                else:
+                    sub = data  # batch 1 simbol
+                sub = sub.dropna(how="all")
+                if sub.empty:
+                    continue
+                frames.append(_normalize(sub, sym, available_at))
+            except Exception as exc:  # noqa: BLE001
+                print(f"[prices] bulk normalize gagal {sym}: {exc}")
+        print(f"[prices] batch {i // chunk + 1}/{(len(symbols)-1)//chunk + 1}: "
+              f"{len(frames)} simbol terkumpul")
+
+    if not frames:
+        return pd.DataFrame(columns=PRICE_COLS)
+    out = pd.concat(frames, ignore_index=True)
+    out, report = validate(out)
+    print(f"[prices] {report}")
+    return out
+
+
 def validate(df: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     """Cek kualitas: harga > 0, volume >= 0. Kembalikan (df_bersih, report)."""
     n_in = len(df)
