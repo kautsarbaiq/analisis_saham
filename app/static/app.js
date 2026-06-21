@@ -73,6 +73,31 @@ function subBar(label, val) {
     `<span class="sv">${val == null ? "—" : val.toFixed(0)}</span></div>`;
 }
 
+function esc(s) {
+  return (s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+async function loadNews(sym) {
+  const el = document.getElementById("news-block");
+  if (!el) return;
+  el.innerHTML = '<div class="hint">Memuat berita…</div>';
+  try {
+    const d = await (await fetch("/api/news/" + encodeURIComponent(sym))).json();
+    const s = d.summary;
+    if (!s || !s.count) { el.innerHTML = '<div class="hint">Tidak ada berita.</div>'; return; }
+    const col = s.avg > 0.05 ? "#26a69a" : s.avg < -0.05 ? "#ef5350" : "#9aa7b4";
+    const head = `<div class="news-sum">Sentimen rata-rata <b style="color:${col}">${s.avg > 0 ? "+" : ""}${s.avg}</b>` +
+      ` · <span class="up">${s.pos}▲</span> <span class="down">${s.neg}▼</span> <span class="mut">${s.neu}●</span> / ${s.count} berita</div>`;
+    const items = d.items.slice(0, 8).map((it) => {
+      const c = it.sentiment > 0.05 ? "up" : it.sentiment < -0.05 ? "down" : "mut";
+      return `<a class="news-it" href="${esc(it.link)}" target="_blank" rel="noopener">` +
+        `<span class="news-sc ${c}">${it.sentiment > 0 ? "+" : ""}${it.sentiment}</span>` +
+        `<span class="news-tt">${esc(it.title)}</span></a>`;
+    }).join("");
+    el.innerHTML = head + items;
+  } catch (e) { el.innerHTML = '<div class="hint">Berita tak tersedia.</div>'; }
+}
+
 function renderWatchlist() {
   const el = document.getElementById("wl-rows");
   el.innerHTML = WL.map((m) => {
@@ -144,6 +169,7 @@ async function selectSymbol(sym) {
   document.querySelectorAll(".wl-row").forEach((r) => r.classList.toggle("sel", r.dataset.sym === sym));
   document.getElementById("c-sym").textContent = sym;
   renderDetail(bySym[sym]);
+  loadNews(sym);
 
   const r = await fetch("/api/ohlc/" + encodeURIComponent(sym));
   if (!r.ok) return;
@@ -270,6 +296,11 @@ function renderDetail(m) {
         ${stat("SMA 200", fmt.px(m.sma200), m.last >= m.sma200 ? "up" : "down")}
         ${stat("vs SMA200", m.sma200 ? fmt.pct((m.last / m.sma200 - 1) * 100) : "—", m.last >= m.sma200 ? "up" : "down")}
       </div>
+    </div>
+
+    <div>
+      <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#d2a24a">Berita &amp; Sentimen</span><span class="tag unval">live · belum di-backtest</span></div>
+      <div id="news-block"><div class="hint">Memuat berita…</div></div>
     </div>
   `;
 }

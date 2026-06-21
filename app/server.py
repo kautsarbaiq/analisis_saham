@@ -44,5 +44,12 @@ def api_ohlc(symbol: str) -> dict:
     return data
 
 
+@app.get("/api/news/{symbol}")
+def api_news(symbol: str) -> dict:
+    from src.ingestion.news import aggregate_sentiment, fetch_rss
+    items = fetch_rss(symbol.upper())
+    return {"symbol": symbol.upper(), "items": items, "summary": aggregate_sentiment(items)}
+
+
 # Static assets (css/js) di /static.
 app.mount("/static", StaticFiles(directory=STATIC), name="static")

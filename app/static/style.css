@@ -110,6 +110,13 @@ body {
 .subrow { display:grid; grid-template-columns:78px 1fr 34px; align-items:center; gap:8px; margin-top:6px; }
 .subrow .sk { color:var(--muted); font-size:11px; }
 .subrow .sv { text-align:right; font-variant-numeric:tabular-nums; font-size:11px; }
+.news-sum { font-size:11px; color:var(--muted); margin:6px 0 8px; }
+.news-it { display:grid; grid-template-columns:34px 1fr; gap:7px; align-items:start;
+  padding:5px 0; border-bottom:1px solid rgba(27,37,49,.5); text-decoration:none; }
+.news-it:hover { background:rgba(255,255,255,.03); }
+.news-sc { font-size:11px; font-variant-numeric:tabular-nums; text-align:right; padding-top:1px; }
+.news-tt { font-size:11px; line-height:1.4; color:#aeb9c4; }
+.mut { color:var(--muted); }
 
 /* ---------- Status bar ---------- */
 .statusbar { display:flex; align-items:center; gap:20px; padding:0 14px;
