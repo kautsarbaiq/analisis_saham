@@ -11,9 +11,9 @@ requests>=2.32         # SEC EDGAR, GDELT, API lain
 feedparser>=6.0        # RSS berita
 
 # === NLP / sentimen (gratis, lokal) ===
-vaderSentiment>=3.3    # sentimen cepat (baseline)
-# transformers>=4.40   # FinBERT (opsional, berat — aktifkan saat Fase 2)
-# torch                # backend FinBERT (opsional)
+vaderSentiment>=3.3    # sentimen cepat (baseline/fallback)
+transformers>=4.40     # FinBERT (sentimen finansial, default)
+torch                  # backend FinBERT
 
 # === Engine teknikal ===
 pandas-ta>=0.3.14b     # indikator teknikal
