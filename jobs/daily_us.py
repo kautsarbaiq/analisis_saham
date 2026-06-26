@@ -10,6 +10,7 @@ import json
 
 import pandas as pd
 
+from config.settings import ROOT
 from config.universe import US_UNIVERSE, all_symbols, load_sectors
 from src.engines import event_study, fundamental_engine, mean_reversion_engine, technical_engine
 from src.ingestion import fundamentals, prices
@@ -18,14 +19,21 @@ from src.storage import db
 
 
 def _validated_engines(con) -> set[str]:
-    """Engine yang lulus backtest (tabel `validation`). Kosong jika backtest belum jalan."""
+    """Engine yang lulus backtest. Dari tabel `validation`; bila kosong (mis. runner
+    GitHub Actions yang DB-nya fresh), fallback ke config/validation.json (statis)."""
     try:
         rows = con.execute(
             "SELECT DISTINCT engine FROM validation WHERE validated = TRUE"
         ).fetchall()
-        return {r[0] for r in rows}
+        eng = {r[0] for r in rows}
+        if eng:
+            return eng
     except Exception:
-        return set()
+        pass
+    f = ROOT / "config" / "validation.json"
+    if f.exists():
+        return {x["engine"] for x in json.loads(f.read_text()) if x.get("validated")}
+    return set()
 
 
 def _score_all(con, symbols: list[str]) -> None:

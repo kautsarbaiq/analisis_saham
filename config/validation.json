@@ -1,0 +1,74 @@
+[
+  {
+    "engine": "technical",
+    "horizon_days": 5,
+    "spread": -0.325,
+    "t_stat": -14.255,
+    "validated": false,
+    "note": "TIDAK ada edge positif (spread -0.33%, t=-14.255) \u2014 kemungkinan rezim mean-reversion"
+  },
+  {
+    "engine": "technical",
+    "horizon_days": 21,
+    "spread": -1.182,
+    "t_stat": -24.608,
+    "validated": false,
+    "note": "TIDAK ada edge positif (spread -1.18%, t=-24.608) \u2014 kemungkinan rezim mean-reversion"
+  },
+  {
+    "engine": "fundamental",
+    "horizon_days": 21,
+    "spread": 0.122,
+    "t_stat": 0.613,
+    "validated": false,
+    "note": "sector-neutral TOLAK (pooled +0.12%); edge raw mungkin sebagian taruhan sektor"
+  },
+  {
+    "engine": "low_volatility",
+    "horizon_days": 21,
+    "spread": -1.983,
+    "t_stat": -38.08,
+    "validated": false,
+    "note": "sector-neutral TOLAK (pooled -1.98%, t -38.08)"
+  },
+  {
+    "engine": "low_volatility",
+    "horizon_days": 63,
+    "spread": -6.0,
+    "t_stat": -61.414,
+    "validated": false,
+    "note": "sector-neutral TOLAK (pooled -6.00%, t -61.414)"
+  },
+  {
+    "engine": "mean_reversion",
+    "horizon_days": 5,
+    "spread": 0.176,
+    "t_stat": 7.667,
+    "validated": true,
+    "note": "raw OOS konsisten +0.18% (3/3 periode termasuk OOS terlama); DIAGNOSTIK: ~sebagian rotasi sektor (edge sector-neutral ~0), kecil & melemah"
+  },
+  {
+    "engine": "mean_reversion",
+    "horizon_days": 10,
+    "spread": 0.24,
+    "t_stat": 7.481,
+    "validated": true,
+    "note": "raw OOS konsisten +0.24% (3/3 periode termasuk OOS terlama); DIAGNOSTIK: ~sebagian rotasi sektor (edge sector-neutral ~0), kecil & melemah"
+  },
+  {
+    "engine": "event_drift",
+    "horizon_days": 21,
+    "spread": 0.043,
+    "t_stat": 0.919,
+    "validated": false,
+    "note": "sector-neutral TOLAK (pooled +0.04%, t 0.919)"
+  },
+  {
+    "engine": "event_drift",
+    "horizon_days": 63,
+    "spread": 0.671,
+    "t_stat": 7.699,
+    "validated": true,
+    "note": "sector-neutral LOLOS walk-forward"
+  }
+]

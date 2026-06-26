@@ -105,15 +105,29 @@ Detail + definisi KPI: [docs/06_roadmap.md](docs/06_roadmap.md)
 
 ---
 
-## Cara Menjalankan (setelah implementasi)
+## Cara Menjalankan
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env          # isi API keys
-python jobs/daily_us.py       # tarik & olah data US sekali
-streamlit run app/dashboard.py
+uv venv --python 3.12 .venv          # atau: python -m venv .venv
+uv pip install --python .venv -r requirements.txt
+python -m jobs.daily_us              # tarik harga+SEC, hitung skor (~12 mnt, 503 saham)
+python -m jobs.backtest_mean_reversion   # validasi engine (sesekali)
+python -m jobs.backtest_factor score_below_ma mean_reversion 5,10
+.venv/bin/uvicorn app.server:app --port 8000    # dashboard -> http://localhost:8000
 ```
 
-> Saat ini file-file di `src/` masih berupa kontrak (docstring + signature) tanpa
-> implementasi. Lihat tiap modul untuk spesifikasi I/O-nya.
+Refresh harian ringan (harga + skor saja, ~1–2 mnt): `python -m jobs.refresh`
+
+## Otomatisasi
+
+**Lokal (macOS, langsung berguna):** jalankan refresh tiap pagi via launchd —
+```bash
+cp scripts/com.projectbandar.daily.plist ~/Library/LaunchAgents/
+launchctl load -w ~/Library/LaunchAgents/com.projectbandar.daily.plist   # bongkar: launchctl unload ...
+```
+
+**Cloud (GitHub Actions, $0):** `.github/workflows/daily_us.yml` menarik harga segar,
+skor pakai vonis backtest statis [`config/validation.json`](config/validation.json),
+lalu commit [`snapshots/latest.json`](snapshots/latest.json) balik ke repo (rekam jejak
+harian + sumber dashboard hosted). Aktif begitu repo di-push ke GitHub. Backtest 5 tahun
+dijalankan terpisah (bukan harian) karena butuh histori penuh.

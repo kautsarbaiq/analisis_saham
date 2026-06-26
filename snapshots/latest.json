@@ -1,0 +1,559 @@
+{
+  "as_of": "2026-06-25",
+  "validated_engines": [
+    "event_drift",
+    "mean_reversion"
+  ],
+  "top": [
+    {
+      "symbol": "SMCI",
+      "score": 84.6,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 41.25,
+        "event_drift": 43.32,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "SATS",
+      "score": 80.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.75,
+        "event_drift": 31.06,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "TTD",
+      "score": 78.3,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.88,
+        "event_drift": 28.42,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "SATS",
+      "score": 77.5,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 46.06,
+        "event_drift": 31.41,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "ICE",
+      "score": 77.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 53.08,
+        "event_drift": 23.96,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "COIN",
+      "score": 73.5,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.53,
+        "event_drift": 23.96,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "INTU",
+      "score": 73.3,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 50.31,
+        "event_drift": 22.96,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "PLTR",
+      "score": 73.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 52.14,
+        "event_drift": 21.1,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "LYB",
+      "score": 71.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 54.44,
+        "event_drift": 16.77,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "TTD",
+      "score": 71.1,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 42.73,
+        "event_drift": 28.38,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "HAL",
+      "score": 70.9,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 50.97,
+        "event_drift": 19.97,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "ROL",
+      "score": 70.9,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.18,
+        "event_drift": 21.72,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "BSX",
+      "score": 70.4,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 48.62,
+        "event_drift": 21.78,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "QCOM",
+      "score": 70.4,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 35.99,
+        "event_drift": 34.39,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "INTU",
+      "score": 70.3,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.18,
+        "event_drift": 21.1,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "CME",
+      "score": 70.1,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 54.02,
+        "event_drift": 16.09,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "APA",
+      "score": 69.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 48.64,
+        "event_drift": 21.12,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "ARES",
+      "score": 69.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 44.69,
+        "event_drift": 24.99,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "APP",
+      "score": 69.6,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 44.76,
+        "event_drift": 24.85,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "OXY",
+      "score": 69.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 44.53,
+        "event_drift": 24.66,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "NFLX",
+      "score": 69.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 55.16,
+        "event_drift": 14.01,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "CSGP",
+      "score": 69.1,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 47.59,
+        "event_drift": 21.5,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "DOW",
+      "score": 68.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 52.41,
+        "event_drift": 16.35,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "AKAM",
+      "score": 68.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 50.73,
+        "event_drift": 18.03,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "META",
+      "score": 68.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 40.56,
+        "event_drift": 28.12,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "CRM",
+      "score": 68.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 48.48,
+        "event_drift": 20.17,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "TRMB",
+      "score": 68.1,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 44.39,
+        "event_drift": 23.75,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "SLB",
+      "score": 68.1,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.35,
+        "event_drift": 18.72,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "IT",
+      "score": 67.9,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 51.06,
+        "event_drift": 16.88,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "PSKY",
+      "score": 66.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 41.53,
+        "event_drift": 25.32,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "FDS",
+      "score": 66.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 44.24,
+        "event_drift": 22.41,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "CMCSA",
+      "score": 66.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 42.37,
+        "event_drift": 24.28,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "CRM",
+      "score": 66.6,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 48.32,
+        "event_drift": 18.32,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "MSFT",
+      "score": 66.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.29,
+        "event_drift": 16.67,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "OXY",
+      "score": 65.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 41.11,
+        "event_drift": 24.74,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "IT",
+      "score": 65.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 50.77,
+        "event_drift": 15.02,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "VRSN",
+      "score": 65.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 42.83,
+        "event_drift": 22.82,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "LYB",
+      "score": 65.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 47.94,
+        "event_drift": 17.71,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "ALB",
+      "score": 65.5,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 49.94,
+        "event_drift": 15.56,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "T",
+      "score": 65.4,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 42.15,
+        "event_drift": 23.25,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "ICE",
+      "score": 65.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 41.63,
+        "event_drift": 23.61,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "BSX",
+      "score": 65.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 43.99,
+        "event_drift": 21.19,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "MSCI",
+      "score": 65.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 44.71,
+        "event_drift": 20.45,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "SLB",
+      "score": 65.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 50.08,
+        "event_drift": 15.07,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "ROL",
+      "score": 65.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 42.97,
+        "event_drift": 22.08,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "AMT",
+      "score": 64.9,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 41.95,
+        "event_drift": 22.99,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    },
+    {
+      "symbol": "BG",
+      "score": 64.9,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 43.01,
+        "event_drift": 21.89,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "NFLX",
+      "score": 64.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 43.02,
+        "event_drift": 21.72,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "CHTR",
+      "score": 64.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 44.71,
+        "event_drift": 19.98,
+        "fundamental": 0.0
+      },
+      "confidence": "normal"
+    },
+    {
+      "symbol": "DOW",
+      "score": 64.6,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 43.14,
+        "event_drift": 21.47,
+        "fundamental": 0.0
+      },
+      "confidence": "low"
+    }
+  ]
+}
