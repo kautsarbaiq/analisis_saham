@@ -28,6 +28,65 @@ async function boot() {
     if (bySym[s]) { selectSymbol(s); e.target.value = ""; }
     else { e.target.classList.add("err"); setTimeout(() => e.target.classList.remove("err"), 500); }
   });
+
+  document.getElementById("tr-btn").addEventListener("click", openTrackRecord);
+  document.getElementById("tr-close").addEventListener("click", closeTrackRecord);
+  document.getElementById("tr-overlay").addEventListener("click", (e) => {
+    if (e.target.id === "tr-overlay") closeTrackRecord();
+  });
+}
+
+function closeTrackRecord() { document.getElementById("tr-overlay").style.display = "none"; }
+
+async function openTrackRecord() {
+  const ov = document.getElementById("tr-overlay");
+  ov.style.display = "flex";
+  const mEl = document.getElementById("tr-metrics");
+  try {
+    const d = await (await fetch("/api/track_record")).json();
+    const m = d.metrics;
+    if (!m || !d.curve || !d.curve.length) {
+      mEl.innerHTML = '<div class="tr-mc"><div class="v">Belum ada data — jalankan jobs.track_record</div></div>';
+      return;
+    }
+    const mc = (k, v, cls = "") => `<div class="tr-mc"><div class="k">${k}</div><div class="v ${cls}">${v}</div></div>`;
+    const sgn = (x) => (x >= 0 ? "+" : "") + x;
+    mEl.innerHTML =
+      mc("Strategi NET", sgn(m.strat_net_total_pct) + "%", m.strat_net_total_pct >= 0 ? "up" : "down") +
+      mc("Benchmark", sgn(m.bench_total_pct) + "%", "up") +
+      mc("Alpha vs bench", sgn(m.alpha_total_pct) + "%", m.alpha_total_pct >= 0 ? "up" : "down") +
+      mc("Hit-rate", Math.round(m.hit_rate_vs_bench * 100) + "%") +
+      mc("Strategi GROSS", sgn(m.strat_gross_total_pct) + "%", "mut") +
+      mc("CAGR net", m.strat_net_cagr_pct + "%", m.strat_net_cagr_pct >= 0 ? "up" : "down") +
+      mc("Sharpe net", m.sharpe_net) +
+      mc("Max drawdown", m.max_drawdown_pct + "%", "down");
+    requestAnimationFrame(() => drawEquity(d.curve));
+    document.getElementById("tr-verdict").innerHTML =
+      `<b>Vonis jujur:</b> sinyal punya edge (gross ${sgn(m.strat_gross_total_pct)}%), TAPI edge mean-reversion ` +
+      `bersifat relatif/long-short — di pasar bull, beli-dip long-only tertinggal benchmark, dan ` +
+      `<b>biaya transaksi (${m.cost_bps}bps × turnover mingguan)</b> menghancurkan sisanya → NET ${m.strat_net_total_pct}%. ` +
+      `Pakai screener sebagai <b>penyaring ide</b>, BUKAN sistem trading mekanis. ` +
+      `(Simulasi pada S&P 500 saat ini → survivorship bias, cenderung optimistis.)`;
+  } catch (e) {
+    mEl.innerHTML = '<div class="tr-mc"><div class="v">Gagal memuat</div></div>';
+  }
+}
+
+function drawEquity(curve) {
+  const cv = document.getElementById("tr-canvas"), dpr = window.devicePixelRatio || 1;
+  const W = cv.clientWidth || 700, H = cv.clientHeight || 220;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const x = cv.getContext("2d"); x.setTransform(dpr, 0, 0, dpr, 0, 0); x.clearRect(0, 0, W, H);
+  const series = [["bench", "#46d3ff"], ["strat_gross", "#6a7888"], ["strat_net", "#26a69a"]];
+  let lo = Infinity, hi = -Infinity;
+  curve.forEach((p) => series.forEach(([k]) => { lo = Math.min(lo, p[k]); hi = Math.max(hi, p[k]); }));
+  const pad = (hi - lo) * 0.08 || 0.1; hi += pad; lo -= pad;
+  const pR = 46, pB = 14, pT = 8, pL = 6, cw = W - pR - pL, ch = H - pT - pB;
+  const px = (i) => pL + i / (curve.length - 1) * cw, py = (v) => pT + (hi - v) / (hi - lo) * ch;
+  x.strokeStyle = "#141c26"; x.fillStyle = "#5a6776"; x.font = "10px ui-monospace,monospace"; x.textBaseline = "middle";
+  for (let g = 0; g <= 4; g++) { const v = lo + (hi - lo) * g / 4, yy = py(v); x.beginPath(); x.moveTo(pL, yy); x.lineTo(pL + cw, yy); x.stroke(); x.fillText(((v - 1) * 100).toFixed(0) + "%", pL + cw + 5, yy); }
+  if (1 >= lo && 1 <= hi) { const y1 = py(1); x.strokeStyle = "rgba(207,214,224,.25)"; x.setLineDash([3, 3]); x.beginPath(); x.moveTo(pL, y1); x.lineTo(pL + cw, y1); x.stroke(); x.setLineDash([]); }
+  series.forEach(([k, col]) => { x.strokeStyle = col; x.lineWidth = 1.4; x.beginPath(); curve.forEach((p, i) => { const xx = px(i), yy = py(p[k]); i ? x.lineTo(xx, yy) : x.moveTo(xx, yy); }); x.stroke(); });
 }
 
 /* ---------- Watchlist ---------- */

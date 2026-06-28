@@ -124,6 +124,30 @@ body {
   color:var(--muted); font-size:10px; letter-spacing:1px; }
 .statusbar .disclaimer { margin-left:auto; color:var(--amber-dim); }
 
+.tr-btn { background:rgba(255,176,0,.10); color:var(--amber); border:1px solid var(--border);
+  font-family:inherit; font-size:10px; letter-spacing:1px; padding:3px 8px; border-radius:3px; cursor:pointer; }
+.tr-btn:hover { background:rgba(255,176,0,.18); }
+.tr-overlay { position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:50;
+  display:flex; align-items:center; justify-content:center; }
+.tr-modal { background:#0c1117; border:1px solid var(--border); border-radius:8px;
+  width:min(760px,92vw); max-height:90vh; overflow:auto; padding:0; }
+.tr-head { display:flex; align-items:center; justify-content:space-between; padding:10px 14px;
+  border-bottom:1px solid var(--border); color:var(--amber); font-size:12px; letter-spacing:.5px; }
+.tr-close { background:none; border:none; color:var(--muted); font-size:15px; cursor:pointer; }
+.tr-close:hover { color:var(--text); }
+.tr-metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border);
+  border-bottom:1px solid var(--border); }
+.tr-mc { background:#0a0d12; padding:9px 11px; }
+.tr-mc .k { color:var(--muted); font-size:10px; letter-spacing:.5px; text-transform:uppercase; }
+.tr-mc .v { font-size:16px; font-variant-numeric:tabular-nums; margin-top:2px; }
+.tr-chartwrap { padding:12px 14px 4px; }
+#tr-canvas { width:100%; height:220px; display:block; }
+.tr-legend { display:flex; gap:16px; padding:0 14px 10px; color:var(--muted); font-size:10px; }
+.tr-legend i { display:inline-block; width:11px; height:2px; vertical-align:middle; margin-right:5px; }
+.tr-verdict { padding:10px 14px 14px; color:#d2a24a; font-size:11px; line-height:1.6;
+  border-top:1px solid var(--border); background:#140f06; }
+.tr-verdict b { color:#ffb000; }
+
 ::-webkit-scrollbar { width:8px; height:8px; }
 ::-webkit-scrollbar-thumb { background:#1d2733; border-radius:4px; }
 ::-webkit-scrollbar-track { background:transparent; }

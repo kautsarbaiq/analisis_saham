@@ -36,6 +36,16 @@ def api_validation() -> list[dict]:
     return service.validation()
 
 
+@app.get("/api/track_record")
+def api_track_record() -> dict:
+    import json
+    from pathlib import Path
+    f = Path(__file__).parent.parent / "snapshots" / "track_record.json"
+    if not f.exists():
+        return {"metrics": {}, "curve": []}
+    return json.loads(f.read_text())
+
+
 @app.get("/api/ohlc/{symbol}")
 def api_ohlc(symbol: str) -> dict:
     data = service.ohlc(symbol.upper())

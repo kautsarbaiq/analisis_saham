@@ -19,6 +19,7 @@
       <span class="cmd-go">GO ⏎</span>
     </div>
     <div class="status">
+      <button id="tr-btn" class="tr-btn">◷ TRACK RECORD</button>
       <span class="live"><i class="dot"></i> US · EOD</span>
       <span id="clock">--:--:--</span>
     </div>
@@ -54,6 +55,19 @@
     <span id="sb-asof"></span>
     <span class="disclaimer">⚠ ALAT ANALISIS &amp; EDUKASI — BUKAN NASIHAT INVESTASI</span>
   </footer>
+
+  <div id="tr-overlay" class="tr-overlay" style="display:none">
+    <div class="tr-modal">
+      <div class="tr-head">
+        <span>◷ TRACK RECORD — simulasi portofolio strategi (NET biaya transaksi)</span>
+        <button id="tr-close" class="tr-close">✕</button>
+      </div>
+      <div id="tr-metrics" class="tr-metrics"></div>
+      <div class="tr-chartwrap"><canvas id="tr-canvas"></canvas></div>
+      <div class="tr-legend"><span><i style="background:#26a69a"></i>Strategi (net)</span><span><i style="background:#6a7888"></i>Strategi (gross)</span><span><i style="background:#46d3ff"></i>Benchmark (EW universe)</span></div>
+      <div id="tr-verdict" class="tr-verdict"></div>
+    </div>
+  </div>
 
   <script src="/static/app.js"></script>
 </body>
