@@ -55,8 +55,27 @@ def build_panels(con):
             m = ed_p[cols].mean(axis=1)
             ed_neu[cols] = (50 + ed_p[cols].sub(m, axis=0)).clip(0, 100)
 
-    w_mr, w_ed = SCORE_WEIGHTS["mean_reversion"], SCORE_WEIGHTS["event_drift"]
-    comp = (w_mr * mr_p + w_ed * ed_neu) / (w_mr + w_ed)
+    # Insider panel (point-in-time: rolling 90-hari count pembelian via filing_date).
+    ins = pd.DataFrame(50.0, index=cl_p.index, columns=cl_p.columns)
+    ib = con.execute("SELECT symbol, filing_date FROM insider_buys").df()
+    if not ib.empty:
+        from collections import defaultdict
+        ib["filing_date"] = pd.to_datetime(ib["filing_date"])
+        td = cl_p.index.values.astype("datetime64[D]")
+        win = np.timedelta64(90, "D")
+        bym = defaultdict(list)
+        for r in ib.itertuples():
+            bym[r.symbol].append(np.datetime64(r.filing_date, "D"))
+        for sym, fds in bym.items():
+            if sym not in ins.columns:
+                continue
+            fa = np.sort(np.array(fds, dtype="datetime64[D]"))
+            cnt = np.searchsorted(fa, td, side="right") - np.searchsorted(fa, td - win, side="right")
+            ins[sym] = np.where(cnt > 0, 50 + np.minimum(50, cnt * 12.5), 50.0)
+
+    w = SCORE_WEIGHTS
+    wm, we, wi = w["mean_reversion"], w["event_drift"], w["insider"]
+    comp = (wm * mr_p + we * ed_neu + wi * ins) / (wm + we + wi)
     return comp, cl_p
 
 

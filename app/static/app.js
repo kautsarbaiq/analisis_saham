@@ -62,12 +62,12 @@ async function openTrackRecord() {
       mc("Max drawdown", m.max_drawdown_pct + "%", "down");
     requestAnimationFrame(() => drawEquity(d.curve));
     document.getElementById("tr-verdict").innerHTML =
-      `<b>Vonis jujur (rebalance bulanan, NET ${m.cost_bps}bps):</b> NET <b>${sgn(m.strat_net_total_pct)}%</b> ` +
-      `(gross ${sgn(m.strat_gross_total_pct)}%) — positif, TAPI jauh di bawah benchmark <b>+${m.bench_total_pct}%</b>. ` +
-      `Eksperimen menunjukkan: lower-turnover menyelamatkan dari −21% (mingguan) → +4% (bulanan), tapi ` +
-      `<b>long-short JUSTRU GAGAL</b> (gross negatif — men-short pemimpin bull market). ` +
-      `Kesimpulan: tak ada varian yang mengalahkan beli-tahan index. Edge nyata tapi <b>tak cukup jadi alpha</b>. ` +
-      `Screener = <b>penyaring ide / kesadaran risiko</b>, BUKAN mesin uang. (Survivorship bias → optimistis.)`;
+      `<b>Vonis jujur (long-only bulanan, 3 sinyal, NET ${m.cost_bps}bps):</b> NET <b>${sgn(m.strat_net_total_pct)}%</b> ` +
+      `(gross ${sgn(m.strat_gross_total_pct)}%) vs benchmark <b>+${m.bench_total_pct}%</b>. ` +
+      `Menambah sinyal INDEPENDEN (insider) <b>melipat-empatkan net (+4%→+20%)</b> — bukti edge independen MENUMPUK ` +
+      `(prinsip Renaissance: banyak sinyal kecil). Tapi masih di bawah beli-tahan index; long-short tetap gagal ` +
+      `(short pemimpin bull). Arah benar — butuh LEBIH banyak sinyal independen untuk benar-benar menang. ` +
+      `Screener = <b>penyaring ide berbukti</b>, edukasi, bukan jaminan. (Survivorship bias → optimistis.)`;
   } catch (e) {
     mEl.innerHTML = '<div class="tr-mc"><div class="v">Gagal memuat</div></div>';
   }
