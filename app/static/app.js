@@ -158,6 +158,24 @@ async function loadNews(sym) {
   } catch (e) { el.innerHTML = '<div class="hint">Berita tak tersedia.</div>'; }
 }
 
+function fmtCompact(v) {
+  return Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(v || 0);
+}
+
+async function loadInsider(sym) {
+  const el = document.getElementById("insider-block");
+  if (!el) return;
+  const head = (txt, col) => `<div class="subrow" style="grid-template-columns:1fr auto"><span class="sk">Insider buys (real-time 180h)</span><span class="sv" style="color:${col}">${txt}</span></div>`;
+  try {
+    const d = await (await fetch("/api/insider/" + encodeURIComponent(sym))).json();
+    if (!d.count) { el.innerHTML = head("tak ada", "#6a7888"); return; }
+    const items = d.buys.slice(0, 4).map((b) =>
+      `<div class="news-it" style="grid-template-columns:54px 1fr"><span class="news-sc up">$${fmtCompact(b.value)}</span>` +
+      `<span class="ntt">${esc(b.date)} · ${esc(b.role)}</span></div>`).join("");
+    el.innerHTML = head(`$${fmtCompact(d.total_value)} · ${d.n_insiders} insider ✓`, "#26a69a") + items;
+  } catch (e) { el.innerHTML = head("—", "#6a7888"); }
+}
+
 function renderWatchlist() {
   const el = document.getElementById("wl-rows");
   el.innerHTML = WL.map((m) => {
@@ -230,6 +248,7 @@ async function selectSymbol(sym) {
   document.getElementById("c-sym").textContent = sym;
   renderDetail(bySym[sym]);
   loadNews(sym);
+  loadInsider(sym);
 
   const r = await fetch("/api/ohlc/" + encodeURIComponent(sym));
   if (!r.ok) return;
@@ -280,9 +299,8 @@ function renderDetail(m) {
       ${subBar("Reversal 1M", mrc.reversal)}
       ${subBar("Oversold RSI", mrc.oversold)}
       ${subBar("Di bawah SMA20", mrc.below_ma)}
-      <div class="subrow" style="grid-template-columns:1fr auto;margin-top:7px">
-        <span class="sk">Insider 90h (smart money)</span>
-        <span class="sv" style="color:${m.insider_buys ? "#26a69a" : "#6a7888"}">${m.insider_buys ? m.insider_buys + "× beli ✓" : "tak ada"}</span>
+      <div id="insider-block" style="margin-top:7px">
+        <div class="subrow" style="grid-template-columns:1fr auto"><span class="sk">Insider buys (real-time)</span><span class="sv mut">memuat…</span></div>
       </div>
     </div>
 

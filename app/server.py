@@ -61,5 +61,16 @@ def api_news(symbol: str) -> dict:
     return {"symbol": symbol.upper(), "items": items, "summary": aggregate_sentiment(items)}
 
 
+@app.get("/api/insider/{symbol}")
+def api_insider(symbol: str) -> dict:
+    from src.ingestion.insider import recent_buys
+    buys = recent_buys(symbol.upper(), days=180)
+    return {
+        "symbol": symbol.upper(), "buys": buys[:8], "count": len(buys),
+        "total_value": sum(b["value"] for b in buys),
+        "n_insiders": len({b["owner"] for b in buys}),
+    }
+
+
 # Static assets (css/js) di /static.
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
