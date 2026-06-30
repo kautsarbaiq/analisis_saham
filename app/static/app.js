@@ -62,11 +62,12 @@ async function openTrackRecord() {
       mc("Max drawdown", m.max_drawdown_pct + "%", "down");
     requestAnimationFrame(() => drawEquity(d.curve));
     document.getElementById("tr-verdict").innerHTML =
-      `<b>Vonis jujur:</b> sinyal punya edge (gross ${sgn(m.strat_gross_total_pct)}%), TAPI edge mean-reversion ` +
-      `bersifat relatif/long-short — di pasar bull, beli-dip long-only tertinggal benchmark, dan ` +
-      `<b>biaya transaksi (${m.cost_bps}bps × turnover mingguan)</b> menghancurkan sisanya → NET ${m.strat_net_total_pct}%. ` +
-      `Pakai screener sebagai <b>penyaring ide</b>, BUKAN sistem trading mekanis. ` +
-      `(Simulasi pada S&P 500 saat ini → survivorship bias, cenderung optimistis.)`;
+      `<b>Vonis jujur (rebalance bulanan, NET ${m.cost_bps}bps):</b> NET <b>${sgn(m.strat_net_total_pct)}%</b> ` +
+      `(gross ${sgn(m.strat_gross_total_pct)}%) — positif, TAPI jauh di bawah benchmark <b>+${m.bench_total_pct}%</b>. ` +
+      `Eksperimen menunjukkan: lower-turnover menyelamatkan dari −21% (mingguan) → +4% (bulanan), tapi ` +
+      `<b>long-short JUSTRU GAGAL</b> (gross negatif — men-short pemimpin bull market). ` +
+      `Kesimpulan: tak ada varian yang mengalahkan beli-tahan index. Edge nyata tapi <b>tak cukup jadi alpha</b>. ` +
+      `Screener = <b>penyaring ide / kesadaran risiko</b>, BUKAN mesin uang. (Survivorship bias → optimistis.)`;
   } catch (e) {
     mEl.innerHTML = '<div class="tr-mc"><div class="v">Gagal memuat</div></div>';
   }

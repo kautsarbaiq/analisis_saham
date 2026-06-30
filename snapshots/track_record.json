@@ -1,1275 +1,315 @@
 {
   "metrics": {
-    "rebalances": 209,
-    "years": 4.1,
+    "mode": "long_only",
+    "rebalance_days": 21,
     "top_n": 20,
-    "rebalance_days": 5,
     "cost_bps": 15,
-    "strat_net_total_pct": -21.3,
-    "strat_gross_total_pct": 17.9,
-    "bench_total_pct": 60.2,
-    "strat_net_cagr_pct": -5.6,
-    "bench_cagr_pct": 12.0,
-    "alpha_total_pct": -81.5,
-    "hit_rate_vs_bench": 0.416,
-    "sharpe_net": -0.08,
-    "max_drawdown_pct": -26.0,
-    "avg_turnover": 1.0
+    "rebalances": 49,
+    "years": 4.1,
+    "strat_net_total_pct": 4.0,
+    "strat_gross_total_pct": 19.0,
+    "bench_total_pct": 58.3,
+    "strat_net_cagr_pct": 1.0,
+    "bench_cagr_pct": 11.9,
+    "alpha_total_pct": -54.3,
+    "hit_rate_vs_bench": 0.408,
+    "sharpe_net": 0.16,
+    "max_drawdown_pct": -19.7
   },
   "curve": [
     {
       "date": "2022-04-20",
-      "strat_gross": 0.8878,
-      "strat_net": 0.8848,
-      "bench": 0.9379
+      "strat_gross": 0.8065,
+      "strat_net": 0.8035,
+      "bench": 0.8822
     },
     {
-      "date": "2022-04-27",
-      "strat_gross": 0.9228,
-      "strat_net": 0.9179,
-      "bench": 0.9615
+      "date": "2022-05-19",
+      "strat_gross": 0.7675,
+      "strat_net": 0.7624,
+      "bench": 0.8348
     },
     {
-      "date": "2022-05-04",
-      "strat_gross": 0.779,
-      "strat_net": 0.7729,
-      "bench": 0.8773
-    },
-    {
-      "date": "2022-05-11",
-      "strat_gross": 0.7993,
-      "strat_net": 0.7915,
-      "bench": 0.884
-    },
-    {
-      "date": "2022-05-18",
-      "strat_gross": 0.8118,
-      "strat_net": 0.8019,
-      "bench": 0.8997
-    },
-    {
-      "date": "2022-05-25",
-      "strat_gross": 0.9027,
-      "strat_net": 0.8896,
-      "bench": 0.9413
-    },
-    {
-      "date": "2022-06-02",
-      "strat_gross": 0.8661,
-      "strat_net": 0.8511,
-      "bench": 0.9064
-    },
-    {
-      "date": "2022-06-09",
-      "strat_gross": 0.7761,
-      "strat_net": 0.7611,
-      "bench": 0.8185
-    },
-    {
-      "date": "2022-06-16",
-      "strat_gross": 0.8486,
-      "strat_net": 0.8306,
-      "bench": 0.8715
-    },
-    {
-      "date": "2022-06-24",
-      "strat_gross": 0.8428,
-      "strat_net": 0.8229,
-      "bench": 0.8558
-    },
-    {
-      "date": "2022-07-01",
-      "strat_gross": 0.8487,
-      "strat_net": 0.827,
-      "bench": 0.8561
-    },
-    {
-      "date": "2022-07-11",
-      "strat_gross": 0.8525,
-      "strat_net": 0.8288,
-      "bench": 0.8542
-    },
-    {
-      "date": "2022-07-18",
-      "strat_gross": 0.8789,
-      "strat_net": 0.8529,
+      "date": "2022-06-21",
+      "strat_gross": 0.8215,
+      "strat_net": 0.814,
       "bench": 0.8905
     },
     {
-      "date": "2022-07-25",
-      "strat_gross": 0.9095,
-      "strat_net": 0.8809,
-      "bench": 0.9233
+      "date": "2022-07-21",
+      "strat_gross": 0.9071,
+      "strat_net": 0.8968,
+      "bench": 0.9488
     },
     {
-      "date": "2022-08-01",
-      "strat_gross": 0.9336,
-      "strat_net": 0.9025,
-      "bench": 0.9333
-    },
-    {
-      "date": "2022-08-08",
-      "strat_gross": 0.9568,
-      "strat_net": 0.9232,
-      "bench": 0.9697
-    },
-    {
-      "date": "2022-08-15",
-      "strat_gross": 0.8848,
-      "strat_net": 0.8525,
-      "bench": 0.9335
-    },
-    {
-      "date": "2022-08-22",
-      "strat_gross": 0.8556,
-      "strat_net": 0.8224,
-      "bench": 0.9157
-    },
-    {
-      "date": "2022-08-29",
-      "strat_gross": 0.8322,
-      "strat_net": 0.7992,
-      "bench": 0.889
-    },
-    {
-      "date": "2022-09-06",
-      "strat_gross": 0.8417,
-      "strat_net": 0.8069,
-      "bench": 0.9026
-    },
-    {
-      "date": "2022-09-13",
-      "strat_gross": 0.811,
-      "strat_net": 0.7764,
-      "bench": 0.8783
+      "date": "2022-08-19",
+      "strat_gross": 0.8189,
+      "strat_net": 0.807,
+      "bench": 0.8742
     },
     {
       "date": "2022-09-20",
-      "strat_gross": 0.7535,
-      "strat_net": 0.72,
-      "bench": 0.8221
+      "strat_gross": 0.7333,
+      "strat_net": 0.7204,
+      "bench": 0.838
     },
     {
-      "date": "2022-09-27",
-      "strat_gross": 0.7907,
-      "strat_net": 0.754,
-      "bench": 0.8697
+      "date": "2022-10-19",
+      "strat_gross": 0.8335,
+      "strat_net": 0.8169,
+      "bench": 0.9178
     },
     {
-      "date": "2022-10-04",
-      "strat_gross": 0.7251,
-      "strat_net": 0.6898,
-      "bench": 0.8252
+      "date": "2022-11-17",
+      "strat_gross": 0.7667,
+      "strat_net": 0.7492,
+      "bench": 0.8919
     },
     {
-      "date": "2022-10-11",
-      "strat_gross": 0.746,
-      "strat_net": 0.7081,
-      "bench": 0.8517
+      "date": "2022-12-19",
+      "strat_gross": 0.8789,
+      "strat_net": 0.8572,
+      "bench": 0.9417
     },
     {
-      "date": "2022-10-18",
-      "strat_gross": 0.7754,
-      "strat_net": 0.7346,
-      "bench": 0.8803
-    },
-    {
-      "date": "2022-10-25",
-      "strat_gross": 0.8129,
-      "strat_net": 0.7686,
-      "bench": 0.8996
-    },
-    {
-      "date": "2022-11-01",
-      "strat_gross": 0.7578,
-      "strat_net": 0.7145,
-      "bench": 0.8972
-    },
-    {
-      "date": "2022-11-08",
-      "strat_gross": 0.8392,
-      "strat_net": 0.7901,
-      "bench": 0.9393
-    },
-    {
-      "date": "2022-11-15",
-      "strat_gross": 0.7994,
-      "strat_net": 0.7515,
-      "bench": 0.9399
-    },
-    {
-      "date": "2022-11-22",
-      "strat_gross": 0.8429,
-      "strat_net": 0.7914,
-      "bench": 0.9578
-    },
-    {
-      "date": "2022-11-30",
-      "strat_gross": 0.7739,
-      "strat_net": 0.7252,
-      "bench": 0.9246
-    },
-    {
-      "date": "2022-12-07",
-      "strat_gross": 0.7798,
-      "strat_net": 0.7294,
-      "bench": 0.9386
-    },
-    {
-      "date": "2022-12-14",
-      "strat_gross": 0.7562,
-      "strat_net": 0.7064,
-      "bench": 0.9121
-    },
-    {
-      "date": "2022-12-21",
-      "strat_gross": 0.7483,
-      "strat_net": 0.6978,
-      "bench": 0.9104
-    },
-    {
-      "date": "2022-12-29",
-      "strat_gross": 0.7657,
-      "strat_net": 0.7131,
-      "bench": 0.9294
-    },
-    {
-      "date": "2023-01-06",
-      "strat_gross": 0.8489,
-      "strat_net": 0.7893,
-      "bench": 0.9573
-    },
-    {
-      "date": "2023-01-13",
-      "strat_gross": 0.846,
-      "strat_net": 0.785,
-      "bench": 0.9598
-    },
-    {
-      "date": "2023-01-23",
-      "strat_gross": 0.8479,
-      "strat_net": 0.7855,
-      "bench": 0.9597
-    },
-    {
-      "date": "2023-01-30",
-      "strat_gross": 0.8466,
-      "strat_net": 0.7831,
-      "bench": 0.98
-    },
-    {
-      "date": "2023-02-06",
-      "strat_gross": 0.8692,
-      "strat_net": 0.8025,
-      "bench": 0.9846
-    },
-    {
-      "date": "2023-02-13",
-      "strat_gross": 0.8606,
-      "strat_net": 0.7927,
-      "bench": 0.957
+      "date": "2023-01-20",
+      "strat_gross": 0.8831,
+      "strat_net": 0.8587,
+      "bench": 0.9507
     },
     {
       "date": "2023-02-21",
-      "strat_gross": 0.8516,
-      "strat_net": 0.7827,
-      "bench": 0.9502
+      "strat_gross": 0.8378,
+      "strat_net": 0.8122,
+      "bench": 0.9032
     },
     {
-      "date": "2023-02-28",
-      "strat_gross": 0.8389,
-      "strat_net": 0.7692,
-      "bench": 0.9499
+      "date": "2023-03-22",
+      "strat_gross": 0.8794,
+      "strat_net": 0.8501,
+      "bench": 0.947
     },
     {
-      "date": "2023-03-07",
-      "strat_gross": 0.7855,
-      "strat_net": 0.7191,
-      "bench": 0.9191
+      "date": "2023-04-21",
+      "strat_gross": 0.9551,
+      "strat_net": 0.9208,
+      "bench": 0.9461
     },
     {
-      "date": "2023-03-14",
-      "strat_gross": 0.7984,
-      "strat_net": 0.7291,
-      "bench": 0.9286
+      "date": "2023-05-22",
+      "strat_gross": 0.9466,
+      "strat_net": 0.91,
+      "bench": 0.9785
     },
     {
-      "date": "2023-03-21",
-      "strat_gross": 0.7837,
-      "strat_net": 0.7142,
-      "bench": 0.9191
-    },
-    {
-      "date": "2023-03-28",
-      "strat_gross": 0.7989,
-      "strat_net": 0.7266,
-      "bench": 0.9433
-    },
-    {
-      "date": "2023-04-04",
-      "strat_gross": 0.8067,
-      "strat_net": 0.7325,
-      "bench": 0.9481
-    },
-    {
-      "date": "2023-04-12",
-      "strat_gross": 0.8292,
-      "strat_net": 0.7516,
-      "bench": 0.9588
-    },
-    {
-      "date": "2023-04-19",
-      "strat_gross": 0.7996,
-      "strat_net": 0.7232,
-      "bench": 0.93
-    },
-    {
-      "date": "2023-04-26",
-      "strat_gross": 0.7925,
-      "strat_net": 0.7155,
-      "bench": 0.9375
-    },
-    {
-      "date": "2023-05-03",
-      "strat_gross": 0.8502,
-      "strat_net": 0.7661,
-      "bench": 0.9447
-    },
-    {
-      "date": "2023-05-10",
-      "strat_gross": 0.8547,
-      "strat_net": 0.7687,
-      "bench": 0.9456
-    },
-    {
-      "date": "2023-05-17",
-      "strat_gross": 0.8556,
-      "strat_net": 0.7681,
-      "bench": 0.9322
-    },
-    {
-      "date": "2023-05-24",
-      "strat_gross": 0.8518,
-      "strat_net": 0.763,
-      "bench": 0.9426
-    },
-    {
-      "date": "2023-06-01",
-      "strat_gross": 0.8926,
-      "strat_net": 0.7985,
-      "bench": 0.9744
-    },
-    {
-      "date": "2023-06-08",
-      "strat_gross": 0.9287,
-      "strat_net": 0.8289,
-      "bench": 0.9997
-    },
-    {
-      "date": "2023-06-15",
-      "strat_gross": 0.92,
-      "strat_net": 0.8191,
-      "bench": 0.977
-    },
-    {
-      "date": "2023-06-23",
-      "strat_gross": 0.9488,
-      "strat_net": 0.8425,
-      "bench": 1.0107
-    },
-    {
-      "date": "2023-06-30",
-      "strat_gross": 0.9479,
-      "strat_net": 0.8398,
-      "bench": 1.0125
-    },
-    {
-      "date": "2023-07-10",
-      "strat_gross": 0.9559,
-      "strat_net": 0.8455,
-      "bench": 1.0317
-    },
-    {
-      "date": "2023-07-17",
-      "strat_gross": 0.9872,
-      "strat_net": 0.8719,
-      "bench": 1.0458
+      "date": "2023-06-22",
+      "strat_gross": 1.0303,
+      "strat_net": 0.9881,
+      "bench": 1.0385
     },
     {
       "date": "2023-07-24",
-      "strat_gross": 0.9951,
-      "strat_net": 0.8766,
-      "bench": 1.0507
+      "strat_gross": 0.9609,
+      "strat_net": 0.9185,
+      "bench": 0.9925
     },
     {
-      "date": "2023-07-31",
-      "strat_gross": 0.9752,
-      "strat_net": 0.8572,
-      "bench": 1.0402
+      "date": "2023-08-22",
+      "strat_gross": 0.9092,
+      "strat_net": 0.8663,
+      "bench": 0.9756
     },
     {
-      "date": "2023-08-07",
-      "strat_gross": 0.9577,
-      "strat_net": 0.8399,
-      "bench": 1.0301
+      "date": "2023-09-21",
+      "strat_gross": 0.8977,
+      "strat_net": 0.8532,
+      "bench": 0.9356
     },
     {
-      "date": "2023-08-14",
-      "strat_gross": 0.9376,
-      "strat_net": 0.8207,
-      "bench": 1.0026
+      "date": "2023-10-20",
+      "strat_gross": 1.0326,
+      "strat_net": 0.979,
+      "bench": 1.005
     },
     {
-      "date": "2023-08-21",
-      "strat_gross": 0.9425,
-      "strat_net": 0.8229,
-      "bench": 1.0111
-    },
-    {
-      "date": "2023-08-28",
-      "strat_gross": 0.9687,
-      "strat_net": 0.8442,
-      "bench": 1.016
-    },
-    {
-      "date": "2023-09-05",
-      "strat_gross": 0.9661,
-      "strat_net": 0.8403,
-      "bench": 1.0107
-    },
-    {
-      "date": "2023-09-12",
-      "strat_gross": 0.9612,
-      "strat_net": 0.8344,
-      "bench": 1.0053
-    },
-    {
-      "date": "2023-09-19",
-      "strat_gross": 0.9134,
-      "strat_net": 0.7917,
-      "bench": 0.9685
-    },
-    {
-      "date": "2023-09-26",
-      "strat_gross": 0.8994,
-      "strat_net": 0.7784,
-      "bench": 0.9517
-    },
-    {
-      "date": "2023-10-03",
-      "strat_gross": 0.9154,
-      "strat_net": 0.7902,
-      "bench": 0.979
-    },
-    {
-      "date": "2023-10-10",
-      "strat_gross": 0.9101,
-      "strat_net": 0.7839,
-      "bench": 0.9817
-    },
-    {
-      "date": "2023-10-17",
-      "strat_gross": 0.8768,
-      "strat_net": 0.754,
-      "bench": 0.9449
-    },
-    {
-      "date": "2023-10-24",
-      "strat_gross": 0.8414,
-      "strat_net": 0.7221,
-      "bench": 0.9376
-    },
-    {
-      "date": "2023-10-31",
-      "strat_gross": 0.9142,
-      "strat_net": 0.7833,
-      "bench": 0.9749
-    },
-    {
-      "date": "2023-11-07",
-      "strat_gross": 0.9486,
-      "strat_net": 0.811,
-      "bench": 1.0023
-    },
-    {
-      "date": "2023-11-14",
-      "strat_gross": 0.9476,
-      "strat_net": 0.8088,
-      "bench": 1.01
-    },
-    {
-      "date": "2023-11-21",
-      "strat_gross": 0.9509,
-      "strat_net": 0.8106,
-      "bench": 1.0194
-    },
-    {
-      "date": "2023-11-29",
-      "strat_gross": 0.9426,
-      "strat_net": 0.802,
-      "bench": 1.0334
-    },
-    {
-      "date": "2023-12-06",
-      "strat_gross": 0.9737,
-      "strat_net": 0.827,
-      "bench": 1.0755
-    },
-    {
-      "date": "2023-12-13",
-      "strat_gross": 0.9941,
-      "strat_net": 0.8434,
-      "bench": 1.0747
+      "date": "2023-11-20",
+      "strat_gross": 1.1349,
+      "strat_net": 1.0731,
+      "bench": 1.0676
     },
     {
       "date": "2023-12-20",
-      "strat_gross": 1.0036,
-      "strat_net": 0.8494,
-      "bench": 1.1
+      "strat_gross": 1.1705,
+      "strat_net": 1.1041,
+      "bench": 1.087
     },
     {
-      "date": "2023-12-28",
-      "strat_gross": 0.9981,
-      "strat_net": 0.8438,
-      "bench": 1.0806
+      "date": "2024-01-23",
+      "strat_gross": 1.2203,
+      "strat_net": 1.148,
+      "bench": 1.1297
     },
     {
-      "date": "2024-01-05",
-      "strat_gross": 1.0213,
-      "strat_net": 0.8614,
-      "bench": 1.0874
+      "date": "2024-02-22",
+      "strat_gross": 1.2373,
+      "strat_net": 1.1609,
+      "bench": 1.1771
     },
     {
-      "date": "2024-01-12",
-      "strat_gross": 1.0227,
-      "strat_net": 0.8608,
-      "bench": 1.0942
+      "date": "2024-03-22",
+      "strat_gross": 1.1535,
+      "strat_net": 1.079,
+      "bench": 1.1477
     },
     {
-      "date": "2024-01-22",
-      "strat_gross": 1.044,
-      "strat_net": 0.8773,
-      "bench": 1.1068
-    },
-    {
-      "date": "2024-01-29",
-      "strat_gross": 1.0017,
-      "strat_net": 0.8405,
-      "bench": 1.0973
-    },
-    {
-      "date": "2024-02-05",
-      "strat_gross": 1.0417,
-      "strat_net": 0.8728,
-      "bench": 1.1233
-    },
-    {
-      "date": "2024-02-12",
-      "strat_gross": 1.0328,
-      "strat_net": 0.864,
-      "bench": 1.1209
-    },
-    {
-      "date": "2024-02-20",
-      "strat_gross": 1.0498,
-      "strat_net": 0.8769,
-      "bench": 1.1426
-    },
-    {
-      "date": "2024-02-27",
-      "strat_gross": 1.0523,
-      "strat_net": 0.8772,
-      "bench": 1.155
-    },
-    {
-      "date": "2024-03-05",
-      "strat_gross": 1.1041,
-      "strat_net": 0.9189,
-      "bench": 1.1742
-    },
-    {
-      "date": "2024-03-12",
-      "strat_gross": 1.0904,
-      "strat_net": 0.9054,
-      "bench": 1.172
-    },
-    {
-      "date": "2024-03-19",
-      "strat_gross": 1.0996,
-      "strat_net": 0.9114,
-      "bench": 1.1815
-    },
-    {
-      "date": "2024-03-26",
-      "strat_gross": 1.1101,
-      "strat_net": 0.9181,
-      "bench": 1.1888
-    },
-    {
-      "date": "2024-04-03",
-      "strat_gross": 1.1011,
-      "strat_net": 0.9089,
-      "bench": 1.1722
-    },
-    {
-      "date": "2024-04-10",
-      "strat_gross": 1.0592,
-      "strat_net": 0.8723,
-      "bench": 1.1339
-    },
-    {
-      "date": "2024-04-17",
-      "strat_gross": 1.0748,
-      "strat_net": 0.8832,
-      "bench": 1.1578
-    },
-    {
-      "date": "2024-04-24",
-      "strat_gross": 1.056,
-      "strat_net": 0.8663,
-      "bench": 1.1442
-    },
-    {
-      "date": "2024-05-01",
-      "strat_gross": 1.0815,
-      "strat_net": 0.8855,
-      "bench": 1.1738
-    },
-    {
-      "date": "2024-05-08",
-      "strat_gross": 1.1071,
-      "strat_net": 0.9049,
-      "bench": 1.2017
-    },
-    {
-      "date": "2024-05-15",
-      "strat_gross": 1.1016,
-      "strat_net": 0.8988,
-      "bench": 1.1961
+      "date": "2024-04-23",
+      "strat_gross": 1.206,
+      "strat_net": 1.1253,
+      "bench": 1.1889
     },
     {
       "date": "2024-05-22",
-      "strat_gross": 1.0853,
-      "strat_net": 0.884,
-      "bench": 1.1719
+      "strat_gross": 1.1998,
+      "strat_net": 1.1163,
+      "bench": 1.1851
     },
     {
-      "date": "2024-05-30",
-      "strat_gross": 1.0823,
-      "strat_net": 0.8803,
-      "bench": 1.1815
+      "date": "2024-06-24",
+      "strat_gross": 1.1906,
+      "strat_net": 1.1048,
+      "bench": 1.1941
     },
     {
-      "date": "2024-06-06",
-      "strat_gross": 1.0794,
-      "strat_net": 0.8766,
-      "bench": 1.1821
+      "date": "2024-07-24",
+      "strat_gross": 1.2052,
+      "strat_net": 1.1153,
+      "bench": 1.2293
     },
     {
-      "date": "2024-06-13",
-      "strat_gross": 1.0919,
-      "strat_net": 0.8844,
-      "bench": 1.1881
+      "date": "2024-08-22",
+      "strat_gross": 1.2258,
+      "strat_net": 1.1314,
+      "bench": 1.2778
     },
     {
-      "date": "2024-06-21",
-      "strat_gross": 1.0788,
-      "strat_net": 0.8724,
-      "bench": 1.1844
-    },
-    {
-      "date": "2024-06-28",
-      "strat_gross": 1.0855,
-      "strat_net": 0.8764,
-      "bench": 1.1843
-    },
-    {
-      "date": "2024-07-08",
-      "strat_gross": 1.0931,
-      "strat_net": 0.8806,
-      "bench": 1.2169
-    },
-    {
-      "date": "2024-07-15",
-      "strat_gross": 1.1172,
-      "strat_net": 0.8984,
-      "bench": 1.2231
-    },
-    {
-      "date": "2024-07-22",
-      "strat_gross": 1.0703,
-      "strat_net": 0.8589,
-      "bench": 1.2214
-    },
-    {
-      "date": "2024-07-29",
-      "strat_gross": 0.9627,
-      "strat_net": 0.7713,
-      "bench": 1.1651
-    },
-    {
-      "date": "2024-08-05",
-      "strat_gross": 0.9915,
-      "strat_net": 0.7932,
-      "bench": 1.192
-    },
-    {
-      "date": "2024-08-12",
-      "strat_gross": 1.0746,
-      "strat_net": 0.8584,
-      "bench": 1.2405
-    },
-    {
-      "date": "2024-08-19",
-      "strat_gross": 1.0896,
-      "strat_net": 0.8687,
-      "bench": 1.2556
-    },
-    {
-      "date": "2024-08-26",
-      "strat_gross": 1.0479,
-      "strat_net": 0.8337,
-      "bench": 1.2468
-    },
-    {
-      "date": "2024-09-03",
-      "strat_gross": 1.0206,
-      "strat_net": 0.8105,
-      "bench": 1.2364
-    },
-    {
-      "date": "2024-09-10",
-      "strat_gross": 1.0779,
-      "strat_net": 0.8546,
-      "bench": 1.2734
-    },
-    {
-      "date": "2024-09-17",
-      "strat_gross": 1.097,
-      "strat_net": 0.8682,
-      "bench": 1.2918
-    },
-    {
-      "date": "2024-09-24",
-      "strat_gross": 1.0849,
-      "strat_net": 0.8569,
-      "bench": 1.2934
-    },
-    {
-      "date": "2024-10-01",
-      "strat_gross": 1.0731,
-      "strat_net": 0.8459,
-      "bench": 1.2921
-    },
-    {
-      "date": "2024-10-08",
-      "strat_gross": 1.0935,
-      "strat_net": 0.8603,
-      "bench": 1.3134
-    },
-    {
-      "date": "2024-10-15",
-      "strat_gross": 1.0772,
-      "strat_net": 0.8457,
-      "bench": 1.3085
+      "date": "2024-09-23",
+      "strat_gross": 1.1794,
+      "strat_net": 1.0857,
+      "bench": 1.2962
     },
     {
       "date": "2024-10-22",
-      "strat_gross": 1.0651,
-      "strat_net": 0.8347,
-      "bench": 1.302
+      "strat_gross": 1.1041,
+      "strat_net": 1.0136,
+      "bench": 1.3247
     },
     {
-      "date": "2024-10-29",
-      "strat_gross": 1.0751,
-      "strat_net": 0.8411,
-      "bench": 1.3041
+      "date": "2024-11-20",
+      "strat_gross": 1.1015,
+      "strat_net": 1.0086,
+      "bench": 1.2889
     },
     {
-      "date": "2024-11-05",
-      "strat_gross": 1.0682,
-      "strat_net": 0.834,
-      "bench": 1.3466
+      "date": "2024-12-20",
+      "strat_gross": 1.1743,
+      "strat_net": 1.0724,
+      "bench": 1.3379
     },
     {
-      "date": "2024-11-12",
-      "strat_gross": 1.0511,
-      "strat_net": 0.8188,
-      "bench": 1.3323
+      "date": "2025-01-24",
+      "strat_gross": 1.2086,
+      "strat_net": 1.1006,
+      "bench": 1.3176
     },
     {
-      "date": "2024-11-19",
-      "strat_gross": 1.1034,
-      "strat_net": 0.8579,
-      "bench": 1.3763
-    },
-    {
-      "date": "2024-11-26",
-      "strat_gross": 1.1192,
-      "strat_net": 0.8688,
-      "bench": 1.3729
-    },
-    {
-      "date": "2024-12-04",
-      "strat_gross": 1.0934,
-      "strat_net": 0.8471,
-      "bench": 1.3498
-    },
-    {
-      "date": "2024-12-11",
-      "strat_gross": 1.0327,
-      "strat_net": 0.7986,
-      "bench": 1.2867
-    },
-    {
-      "date": "2024-12-18",
-      "strat_gross": 1.0525,
-      "strat_net": 0.8123,
-      "bench": 1.3138
-    },
-    {
-      "date": "2024-12-26",
-      "strat_gross": 1.0533,
-      "strat_net": 0.8116,
-      "bench": 1.3022
-    },
-    {
-      "date": "2025-01-03",
-      "strat_gross": 1.0598,
-      "strat_net": 0.815,
-      "bench": 1.2883
-    },
-    {
-      "date": "2025-01-13",
-      "strat_gross": 1.1151,
-      "strat_net": 0.8557,
-      "bench": 1.348
-    },
-    {
-      "date": "2025-01-21",
-      "strat_gross": 1.114,
-      "strat_net": 0.8533,
-      "bench": 1.3404
-    },
-    {
-      "date": "2025-01-28",
-      "strat_gross": 1.1003,
-      "strat_net": 0.8414,
-      "bench": 1.3353
-    },
-    {
-      "date": "2025-02-04",
-      "strat_gross": 1.097,
-      "strat_net": 0.8375,
-      "bench": 1.3405
-    },
-    {
-      "date": "2025-02-11",
-      "strat_gross": 1.1255,
-      "strat_net": 0.8579,
-      "bench": 1.3545
-    },
-    {
-      "date": "2025-02-19",
-      "strat_gross": 1.0909,
-      "strat_net": 0.8295,
-      "bench": 1.3278
-    },
-    {
-      "date": "2025-02-26",
-      "strat_gross": 1.0606,
-      "strat_net": 0.8046,
-      "bench": 1.3062
-    },
-    {
-      "date": "2025-03-05",
-      "strat_gross": 0.9963,
-      "strat_net": 0.7541,
-      "bench": 1.2578
-    },
-    {
-      "date": "2025-03-12",
-      "strat_gross": 1.0199,
-      "strat_net": 0.7705,
-      "bench": 1.2882
-    },
-    {
-      "date": "2025-03-19",
-      "strat_gross": 1.0486,
-      "strat_net": 0.7906,
-      "bench": 1.2916
+      "date": "2025-02-25",
+      "strat_gross": 1.1253,
+      "strat_net": 1.0214,
+      "bench": 1.2801
     },
     {
       "date": "2025-03-26",
-      "strat_gross": 1.03,
-      "strat_net": 0.7749,
-      "bench": 1.2892
+      "strat_gross": 1.0756,
+      "strat_net": 0.9737,
+      "bench": 1.226
     },
     {
-      "date": "2025-04-02",
-      "strat_gross": 0.9862,
-      "strat_net": 0.7408,
-      "bench": 1.2162
+      "date": "2025-04-25",
+      "strat_gross": 1.0937,
+      "strat_net": 0.9872,
+      "bench": 1.3068
     },
     {
-      "date": "2025-04-09",
-      "strat_gross": 0.9118,
-      "strat_net": 0.6835,
-      "bench": 1.1866
+      "date": "2025-05-27",
+      "strat_gross": 1.1266,
+      "strat_net": 1.0141,
+      "bench": 1.3353
     },
     {
-      "date": "2025-04-16",
-      "strat_gross": 0.9755,
-      "strat_net": 0.7302,
-      "bench": 1.2386
+      "date": "2025-06-26",
+      "strat_gross": 1.1586,
+      "strat_net": 1.0405,
+      "bench": 1.3883
     },
     {
-      "date": "2025-04-24",
-      "strat_gross": 0.9725,
-      "strat_net": 0.7262,
-      "bench": 1.2498
-    },
-    {
-      "date": "2025-05-01",
-      "strat_gross": 0.9812,
-      "strat_net": 0.7313,
-      "bench": 1.2782
-    },
-    {
-      "date": "2025-05-08",
-      "strat_gross": 0.9585,
-      "strat_net": 0.713,
-      "bench": 1.3239
-    },
-    {
-      "date": "2025-05-15",
-      "strat_gross": 0.9613,
-      "strat_net": 0.7139,
-      "bench": 1.3006
-    },
-    {
-      "date": "2025-05-22",
-      "strat_gross": 0.9764,
-      "strat_net": 0.7238,
-      "bench": 1.3112
-    },
-    {
-      "date": "2025-05-30",
-      "strat_gross": 1.0005,
-      "strat_net": 0.7402,
-      "bench": 1.3284
-    },
-    {
-      "date": "2025-06-06",
-      "strat_gross": 0.9897,
-      "strat_net": 0.7307,
-      "bench": 1.3178
-    },
-    {
-      "date": "2025-06-13",
-      "strat_gross": 1.0164,
-      "strat_net": 0.7494,
-      "bench": 1.3337
-    },
-    {
-      "date": "2025-06-23",
-      "strat_gross": 1.0311,
-      "strat_net": 0.7593,
-      "bench": 1.3616
-    },
-    {
-      "date": "2025-06-30",
-      "strat_gross": 1.0541,
-      "strat_net": 0.7751,
-      "bench": 1.3788
-    },
-    {
-      "date": "2025-07-08",
-      "strat_gross": 1.0364,
-      "strat_net": 0.7605,
-      "bench": 1.3647
-    },
-    {
-      "date": "2025-07-15",
-      "strat_gross": 1.0525,
-      "strat_net": 0.7709,
-      "bench": 1.3933
-    },
-    {
-      "date": "2025-07-22",
-      "strat_gross": 1.0466,
-      "strat_net": 0.7649,
-      "bench": 1.4007
-    },
-    {
-      "date": "2025-07-29",
-      "strat_gross": 0.9993,
-      "strat_net": 0.7289,
-      "bench": 1.3773
-    },
-    {
-      "date": "2025-08-05",
-      "strat_gross": 0.9731,
-      "strat_net": 0.7083,
-      "bench": 1.3925
-    },
-    {
-      "date": "2025-08-12",
-      "strat_gross": 1.0077,
-      "strat_net": 0.7321,
-      "bench": 1.402
-    },
-    {
-      "date": "2025-08-19",
-      "strat_gross": 1.028,
-      "strat_net": 0.7453,
-      "bench": 1.4162
+      "date": "2025-07-28",
+      "strat_gross": 1.143,
+      "strat_net": 1.0237,
+      "bench": 1.4012
     },
     {
       "date": "2025-08-26",
-      "strat_gross": 1.0284,
-      "strat_net": 0.744,
-      "bench": 1.4061
+      "strat_gross": 1.1689,
+      "strat_net": 1.044,
+      "bench": 1.4027
     },
     {
-      "date": "2025-09-03",
-      "strat_gross": 1.0368,
-      "strat_net": 0.7485,
-      "bench": 1.4151
+      "date": "2025-09-25",
+      "strat_gross": 1.2125,
+      "strat_net": 1.0801,
+      "bench": 1.4412
     },
     {
-      "date": "2025-09-10",
-      "strat_gross": 1.0392,
-      "strat_net": 0.7491,
-      "bench": 1.4218
+      "date": "2025-10-24",
+      "strat_gross": 1.1788,
+      "strat_net": 1.047,
+      "bench": 1.4075
     },
     {
-      "date": "2025-09-17",
-      "strat_gross": 1.0262,
-      "strat_net": 0.7382,
-      "bench": 1.4278
+      "date": "2025-11-24",
+      "strat_gross": 1.283,
+      "strat_net": 1.1366,
+      "bench": 1.4724
     },
     {
-      "date": "2025-09-24",
-      "strat_gross": 1.0329,
-      "strat_net": 0.7416,
-      "bench": 1.4437
-    },
-    {
-      "date": "2025-10-01",
-      "strat_gross": 1.0481,
-      "strat_net": 0.7509,
-      "bench": 1.4499
-    },
-    {
-      "date": "2025-10-08",
-      "strat_gross": 1.0523,
-      "strat_net": 0.7524,
-      "bench": 1.4352
-    },
-    {
-      "date": "2025-10-15",
-      "strat_gross": 1.0771,
-      "strat_net": 0.7688,
-      "bench": 1.4414
-    },
-    {
-      "date": "2025-10-22",
-      "strat_gross": 1.0989,
-      "strat_net": 0.7826,
-      "bench": 1.4342
-    },
-    {
-      "date": "2025-10-29",
-      "strat_gross": 1.0993,
-      "strat_net": 0.7809,
-      "bench": 1.4268
-    },
-    {
-      "date": "2025-11-05",
-      "strat_gross": 1.115,
-      "strat_net": 0.7904,
-      "bench": 1.45
-    },
-    {
-      "date": "2025-11-12",
-      "strat_gross": 1.046,
-      "strat_net": 0.7396,
-      "bench": 1.4045
-    },
-    {
-      "date": "2025-11-19",
-      "strat_gross": 1.0974,
-      "strat_net": 0.7748,
-      "bench": 1.4512
-    },
-    {
-      "date": "2025-11-26",
-      "strat_gross": 1.1443,
-      "strat_net": 0.8064,
-      "bench": 1.4617
-    },
-    {
-      "date": "2025-12-04",
-      "strat_gross": 1.1382,
-      "strat_net": 0.8003,
-      "bench": 1.4866
-    },
-    {
-      "date": "2025-12-11",
-      "strat_gross": 1.1516,
-      "strat_net": 0.8084,
-      "bench": 1.4662
-    },
-    {
-      "date": "2025-12-18",
-      "strat_gross": 1.1694,
-      "strat_net": 0.8189,
-      "bench": 1.4864
-    },
-    {
-      "date": "2025-12-26",
-      "strat_gross": 1.1783,
-      "strat_net": 0.8242,
-      "bench": 1.4916
-    },
-    {
-      "date": "2026-01-05",
-      "strat_gross": 1.1941,
-      "strat_net": 0.8338,
-      "bench": 1.5147
-    },
-    {
-      "date": "2026-01-12",
-      "strat_gross": 1.1439,
-      "strat_net": 0.797,
-      "bench": 1.5004
-    },
-    {
-      "date": "2026-01-20",
-      "strat_gross": 1.1648,
-      "strat_net": 0.8101,
-      "bench": 1.5224
+      "date": "2025-12-24",
+      "strat_gross": 1.3191,
+      "strat_net": 1.1654,
+      "bench": 1.5097
     },
     {
       "date": "2026-01-27",
-      "strat_gross": 1.1015,
-      "strat_net": 0.7648,
-      "bench": 1.517
+      "strat_gross": 1.2221,
+      "strat_net": 1.0765,
+      "bench": 1.5506
     },
     {
-      "date": "2026-02-03",
-      "strat_gross": 1.1268,
-      "strat_net": 0.7807,
-      "bench": 1.5522
+      "date": "2026-02-26",
+      "strat_gross": 1.1231,
+      "strat_net": 0.9865,
+      "bench": 1.4348
     },
     {
-      "date": "2026-02-10",
-      "strat_gross": 1.1101,
-      "strat_net": 0.7674,
-      "bench": 1.553
+      "date": "2026-03-27",
+      "strat_gross": 1.1558,
+      "strat_net": 1.0127,
+      "bench": 1.5323
     },
     {
-      "date": "2026-02-18",
-      "strat_gross": 1.1048,
-      "strat_net": 0.7624,
-      "bench": 1.5524
-    },
-    {
-      "date": "2026-02-25",
-      "strat_gross": 1.1737,
-      "strat_net": 0.8085,
-      "bench": 1.5527
-    },
-    {
-      "date": "2026-03-04",
-      "strat_gross": 1.1252,
-      "strat_net": 0.7732,
-      "bench": 1.503
-    },
-    {
-      "date": "2026-03-11",
-      "strat_gross": 1.0956,
-      "strat_net": 0.751,
-      "bench": 1.4762
-    },
-    {
-      "date": "2026-03-18",
-      "strat_gross": 1.0982,
-      "strat_net": 0.7515,
-      "bench": 1.4792
-    },
-    {
-      "date": "2026-03-25",
-      "strat_gross": 1.0905,
-      "strat_net": 0.7444,
-      "bench": 1.4768
-    },
-    {
-      "date": "2026-04-01",
-      "strat_gross": 1.0707,
-      "strat_net": 0.7296,
-      "bench": 1.5196
-    },
-    {
-      "date": "2026-04-09",
-      "strat_gross": 1.1591,
-      "strat_net": 0.7885,
-      "bench": 1.5411
-    },
-    {
-      "date": "2026-04-16",
-      "strat_gross": 1.1724,
-      "strat_net": 0.7956,
-      "bench": 1.5528
-    },
-    {
-      "date": "2026-04-23",
-      "strat_gross": 1.1622,
-      "strat_net": 0.7869,
-      "bench": 1.5584
-    },
-    {
-      "date": "2026-04-30",
-      "strat_gross": 1.1552,
-      "strat_net": 0.7811,
-      "bench": 1.5602
-    },
-    {
-      "date": "2026-05-07",
-      "strat_gross": 1.1313,
-      "strat_net": 0.7637,
-      "bench": 1.5557
-    },
-    {
-      "date": "2026-05-14",
-      "strat_gross": 1.174,
-      "strat_net": 0.791,
-      "bench": 1.5656
-    },
-    {
-      "date": "2026-05-21",
-      "strat_gross": 1.1902,
-      "strat_net": 0.8001,
-      "bench": 1.5917
-    },
-    {
-      "date": "2026-05-29",
-      "strat_gross": 1.199,
-      "strat_net": 0.8041,
-      "bench": 1.5883
-    },
-    {
-      "date": "2026-06-05",
-      "strat_gross": 1.235,
-      "strat_net": 0.8265,
-      "bench": 1.6136
-    },
-    {
-      "date": "2026-06-12",
-      "strat_gross": 1.1794,
-      "strat_net": 0.7874,
-      "bench": 1.6025
+      "date": "2026-04-28",
+      "strat_gross": 1.1899,
+      "strat_net": 1.0399,
+      "bench": 1.5826
     }
   ]
 }
