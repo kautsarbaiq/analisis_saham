@@ -38,8 +38,16 @@ def load_sectors() -> dict[str, str]:
 
 US_UNIVERSE: list[str] = _load_sp500() or _FALLBACK_US
 
-# --- IDX: ditambahkan di Fase 3 (suffix .JK untuk yfinance) ---
-IDX_UNIVERSE: list[str] = []
+# --- IDX (Fase 3): LQ45 — saham paling likuid di BEI (suffix .JK utk yfinance) ---
+IDX_UNIVERSE: list[str] = [
+    "BBCA.JK", "BBRI.JK", "BMRI.JK", "BBNI.JK", "TLKM.JK", "ASII.JK", "UNVR.JK",
+    "ICBP.JK", "INDF.JK", "GGRM.JK", "HMSP.JK", "KLBF.JK", "ANTM.JK", "ADRO.JK",
+    "PGAS.JK", "PTBA.JK", "SMGR.JK", "UNTR.JK", "GOTO.JK", "BUKA.JK", "ARTO.JK",
+    "MDKA.JK", "INCO.JK", "TPIA.JK", "AMRT.JK", "CPIN.JK", "TOWR.JK", "TBIG.JK",
+    "EXCL.JK", "ISAT.JK", "AKRA.JK", "BRPT.JK", "MEDC.JK", "ITMG.JK", "INKP.JK",
+    "BSDE.JK", "CTRA.JK", "PWON.JK", "ACES.JK", "ERAA.JK", "JPFA.JK", "MNCN.JK",
+    "ADMR.JK", "INDY.JK", "MAPI.JK",
+]
 
 
 def all_symbols() -> list[str]:

@@ -87,4 +87,14 @@ def indicators(df: pd.DataFrame) -> pd.DataFrame:
     _hv = (out["vol_ratio"] > 1.5).astype(float)
     out["event_ret"] = (out["ret1d"] * _hv).rolling(10).sum() * 100   # net % gerak hari hi-vol, 10h
     out["event_drift_score"] = _clip(50 + out["event_ret"] * 3)       # +16% net -> 100
+
+    # --- BANDARMOLOGY proxy (IDX): akumulasi/distribusi via Chaikin A/D Line.
+    # Tinggi = "bandar" mengakumulasi diam-diam (volume mengalir saat harga ditutup
+    # dekat high). Proxy gratis pengganti broker-summary berbayar.
+    _rng = (out["high"] - out["low"]).replace(0, float("nan"))
+    _mfm = (((c - out["low"]) - (out["high"] - c)) / _rng).fillna(0)   # money flow multiplier
+    out["adl"] = (_mfm * out["volume"]).cumsum()                       # accumulation/distribution line
+    _dv = (c * out["volume"]).rolling(21).mean()
+    out["bandar_acc"] = (out["adl"] - out["adl"].shift(21)) / (_dv * 21).replace(0, float("nan"))
+    out["bandar_score"] = _clip(50 + out["bandar_acc"].fillna(0) * 25)  # akumulasi 1-bln ternormalisasi
     return out

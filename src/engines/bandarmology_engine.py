@@ -1,23 +1,29 @@
-"""Bandarmology Engine (Lapisan 5d) — IDX, Fase 3.
+"""Bandarmology Engine (Lapisan 5d) — IDX, PROXY GRATIS (deskriptif).
 
-Budget $0 -> pakai PROXY (bukan broker summary asli). Confidence dibatasi & dinyatakan
-eksplisit. Jangan pernah menjual proxy sebagai data broker asli (lihat 02_data_sources.md).
+Skor akumulasi/distribusi via Chaikin A/D Line (volume-based). CATATAN JUJUR: backtest
+IDX menunjukkan proxy ini TIDAK punya edge (malah kontrarian) -> ia DESKRIPTIF saja,
+BUKAN sinyal beli tervalidasi. Bandarmology sejati butuh broker-summary berbayar
+(Stockbit/RTI). Ditampilkan sebagai konteks "akumulasi/distribusi", bukan untuk
+menyetir skor prediktif.
 """
 from __future__ import annotations
 
-from datetime import date
+import pandas as pd
 
+from src.features.technical import indicators
 from src.types import EngineScore
 
 
-def score(symbol: str, asof: date) -> EngineScore:
-    """Skor akumulasi/distribusi (proxy bandarmology).
-
-    TODO(impl, Fase 3):
-      - foreign net flow (bila tersedia publik).
-      - OBV, A/D line, Money Flow Index.
-      - deteksi unusual volume + price-volume divergence.
-      - confidence selalu <= 'normal' dan ditandai 'proxy' di components.
-      - WAJIB lewat backtest: win-rate > 50% terukur, else bobot 0.
-    """
-    raise NotImplementedError("Implementasi di Fase 3.")
+def score(symbol: str, prices_df: pd.DataFrame) -> EngineScore:
+    ind = indicators(prices_df)
+    row = ind.iloc[-1]
+    have = pd.notna(row["bandar_score"])
+    return EngineScore(
+        symbol=symbol,
+        as_of=pd.Timestamp(row["date"]).date(),
+        engine="bandarmology",
+        score=round(float(row["bandar_score"]), 2) if have else 50.0,
+        components={"acc_1m": round(float(row["bandar_acc"]), 4) if pd.notna(row["bandar_acc"]) else None},
+        sample_size=None,
+        confidence="low",  # proxy gratis: selalu low-confidence
+    )
