@@ -272,14 +272,18 @@ function renderDetail(m) {
   const mrc = m.mr_comp || {};
   document.getElementById("detail").innerHTML = `
     <div>
-      <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#26a69a">Skor Prediktif</span><span class="tag" style="background:rgba(38,166,154,.18);color:#26a69a">mean-reversion ✓ tervalidasi</span></div>
+      <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#26a69a">Skor Prediktif</span><span class="tag" style="background:rgba(38,166,154,.18);color:#26a69a">3 sinyal ✓ tervalidasi</span></div>
       <div style="display:flex;align-items:baseline;gap:8px">
         <span class="posture-score" style="color:#26a69a">${m.composite == null ? "—" : m.composite.toFixed(0)}</span>
-        <span style="color:var(--muted);font-size:11px">/100 · edge kecil (+0.18%/5h) &amp; melemah</span>
+        <span style="color:var(--muted);font-size:11px">/100 · mean-reversion + event-drift + insider (edge kecil)</span>
       </div>
       ${subBar("Reversal 1M", mrc.reversal)}
       ${subBar("Oversold RSI", mrc.oversold)}
       ${subBar("Di bawah SMA20", mrc.below_ma)}
+      <div class="subrow" style="grid-template-columns:1fr auto;margin-top:7px">
+        <span class="sk">Insider 90h (smart money)</span>
+        <span class="sv" style="color:${m.insider_buys ? "#26a69a" : "#6a7888"}">${m.insider_buys ? m.insider_buys + "× beli ✓" : "tak ada"}</span>
+      </div>
     </div>
 
     <div>
