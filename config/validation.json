@@ -70,5 +70,13 @@
     "t_stat": 7.699,
     "validated": true,
     "note": "sector-neutral LOLOS walk-forward"
+  },
+  {
+    "engine": "insider",
+    "horizon_days": 21,
+    "spread": 0.22,
+    "t_stat": 2.417,
+    "validated": true,
+    "note": "insider open-market buy (>=1, 90d) abnormal +0.22%/21d, per-periode [0.21, 0.38, 0.06] (t +2.42); INDEPENDEN dari harga/fundamental; edge kecil & melemah; equal-weight (outlier TPL ter-redam 1/n)"
   }
 ]

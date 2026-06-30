@@ -10,6 +10,7 @@ Uji K=1 (ada pembelian) dan K=2 (cluster buy, sinyal lebih kuat).
 from __future__ import annotations
 
 from collections import defaultdict
+from datetime import date
 
 import numpy as np
 import pandas as pd
@@ -75,6 +76,19 @@ def run() -> None:
             print(f"  H{H:>2}: abnormal/periode rata2 {abn.mean()*100:+.2f}% (t {t:+.2f}) "
                   f"| per-periode {fold_means} | avg n={p['n'].mean():.0f} "
                   f"| {'VALID ✓' if valid else 'tolak'}")
+            # Persist verdict kanonik engine 'insider' (sinyal K>=1, horizon 21h).
+            if K == 1 and H == 21:
+                con2 = db.connect(); db.init_schema(con2)
+                note = (f"insider open-market buy (>=1, 90d) abnormal {abn.mean()*100:+.2f}%/21d, "
+                        f"per-periode {fold_means} (t {t:+.2f}); INDEPENDEN dari harga/fundamental; "
+                        f"edge kecil & melemah; equal-weight (outlier TPL ter-redam 1/n)")
+                db.upsert_df(con2, "validation", pd.DataFrame([{
+                    "engine": "insider", "horizon_days": 21, "as_of": date.today(),
+                    "n_obs": int(len(p)), "top_mean": round(abn.mean() * 100, 3),
+                    "bottom_mean": 0.0, "spread": round(abn.mean() * 100, 3),
+                    "t_stat": round(t, 3), "validated": bool(valid), "note": note,
+                }]), ["engine", "horizon_days"])
+                con2.close()
 
 
 if __name__ == "__main__":

@@ -12,7 +12,9 @@ import pandas as pd
 
 from config.settings import ROOT
 from config.universe import US_UNIVERSE, all_symbols, load_sectors
-from src.engines import event_study, fundamental_engine, mean_reversion_engine, technical_engine
+from src.engines import (
+    event_study, fundamental_engine, insider_engine, mean_reversion_engine, technical_engine,
+)
 from src.ingestion import fundamentals, prices
 from src.scoring import composite
 from src.storage import db
@@ -47,6 +49,19 @@ def _score_all(con, symbols: list[str]) -> None:
     validated = _validated_engines(con)
     sectors = load_sectors()
 
+    # Pembelian insider 90 hari terakhir (dari data bulk Form 345 yang tersedia).
+    ins_counts: dict[str, int] = {}
+    try:
+        maxf = con.execute("SELECT max(filing_date) FROM insider_buys").fetchone()[0]
+        if maxf:
+            rows = con.execute(
+                "SELECT symbol, count(*) FROM insider_buys "
+                "WHERE filing_date > ? - INTERVAL 90 DAY GROUP BY symbol", [maxf]
+            ).fetchall()
+            ins_counts = {r[0]: int(r[1]) for r in rows}
+    except Exception:
+        ins_counts = {}
+
     per_symbol: dict[str, dict] = {}
     for sym in symbols:
         pdf = con.execute(
@@ -59,6 +74,7 @@ def _score_all(con, symbols: list[str]) -> None:
         el = [technical_engine.score(sym, pdf),
               mean_reversion_engine.score(sym, pdf),
               event_study.score(sym, pdf)]
+        el.append(insider_engine.score(sym, ins_counts.get(sym, 0), el[0].as_of))
         fdf = con.execute(
             "SELECT period, metric, value FROM fundamentals WHERE symbol = ?", [sym]
         ).df()
