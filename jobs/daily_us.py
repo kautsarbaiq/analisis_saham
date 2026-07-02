@@ -103,9 +103,9 @@ def _score_all(con, symbols: list[str]) -> None:
     # Audit fix: grup demean kini MARKET-AWARE — simbol IDX tidak lagi tercampur
     # sebagai pseudo-sektor '?' dalam cross-section GICS US.
     def _group(sym: str) -> str:
-        if market_of(sym) == "IDX":
-            return "IDX"  # demean di antara sesama IDX (deskriptif; tak dipakai composite IDX)
-        return "US:" + sectors.get(sym, "?")
+        # load_sectors kini mencakup IDX_SECTORS -> demean IDX per sektor IDX
+        # (konsisten dgn gerbang backtest sector-neutral per market).
+        return f"{market_of(sym)}:" + sectors.get(sym, "?")
 
     sec_vals: dict[str, list] = {}
     for sym, d in per_symbol.items():

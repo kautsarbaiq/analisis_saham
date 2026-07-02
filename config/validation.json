@@ -45,60 +45,6 @@
     "note": "insider open-market buy (>=1, 90d) abnormal +0.25%/21d, per-periode [-0.1, 0.6, 0.19] (t +1.25); INDEPENDEN dari harga/fundamental; edge kecil & melemah; equal-weight (outlier TPL ter-redam 1/n)"
   },
   {
-    "engine": "mean_reversion",
-    "horizon_days": 5,
-    "market": "IDX",
-    "spread": 0.224,
-    "t_stat": 3.235,
-    "validated": false,
-    "note": "IDX raw walk-forward (tanpa sector-neutral): per-periode [-0.11, 0.62, 0.15] \u2014 tolak"
-  },
-  {
-    "engine": "mean_reversion",
-    "horizon_days": 10,
-    "market": "IDX",
-    "spread": 0.318,
-    "t_stat": 3.24,
-    "validated": false,
-    "note": "IDX raw walk-forward (tanpa sector-neutral): per-periode [-0.15, 0.76, 0.34] \u2014 tolak"
-  },
-  {
-    "engine": "event_drift",
-    "horizon_days": 21,
-    "market": "IDX",
-    "spread": -0.097,
-    "t_stat": -0.693,
-    "validated": false,
-    "note": "IDX raw walk-forward (tanpa sector-neutral): per-periode [-0.61, -0.17, 0.62] \u2014 tolak"
-  },
-  {
-    "engine": "event_drift",
-    "horizon_days": 63,
-    "market": "IDX",
-    "spread": -0.513,
-    "t_stat": -2.145,
-    "validated": false,
-    "note": "IDX raw walk-forward (tanpa sector-neutral): per-periode [-2.31, -0.69, 1.62] \u2014 tolak"
-  },
-  {
-    "engine": "bandarmology",
-    "horizon_days": 10,
-    "market": "IDX",
-    "spread": -0.432,
-    "t_stat": -4.569,
-    "validated": false,
-    "note": "IDX raw walk-forward (tanpa sector-neutral): per-periode [-0.36, -0.49, -0.44] \u2014 tolak"
-  },
-  {
-    "engine": "bandarmology",
-    "horizon_days": 21,
-    "market": "IDX",
-    "spread": -1.015,
-    "t_stat": -7.337,
-    "validated": false,
-    "note": "IDX raw walk-forward (tanpa sector-neutral): per-periode [-0.62, -0.95, -1.46] \u2014 tolak"
-  },
-  {
     "engine": "fundamental",
     "horizon_days": 21,
     "market": "US",
@@ -124,5 +70,59 @@
     "t_stat": 0.0,
     "validated": false,
     "note": "TIDAK ada edge positif (spread +0.00%, t=0.0) \u2014 kemungkinan rezim mean-reversion"
+  },
+  {
+    "engine": "mean_reversion",
+    "horizon_days": 5,
+    "market": "IDX",
+    "spread": 0.314,
+    "t_stat": 4.596,
+    "validated": false,
+    "note": "IDX sector-neutral walk-forward: per-periode [-0.01, 0.59, 0.36]; raw pooled +0.22% \u2014 tolak"
+  },
+  {
+    "engine": "mean_reversion",
+    "horizon_days": 10,
+    "market": "IDX",
+    "spread": 0.445,
+    "t_stat": 4.559,
+    "validated": false,
+    "note": "IDX sector-neutral walk-forward: per-periode [-0.1, 0.76, 0.67]; raw pooled +0.32% \u2014 tolak"
+  },
+  {
+    "engine": "event_drift",
+    "horizon_days": 21,
+    "market": "IDX",
+    "spread": -0.435,
+    "t_stat": -3.08,
+    "validated": false,
+    "note": "IDX sector-neutral walk-forward: per-periode [0.09, -0.49, -0.85]; raw pooled -0.10% \u2014 tolak"
+  },
+  {
+    "engine": "event_drift",
+    "horizon_days": 63,
+    "market": "IDX",
+    "spread": -0.924,
+    "t_stat": -3.698,
+    "validated": false,
+    "note": "IDX sector-neutral walk-forward: per-periode [-2.22, 0.48, -0.99]; raw pooled -0.51% \u2014 tolak"
+  },
+  {
+    "engine": "bandarmology",
+    "horizon_days": 10,
+    "market": "IDX",
+    "spread": -0.111,
+    "t_stat": -1.167,
+    "validated": false,
+    "note": "IDX sector-neutral walk-forward: per-periode [0.21, -0.12, -0.41]; raw pooled -0.43% \u2014 tolak"
+  },
+  {
+    "engine": "bandarmology",
+    "horizon_days": 21,
+    "market": "IDX",
+    "spread": -0.444,
+    "t_stat": -3.204,
+    "validated": false,
+    "note": "IDX sector-neutral walk-forward: per-periode [0.51, -0.06, -1.75]; raw pooled -1.01% \u2014 tolak"
   }
 ]

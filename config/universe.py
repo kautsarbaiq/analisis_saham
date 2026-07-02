@@ -27,13 +27,47 @@ def _load_sp500() -> list[str]:
         return [r["symbol"].strip().upper() for r in csv.DictReader(f) if r.get("symbol")]
 
 
+# Sektor IDX (LQ45) — klasifikasi manual ala IDX-IC, dikelompokkan agar tiap bucket
+# cukup besar utk sector-neutralization (demean per tanggal x sektor).
+IDX_SECTORS: dict[str, str] = {
+    # Financials (bank)
+    "BBCA.JK": "Financials", "BBRI.JK": "Financials", "BMRI.JK": "Financials",
+    "BBNI.JK": "Financials", "ARTO.JK": "Financials",
+    # Infrastruktur / telco / menara
+    "TLKM.JK": "Telco-Infra", "EXCL.JK": "Telco-Infra", "ISAT.JK": "Telco-Infra",
+    "TOWR.JK": "Telco-Infra", "TBIG.JK": "Telco-Infra",
+    # Energi (batubara, migas, distribusi)
+    "ADRO.JK": "Energy", "PTBA.JK": "Energy", "ITMG.JK": "Energy", "ADMR.JK": "Energy",
+    "INDY.JK": "Energy", "MEDC.JK": "Energy", "PGAS.JK": "Energy", "AKRA.JK": "Energy",
+    # Basic materials (logam, semen, petrokimia, pulp)
+    "ANTM.JK": "Basic-Mat", "MDKA.JK": "Basic-Mat", "INCO.JK": "Basic-Mat",
+    "SMGR.JK": "Basic-Mat", "TPIA.JK": "Basic-Mat", "BRPT.JK": "Basic-Mat",
+    "INKP.JK": "Basic-Mat",
+    # Consumer non-cyclical (+ farmasi)
+    "UNVR.JK": "Consumer-NC", "ICBP.JK": "Consumer-NC", "INDF.JK": "Consumer-NC",
+    "GGRM.JK": "Consumer-NC", "HMSP.JK": "Consumer-NC", "CPIN.JK": "Consumer-NC",
+    "JPFA.JK": "Consumer-NC", "KLBF.JK": "Consumer-NC",
+    # Consumer cyclical / ritel / media
+    "AMRT.JK": "Consumer-Cyc", "ACES.JK": "Consumer-Cyc", "ERAA.JK": "Consumer-Cyc",
+    "MAPI.JK": "Consumer-Cyc", "MNCN.JK": "Consumer-Cyc",
+    # Teknologi
+    "GOTO.JK": "Tech", "BUKA.JK": "Tech",
+    # Properti
+    "BSDE.JK": "Property", "CTRA.JK": "Property", "PWON.JK": "Property",
+    # Industrials (konglomerat otomotif, alat berat)
+    "ASII.JK": "Industrials", "UNTR.JK": "Industrials",
+}
+
+
 def load_sectors() -> dict[str, str]:
-    """Peta ticker -> sektor GICS (dari sp500.csv). Untuk sector-neutralization."""
-    if not _SP500_FILE.exists():
-        return {}
-    with open(_SP500_FILE) as f:
-        return {r["symbol"].strip().upper(): (r.get("sector") or "?").strip()
-                for r in csv.DictReader(f) if r.get("symbol")}
+    """Peta ticker -> sektor: GICS utk US (sp500.csv) + IDX_SECTORS utk .JK.
+    Dipakai sector-neutralization (demean per tanggal x sektor)."""
+    out: dict[str, str] = dict(IDX_SECTORS)
+    if _SP500_FILE.exists():
+        with open(_SP500_FILE) as f:
+            out.update({r["symbol"].strip().upper(): (r.get("sector") or "?").strip()
+                        for r in csv.DictReader(f) if r.get("symbol")})
+    return out
 
 
 US_UNIVERSE: list[str] = _load_sp500() or _FALLBACK_US
