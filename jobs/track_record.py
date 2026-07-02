@@ -151,13 +151,19 @@ def run() -> None:
     print(f"[track] {comp.shape[1]} simbol, {comp.shape[0]} hari")
     metrics, rows = simulate(comp, cl_p, rebalance=21, top_n=20, cost_bps=15, mode="long_only")
 
-    con.execute("CREATE TABLE IF NOT EXISTS track_record (date DATE PRIMARY KEY, "
-                "strat_gross DOUBLE, strat_net DOUBLE, bench DOUBLE)")
-    con.execute("DELETE FROM track_record")
+    # Tabel di schema.sql; tulis-ulang dalam transaksi (audit fix: crash-safe).
     if rows:
         con.register("_tr", pd.DataFrame(rows))
-        con.execute("INSERT INTO track_record BY NAME SELECT * FROM _tr")
-        con.unregister("_tr")
+        try:
+            con.execute("BEGIN")
+            con.execute("DELETE FROM track_record")
+            con.execute("INSERT INTO track_record BY NAME SELECT * FROM _tr")
+            con.execute("COMMIT")
+        except Exception:
+            con.execute("ROLLBACK")
+            raise
+        finally:
+            con.unregister("_tr")
     out = ROOT / "snapshots"; out.mkdir(exist_ok=True)
     (out / "track_record.json").write_text(json.dumps({"metrics": metrics, "curve": rows}, indent=2))
     con.close()

@@ -87,11 +87,12 @@ def run() -> None:
                         f"per-periode {fold_means} (t {t:+.2f}); INDEPENDEN dari harga/fundamental; "
                         f"edge kecil & melemah; equal-weight (outlier TPL ter-redam 1/n)")
                 db.upsert_df(con2, "validation", pd.DataFrame([{
-                    "engine": "insider", "horizon_days": 21, "as_of": date.today(),
+                    "engine": "insider", "horizon_days": 21, "market": "US",
+                    "as_of": date.today(),
                     "n_obs": int(len(p)), "top_mean": round(abn.mean() * 100, 3),
                     "bottom_mean": 0.0, "spread": round(abn.mean() * 100, 3),
                     "t_stat": round(t, 3), "validated": bool(valid), "note": note,
-                }]), ["engine", "horizon_days"])
+                }]), ["engine", "horizon_days", "market"])
                 con2.close()
 
 

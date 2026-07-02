@@ -59,7 +59,12 @@ def combine(
         breakdown[es.engine] = round(contrib, 2)
         total += contrib
 
-    confidence = "low" if any(es.confidence == "low" for es in engine_scores) else "normal"
+    # Audit fix: confidence composite hanya ditentukan engine yang BERBOBOT EFEKTIF
+    # (>0). Engine deskriptif ber-bobot-0 (mis. bandarmology 'low') tidak lagi
+    # memaksa seluruh composite berlabel 'low'.
+    confidence = "low" if any(
+        es.confidence == "low" and weights.get(es.engine, 0) > 0 for es in engine_scores
+    ) else "normal"
 
     return CompositeScore(
         symbol=symbol, as_of=as_of, market=market_of(symbol),

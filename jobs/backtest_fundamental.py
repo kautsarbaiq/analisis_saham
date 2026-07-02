@@ -84,11 +84,12 @@ def run() -> None:
     print(f"\n>> VONIS FUNDAMENTAL (basis sector-neutral): {'VALID ✓' if validated else 'TOLAK ✗'} — {note}")
 
     db.upsert_df(con, "validation", pd.DataFrame([{
-        "engine": "fundamental", "horizon_days": HORIZON, "as_of": date.today(),
+        "engine": "fundamental", "horizon_days": HORIZON, "market": "US",
+        "as_of": date.today(),
         "n_obs": int(p.get("n_obs", 0)), "top_mean": p.get("top_mean"),
         "bottom_mean": p.get("bottom_mean"), "spread": p.get("spread"),
         "t_stat": p.get("t_stat"), "validated": validated, "note": note,
-    }]), ["engine", "horizon_days"])
+    }]), ["engine", "horizon_days", "market"])
     con.close()
 
 

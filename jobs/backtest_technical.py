@@ -54,13 +54,13 @@ def run() -> None:
               f"spread={res['spread']:+.2f}% t={res['t_stat']:+.2f} | "
               f"{'VALID ✓' if validated else 'TOLAK ✗'} — {note}")
         rows.append({
-            "engine": "technical", "horizon_days": h, "as_of": date.today(),
+            "engine": "technical", "horizon_days": h, "market": "US", "as_of": date.today(),
             "n_obs": res["n_obs"], "top_mean": res["top_mean"],
             "bottom_mean": res["bottom_mean"], "spread": res["spread"],
             "t_stat": res["t_stat"], "validated": validated, "note": note,
         })
 
-    db.upsert_df(con, "validation", pd.DataFrame(rows), ["engine", "horizon_days"])
+    db.upsert_df(con, "validation", pd.DataFrame(rows), ["engine", "horizon_days", "market"])
     con.close()
     print("\nVonis tersimpan di tabel `validation`. composite.py menolak engine "
           "yang belum VALID (bobot 0).")

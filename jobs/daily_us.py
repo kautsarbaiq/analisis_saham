@@ -11,7 +11,7 @@ import json
 import pandas as pd
 
 from config.settings import ROOT
-from config.universe import US_UNIVERSE, all_symbols, load_sectors
+from config.universe import US_UNIVERSE, all_symbols, load_sectors, market_of
 from src.engines import (
     event_study, fundamental_engine, insider_engine, mean_reversion_engine, technical_engine,
 )
@@ -20,12 +20,15 @@ from src.scoring import composite
 from src.storage import db
 
 
-def _validated_engines(con) -> set[str]:
-    """Engine yang lulus backtest. Dari tabel `validation`; bila kosong (mis. runner
-    GitHub Actions yang DB-nya fresh), fallback ke config/validation.json (statis)."""
+def _validated_engines(con, market: str = "US") -> set[str]:
+    """Engine yang lulus backtest UNTUK MARKET tsb (audit fix: dulu market-blind —
+    vonis US ikut menyetir IDX padahal mis. event_drift kontrarian di IDX).
+    Dari tabel `validation`; bila kosong (runner CI fresh) fallback ke
+    config/validation.json (statis, juga ber-market)."""
     try:
         rows = con.execute(
-            "SELECT DISTINCT engine FROM validation WHERE validated = TRUE"
+            "SELECT DISTINCT engine FROM validation WHERE validated = TRUE AND market = ?",
+            [market],
         ).fetchall()
         eng = {r[0] for r in rows}
         if eng:
@@ -34,7 +37,8 @@ def _validated_engines(con) -> set[str]:
         pass
     f = ROOT / "config" / "validation.json"
     if f.exists():
-        return {x["engine"] for x in json.loads(f.read_text()) if x.get("validated")}
+        return {x["engine"] for x in json.loads(f.read_text())
+                if x.get("validated") and x.get("market", "US") == market}
     return set()
 
 
@@ -46,14 +50,23 @@ def _score_all(con, symbols: list[str]) -> None:
             hanya sebagai alpha dalam-sektor).
     Pass 2: composite atas engine tervalidasi.
     """
-    validated = _validated_engines(con)
+    validated_by_market = {
+        "US": _validated_engines(con, "US"),
+        "IDX": _validated_engines(con, "IDX"),
+    }
     sectors = load_sectors()
 
-    # Pembelian insider 90 hari terakhir (dari data bulk Form 345 yang tersedia).
+    # Pembelian insider 90 hari terakhir (data bulk Form 345). Audit fix: deteksi
+    # STALENESS — data bulk kuartalan bisa tertinggal jauh dari hari ini; bila
+    # anchor (max filing_date) lebih tua dari 45 hari, sinyal insider ditandai
+    # low-confidence (bobotnya otomatis dipangkas di composite).
     ins_counts: dict[str, int] = {}
+    ins_stale = True
     try:
         maxf = con.execute("SELECT max(filing_date) FROM insider_buys").fetchone()[0]
         if maxf:
+            from datetime import date as _date
+            ins_stale = (_date.today() - maxf).days > 45
             rows = con.execute(
                 "SELECT symbol, count(*) FROM insider_buys "
                 "WHERE filing_date > ? - INTERVAL 90 DAY GROUP BY symbol", [maxf]
@@ -71,7 +84,9 @@ def _score_all(con, symbols: list[str]) -> None:
         el = [technical_engine.score(sym, pdf),
               mean_reversion_engine.score(sym, pdf),
               event_study.score(sym, pdf)]
-        el.append(insider_engine.score(sym, ins_counts.get(sym, 0), el[0].as_of))
+        if market_of(sym) == "US":  # insider hanya ada utk emiten SEC/US
+            el.append(insider_engine.score(sym, ins_counts.get(sym, 0), el[0].as_of,
+                                           stale=ins_stale))
         fdf = con.execute(
             "SELECT period, metric, value FROM fundamentals WHERE symbol = ?", [sym]
         ).df()
@@ -80,13 +95,20 @@ def _score_all(con, symbols: list[str]) -> None:
         per_symbol[sym] = {"el": el, "as_of": el[0].as_of}
 
     # --- Sector-neutralize event_drift (demean per sektor, rescale 0..100) ---
+    # Audit fix: grup demean kini MARKET-AWARE — simbol IDX tidak lagi tercampur
+    # sebagai pseudo-sektor '?' dalam cross-section GICS US.
+    def _group(sym: str) -> str:
+        if market_of(sym) == "IDX":
+            return "IDX"  # demean di antara sesama IDX (deskriptif; tak dipakai composite IDX)
+        return "US:" + sectors.get(sym, "?")
+
     sec_vals: dict[str, list] = {}
     for sym, d in per_symbol.items():
         raw = next(e.score for e in d["el"] if e.engine == "event_drift")
-        sec_vals.setdefault(sectors.get(sym, "?"), []).append(raw)
+        sec_vals.setdefault(_group(sym), []).append(raw)
     sec_mean = {s: sum(v) / len(v) for s, v in sec_vals.items()}
     for sym, d in per_symbol.items():
-        sec = sectors.get(sym, "?")
+        sec = _group(sym)
         for e in d["el"]:
             if e.engine == "event_drift":
                 e.score = round(max(0.0, min(100.0, 50 + (e.score - sec_mean[sec]))), 2)
@@ -99,7 +121,8 @@ def _score_all(con, symbols: list[str]) -> None:
                 "score": es.score, "sample_size": es.sample_size,
                 "confidence": es.confidence, "components": json.dumps(es.components),
             })
-        cs = composite.combine(sym, d["as_of"], d["el"], validated_engines=validated)
+        cs = composite.combine(sym, d["as_of"], d["el"],
+                               validated_engines=validated_by_market[market_of(sym)])
         cs_rows.append({
             "symbol": cs.symbol, "as_of": cs.as_of, "market": cs.market,
             "total": cs.total, "breakdown": json.dumps(cs.breakdown),
@@ -113,7 +136,8 @@ def _score_all(con, symbols: list[str]) -> None:
         cs_df["total"] = pd.to_numeric(cs_df["total"], errors="coerce")
         db.upsert_df(con, "composite_scores", cs_df, ["symbol", "as_of"])
     print(f"[daily_us] skor: {len(es_rows)} engine_scores, {len(cs_rows)} composite_scores "
-          f"(engine tervalidasi: {validated or 'belum ada'})")
+          f"(tervalidasi US: {validated_by_market['US'] or '-'} | "
+          f"IDX: {validated_by_market['IDX'] or '-'} | insider_stale={ins_stale})")
 
 
 def run(period: str = "2y", with_fundamentals: bool = True) -> None:

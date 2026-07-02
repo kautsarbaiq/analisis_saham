@@ -19,30 +19,52 @@ from src.storage import db
 
 def export_validation(con) -> None:
     rows = con.execute(
-        "SELECT engine, horizon_days, spread, t_stat, validated, note FROM validation"
+        "SELECT engine, horizon_days, market, spread, t_stat, validated, note FROM validation"
     ).fetchall()
-    data = [{"engine": r[0], "horizon_days": r[1], "spread": r[2], "t_stat": r[3],
-             "validated": bool(r[4]), "note": r[5]} for r in rows]
+    # Audit fix (anti-clobber CI): runner fresh punya tabel validation KOSONG —
+    # jangan timpa config/validation.json (sumber vonis) dengan [].
+    if not rows:
+        print("[export] validation kosong — config/validation.json TIDAK ditimpa")
+        return
+    data = [{"engine": r[0], "horizon_days": r[1], "market": r[2], "spread": r[3],
+             "t_stat": r[4], "validated": bool(r[5]), "note": r[6]} for r in rows]
     (ROOT / "config" / "validation.json").write_text(json.dumps(data, indent=2))
     print(f"[export] config/validation.json: {len(data)} baris")
 
 
 def export_snapshot(con, top: int = 50) -> None:
-    asof = con.execute("SELECT max(as_of) FROM composite_scores").fetchone()[0]
+    # Audit fix: (1) hanya skor TERBARU per simbol (dulu mencampur as_of basi lintas
+    # tanggal); (2) US & IDX dipisah (skala composite beda: blend multi-engine vs
+    # engine tunggal — tidak apple-to-apple dalam satu ranking).
     rows = con.execute(
-        "SELECT symbol, total, breakdown, confidence FROM composite_scores "
-        "WHERE total IS NOT NULL ORDER BY total DESC LIMIT ?", [top]
+        "SELECT symbol, total, breakdown, confidence, market, as_of FROM composite_scores "
+        "WHERE total IS NOT NULL "
+        "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1 "
+        "ORDER BY total DESC"
     ).fetchall()
-    screener = [{"symbol": r[0], "score": round(r[1], 1),
-                 "breakdown": json.loads(r[2]) if r[2] else {}, "confidence": r[3]}
-                for r in rows]
-    val = con.execute("SELECT DISTINCT engine FROM validation WHERE validated = TRUE").fetchall()
-    snap = {"as_of": str(asof), "validated_engines": [v[0] for v in val],
-            "top": screener}
+
+    def _fmt(r):
+        return {"symbol": r[0], "score": round(r[1], 1),
+                "breakdown": json.loads(r[2]) if r[2] else {},
+                "confidence": r[3], "as_of": str(r[5])}
+
+    top_us = [_fmt(r) for r in rows if r[4] == "US"][:top]
+    top_idx = [_fmt(r) for r in rows if r[4] == "IDX"][:top]
+
+    val = con.execute(
+        "SELECT market, engine FROM validation WHERE validated = TRUE"
+    ).fetchall()
+    validated_by_market: dict[str, list] = {}
+    for mkt, eng in val:
+        validated_by_market.setdefault(mkt, []).append(eng)
+
+    asof = con.execute("SELECT max(as_of) FROM composite_scores").fetchone()[0]
+    snap = {"as_of": str(asof), "validated_engines": validated_by_market,
+            "top_us": top_us, "top_idx": top_idx}
     out = ROOT / "snapshots"
     out.mkdir(exist_ok=True)
     (out / "latest.json").write_text(json.dumps(snap, indent=2))
-    print(f"[export] snapshots/latest.json: top {len(screener)} per {asof}")
+    print(f"[export] snapshots/latest.json: US {len(top_us)} + IDX {len(top_idx)} per {asof}")
 
 
 def run() -> None:

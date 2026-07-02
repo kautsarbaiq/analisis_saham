@@ -37,11 +37,11 @@ def _report(label: str, res: dict) -> None:
     print(f"   >> {'VALID ✓' if res['validated'] else 'TOLAK ✗'}")
 
 
-def run(score_col: str, engine: str, horizons: list[int]) -> None:
+def run(score_col: str, engine: str, horizons: list[int], market: str = "US") -> None:
     con = db.connect(); db.init_schema(con)
     prices = _prices(con)
     sectors = load_sectors()
-    print(f"=== BACKTEST FAKTOR '{engine}' (score_col={score_col}) · {len(prices)} simbol ===")
+    print(f"=== BACKTEST FAKTOR '{engine}' (score_col={score_col}, market={market}) · {len(prices)} simbol ===")
 
     rows = []
     for h in horizons:
@@ -57,13 +57,13 @@ def run(score_col: str, engine: str, horizons: list[int]) -> None:
                 else f"sector-neutral TOLAK (pooled {p.get('spread'):+.2f}%, t {p.get('t_stat')})")
         print(f">> VONIS {engine} h{h}: {'VALID ✓' if validated else 'TOLAK ✗'} — {note}")
         rows.append({
-            "engine": engine, "horizon_days": h, "as_of": date.today(),
+            "engine": engine, "horizon_days": h, "market": market, "as_of": date.today(),
             "n_obs": int(p.get("n_obs", 0)), "top_mean": p.get("top_mean"),
             "bottom_mean": p.get("bottom_mean"), "spread": p.get("spread"),
             "t_stat": p.get("t_stat"), "validated": validated, "note": note,
         })
 
-    db.upsert_df(con, "validation", pd.DataFrame(rows), ["engine", "horizon_days"])
+    db.upsert_df(con, "validation", pd.DataFrame(rows), ["engine", "horizon_days", "market"])
     con.close()
 
 

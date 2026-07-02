@@ -89,11 +89,14 @@ CREATE TABLE IF NOT EXISTS predictions (
     PRIMARY KEY (symbol, as_of, horizon_days)
 );
 
--- 8) Vonis backtest per engine: apakah skornya PUNYA EDGE TERUKUR?
---    Sebuah engine hanya diberi bobot di composite bila validated = TRUE.
+-- 8) Vonis backtest per engine PER MARKET: apakah skornya PUNYA EDGE TERUKUR?
+--    Engine hanya diberi bobot di composite bila validated = TRUE untuk market ybs.
+--    (Audit fix: tanpa kolom market, vonis US menyetir IDX — mis. event_drift valid
+--    di US tapi KONTRARIAN di IDX; keduanya kini bisa direpresentasikan.)
 CREATE TABLE IF NOT EXISTS validation (
     engine       VARCHAR NOT NULL,
     horizon_days INTEGER NOT NULL,
+    market       VARCHAR NOT NULL DEFAULT 'US',   -- 'US' | 'IDX'
     as_of        DATE,
     n_obs        INTEGER,
     top_mean     DOUBLE,            -- mean fwd return kuantil skor tertinggi (%)
@@ -102,5 +105,25 @@ CREATE TABLE IF NOT EXISTS validation (
     t_stat       DOUBLE,
     validated    BOOLEAN,
     note         VARCHAR,
-    PRIMARY KEY (engine, horizon_days)
+    PRIMARY KEY (engine, horizon_days, market)
+);
+
+-- 9) Pembelian insider pasar-terbuka (SEC Form 4 code P) — audit fix: dulu tabel
+--    ini dibuat ad-hoc oleh job; kini bagian skema agar runner fresh konsisten.
+CREATE TABLE IF NOT EXISTS insider_buys (
+    accession   VARCHAR,
+    symbol      VARCHAR,
+    trans_date  DATE,
+    filing_date DATE,
+    shares      DOUBLE,
+    price       DOUBLE,
+    value       DOUBLE
+);
+
+-- 10) Kurva track-record (simulasi portofolio) — dipersist utk dashboard.
+CREATE TABLE IF NOT EXISTS track_record (
+    date        DATE PRIMARY KEY,
+    strat_gross DOUBLE,
+    strat_net   DOUBLE,
+    bench       DOUBLE
 );

@@ -75,13 +75,14 @@ def run() -> None:
         print(f"  >> VONIS h{h}: {'VALID ✓' if validated else 'TOLAK ✗'} — {note}")
 
         rows.append({
-            "engine": "mean_reversion", "horizon_days": h, "as_of": date.today(),
+            "engine": "mean_reversion", "horizon_days": h, "market": "US",
+            "as_of": date.today(),
             "n_obs": int(res["n_obs"]), "top_mean": res["top_mean"],
             "bottom_mean": res["bottom_mean"], "spread": res["spread"],
             "t_stat": res["t_stat"], "validated": validated, "note": note,
         })
 
-    db.upsert_df(con, "validation", pd.DataFrame(rows), ["engine", "horizon_days"])
+    db.upsert_df(con, "validation", pd.DataFrame(rows), ["engine", "horizon_days", "market"])
     con.close()
 
 
