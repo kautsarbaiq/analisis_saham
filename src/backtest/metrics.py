@@ -45,11 +45,19 @@ def profit_factor(returns) -> float:
     return float(gains / losses) if losses > 0 else float("inf")
 
 
+_Z_TABLE = {0.90: 1.6448536269514722, 0.95: 1.959963984540054, 0.99: 2.5758293035489004}
+
+
 def wilson_ci(successes: int, n: int, level: float = 0.95) -> tuple[float, float]:
-    """Confidence interval Wilson untuk proporsi (stabil untuk N kecil)."""
+    """Confidence interval Wilson untuk proporsi (stabil untuk N kecil).
+
+    Level didukung: 0.90 / 0.95 / 0.99 (audit fix: dulu level lain diam-diam jadi 90%).
+    """
     if n == 0:
         return (float("nan"), float("nan"))
-    z = 1.959963984540054 if abs(level - 0.95) < 1e-6 else 1.6448536269514722
+    z = _Z_TABLE.get(round(level, 2))
+    if z is None:
+        raise ValueError(f"level {level} tidak didukung; pakai salah satu {sorted(_Z_TABLE)}")
     p = successes / n
     den = 1 + z * z / n
     centre = (p + z * z / (2 * n)) / den

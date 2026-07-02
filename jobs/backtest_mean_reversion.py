@@ -52,8 +52,10 @@ def run() -> None:
         print(f"  POOLED spread(top-bottom)={res['spread']:+.2f}%  t={res['t_stat']}")
 
         fold_spreads = []
-        for k, (lo, hi) in enumerate(_folds(panel)):
-            sub = panel[(panel["date"] >= lo) & (panel["date"] <= hi)]
+        fold_list = _folds(panel)
+        for k, (lo, hi) in enumerate(fold_list):
+            last = k == len(fold_list) - 1
+            sub = panel[(panel["date"] >= lo) & ((panel["date"] <= hi) if last else (panel["date"] < hi))]
             fr = quantile_test(sub, n_quantiles=5)
             fold_spreads.append(fr["spread"])
             tag = " (OOS terlama)" if k == 0 else ""

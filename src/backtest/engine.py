@@ -42,15 +42,28 @@ def build_panel(
 
 
 def quantile_test(panel: pd.DataFrame, n_quantiles: int = 5) -> dict:
-    """Bagi observasi ke kuantil skor; bandingkan return ke depan tiap kuantil.
+    """Kuantil CROSS-SECTIONAL PER-TANGGAL; bandingkan return ke depan tiap kuantil.
 
-    Kembalikan ringkasan terukur: mean fwd return per kuantil, spread top-bottom,
-    win-rate tiap ujung, dan statistik t Welch (top vs bottom).
+    PENTING (audit fix): qcut dilakukan per-tanggal, bukan pooled lintas-tanggal.
+    Pooled mencampur efek market-timing (skor tinggi saat pasar jatuh) dengan efek
+    seleksi saham; per-tanggal mengukur murni "pilih saham mana HARI INI" — sesuai
+    cara skor dipakai screener. Kembalikan: mean fwd per kuantil, spread top-bottom,
+    win-rate ujung, t Welch.
     """
     if panel.empty:
         return {}
     p = panel.copy()
-    p["q"] = pd.qcut(p["score"], n_quantiles, labels=False, duplicates="drop")
+
+    def _q(s: pd.Series):
+        try:
+            return pd.qcut(s, n_quantiles, labels=False, duplicates="drop")
+        except ValueError:  # terlalu sedikit nilai unik pada tanggal itu
+            return pd.Series([float("nan")] * len(s), index=s.index)
+
+    p["q"] = p.groupby("date")["score"].transform(_q)
+    p = p.dropna(subset=["q"])
+    if p.empty:
+        return {}
 
     buckets = []
     for q, grp in p.groupby("q"):
@@ -110,7 +123,11 @@ def walk_forward_quantile(panel: pd.DataFrame, n_folds: int = 3,
     folds = []
     for k in range(n_folds):
         lo, hi = cuts[k], cuts[k + 1]
-        fr = quantile_test(p[(p["date"] >= lo) & (p["date"] <= hi)], n_quantiles)
+        # Batas atas EKSKLUSIF kecuali fold terakhir (audit fix: tanggal batas tidak
+        # dihitung ganda di dua fold). Catatan: fwd return dekat batas tetap bisa
+        # "melihat" beberapa hari fold berikutnya (tanpa embargo) — bias kecil, diketahui.
+        mask = (p["date"] >= lo) & ((p["date"] <= hi) if k == n_folds - 1 else (p["date"] < hi))
+        fr = quantile_test(p[mask], n_quantiles)
         folds.append({"k": k + 1, "lo": str(pd.Timestamp(lo).date()),
                       "hi": str(pd.Timestamp(hi).date()),
                       "spread": fr.get("spread"), "t": fr.get("t_stat"), "n": fr.get("n_obs")})
