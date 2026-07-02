@@ -30,9 +30,7 @@ def run() -> None:
 
     prices = {}
     for s in US_UNIVERSE:
-        df = con.execute(
-            "SELECT date, close FROM prices WHERE symbol = ? ORDER BY date", [s]
-        ).df()
+        df = con.execute(db.ADJ_PRICES_SQL, [s]).df()  # OHLCV penuh (indicators butuh volume)
         if len(df) >= 220:
             prices[s] = df
 

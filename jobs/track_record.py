@@ -30,8 +30,15 @@ WARMUP = 210
 SHORT_BORROW_ANNUAL = 0.01  # 1%/th biaya pinjam saham utk kaki short
 
 
-def build_panels(con):
-    """Kembalikan (comp, cl_p): panel composite (date x symbol) + harga close."""
+def build_panels(con, validated: set[str] | None = None):
+    """Kembalikan (comp, cl_p): panel composite (date x symbol) + harga close.
+
+    Audit fix: composite simulasi kini DINAMIS mengikuti engine TERVALIDASI
+    (tabel validation, market US) — bukan hardcode 3 sinyal — sehingga simulasi
+    selalu identik dgn composite produksi."""
+    if validated is None:
+        from jobs.daily_us import _validated_engines
+        validated = _validated_engines(con, "US")
     sectors = load_sectors()
     mr, ed, cl = {}, {}, {}
     for s in US_UNIVERSE:
@@ -70,9 +77,15 @@ def build_panels(con):
             cnt = np.searchsorted(fa, td, side="right") - np.searchsorted(fa, td - win, side="right")
             ins[sym] = np.where(cnt > 0, 50 + np.minimum(50, cnt * 12.5), 50.0)
 
-    w = SCORE_WEIGHTS
-    wm, we, wi = w["mean_reversion"], w["event_drift"], w["insider"]
-    comp = (wm * mr_p + we * ed_neu + wi * ins) / (wm + we + wi)
+    panels = {"mean_reversion": mr_p, "event_drift": ed_neu, "insider": ins}
+    use = [e for e in panels if e in validated]
+    if not use:  # tidak ada engine tervalidasi -> tidak ada composite prediktif
+        print("[track] TIDAK ada engine tervalidasi (US) — simulasi pakai event_drift "
+              "sebagai fallback deskriptif TIDAK dilakukan; kembalikan panel kosong")
+        return pd.DataFrame(), cl_p
+    wsum = sum(SCORE_WEIGHTS[e] for e in use)
+    comp = sum(SCORE_WEIGHTS[e] * panels[e] for e in use) / wsum
+    print(f"[track] composite simulasi = {sorted(use)} (identik dgn produksi)")
     return comp, cl_p
 
 
@@ -148,6 +161,9 @@ def run() -> None:
     """
     con = db.connect(); db.init_schema(con)
     comp, cl_p = build_panels(con)
+    if comp.empty:
+        print("[track] composite kosong (tak ada engine tervalidasi) — track record dilewati")
+        con.close(); return
     print(f"[track] {comp.shape[1]} simbol, {comp.shape[0]} hari")
     metrics, rows = simulate(comp, cl_p, rebalance=21, top_n=20, cost_bps=15, mode="long_only")
 
