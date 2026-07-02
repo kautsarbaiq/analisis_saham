@@ -120,7 +120,16 @@ CREATE TABLE IF NOT EXISTS insider_buys (
     value       DOUBLE
 );
 
--- 10) Kurva track-record (simulasi portofolio) — dipersist utk dashboard.
+-- 10) FINRA Reg SHO daily short sale volume (short-volume ratio = short/total).
+CREATE TABLE IF NOT EXISTS short_volume (
+    symbol    VARCHAR NOT NULL,
+    date      DATE    NOT NULL,
+    short_vol DOUBLE,
+    total_vol DOUBLE,
+    PRIMARY KEY (symbol, date)
+);
+
+-- 11) Kurva track-record (simulasi portofolio) — dipersist utk dashboard.
 CREATE TABLE IF NOT EXISTS track_record (
     date        DATE PRIMARY KEY,
     strat_gross DOUBLE,
