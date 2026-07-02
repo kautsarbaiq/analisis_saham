@@ -26,10 +26,18 @@ jobs:
       - name: Install deps (inti, tanpa torch/FinBERT)
         run: pip install duckdb pandas numpy yfinance pyarrow requests python-dotenv
 
-      - name: Tarik harga + skor (engine harga tervalidasi) + export snapshot
+      - name: Tarik harga + skor (vonis per-market dari config/validation.json) + snapshot
         run: |
           python -c "from jobs.daily_us import run; run(period='2y', with_fundamentals=False)"
           python -m jobs.export_snapshot
+
+      # Screener di runner yang SAMA (audit fix: dulu workflow terpisah tanpa DB
+      # -> gagal 100%). Tanpa secrets Telegram, hanya tercetak di log.
+      - name: Screener Top-N (cetak / Telegram bila secrets di-set)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m jobs.screener
 
       - name: Commit snapshot harian
         run: |

@@ -4,37 +4,25 @@ numpy>=1.26
 duckdb>=1.0            # database analitik file-based (backtest cepat)
 pyarrow>=16.0          # interop parquet/duckdb
 
-# === Ingestion: harga & fundamental ===
-yfinance>=0.2.40       # harga US & IDX (.JK), fundamental ringkas
-pandas-datareader>=0.10  # Stooq, FRED
-requests>=2.32         # SEC EDGAR, GDELT, API lain
-feedparser>=6.0        # RSS berita
+# === Ingestion ===
+yfinance>=0.2.40       # harga US & IDX (.JK)
+requests>=2.32         # SEC EDGAR (fundamental/insider), GDELT, Telegram
+feedparser>=6.0        # RSS berita (Yahoo Finance per-ticker)
 
-# === NLP / sentimen (gratis, lokal) ===
-vaderSentiment>=3.3    # sentimen cepat (baseline/fallback)
+# === NLP sentimen ===
+vaderSentiment>=3.3    # baseline/fallback
 transformers>=4.40     # FinBERT (sentimen finansial, default)
 torch                  # backend FinBERT
 
-# === Engine teknikal ===
-pandas-ta>=0.3.14b     # indikator teknikal
-
-# === Backtesting & statistik ===
-scikit-learn>=1.5      # model probabilistik (logistic / gradient boosting)
-scipy>=1.13            # statistik, confidence interval
-
 # === Delivery ===
-fastapi>=0.111          # backend API (serve JSON ke dashboard Bloomberg-style)
+fastapi>=0.111          # backend API dashboard
 uvicorn[standard]>=0.30 # ASGI server
-jinja2>=3.1             # render template HTML dashboard
-python-telegram-bot>=21 # alert (atau pakai requests langsung ke Bot API)
-# Frontend: HTML/CSS custom + TradingView lightweight-charts (via CDN, tanpa pip).
-# streamlit dilepas: UI ala Bloomberg butuh kontrol layout/tema penuh.
-
-# === Util ===
-python-dotenv>=1.0     # baca .env
-pydantic>=2.7          # validasi config & skema data
-loguru>=0.7            # logging
+python-dotenv>=1.0      # baca .env
 
 # === Dev / test ===
 pytest>=8.0
-ruff>=0.5              # linter + formatter
+ruff>=0.5
+
+# Audit 2026-07: dihapus krn tak diimpor di mana pun (terverifikasi grep):
+# pandas-ta, pandas-datareader, scikit-learn, scipy, python-telegram-bot
+# (alert pakai requests), loguru, pydantic, jinja2. Frontend chart via CDN.
