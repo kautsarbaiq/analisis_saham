@@ -61,15 +61,30 @@ def api_news(symbol: str) -> dict:
     return {"symbol": symbol.upper(), "items": items, "summary": aggregate_sentiment(items)}
 
 
+# Cache insider real-time (audit fix: tanpa cache, tiap klik simbol memicu hingga
+# 40 fetch SEC sekuensial). TTL 1 jam — Form 4 tidak berubah semenit-menit.
+_INSIDER_CACHE: dict[str, tuple[float, dict]] = {}
+_INSIDER_TTL = 3600.0
+
+
 @app.get("/api/insider/{symbol}")
 def api_insider(symbol: str) -> dict:
+    import time as _time
+
     from src.ingestion.insider import recent_buys
-    buys = recent_buys(symbol.upper(), days=180)
-    return {
-        "symbol": symbol.upper(), "buys": buys[:8], "count": len(buys),
+
+    sym = symbol.upper()
+    hit = _INSIDER_CACHE.get(sym)
+    if hit and _time.time() - hit[0] < _INSIDER_TTL:
+        return hit[1]
+    buys = recent_buys(sym, days=180)
+    payload = {
+        "symbol": sym, "buys": buys[:8], "count": len(buys),
         "total_value": sum(b["value"] for b in buys),
         "n_insiders": len({b["owner"] for b in buys}),
     }
+    _INSIDER_CACHE[sym] = (_time.time(), payload)
+    return payload
 
 
 # Static assets (css/js) di /static.

@@ -29,7 +29,12 @@
 
   <main class="grid">
     <section class="panel watchlist">
-      <div class="panel-hd">Watchlist <span id="wl-count" class="hd-tag"></span></div>
+      <div class="panel-hd">Watchlist <span id="wl-count" class="hd-tag"></span>
+        <span class="grow"></span>
+        <span class="mkt-chips">
+          <button data-m="ALL" class="on">ALL</button><button data-m="US">US</button><button data-m="IDX">IDX</button>
+        </span>
+      </div>
       <div class="wl-head"><span>SYM</span><span class="num">LAST</span><span class="num">CHG%</span><span class="num" title="Fundamental (SEC)">F</span><span class="num" title="Skor prediktif (mean-reversion, TERVALIDASI)">P ✓</span></div>
       <div id="wl-rows" class="wl-rows"></div>
     </section>

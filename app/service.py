@@ -54,15 +54,6 @@ def _load(con, symbol: str) -> pd.DataFrame:
     ).df()
 
 
-def symbols() -> list[str]:
-    con = _con()
-    try:
-        rows = con.execute("SELECT DISTINCT symbol FROM prices ORDER BY symbol").fetchall()
-    finally:
-        con.close()
-    return [r[0] for r in rows]
-
-
 def _metrics(df: pd.DataFrame) -> dict:
     close = df["close"]
     last = float(close.iloc[-1])
@@ -131,21 +122,22 @@ def _composite_map(con) -> dict:
 
 
 def validation() -> list[dict]:
-    """Vonis backtest per engine (apakah skornya punya edge terukur)."""
+    """Vonis backtest per engine PER MARKET (apakah skornya punya edge terukur)."""
     con = _con()
     try:
         rows = con.execute(
-            "SELECT engine, horizon_days, top_mean, bottom_mean, spread, t_stat, "
-            "validated, note FROM validation ORDER BY engine, horizon_days"
+            "SELECT engine, horizon_days, market, top_mean, bottom_mean, spread, "
+            "t_stat, validated, note FROM validation "
+            "ORDER BY market, validated DESC, engine, horizon_days"
         ).fetchall()
     except Exception:
         return []
     finally:
         con.close()
     return [{
-        "engine": r[0], "horizon_days": r[1], "top_mean": _safe(r[2]),
-        "bottom_mean": _safe(r[3]), "spread": _safe(r[4]), "t_stat": _safe(r[5]),
-        "validated": bool(r[6]), "note": r[7],
+        "engine": r[0], "horizon_days": r[1], "market": r[2], "top_mean": _safe(r[3]),
+        "bottom_mean": _safe(r[4]), "spread": _safe(r[5]), "t_stat": _safe(r[6]),
+        "validated": bool(r[7]), "note": r[8],
     } for r in rows]
 
 

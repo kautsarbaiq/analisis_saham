@@ -62,17 +62,21 @@ body {
   gap:5px; padding:0 12px; }
 .wl-head { height:24px; color:var(--muted); font-size:11px; letter-spacing:1px;
   border-bottom:1px solid var(--border); }
-.wl-pt, .wl-fd, .wl-pred { justify-self:end; font-size:11px; font-variant-numeric:tabular-nums;
+.wl-fd, .wl-pred { justify-self:end; font-size:11px; font-variant-numeric:tabular-nums;
   padding:1px 4px; border-radius:3px; min-width:28px; text-align:center; }
-.wl-pt { background:rgba(255,176,0,.10); color:#d2a24a; }
 .wl-fd { background:rgba(70,211,255,.10); color:#46d3ff; }
 .wl-pred { background:rgba(38,166,154,.14); color:#26a69a; }
+.wl-pred.na { background:rgba(106,120,136,.12); color:var(--muted); }
+.mkt-chips { display:flex; gap:3px; }
+.mkt-chips button { background:transparent; border:1px solid var(--border); color:var(--muted);
+  font-family:inherit; font-size:10px; letter-spacing:.5px; padding:1px 7px; border-radius:3px; cursor:pointer; }
+.mkt-chips button:hover { color:var(--text); }
+.mkt-chips button.on { background:rgba(255,176,0,.12); color:var(--amber); border-color:var(--amber-dim); }
 .wl-rows { overflow-y:auto; }
 .wl-row { height:34px; cursor:pointer; border-bottom:1px solid rgba(27,37,49,.5); }
 .wl-row:hover { background:rgba(255,255,255,.03); }
 .wl-row.sel { background:var(--sel); box-shadow:inset 2px 0 0 var(--amber); }
 .wl-sym { font-weight:700; color:var(--text); letter-spacing:.5px; }
-.wl-spark { display:flex; justify-content:flex-end; align-items:center; }
 
 /* ---------- Chart ---------- */
 .chart-hd { gap:14px; }

@@ -9,17 +9,32 @@ const fmt = {
 
 let WL = [];            // watchlist metrics
 const bySym = {};       // symbol -> metrics
-let current = null;
+let MKT = "ALL";        // filter market aktif: ALL | US | IDX
+let VAL = { US: [], IDX: [] };  // engine tervalidasi per market (dari /api/validation)
 let chart, candle, volSeries, sma20S, sma50S;
+
+const mktOf = (sym) => (sym.endsWith(".JK") ? "IDX" : "US");
 
 document.addEventListener("DOMContentLoaded", boot);
 
 async function boot() {
   startClock();
-  await loadWatchlist();
-  loadVerdict();
+  try {
+    await loadVerdict();      // isi VAL dulu agar label detail benar
+    await loadWatchlist();
+  } catch (e) {
+    const el = document.getElementById("wl-rows");
+    if (el) el.innerHTML = '<div class="hint">Gagal memuat data — apakah server & DB tersedia?</div>';
+  }
   initChart();
   if (WL.length) selectSymbol(WL[0].symbol);
+
+  document.querySelectorAll(".mkt-chips button").forEach((b) =>
+    b.addEventListener("click", () => {
+      MKT = b.dataset.m;
+      document.querySelectorAll(".mkt-chips button").forEach((x) => x.classList.toggle("on", x === b));
+      renderWatchlist();
+    }));
 
   const cmd = document.getElementById("cmd");
   cmd.addEventListener("keydown", (e) => {
@@ -61,13 +76,15 @@ async function openTrackRecord() {
       mc("Sharpe net", m.sharpe_net) +
       mc("Max drawdown", m.max_drawdown_pct + "%", "down");
     requestAnimationFrame(() => drawEquity(d.curve));
+    const beat = m.strat_net_total_pct > m.bench_total_pct;
     document.getElementById("tr-verdict").innerHTML =
-      `<b>Vonis jujur (long-only bulanan, 3 sinyal, NET ${m.cost_bps}bps):</b> NET <b>${sgn(m.strat_net_total_pct)}%</b> ` +
-      `(gross ${sgn(m.strat_gross_total_pct)}%) vs benchmark <b>+${m.bench_total_pct}%</b>. ` +
-      `Menambah sinyal INDEPENDEN (insider) <b>melipat-empatkan net (+4%→+20%)</b> — bukti edge independen MENUMPUK ` +
-      `(prinsip Renaissance: banyak sinyal kecil). Tapi masih di bawah beli-tahan index; long-short tetap gagal ` +
-      `(short pemimpin bull). Arah benar — butuh LEBIH banyak sinyal independen untuk benar-benar menang. ` +
-      `Screener = <b>penyaring ide berbukti</b>, edukasi, bukan jaminan. (Survivorship bias → optimistis.)`;
+      `<b>Vonis jujur (long-only bulanan, engine tervalidasi saja, NET ${m.cost_bps}bps):</b> ` +
+      `NET <b>${sgn(m.strat_net_total_pct)}%</b> (gross ${sgn(m.strat_gross_total_pct)}%) vs benchmark ` +
+      `<b>${sgn(m.bench_total_pct)}%</b> — ${beat ? "mengungguli" : "di bawah"} beli-tahan universe. ` +
+      `Simulasi memakai composite yang IDENTIK dgn produksi (hanya engine lolos backtest rigor: ` +
+      `harga ter-adjust, kuantil per-tanggal, walk-forward OOS). ` +
+      `Caveat terukur: survivorship bias (konstituen saat ini) & tanpa slippage di luar biaya — ` +
+      `hasil cenderung optimistis. Screener = <b>penyaring ide berbukti</b>, edukasi, bukan jaminan.`;
   } catch (e) {
     mEl.innerHTML = '<div class="tr-mc"><div class="v">Gagal memuat</div></div>';
   }
@@ -100,28 +117,45 @@ async function loadWatchlist() {
   renderWatchlist();
 }
 
+const ENG_NAMES = {
+  mean_reversion: "Mean-rev", fundamental: "Fundamental", technical: "Momentum",
+  event_drift: "Event-drift", insider: "Insider", low_volatility: "Low-vol",
+  bandarmology: "Bandar-proxy",
+};
+
 async function loadVerdict() {
   const el = document.getElementById("verdict");
   try {
     const v = await (await fetch("/api/validation")).json();
     if (!v.length) { el.innerHTML = '<span class="vtag">info</span> Backtest belum dijalankan.'; return; }
-    const names = { mean_reversion: "Mean-reversion", fundamental: "Fundamental", technical: "Teknikal" };
-    const byEng = {};
-    v.forEach((x) => { (byEng[x.engine] = byEng[x.engine] || []).push(x); });
-    const anyOk = v.some((x) => x.validated);
-    const order = Object.keys(byEng).sort((a, b) =>
-      (byEng[b].some((r) => r.validated) ? 1 : 0) - (byEng[a].some((r) => r.validated) ? 1 : 0));
-    const segs = order.map((eng) => {
-      const rows = byEng[eng];
-      const ok = rows.some((r) => r.validated);
-      const sp = rows.map((r) => `${r.horizon_days}h ${r.spread >= 0 ? "+" : ""}${r.spread}%`).join("/");
-      const mark = ok ? '<span style="color:#26a69a">✓</span>' : '<span style="color:#ef5350">✗</span>';
-      return `<b>${names[eng] || eng}</b> ${mark} (${sp})`;
+
+    VAL = { US: [], IDX: [] };
+    v.filter((x) => x.validated).forEach((x) => {
+      const m = x.market || "US";
+      if (!VAL[m].includes(x.engine)) VAL[m].push(x.engine);
     });
+
+    const seg = (mkt) => {
+      const rows = v.filter((x) => (x.market || "US") === mkt);
+      if (!rows.length) return `<b>${mkt}</b>: belum diuji`;
+      const byEng = {};
+      rows.forEach((x) => { (byEng[x.engine] = byEng[x.engine] || []).push(x); });
+      const parts = Object.keys(byEng)
+        .sort((a, b) => (byEng[b].some((r) => r.validated) ? 1 : 0) - (byEng[a].some((r) => r.validated) ? 1 : 0))
+        .map((eng) => {
+          const ok = byEng[eng].some((r) => r.validated);
+          const mark = ok ? '<span style="color:#26a69a">✓</span>' : '<span style="color:#ef5350">✗</span>';
+          return `${ENG_NAMES[eng] || eng}${mark}`;
+        });
+      return `<b>${mkt}</b>: ${parts.join(" ")}`;
+    };
+
+    const anyOk = VAL.US.length + VAL.IDX.length > 0;
     el.classList.toggle("ok", anyOk);
-    el.innerHTML = `<span class="vtag">${anyOk ? "1 engine tervalidasi" : "belum tervalidasi"}</span>` +
-      `<b>Backtest</b> — ${segs.join(" &nbsp;·&nbsp; ")}. ` +
-      (anyOk ? "Kolom <b>P</b> (skor prediktif) disetir engine tervalidasi — edge kecil, bukan jaminan."
+    const tag = `${VAL.US.length + VAL.IDX.length} engine tervalidasi`;
+    el.innerHTML = `<span class="vtag">${anyOk ? tag : "belum tervalidasi"}</span>` +
+      `<b>Backtest rigor</b> (adj-price · kuantil per-tanggal · OOS) — ${seg("US")} &nbsp;·&nbsp; ${seg("IDX")}. ` +
+      (anyOk ? "Kolom <b>P</b> hanya disetir engine ✓ market ybs — edge kecil, bukan jaminan."
              : "Semua skor deskriptif, bukan sinyal beli.");
   } catch (e) { el.innerHTML = '<span class="vtag">info</span> Vonis backtest tak tersedia.'; }
 }
@@ -150,7 +184,8 @@ async function loadNews(sym) {
       ` · <span class="up">${s.pos}▲</span> <span class="down">${s.neg}▼</span> <span class="mut">${s.neu}●</span> / ${s.count} berita</div>`;
     const items = d.items.slice(0, 8).map((it) => {
       const c = it.sentiment > 0.05 ? "up" : it.sentiment < -0.05 ? "down" : "mut";
-      return `<a class="news-it" href="${esc(it.link)}" target="_blank" rel="noopener">` +
+      const safeHref = /^https?:\/\//i.test(it.link || "") ? esc(it.link) : "#";  // blokir javascript: dll
+      return `<a class="news-it" href="${safeHref}" target="_blank" rel="noopener">` +
         `<span class="news-sc ${c}">${it.sentiment > 0 ? "+" : ""}${it.sentiment}</span>` +
         `<span class="news-tt">${esc(it.title)}</span></a>`;
     }).join("");
@@ -165,7 +200,7 @@ function fmtCompact(v) {
 async function loadInsider(sym) {
   const el = document.getElementById("insider-block");
   if (!el) return;
-  const head = (txt, col) => `<div class="subrow" style="grid-template-columns:1fr auto"><span class="sk">Insider buys (real-time 180h)</span><span class="sv" style="color:${col}">${txt}</span></div>`;
+  const head = (txt, col) => `<div class="subrow" style="grid-template-columns:1fr auto"><span class="sk">Insider buys (real-time 180h · info, belum tervalidasi)</span><span class="sv" style="color:${col}">${txt}</span></div>`;
   try {
     const d = await (await fetch("/api/insider/" + encodeURIComponent(sym))).json();
     if (!d.count) { el.innerHTML = head("tak ada", "#6a7888"); return; }
@@ -178,27 +213,26 @@ async function loadInsider(sym) {
 
 function renderWatchlist() {
   const el = document.getElementById("wl-rows");
-  el.innerHTML = WL.map((m) => {
+  const view = WL.filter((m) => MKT === "ALL" || mktOf(m.symbol) === MKT);
+  // Skor prediktif dulu (null tenggelam), lalu fundamental sbg tie-break deskriptif.
+  view.sort((a, b) => ((b.composite ?? -1) - (a.composite ?? -1)) || ((b.fundamental ?? -1) - (a.fundamental ?? -1)));
+  document.getElementById("wl-count").textContent = view.length;
+  el.innerHTML = view.map((m) => {
     const up = (m.change_pct || 0) >= 0;
+    const noP = m.composite == null;
+    const pTitle = noP
+      ? "Belum ada engine tervalidasi utk market ini — skor prediktif tidak tersedia (jujur)"
+      : "Skor prediktif: hanya engine yang LOLOS backtest rigor utk market ini";
     return `<div class="wl-row" data-sym="${m.symbol}">
       <span class="wl-sym">${m.symbol}</span>
       <span class="num">${fmt.px(m.last)}</span>
       <span class="num ${up ? "up" : "down"}">${fmt.pct(m.change_pct)}</span>
       <span class="wl-fd" title="Fundamental (SEC EDGAR, deskriptif)">${m.fundamental == null ? "—" : Math.round(m.fundamental)}</span>
-      <span class="wl-pred" title="Skor prediktif: mean-reversion (TERVALIDASI)">${m.composite == null ? "—" : Math.round(m.composite)}</span>
+      <span class="wl-pred${noP ? " na" : ""}" title="${pTitle}">${noP ? "—" : Math.round(m.composite)}</span>
     </div>`;
   }).join("");
   el.querySelectorAll(".wl-row").forEach((row) =>
     row.addEventListener("click", () => selectSymbol(row.dataset.sym)));
-}
-
-function sparkSVG(data, up) {
-  if (!data || data.length < 2) return "";
-  const w = 56, h = 18, min = Math.min(...data), max = Math.max(...data), rng = (max - min) || 1;
-  const pts = data.map((v, i) =>
-    `${(i / (data.length - 1) * w).toFixed(1)},${(h - (v - min) / rng * h).toFixed(1)}`).join(" ");
-  const col = up ? "#26a69a" : "#ef5350";
-  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.2"/></svg>`;
 }
 
 /* ---------- Chart ---------- */
@@ -289,13 +323,20 @@ function renderDetail(m) {
   const fs = fc.sub_scores || {};
   const pctv = (x) => x == null ? "—" : (x * 100).toFixed(0) + "%";
   const mrc = m.mr_comp || {};
+  const mkt = mktOf(m.symbol);
+  const engs = (VAL[mkt] || []).map((e) => ENG_NAMES[e] || e);
+  const hasP = m.composite != null && engs.length > 0;
+  const predTag = hasP
+    ? `<span class="tag" style="background:rgba(38,166,154,.18);color:#26a69a">${engs.join(" + ")} ✓ tervalidasi (${mkt})</span>`
+    : `<span class="tag unval">belum ada engine tervalidasi (${mkt})</span>`;
   document.getElementById("detail").innerHTML = `
     <div>
-      <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#26a69a">Skor Prediktif</span><span class="tag" style="background:rgba(38,166,154,.18);color:#26a69a">3 sinyal ✓ tervalidasi</span></div>
+      <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#26a69a">Skor Prediktif</span>${predTag}</div>
       <div style="display:flex;align-items:baseline;gap:8px">
-        <span class="posture-score" style="color:#26a69a">${m.composite == null ? "—" : m.composite.toFixed(0)}</span>
-        <span style="color:var(--muted);font-size:11px">/100 · mean-reversion + event-drift + insider (edge kecil)</span>
+        <span class="posture-score" style="color:${hasP ? "#26a69a" : "var(--muted)"}">${hasP ? m.composite.toFixed(0) : "—"}</span>
+        <span style="color:var(--muted);font-size:11px">${hasP ? "/100 · hanya engine lolos backtest rigor (edge kecil, bukan jaminan)" : "tidak tersedia — belum ada edge terukur utk market ini (jujur)"}</span>
       </div>
+      <div class="blk-hd" style="margin-top:9px;color:var(--faint)">Konteks teknikal · deskriptif (tidak menyetir skor)</div>
       ${subBar("Reversal 1M", mrc.reversal)}
       ${subBar("Oversold RSI", mrc.oversold)}
       ${subBar("Di bawah SMA20", mrc.below_ma)}
