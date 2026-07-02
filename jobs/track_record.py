@@ -35,10 +35,7 @@ def build_panels(con):
     sectors = load_sectors()
     mr, ed, cl = {}, {}, {}
     for s in US_UNIVERSE:
-        df = con.execute(
-            "SELECT date, open, high, low, close, adj_close, volume "
-            "FROM prices WHERE symbol = ? ORDER BY date", [s]
-        ).df()
+        df = con.execute(db.ADJ_PRICES_SQL, [s]).df()
         if len(df) < WARMUP + 21:
             continue
         ind = indicators(df)

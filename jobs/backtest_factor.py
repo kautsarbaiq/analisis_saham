@@ -22,10 +22,7 @@ from src.storage import db
 def _prices(con) -> dict:
     out = {}
     for s in US_UNIVERSE:
-        df = con.execute(
-            "SELECT date, open, high, low, close, adj_close, volume "
-            "FROM prices WHERE symbol = ? ORDER BY date", [s]
-        ).df()
+        df = con.execute(db.ADJ_PRICES_SQL, [s]).df()
         if len(df) >= 280:
             out[s] = df
     return out

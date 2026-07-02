@@ -27,7 +27,9 @@ SAMPLE_STEP = 21
 def _build_panel(con) -> pd.DataFrame:
     rows = []
     for s in US_UNIVERSE:
-        ps = con.execute("SELECT date, close FROM prices WHERE symbol = ? ORDER BY date", [s]).df()
+        ps = con.execute(
+            "SELECT date, adj_close AS close FROM prices WHERE symbol = ? ORDER BY date", [s]
+        ).df()
         if len(ps) < HORIZON + 5:
             continue
         ps["date"] = pd.to_datetime(ps["date"])

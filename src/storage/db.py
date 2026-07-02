@@ -12,6 +12,19 @@ import duckdb
 from config import settings
 
 
+# SELECT harga TER-ADJUST utk komputasi SINYAL/BACKTEST (anti bias dividen/split):
+# adj_close jadi 'close'; O/H/L diskalakan proporsional (back-adjustment standar).
+# Tampilan (dashboard) tetap pakai harga mentah — hanya sinyal yang wajib adjusted.
+ADJ_PRICES_SQL = (
+    "SELECT date, "
+    "open * (adj_close / close) AS open, "
+    "high * (adj_close / close) AS high, "
+    "low  * (adj_close / close) AS low, "
+    "adj_close AS close, adj_close, volume "
+    "FROM prices WHERE symbol = ? ORDER BY date"
+)
+
+
 def connect() -> "duckdb.DuckDBPyConnection":
     """Buka koneksi DuckDB ke DUCKDB_PATH (buat folder bila perlu)."""
     Path(settings.DUCKDB_PATH).parent.mkdir(parents=True, exist_ok=True)

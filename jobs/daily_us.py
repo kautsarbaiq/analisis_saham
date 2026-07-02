@@ -64,10 +64,7 @@ def _score_all(con, symbols: list[str]) -> None:
 
     per_symbol: dict[str, dict] = {}
     for sym in symbols:
-        pdf = con.execute(
-            "SELECT date, open, high, low, close, adj_close, volume "
-            "FROM prices WHERE symbol = ? ORDER BY date", [sym]
-        ).df()
+        pdf = con.execute(db.ADJ_PRICES_SQL, [sym]).df()
         if len(pdf) < 220:
             continue
 

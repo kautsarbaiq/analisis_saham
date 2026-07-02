@@ -36,10 +36,7 @@ def run() -> None:
 
     prices = {}
     for s in US_UNIVERSE:
-        df = con.execute(
-            "SELECT date, open, high, low, close, adj_close, volume "
-            "FROM prices WHERE symbol = ? ORDER BY date", [s]
-        ).df()
+        df = con.execute(db.ADJ_PRICES_SQL, [s]).df()
         if len(df) >= 260:
             prices[s] = df
     print(f"=== BACKTEST MEAN-REVERSION · {len(prices)} simbol ===")

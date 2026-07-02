@@ -20,10 +20,7 @@ def run() -> None:
     con = db.connect(); db.init_schema(con)
     es_rows, cs_rows = [], []
     for sym in IDX_UNIVERSE:
-        pdf = con.execute(
-            "SELECT date, open, high, low, close, adj_close, volume "
-            "FROM prices WHERE symbol = ? ORDER BY date", [sym]
-        ).df()
+        pdf = con.execute(db.ADJ_PRICES_SQL, [sym]).df()
         if len(pdf) < 220:
             continue
         el = [mean_reversion_engine.score(sym, pdf), bandarmology_engine.score(sym, pdf)]

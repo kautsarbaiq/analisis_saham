@@ -34,7 +34,9 @@ def run() -> None:
     if ib.empty:
         print("Tabel insider_buys kosong — jalankan jobs.insider_ingest dulu."); con.close(); return
     ib["filing_date"] = pd.to_datetime(ib["filing_date"])
-    px = con.execute("SELECT symbol, date, close FROM prices ORDER BY symbol, date").df()
+    px = con.execute(
+        "SELECT symbol, date, adj_close AS close FROM prices ORDER BY symbol, date"
+    ).df()
     con.close()
     px["date"] = pd.to_datetime(px["date"])
     close = px.pivot_table(index="date", columns="symbol", values="close").sort_index()
