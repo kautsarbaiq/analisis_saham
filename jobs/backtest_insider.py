@@ -19,8 +19,10 @@ from src.storage import db
 
 HORIZONS = [21, 63]
 LOOKBACK = 90          # hari kalender jendela "pembelian baru"
-REBALANCE = 5
 WARMUP = 210
+# Audit fix: langkah sampling = HORIZON (jendela NON-OVERLAP). Dulu langkah 5 hari
+# dgn horizon 21/63 -> observasi tumpang-tindih menginflasi t-stat (autokorelasi).
+# Non-overlap = t jujur (obs independen), meski N lebih kecil.
 
 
 def _periods(dates):
@@ -53,7 +55,7 @@ def run() -> None:
         for H in HORIZONS:
             fwd = close.shift(-H) / close - 1.0
             dates = close.index
-            rebal = dates[WARMUP::REBALANCE]
+            rebal = dates[WARMUP::H]  # non-overlap: langkah = horizon
             recs = []
             for d in rebal:
                 f = fwd.loc[d].dropna()
