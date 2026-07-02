@@ -10,6 +10,7 @@
 | Harga EOD | `yfinance`, Stooq | Tinggi | ⚠️ ToS abu-abu | Untuk produk: swap ke Polygon/Tiingo berlisensi |
 | Harga intraday | `yfinance` (15m delay) | Sedang | ❌ | Real-time butuh data berbayar |
 | Fundamental | **SEC EDGAR API** | Institusional | ✅ **Public domain** | Sumber resmi; aman dijual |
+| Insider (SEC Form 4 / bulk Form 345) | **SEC EDGAR** | Institusional | ✅ **Public domain** | Aman komersial. Bulk kuartalan (lag ~1 kuartal) + real-time per emiten (Form 4 XML) — `src/ingestion/insider.py` |
 | Makro | **FRED API** | Institusional | ✅ | Wajib atribusi |
 | Estimasi analis | — | — | ❌ | Tidak ada sumber gratis bersih |
 

@@ -1,8 +1,13 @@
-"""Entry-point batch harian US (dijalankan GitHub Actions ~04:00 WIB).
+"""Entry-point batch harian (GitHub Actions ~04:00 WIB / launchd lokal).
 
-Orkestrasi end-to-end (lihat docs/01_architecture.md). Saat ini Fase 0:
-hanya ingestion harga -> DuckDB. Langkah features/engines/scoring/event-study
-disambung bertahap di Fase 1-2 (lihat TODO).
+Pipeline nyata (lihat docs/01_architecture.md):
+  1. Harga bulk universe US (S&P 500) + IDX (LQ45) -> tabel prices (upsert).
+  2. Opsional: fundamental SEC EDGAR untuk simbol US -> tabel fundamentals.
+  3. _score_all (market-aware, sinyal dari harga TER-ADJUST via db.ADJ_PRICES_SQL):
+     technical / mean_reversion / event_drift / insider (US-only) / fundamental;
+     event_drift di-sector-neutralkan cross-sectional per market; composite
+     hanya atas engine tervalidasi untuk market ybs (tabel `validation`,
+     fallback config/validation.json) -> engine_scores + composite_scores.
 
 Harus IDEMPOTENT: aman dijalankan ulang untuk tanggal yang sama (upsert by key).
 """

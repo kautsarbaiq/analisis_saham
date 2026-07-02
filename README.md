@@ -4,7 +4,7 @@
 > (event-study), dan bandarmology — dengan backtesting jujur dan track-record yang
 > menelanjangi akurasinya sendiri.
 
-**Status:** `Fase 0 — Cetak biru (skeleton + dokumen teknis). Belum ada implementasi logika.`
+**Status:** `Fase 0-3 TERIMPLEMENTASI & diaudit. 1 engine tervalidasi: event_drift (PEAD proxy) US h63. Semua engine lain berjalan tapi bobot composite-nya 0 (gagal validasi rigor per-market).`
 
 ---
 
@@ -52,12 +52,13 @@ Detail: [docs/01_architecture.md](docs/01_architecture.md)
 | Bahasa engine | Python 3.11 |
 | Harga US/IDX | `yfinance`, Stooq |
 | Fundamental US | SEC EDGAR API |
+| Insider | SEC Form 4 / bulk Form 345 (EDGAR, public domain) |
 | Makro | FRED API |
 | Berita | GDELT, RSS (`feedparser`), NewsAPI free |
 | NLP sentimen | FinBERT / VADER (lokal) + Groq/Gemini free-tier |
 | Database | DuckDB + Supabase Postgres (free) |
-| Scheduler | GitHub Actions (cron gratis) |
-| Dashboard | Streamlit (Streamlit Cloud free) |
+| Scheduler | GitHub Actions (cron gratis) + launchd lokal |
+| Dashboard | FastAPI + HTML/JS custom (terminal ala Bloomberg) |
 | Alert | Telegram Bot API |
 
 Detail + lisensi: [docs/02_data_sources.md](docs/02_data_sources.md)
@@ -71,20 +72,22 @@ analisis_saham/
 ├── README.md                 ← Anda di sini
 ├── requirements.txt
 ├── .env.example              ← template API keys (salin ke .env)
-├── config/                   ← konfigurasi & daftar saham (universe)
-├── docs/                     ← 7 dokumen teknis (CETAK BIRU)
+├── config/                   ← settings, universe (sp500.csv, LQ45), validation.json
+├── docs/                     ← 7 dokumen teknis
 ├── src/
-│   ├── ingestion/            ← Lapisan 1: tarik data
-│   ├── storage/              ← Lapisan 2: DuckDB + skema
+│   ├── ingestion/            ← Lapisan 1: harga, fundamental, insider, berita, GDELT
+│   ├── storage/              ← Lapisan 2: DuckDB + skema (data/bandar.duckdb)
 │   ├── features/             ← Lapisan 3: feature store
-│   ├── engines/              ← Lapisan 5: 5 engine analitis
+│   ├── engines/              ← Lapisan 5: engine analitis
 │   ├── scoring/              ← Lapisan 6: composite score
 │   ├── backtest/             ← Lapisan 4: backtesting + metrik
-│   ├── nlp/                  ← klasifikasi event + sentimen
-│   └── delivery/             ← Lapisan 7: alert + laporan
-├── app/                      ← dashboard Streamlit
-├── jobs/                     ← entry-point untuk scheduler
-├── .github/workflows/        ← cron GitHub Actions
+│   ├── nlp/                  ← sentimen (FinBERT/VADER); klasifikasi event = stub
+│   └── delivery/             ← Lapisan 7: alert Telegram; report = stub
+├── app/                      ← dashboard FastAPI: server.py + service.py + static/ (HTML/JS/CSS)
+├── jobs/                     ← entry-point scheduler (daily_us, refresh, screener, backtest_*, ...)
+├── snapshots/                ← latest.json (top_us/top_idx) — rekam jejak harian
+├── scripts/                  ← launchd plist utk refresh pagi lokal
+├── .github/workflows/        ← cron GitHub Actions (daily_us.yml, tests.yml)
 └── tests/
 ```
 
@@ -92,16 +95,35 @@ analisis_saham/
 
 ## Roadmap (bertahap / tiered)
 
-| Fase | Isi | KPI terukur |
+| Fase | Isi | Status |
 |---|---|---|
-| **0** | Fondasi: pipeline data US + DuckDB + scheduler | 500 saham US ter-update otomatis |
-| **1** | Engine fundamental+teknikal + backtest + dashboard + screener | Quantile-backtest: skor-tinggi outperform skor-rendah |
-| **2** | News event-study engine + alert Telegram + track-record | Precision/recall classifier ≥ baseline |
-| **3** | Port ke IDX + bandarmology proxy | Win-rate proxy bandar > random (terukur) |
-| **4** | Laporan riset otomatis (LLM) | Laporan konsisten dengan angka engine |
-| **5** | Komersialisasi: data berlisensi + auth + billing + compliance | Siap jual, track record publik |
+| **0** | Fondasi: pipeline data US + DuckDB + scheduler | ✅ Selesai — 503 saham S&P 500, 5 th data |
+| **1** | Engine fundamental+teknikal + backtest + dashboard + screener | 🟡 Selesai sebagian — semua jalan; fundamental & technical GAGAL validasi → deskriptif |
+| **2** | News event-study engine + alert Telegram + track-record | 🟡 Selesai sebagian — event_drift (PEAD proxy) TERVALIDASI US h63; berita live belum di-backtest |
+| **3** | Port ke IDX + bandarmology proxy | ✅ Selesai — 45 LQ45 ter-skor; NOL engine valid IDX (proxy bandar diuji & gagal) |
+| **4** | Laporan riset otomatis (LLM) | ⬜ Belum |
+| **5** | Komersialisasi: data berlisensi + auth + billing + compliance | ⬜ Belum |
 
 Detail + definisi KPI: [docs/06_roadmap.md](docs/06_roadmap.md)
+
+### Vonis validasi terkini (rigor penuh, per-market)
+
+Setelah backtest dengan harga ter-adjust, kuantil cross-sectional per-tanggal,
+walk-forward out-of-sample, dan sector-neutralization
+([config/validation.json](config/validation.json)):
+
+- **TERVALIDASI (satu-satunya):** `event_drift` US h63 (PEAD proxy) —
+  sector-neutral +0.56%/63d (t 6.4); versi raw juga lolos.
+- **DITOLAK:** mean_reversion (US & IDX — edge lama ternyata artefak kuantil pooled),
+  insider (t 1.25 pada uji non-overlap), fundamental, technical/momentum (edge ~0),
+  low_volatility, bandarmology-proxy (justru kontrarian di IDX).
+- **IDX: nol engine tervalidasi** → composite IDX sengaja kosong (jujur, bukan bug).
+
+**Track record** ([jobs/track_record.py](jobs/track_record.py)): simulasi portofolio
+composite dinamis (identik produksi, hanya engine tervalidasi), long-only bulanan
+top-20, NET 15 bps: **+138% vs benchmark equal-weight +70.9%** (4.1 th, Sharpe 1.04).
+*Caveat: universe mengandung survivorship bias dan periode uji didominasi rezim bull —
+angka ini batas atas optimis, bukan janji.*
 
 ---
 
@@ -110,9 +132,11 @@ Detail + definisi KPI: [docs/06_roadmap.md](docs/06_roadmap.md)
 ```bash
 uv venv --python 3.12 .venv          # atau: python -m venv .venv
 uv pip install --python .venv -r requirements.txt
-python -m jobs.daily_us              # tarik harga+SEC, hitung skor (~12 mnt, 503 saham)
-python -m jobs.backtest_mean_reversion   # validasi engine (sesekali)
-python -m jobs.backtest_factor score_below_ma mean_reversion 5,10
+python -m jobs.daily_us              # tarik harga+SEC, hitung skor (~12 mnt, 548 saham US+IDX)
+# Validasi engine (sesekali, bukan harian — butuh histori penuh):
+python -m jobs.backtest_factor event_drift_score event_drift 21,63 US
+python -m jobs.backtest_idx          # vonis per-market IDX
+python -m jobs.track_record          # simulasi portofolio (composite = engine tervalidasi)
 .venv/bin/uvicorn app.server:app --port 8000    # dashboard -> http://localhost:8000
 ```
 
