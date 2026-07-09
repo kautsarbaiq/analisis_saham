@@ -20,6 +20,9 @@ from src.backtest.engine import sector_neutralize, walk_forward_quantile
 from src.storage import db
 
 HORIZONS = [21, 63]
+# Lag 1 hari perdagangan: data FINRA hari-D terbit pagi D+1. Skor pakai SVR s/d
+# hari SEBELUM entry -> nol look-ahead publikasi. Ini versi jujur (non-negosiasi).
+LAG = 1
 
 
 def _panels(con) -> dict[str, pd.DataFrame]:
@@ -43,8 +46,9 @@ def _panels(con) -> dict[str, pd.DataFrame]:
         svr = (m["short_vol"] / m["total_vol"]).clip(0, 1)
         svr5 = svr.rolling(5, min_periods=3).mean()
         svr63 = svr.rolling(63, min_periods=40).mean()
-        lvl = ((1 - svr5) * 100).clip(0, 100)
-        chg = (50 - (svr5 - svr63) * 250).clip(0, 100)
+        # LAG: skor pada baris T memakai data s/d T-LAG (anti look-ahead publikasi).
+        lvl = ((1 - svr5) * 100).clip(0, 100).shift(LAG)
+        chg = (50 - (svr5 - svr63) * 250).clip(0, 100).shift(LAG)
         for h in HORIZONS:
             fwd = (m["close"].shift(-h) / m["close"] - 1.0) * 100
             base = pd.DataFrame({"symbol": sym, "date": m["date"], "fwd": fwd})
