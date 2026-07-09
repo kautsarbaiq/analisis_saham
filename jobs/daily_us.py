@@ -18,7 +18,8 @@ import pandas as pd
 from config.settings import ROOT
 from config.universe import US_UNIVERSE, all_symbols, load_sectors, market_of
 from src.engines import (
-    event_study, fundamental_engine, insider_engine, mean_reversion_engine, technical_engine,
+    event_study, fundamental_engine, insider_engine, mean_reversion_engine,
+    shortvol_engine, technical_engine,
 )
 from src.ingestion import fundamentals, prices
 from src.scoring import composite
@@ -80,6 +81,19 @@ def _score_all(con, symbols: list[str]) -> None:
     except Exception:
         ins_counts = {}
 
+    # Short volume FINRA per simbol US + staleness (data harian, bisa tertinggal).
+    sv_by_sym: dict[str, pd.DataFrame] = {}
+    sv_stale = True
+    try:
+        sv = con.execute("SELECT symbol, date, short_vol, total_vol FROM short_volume").df()
+        if not sv.empty:
+            sv["date"] = pd.to_datetime(sv["date"])
+            from datetime import date as _d2
+            sv_stale = (_d2.today() - sv["date"].max().date()).days > 7
+            sv_by_sym = {s: g for s, g in sv.groupby("symbol")}
+    except Exception:
+        sv_by_sym = {}
+
     per_symbol: dict[str, dict] = {}
     for sym in symbols:
         pdf = con.execute(db.ADJ_PRICES_SQL, [sym]).df()
@@ -89,9 +103,11 @@ def _score_all(con, symbols: list[str]) -> None:
         el = [technical_engine.score(sym, pdf),
               mean_reversion_engine.score(sym, pdf),
               event_study.score(sym, pdf)]
-        if market_of(sym) == "US":  # insider hanya ada utk emiten SEC/US
+        if market_of(sym) == "US":  # insider & short-volume hanya utk emiten AS
             el.append(insider_engine.score(sym, ins_counts.get(sym, 0), el[0].as_of,
                                            stale=ins_stale))
+            el.append(shortvol_engine.score(sym, sv_by_sym.get(sym), el[0].as_of,
+                                            stale=sv_stale))
         fdf = con.execute(
             "SELECT period, metric, value FROM fundamentals WHERE symbol = ?", [sym]
         ).df()
@@ -99,24 +115,24 @@ def _score_all(con, symbols: list[str]) -> None:
             el.append(fundamental_engine.score(sym, fdf, float(pdf["close"].iloc[-1])))
         per_symbol[sym] = {"el": el, "as_of": el[0].as_of}
 
-    # --- Sector-neutralize event_drift (demean per sektor, rescale 0..100) ---
-    # Audit fix: grup demean kini MARKET-AWARE — simbol IDX tidak lagi tercampur
-    # sebagai pseudo-sektor '?' dalam cross-section GICS US.
+    # --- Sector-neutralize event_drift & shortvol_level (demean per market:sektor) ---
+    # Audit fix: grup demean MARKET-AWARE. Kedua engine tervalidasi dlm bentuk
+    # sector-neutral, jadi diproduksi dgn cara yang sama (identik gerbang backtest).
     def _group(sym: str) -> str:
-        # load_sectors kini mencakup IDX_SECTORS -> demean IDX per sektor IDX
-        # (konsisten dgn gerbang backtest sector-neutral per market).
         return f"{market_of(sym)}:" + sectors.get(sym, "?")
 
-    sec_vals: dict[str, list] = {}
-    for sym, d in per_symbol.items():
-        raw = next(e.score for e in d["el"] if e.engine == "event_drift")
-        sec_vals.setdefault(_group(sym), []).append(raw)
-    sec_mean = {s: sum(v) / len(v) for s, v in sec_vals.items()}
-    for sym, d in per_symbol.items():
-        sec = _group(sym)
-        for e in d["el"]:
-            if e.engine == "event_drift":
-                e.score = round(max(0.0, min(100.0, 50 + (e.score - sec_mean[sec]))), 2)
+    for eng in ("event_drift", "shortvol_level"):
+        sec_vals: dict[str, list] = {}
+        for sym, d in per_symbol.items():
+            es = next((e for e in d["el"] if e.engine == eng), None)
+            if es is not None:
+                sec_vals.setdefault(_group(sym), []).append(es.score)
+        sec_mean = {s: sum(v) / len(v) for s, v in sec_vals.items()}
+        for sym, d in per_symbol.items():
+            sec = _group(sym)
+            for e in d["el"]:
+                if e.engine == eng and sec in sec_mean:
+                    e.score = round(max(0.0, min(100.0, 50 + (e.score - sec_mean[sec]))), 2)
 
     es_rows, cs_rows = [], []
     for sym, d in per_symbol.items():
@@ -142,7 +158,8 @@ def _score_all(con, symbols: list[str]) -> None:
         db.upsert_df(con, "composite_scores", cs_df, ["symbol", "as_of"])
     print(f"[daily_us] skor: {len(es_rows)} engine_scores, {len(cs_rows)} composite_scores "
           f"(tervalidasi US: {validated_by_market['US'] or '-'} | "
-          f"IDX: {validated_by_market['IDX'] or '-'} | insider_stale={ins_stale})")
+          f"IDX: {validated_by_market['IDX'] or '-'} | "
+          f"insider_stale={ins_stale} shortvol_stale={sv_stale})")
 
 
 def run(period: str = "2y", with_fundamentals: bool = True) -> None:

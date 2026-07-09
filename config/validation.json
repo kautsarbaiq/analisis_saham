@@ -124,5 +124,41 @@
     "t_stat": -3.204,
     "validated": false,
     "note": "IDX sector-neutral walk-forward: per-periode [0.51, -0.06, -1.75]; raw pooled -1.01% \u2014 tolak"
+  },
+  {
+    "engine": "shortvol_level",
+    "horizon_days": 21,
+    "market": "US",
+    "spread": 0.386,
+    "t_stat": 9.808,
+    "validated": true,
+    "note": "FINRA short-volume, hipotesis a-priori; SN per-periode [0.41, 0.22, 0.53]; raw pooled +0.40%"
+  },
+  {
+    "engine": "shortvol_level",
+    "horizon_days": 63,
+    "market": "US",
+    "spread": 1.674,
+    "t_stat": 23.939,
+    "validated": true,
+    "note": "FINRA short-volume, hipotesis a-priori; SN per-periode [1.59, 0.91, 2.5]; raw pooled +1.67%"
+  },
+  {
+    "engine": "shortvol_chg",
+    "horizon_days": 21,
+    "market": "US",
+    "spread": -0.008,
+    "t_stat": -0.19,
+    "validated": false,
+    "note": "FINRA short-volume, hipotesis a-priori; SN per-periode [0.0, -0.05, 0.03]; raw pooled -0.01% \u2014 tolak"
+  },
+  {
+    "engine": "shortvol_chg",
+    "horizon_days": 63,
+    "market": "US",
+    "spread": 0.547,
+    "t_stat": 7.19,
+    "validated": true,
+    "note": "FINRA short-volume, hipotesis a-priori; SN per-periode [0.62, 0.3, 0.71]; raw pooled +0.54%"
   }
 ]

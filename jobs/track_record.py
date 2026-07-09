@@ -77,7 +77,27 @@ def build_panels(con, validated: set[str] | None = None):
             cnt = np.searchsorted(fa, td, side="right") - np.searchsorted(fa, td - win, side="right")
             ins[sym] = np.where(cnt > 0, 50 + np.minimum(50, cnt * 12.5), 50.0)
 
-    panels = {"mean_reversion": mr_p, "event_drift": ed_neu, "insider": ins}
+    # Short-volume panel: skor (1-SVR5)*100 dgn LAG 1 (anti look-ahead FINRA),
+    # di-align ke hari perdagangan lalu sector-neutralize per tanggal.
+    svl = pd.DataFrame(50.0, index=cl_p.index, columns=cl_p.columns)
+    sv = con.execute("SELECT symbol, date, short_vol, total_vol FROM short_volume").df()
+    if not sv.empty:
+        sv["date"] = pd.to_datetime(sv["date"])
+        for s, g in sv.groupby("symbol"):
+            if s not in svl.columns:
+                continue
+            gg = g.set_index("date").sort_index()
+            svr5 = (gg["short_vol"] / gg["total_vol"]).clip(0, 1).rolling(5, min_periods=3).mean().shift(1)
+            lvl = ((1 - svr5) * 100).clip(0, 100).reindex(cl_p.index).ffill(limit=5)
+            svl[s] = lvl.fillna(50.0)
+        for secname in set(sec.values()):
+            cols = [c for c in svl.columns if sec[c] == secname]
+            if cols:
+                m = svl[cols].mean(axis=1)
+                svl[cols] = (50 + svl[cols].sub(m, axis=0)).clip(0, 100)
+
+    panels = {"mean_reversion": mr_p, "event_drift": ed_neu,
+              "insider": ins, "shortvol_level": svl}
     use = [e for e in panels if e in validated]
     if not use:  # tidak ada engine tervalidasi -> tidak ada composite prediktif
         print("[track] TIDAK ada engine tervalidasi (US) — simulasi pakai event_drift "
