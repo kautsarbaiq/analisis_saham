@@ -150,6 +150,7 @@ def watchlist() -> list[dict]:
         fmap = _engine_map(con, "fundamental")
         mmap = _engine_map(con, "mean_reversion")
         imap = _engine_map(con, "insider")
+        svmap = _engine_map(con, "shortvol_level")
         cmap = _composite_map(con)
         # Satu query untuk semua harga (jauh lebih cepat utk universe 500+).
         big = con.execute(
@@ -179,6 +180,10 @@ def watchlist() -> list[dict]:
             if im:
                 m["insider"] = im["score"]
                 m["insider_buys"] = (im["components"] or {}).get("buys_90d", 0)
+            svm = svmap.get(s)
+            if svm:
+                m["shortvol"] = svm["score"]
+                m["shortvol_svr5"] = (svm["components"] or {}).get("svr5")
             c = cmap.get(s)
             if c:
                 m["composite"] = c["total"]

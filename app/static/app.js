@@ -120,7 +120,7 @@ async function loadWatchlist() {
 const ENG_NAMES = {
   mean_reversion: "Mean-rev", fundamental: "Fundamental", technical: "Momentum",
   event_drift: "Event-drift", insider: "Insider", low_volatility: "Low-vol",
-  bandarmology: "Bandar-proxy",
+  shortvol_level: "Short-vol", shortvol_chg: "Short-vol Δ", bandarmology: "Bandar-proxy",
 };
 
 async function loadVerdict() {
@@ -324,7 +324,12 @@ function renderDetail(m) {
   const pctv = (x) => x == null ? "—" : (x * 100).toFixed(0) + "%";
   const mrc = m.mr_comp || {};
   const mkt = mktOf(m.symbol);
-  const engs = (VAL[mkt] || []).map((e) => ENG_NAMES[e] || e);
+  // Hanya engine yg BENAR-BENAR menyetir composite saham ini: tervalidasi ∩ ada di
+  // breakdown produksi (mis. shortvol_chg tervalidasi tapi tak diproduksi -> dibuang).
+  const bdKeys = Object.keys(m.composite_breakdown || {});
+  const engs = (VAL[mkt] || [])
+    .filter((e) => bdKeys.length === 0 || bdKeys.includes(e))
+    .map((e) => ENG_NAMES[e] || e);
   const hasP = m.composite != null && engs.length > 0;
   const predTag = hasP
     ? `<span class="tag" style="background:rgba(38,166,154,.18);color:#26a69a">${engs.join(" + ")} ✓ tervalidasi (${mkt})</span>`
@@ -336,6 +341,8 @@ function renderDetail(m) {
         <span class="posture-score" style="color:${hasP ? "#26a69a" : "var(--muted)"}">${hasP ? m.composite.toFixed(0) : "—"}</span>
         <span style="color:var(--muted);font-size:11px">${hasP ? "/100 · hanya engine lolos backtest rigor (edge kecil, bukan jaminan)" : "tidak tersedia — belum ada edge terukur utk market ini (jujur)"}</span>
       </div>
+      ${hasP && m.shortvol != null ? `<div class="blk-hd" style="margin-top:9px;color:#26a69a">Penyetir skor · tervalidasi (sector-neutral)</div>
+      <div class="subrow"><span class="sk">Short-volume${m.shortvol_svr5 != null ? ` · ${(m.shortvol_svr5 * 100).toFixed(0)}% vol jual-pendek 5h` : ""}</span><div class="bar"><div class="fill" style="left:0;width:${Math.max(0, Math.min(100, m.shortvol))}%;background:#26a69a"></div></div><span class="sv">${Math.round(m.shortvol)}</span></div>` : ""}
       <div class="blk-hd" style="margin-top:9px;color:var(--faint)">Konteks teknikal · deskriptif (tidak menyetir skor)</div>
       ${subBar("Reversal 1M", mrc.reversal)}
       ${subBar("Oversold RSI", mrc.oversold)}
