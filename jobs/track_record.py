@@ -79,7 +79,10 @@ def build_panels(con, validated: set[str] | None = None):
 
     # Short-volume panel: skor (1-SVR5)*100 dgn LAG 1 (anti look-ahead FINRA),
     # di-align ke hari perdagangan lalu sector-neutralize per tanggal.
-    svl = pd.DataFrame(50.0, index=cl_p.index, columns=cl_p.columns)
+    # Audit fix: simbol/hari TANPA data dibiarkan NaN — dulu placeholder 50
+    # mencemari mean sektor & diberi bobot penuh, beda dari produksi yang
+    # men-skip skor tanpa data.
+    svl = pd.DataFrame(np.nan, index=cl_p.index, columns=cl_p.columns)
     sv = con.execute("SELECT symbol, date, short_vol, total_vol FROM short_volume").df()
     if not sv.empty:
         sv["date"] = pd.to_datetime(sv["date"])
@@ -88,12 +91,11 @@ def build_panels(con, validated: set[str] | None = None):
                 continue
             gg = g.set_index("date").sort_index()
             svr5 = (gg["short_vol"] / gg["total_vol"]).clip(0, 1).rolling(5, min_periods=3).mean().shift(1)
-            lvl = ((1 - svr5) * 100).clip(0, 100).reindex(cl_p.index).ffill(limit=5)
-            svl[s] = lvl.fillna(50.0)
+            svl[s] = ((1 - svr5) * 100).clip(0, 100).reindex(cl_p.index).ffill(limit=5)
         for secname in set(sec.values()):
             cols = [c for c in svl.columns if sec[c] == secname]
             if cols:
-                m = svl[cols].mean(axis=1)
+                m = svl[cols].mean(axis=1)  # skipna: hanya simbol ber-data
                 svl[cols] = (50 + svl[cols].sub(m, axis=0)).clip(0, 100)
 
     panels = {"mean_reversion": mr_p, "event_drift": ed_neu,
@@ -103,8 +105,11 @@ def build_panels(con, validated: set[str] | None = None):
         print("[track] TIDAK ada engine tervalidasi (US) — simulasi pakai event_drift "
               "sebagai fallback deskriptif TIDAK dilakukan; kembalikan panel kosong")
         return pd.DataFrame(), cl_p
-    wsum = sum(SCORE_WEIGHTS[e] for e in use)
-    comp = sum(SCORE_WEIGHTS[e] * panels[e] for e in use) / wsum
+    # Renormalisasi per-sel atas engine yang PUNYA data (paritas composite.combine:
+    # simbol tanpa short-volume dinilai dari engine tervalidasi sisanya).
+    num = sum(panels[e].fillna(0.0) * SCORE_WEIGHTS[e] for e in use)
+    den = sum(panels[e].notna() * SCORE_WEIGHTS[e] for e in use)
+    comp = num / den.where(den > 0)
     print(f"[track] composite simulasi = {sorted(use)} (identik dgn produksi)")
     return comp, cl_p
 
