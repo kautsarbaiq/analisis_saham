@@ -14,9 +14,12 @@ from src.storage import db
 
 
 def _top(con, market: str, n: int) -> list[tuple]:
+    # Buang skor yang tertinggal >7 hari dari batch terbaru (opini rezim lama) —
+    # konsisten dgn service dashboard & export_snapshot.
     return con.execute(
         "SELECT symbol, total, breakdown, as_of FROM composite_scores "
         "WHERE total IS NOT NULL AND market = ? "
+        "AND as_of >= (SELECT max(as_of) FROM composite_scores) - INTERVAL 7 DAY "
         "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1 "
         "ORDER BY total DESC LIMIT ?", [market, n],
     ).fetchall()
