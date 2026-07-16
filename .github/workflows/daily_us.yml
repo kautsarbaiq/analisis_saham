@@ -1,7 +1,12 @@
 # Otomatisasi harian US — GRATIS via GitHub Actions.
-# Strategi $0 tanpa storage eksternal: runner ephemeral menarik harga segar tiap run,
-# skor pakai vonis backtest STATIS (config/validation.json), lalu COMMIT BALIK snapshot
+# Strategi $0: runner ephemeral menarik harga segar tiap run, skor pakai vonis
+# backtest STATIS (config/validation.json), lalu COMMIT BALIK snapshot
 # (snapshots/latest.json) ke repo sebagai rekam jejak harian + sumber dashboard hosted.
+# DB DuckDB di-cache antar-run (actions/cache, tetap $0) agar histori short-volume
+# FINRA tidak diunduh ulang 5 tahun tiap hari — cukup inkremental hari yang kurang.
+# Audit fix: dulu shortvol TIDAK pernah di-ingest di CI -> sinyal berbobot terbesar
+# kosong di snapshot publik; kini di-ingest (dan bila tetap gagal, engine
+# mengembalikan None sehingga composite jujur memakai engine yang tersisa).
 # Catatan: backtest 5 th dijalankan terpisah/lokal (sesekali), bukan tiap hari.
 name: daily-us
 
@@ -16,7 +21,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 50      # run perdana ingest FINRA 5 th (~20 mnt); selanjutnya cepat
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,10 +31,28 @@ jobs:
       - name: Install deps (inti, tanpa torch/FinBERT)
         run: pip install duckdb pandas numpy yfinance pyarrow requests python-dotenv
 
+      - name: Restore cache DB (histori short-volume FINRA)
+        uses: actions/cache/restore@v4
+        with:
+          path: data/bandar.duckdb
+          key: bandar-db-${{ github.run_id }}
+          restore-keys: bandar-db-
+
+      - name: Ingest short volume FINRA (inkremental — hanya bulan yang kurang)
+        continue-on-error: true   # rate-limit CDN? snapshot tetap jujur (engine -> None)
+        run: python -m jobs.shortvol_ingest
+
       - name: Tarik harga + skor (vonis per-market dari config/validation.json) + snapshot
         run: |
           python -c "from jobs.daily_us import run; run(period='2y', with_fundamentals=False)"
           python -m jobs.export_snapshot
+
+      - name: Save cache DB
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/bandar.duckdb
+          key: bandar-db-${{ github.run_id }}
 
       # Screener di runner yang SAMA (audit fix: dulu workflow terpisah tanpa DB
       # -> gagal 100%). Tanpa secrets Telegram, hanya tercetak di log.
