@@ -35,10 +35,13 @@ def export_validation(con) -> None:
 def export_snapshot(con, top: int = 50) -> None:
     # Audit fix: (1) hanya skor TERBARU per simbol (dulu mencampur as_of basi lintas
     # tanggal); (2) US & IDX dipisah (skala composite beda: blend multi-engine vs
-    # engine tunggal — tidak apple-to-apple dalam satu ranking).
+    # engine tunggal — tidak apple-to-apple dalam satu ranking); (3) simbol yang
+    # skornya tertinggal >7 hari dari batch terbaru DIBUANG — itu opini rezim lama
+    # (mis. simbol berhenti ter-skor), bukan skor "terkini".
     rows = con.execute(
         "SELECT symbol, total, breakdown, confidence, market, as_of FROM composite_scores "
         "WHERE total IS NOT NULL "
+        "AND as_of >= (SELECT max(as_of) FROM composite_scores) - INTERVAL 7 DAY "
         "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1 "
         "ORDER BY total DESC"
     ).fetchall()
