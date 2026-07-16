@@ -4,7 +4,7 @@
 > (event-study), dan bandarmology — dengan backtesting jujur dan track-record yang
 > menelanjangi akurasinya sendiri.
 
-**Status:** `Fase 0-3 TERIMPLEMENTASI & diaudit. 1 engine tervalidasi: event_drift (PEAD proxy) US h63. Semua engine lain berjalan tapi bobot composite-nya 0 (gagal validasi rigor per-market).`
+**Status:** `Fase 0-3 TERIMPLEMENTASI & diaudit (2x audit multi-agent). 2 sinyal independen tervalidasi US: shortvol_level (FINRA short volume, h21+h63 — terkuat) + event_drift (PEAD proxy, h63). Engine lain berjalan deskriptif dengan bobot composite 0 (gagal validasi rigor per-market); IDX belum ada yang lolos.`
 
 ---
 
@@ -53,6 +53,7 @@ Detail: [docs/01_architecture.md](docs/01_architecture.md)
 | Harga US/IDX | `yfinance`, Stooq |
 | Fundamental US | SEC EDGAR API |
 | Insider | SEC Form 4 / bulk Form 345 (EDGAR, public domain) |
+| Short volume harian US | FINRA Reg SHO (CDN publik, tanpa API key) |
 | Makro | FRED API |
 | Berita | GDELT, RSS (`feedparser`), NewsAPI free |
 | NLP sentimen | FinBERT / VADER (lokal) + Groq/Gemini free-tier |
@@ -112,16 +113,22 @@ Setelah backtest dengan harga ter-adjust, kuantil cross-sectional per-tanggal,
 walk-forward out-of-sample, dan sector-neutralization
 ([config/validation.json](config/validation.json)):
 
-- **TERVALIDASI (satu-satunya):** `event_drift` US h63 (PEAD proxy) —
-  sector-neutral +0.56%/63d (t 6.4); versi raw juga lolos.
+- **TERVALIDASI — `shortvol_level`** (FINRA daily short volume; skor `(1−SVR5)×100`,
+  hipotesis a-priori, lag-1 publikasi): US sector-neutral **+0.39%/21d (t 9.8)** dan
+  **+1.67%/63d (t 23.9)**; kuintil monotonik; lolos uji adversarial lag & penny-stock.
+  Sinyal terkuat (bobot 0.30). `shortvol_chg` juga lolos h63 tapi sengaja tidak
+  diproduksi. *Catatan: ini short VOLUME harian, bukan short INTEREST bi-mingguan.*
+- **TERVALIDASI — `event_drift`** US h63 (PEAD proxy) — sector-neutral +0.56%/63d
+  (t 6.4); versi raw juga lolos.
 - **DITOLAK:** mean_reversion (US & IDX — edge lama ternyata artefak kuantil pooled),
   insider (t 1.25 pada uji non-overlap), fundamental, technical/momentum (edge ~0),
   low_volatility, bandarmology-proxy (justru kontrarian di IDX).
 - **IDX: nol engine tervalidasi** → composite IDX sengaja kosong (jujur, bukan bug).
 
 **Track record** ([jobs/track_record.py](jobs/track_record.py)): simulasi portofolio
-composite dinamis (identik produksi, hanya engine tervalidasi), long-only bulanan
-top-20, NET 15 bps: **+138% vs benchmark equal-weight +70.9%** (4.1 th, Sharpe 1.04).
+composite dinamis (identik produksi — 2 sinyal tervalidasi, renormalisasi atas engine
+ber-data), long-only bulanan top-20, NET 15 bps: **+125.3% vs benchmark equal-weight
++75.1%** (4.2 th, Sharpe 1.04, hit-rate 58% vs benchmark).
 *Caveat: universe mengandung survivorship bias dan periode uji didominasi rezim bull —
 angka ini batas atas optimis, bukan janji.*
 
@@ -132,9 +139,11 @@ angka ini batas atas optimis, bukan janji.*
 ```bash
 uv venv --python 3.12 .venv          # atau: python -m venv .venv
 uv pip install --python .venv -r requirements.txt
+python -m jobs.shortvol_ingest       # histori short volume FINRA (run perdana ~20 mnt; resumable)
 python -m jobs.daily_us              # tarik harga+SEC, hitung skor (~12 mnt, 548 saham US+IDX)
 # Validasi engine (sesekali, bukan harian — butuh histori penuh):
 python -m jobs.backtest_factor event_drift_score event_drift 21,63 US
+python -m jobs.backtest_shortvol     # vonis short-volume (hipotesis a-priori)
 python -m jobs.backtest_idx          # vonis per-market IDX
 python -m jobs.track_record          # simulasi portofolio (composite = engine tervalidasi)
 .venv/bin/uvicorn app.server:app --port 8000    # dashboard -> http://localhost:8000

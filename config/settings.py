@@ -50,8 +50,10 @@ WALK_FORWARD_FOLDS = 5
 
 # Bobot composite score (Lapisan 6). Dijumlahkan jadi 1.0.
 # CATATAN: bobot ini HIPOTESIS AWAL; hanya engine yang LULUS backtest (tabel
-# `validation`) yang benar-benar diberi bobot di composite. Saat ini hanya
-# `mean_reversion` yang tervalidasi -> ia menyetir skor prediktif.
+# `validation`, per-market) yang diberi bobot, lalu direnormalisasi atas engine
+# tervalidasi yang HADIR. Tervalidasi saat ini (US): shortvol_level & event_drift.
+# mean_reversion/insider/fundamental DICABUT oleh audit metodologi; IDX belum
+# ada yang lolos -> composite IDX = None (jujur).
 SCORE_WEIGHTS = {
     "shortvol_level": 0.30,   # sinyal terkuat tervalidasi (short seller ter-informasi)
     "event_drift": 0.25,      # PEAD proxy, tervalidasi

@@ -9,7 +9,8 @@ sudah lewat backtest sebelum dipercaya.
 
 | Engine | File | Status |
 |---|---|---|
-| Event drift (PEAD proxy) | `src/engines/event_study.py` (fungsi `score`) | ✅ **TERVALIDASI** — US h63, satu-satunya |
+| Short volume (FINRA Reg SHO) | `src/engines/shortvol_engine.py` | ✅ **TERVALIDASI** — US h21 & h63, sinyal terkuat (bobot 0.30) |
+| Event drift (PEAD proxy) | `src/engines/event_study.py` (fungsi `score`) | ✅ **TERVALIDASI** — US h63 |
 | Technical / momentum | `src/engines/technical_engine.py` | ❌ Ditolak (edge ~0) — deskriptif |
 | Mean reversion | `src/engines/mean_reversion_engine.py` | ❌ Ditolak US & IDX (edge lama = artefak kuantil pooled) — deskriptif |
 | Insider | `src/engines/insider_engine.py` | ❌ Ditolak (t 1.25 non-overlap) — tetap tampil sbg info |
@@ -80,7 +81,7 @@ Tiga sub-modul dengan status berbeda:
 `event_study.evaluate()` (forecast probabilistik per-event, metodologi
 [04_event_study.md](04_event_study.md)) juga masih 🚧 **STUB**.
 
-### Event Drift / PEAD proxy — ✅ SATU-SATUNYA engine tervalidasi
+### Event Drift / PEAD proxy — ✅ TERVALIDASI (US h63)
 
 Proxy *post-earnings announcement drift*: deteksi gap harga+volume abnormal
 (proxy event laba/berita material) lalu skor arah drift lanjutannya.
@@ -91,6 +92,28 @@ Proxy *post-earnings announcement drift*: deteksi gap harga+volume abnormal
 - Karena edge-nya alpha **dalam-sektor**, skor event_drift di produksi
   di-sector-neutralkan cross-sectional per market sebelum masuk composite
   (lihat `jobs/daily_us.py`).
+
+### Short Volume (`shortvol_engine.py`) — ✅ TERVALIDASI (US h21 & h63), sinyal terkuat
+
+**Input:** tabel `short_volume` — FINRA Reg SHO **daily short volume**
+(`src/ingestion/short_volume.py`, file CNMS harian gratis dari CDN FINRA;
+`jobs/shortvol_ingest.py` inkremental per-bulan + resumable). US-only.
+
+Skor = `(1 − SVR5) × 100` — SVR5 = rata-rata 5 hari rasio short (short_vol /
+total_vol). Rasio short **rendah** = bullish (short seller ter-informasi;
+Boehmer, Jones & Zhang 2008). Hipotesis dikunci **a-priori** sebelum melihat
+hasil (`jobs/backtest_shortvol.py`).
+
+- **Vonis US (gerbang sector-neutral):** h21 +0.39% (t 9.8), h63 +1.67% (t 23.9);
+  kuintil monotonik sempurna; lolos uji adversarial lag-1/2/5 & drop saham <$10.
+- **Paritas produksi (non-negosiasi):** engine hanya memakai data ber-tanggal
+  `< as_of` (lag-1 publikasi FINRA), window ≤12 hari kalender, minimal 3
+  observasi; data kurang/basi → **tidak ada skor** (None, bukan placeholder 50).
+  Di produksi di-sector-neutralkan seperti event_drift.
+- `shortvol_chg` (H2, perubahan vs baseline 63h) juga lolos h63 tapi **sengaja
+  tidak diproduksi** — shortvol_level dipilih sebagai bentuk produksi tunggal.
+- **Catatan jujur:** ini short **VOLUME** (aliran harian), bukan short
+  **INTEREST** (posisi outstanding, bi-mingguan, butuh API key).
 
 ### Insider Engine (`insider_engine.py`) — ❌ DITOLAK, tampil sebagai info
 

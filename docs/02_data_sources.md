@@ -11,6 +11,7 @@
 | Harga intraday | `yfinance` (15m delay) | Sedang | ❌ | Real-time butuh data berbayar |
 | Fundamental | **SEC EDGAR API** | Institusional | ✅ **Public domain** | Sumber resmi; aman dijual |
 | Insider (SEC Form 4 / bulk Form 345) | **SEC EDGAR** | Institusional | ✅ **Public domain** | Aman komersial. Bulk kuartalan (lag ~1 kuartal) + real-time per emiten (Form 4 XML) — `src/ingestion/insider.py` |
+| Short volume harian | **FINRA Reg SHO** (CDN, file CNMS pipe-delimited, tanpa API key) | Institusional | ✅ publik | `src/ingestion/short_volume.py`. Simbologi slash FINRA (BRK/B) dipetakan ke notasi yfinance (BRK-B). Ini short **VOLUME** harian, BUKAN short **interest** bi-mingguan (yang butuh API key) — publikasi D terbit ~D+1 → produksi & backtest memakai lag-1 |
 | Makro | **FRED API** | Institusional | ✅ | Wajib atribusi |
 | Estimasi analis | — | — | ❌ | Tidak ada sumber gratis bersih |
 

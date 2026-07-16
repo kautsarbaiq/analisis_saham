@@ -42,7 +42,10 @@ hanya membaca. Tidak ada layanan real-time mahal kecuali nanti di fase upgrade.
 Sesuai implementasi nyata `jobs/daily_us.py`:
 
 ```
-GitHub Action (cron ~04:00 WIB) / launchd lokal
+GitHub Action (cron ~04:00 WIB, cache DuckDB antar-run) / launchd lokal
+  └─ jobs/shortvol_ingest.py  → tabel short_volume (FINRA Reg SHO harian,
+                               inkremental per-bulan + resumable; di lokal
+                               dipanggil dari jobs/refresh.py)
   └─ jobs/daily_us.py
        1. ingestion.prices.fetch_bulk(universe US+IDX)        → tabel prices (upsert)
        2. ingestion.fundamentals.fetch(simbol US)  [opsional]  → tabel fundamentals (SEC EDGAR)
@@ -50,13 +53,17 @@ GitHub Action (cron ~04:00 WIB) / launchd lokal
           TER-ADJUST split/dividen (DuckDB `db.ADJ_PRICES_SQL`):
             pass 1  skor mentah per simbol: technical · mean_reversion ·
                     event_drift · insider (US-only, bulk Form 345 + cek
-                    staleness) · fundamental (bila ada data SEC)
-            antara  event_drift di-sector-neutralkan cross-sectional
-                    PER MARKET (demean per sektor GICS utk US; grup IDX
-                    terpisah) — edge-nya tervalidasi sbg alpha dalam-sektor
+                    staleness) · shortvol_level (US-only, hanya data < as_of
+                    lag-1; data kurang/basi → None, TANPA placeholder) ·
+                    fundamental (bila ada data SEC)
+            antara  event_drift & shortvol_level di-sector-neutralkan
+                    cross-sectional PER MARKET (demean per sektor GICS utk US;
+                    grup IDX terpisah) — edge keduanya tervalidasi dlm bentuk
+                    sector-neutral
             pass 2  scoring.composite.combine — HANYA engine yang tervalidasi
                     utk market ybs (tabel `validation` per-market; fallback
-                    config/validation.json). Tak ada engine valid → total None.
+                    config/validation.json), direnormalisasi atas engine yang
+                    HADIR. Tak ada engine valid → total None.
        4. upsert → tabel engine_scores + composite_scores
   └─ jobs/screener.py        → Top-N per market → delivery.alerts (Telegram, opsional)
   └─ jobs/export_snapshot.py → snapshots/latest.json (top_us/top_idx)

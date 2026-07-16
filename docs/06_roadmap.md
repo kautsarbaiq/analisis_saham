@@ -7,11 +7,13 @@ tapi karena terbukti bekerja lewat angka.
 
 Mayoritas "edge" yang awalnya terlihat **menguap begitu rigor dinaikkan**: harga
 ter-adjust split/dividen, kuantil cross-sectional per-tanggal (bukan pooled),
-walk-forward out-of-sample, sector-neutralization, dan uji non-overlap. Yang tersisa
-setelah semua saringan itu hanya **satu**: `event_drift` US h63 (PEAD proxy). Ini
-bukan kegagalan proses — justru inilah gunanya Lapisan 4: engine yang gagal tetap
-tampil deskriptif dengan bobot composite 0, dan IDX yang belum punya engine valid
-menghasilkan composite kosong secara jujur.
+walk-forward out-of-sample, sector-neutralization, dan uji non-overlap. Yang lolos
+semua saringan itu kini **dua sinyal independen**: `shortvol_level` US h21+h63
+(FINRA short volume — terkuat, hipotesis a-priori + lolos uji adversarial) dan
+`event_drift` US h63 (PEAD proxy). Ini bukan kegagalan proses — justru inilah
+gunanya Lapisan 4: engine yang gagal tetap tampil deskriptif dengan bobot
+composite 0, dan IDX yang belum punya engine valid menghasilkan composite kosong
+secara jujur.
 
 ## Fase 0 — Fondasi ✅ SELESAI
 **Bangun:** struktur proyek, DuckDB + skema, ingestion harga US, scheduler GitHub Actions.
@@ -41,7 +43,9 @@ event-study engine, alert Telegram, halaman Track Record.
 - Prediksi mulai dicatat & dievaluasi otomatis.
 
 **Realisasi:** event-study **proxy** (`event_drift`, PEAD dari gap harga+volume)
-TERVALIDASI US h63 — satu-satunya engine lolos. Berita live (Yahoo RSS + FinBERT)
+TERVALIDASI US h63. Sinyal independen ke-2 menyusul: `shortvol_level` (FINRA
+short volume, US h21+h63, hipotesis a-priori) — lihat
+[03_engines.md](03_engines.md). Berita live (Yahoo RSS + FinBERT)
 tayang deskriptif tapi **belum di-backtest**; classifier event (`nlp/classify.py`)
 dan `event_study.evaluate()` masih stub. Track record composite berjalan
 (`jobs/track_record.py`).
