@@ -325,24 +325,28 @@ function renderDetail(m) {
   const mrc = m.mr_comp || {};
   const mkt = mktOf(m.symbol);
   // Hanya engine yg BENAR-BENAR menyetir composite saham ini: tervalidasi ∩ ada di
-  // breakdown produksi (mis. shortvol_chg tervalidasi tapi tak diproduksi -> dibuang).
+  // breakdown produksi. Audit fix: tanpa fallback "breakdown kosong -> semua" —
+  // fallback lama bisa mengklaim engine yang tak pernah diproduksi (shortvol_chg).
   const bdKeys = Object.keys(m.composite_breakdown || {});
   const engs = (VAL[mkt] || [])
-    .filter((e) => bdKeys.length === 0 || bdKeys.includes(e))
+    .filter((e) => bdKeys.includes(e))
     .map((e) => ENG_NAMES[e] || e);
   const hasP = m.composite != null && engs.length > 0;
+  const lowConf = hasP && m.composite_conf === "low";
   const predTag = hasP
     ? `<span class="tag" style="background:rgba(38,166,154,.18);color:#26a69a">${engs.join(" + ")} ✓ tervalidasi (${mkt})</span>`
-    : `<span class="tag unval">belum ada engine tervalidasi (${mkt})</span>`;
+    : `<span class="tag unval">${m.composite_stale ? "skor lama (basi) disembunyikan — jujur" : `belum ada engine tervalidasi (${mkt})`}</span>`;
+  const asOf = m.composite_as_of ? ` · per ${m.composite_as_of}` : "";
   document.getElementById("detail").innerHTML = `
     <div>
       <div class="posture-hd"><span class="blk-hd" style="margin:0;color:#26a69a">Skor Prediktif</span>${predTag}</div>
       <div style="display:flex;align-items:baseline;gap:8px">
         <span class="posture-score" style="color:${hasP ? "#26a69a" : "var(--muted)"}">${hasP ? m.composite.toFixed(0) : "—"}</span>
-        <span style="color:var(--muted);font-size:11px">${hasP ? "/100 · hanya engine lolos backtest rigor (edge kecil, bukan jaminan)" : "tidak tersedia — belum ada edge terukur utk market ini (jujur)"}</span>
+        <span style="color:var(--muted);font-size:11px">${hasP ? `/100 · hanya engine lolos backtest rigor (edge kecil, bukan jaminan)${asOf}` : "tidak tersedia — belum ada edge terukur utk market ini (jujur)"}</span>
       </div>
+      ${lowConf ? `<div style="color:#f0b90b;font-size:10px;margin-top:3px">⚠ confidence rendah — ada sinyal penyetir yang datanya telat/stale</div>` : ""}
       ${hasP && m.shortvol != null ? `<div class="blk-hd" style="margin-top:9px;color:#26a69a">Penyetir skor · tervalidasi (sector-neutral)</div>
-      <div class="subrow"><span class="sk">Short-volume${m.shortvol_svr5 != null ? ` · ${(m.shortvol_svr5 * 100).toFixed(0)}% vol jual-pendek 5h` : ""}</span><div class="bar"><div class="fill" style="left:0;width:${Math.max(0, Math.min(100, m.shortvol))}%;background:#26a69a"></div></div><span class="sv">${Math.round(m.shortvol)}</span></div>` : ""}
+      <div class="subrow"><span class="sk">Short-volume${m.shortvol_svr5 != null ? ` · ${(m.shortvol_svr5 * 100).toFixed(0)}% vol jual-pendek 5h` : ""}${m.shortvol_conf === "low" ? " · ⚠ telat" : ""}</span><div class="bar"><div class="fill" style="left:0;width:${Math.max(0, Math.min(100, m.shortvol))}%;background:#26a69a"></div></div><span class="sv">${Math.round(m.shortvol)}</span></div>` : ""}
       <div class="blk-hd" style="margin-top:9px;color:var(--faint)">Konteks teknikal · deskriptif (tidak menyetir skor)</div>
       ${subBar("Reversal 1M", mrc.reversal)}
       ${subBar("Oversold RSI", mrc.oversold)}

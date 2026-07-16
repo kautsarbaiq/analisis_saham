@@ -106,18 +106,19 @@ def _composite_map(con) -> dict:
     """Skor prediktif composite terbaru per simbol (dari composite_scores)."""
     try:
         rows = con.execute(
-            "SELECT symbol, total, breakdown, confidence FROM composite_scores "
+            "SELECT symbol, total, breakdown, confidence, as_of FROM composite_scores "
             "QUALIFY row_number() OVER (PARTITION BY symbol ORDER BY as_of DESC) = 1"
         ).fetchall()
     except Exception:
         return {}
     out = {}
-    for sym, total, bd, conf in rows:
+    for sym, total, bd, conf, as_of in rows:
         try:
             b = json.loads(bd) if bd else {}
         except Exception:
             b = {}
-        out[sym] = {"total": _safe(total), "breakdown": b, "confidence": conf}
+        out[sym] = {"total": _safe(total), "breakdown": b, "confidence": conf,
+                    "as_of": as_of}
     return out
 
 
@@ -152,6 +153,8 @@ def watchlist() -> list[dict]:
         imap = _engine_map(con, "insider")
         svmap = _engine_map(con, "shortvol_level")
         cmap = _composite_map(con)
+        as_ofs = [v["as_of"] for v in cmap.values() if v.get("as_of")]
+        max_as_of = max(as_ofs) if as_ofs else None
         # Satu query untuk semua harga (jauh lebih cepat utk universe 500+).
         big = con.execute(
             "SELECT symbol, date, open, high, low, close, adj_close, volume "
@@ -184,11 +187,21 @@ def watchlist() -> list[dict]:
             if svm:
                 m["shortvol"] = svm["score"]
                 m["shortvol_svr5"] = (svm["components"] or {}).get("svr5")
+                m["shortvol_conf"] = svm["confidence"]
             c = cmap.get(s)
             if c:
-                m["composite"] = c["total"]
-                m["composite_conf"] = c["confidence"]
-                m["composite_breakdown"] = c["breakdown"]
+                # Audit fix: composite yang as_of-nya tertinggal >7 hari dari batch
+                # terbaru adalah opini rezim lama (mis. simbol berhenti ter-skor) —
+                # jangan disajikan sebagai skor prediktif "terkini".
+                stale = (max_as_of is not None and c["as_of"] is not None
+                         and (max_as_of - c["as_of"]).days > 7)
+                m["composite_as_of"] = str(c["as_of"]) if c["as_of"] else None
+                if stale:
+                    m["composite_stale"] = True
+                else:
+                    m["composite"] = c["total"]
+                    m["composite_conf"] = c["confidence"]
+                    m["composite_breakdown"] = c["breakdown"]
             out.append(m)
     finally:
         con.close()
