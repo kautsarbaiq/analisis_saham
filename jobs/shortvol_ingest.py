@@ -48,7 +48,10 @@ def month_complete(days_present: int, lo: date, hi: date) -> bool:
 def run(force: bool = False) -> None:
     con = db.connect(); db.init_schema(con)
     uni = set(US_UNIVERSE)
-    today = date.today()
+    # File FINRA hari-D terbit ~malam D waktu ET — file "hari ini" hampir pasti
+    # belum ada (CDN menjawab 403 dan retry backoff membuang ~18 dtk). Tarik
+    # sampai kemarin saja; engine pun hanya butuh data < as_of (lag-1).
+    today = date.today() - timedelta(days=1)
 
     have: dict[str, int] = dict(con.execute(
         "SELECT strftime(date, '%Y-%m'), count(DISTINCT date) "

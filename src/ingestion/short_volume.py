@@ -54,7 +54,11 @@ def _fetch_day(d: date, fmap: dict[str, str]) -> list[dict]:
             if e.code in (403, 429) and attempt < 3:  # rate-limit CDN -> backoff
                 time.sleep(3 * (attempt + 1))
                 continue
-            print(f"[shortvol] {ds}: HTTP {e.code} — GAGAL (bukan libur), dilewati")
+            # Temuan empiris: CDN FINRA menjawab 403 (bukan 404) utk file yang
+            # tak ada — hari libur bursa / file hari ini yang belum terbit —
+            # sehingga tak terbedakan dari rate-limit. Log jujur apa adanya.
+            print(f"[shortvol] {ds}: HTTP {e.code} — file tak tersedia "
+                  f"(libur bursa/belum terbit/rate-limit), dilewati")
             return []
         except Exception as exc:  # noqa: BLE001
             if attempt < 3:
