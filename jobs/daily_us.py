@@ -4,9 +4,10 @@ Pipeline nyata (lihat docs/01_architecture.md):
   1. Harga bulk universe US (S&P 500) + IDX (LQ45) -> tabel prices (upsert).
   2. Opsional: fundamental SEC EDGAR untuk simbol US -> tabel fundamentals.
   3. _score_all (market-aware, sinyal dari harga TER-ADJUST via db.ADJ_PRICES_SQL):
-     technical / mean_reversion / event_drift / insider (US-only) / fundamental;
-     event_drift di-sector-neutralkan cross-sectional per market; composite
-     hanya atas engine tervalidasi untuk market ybs (tabel `validation`,
+     technical / mean_reversion / event_drift / insider (US-only) /
+     shortvol_level (US-only, FINRA; None bila data tak cukup) / fundamental;
+     event_drift & shortvol_level di-sector-neutralkan cross-sectional per market;
+     composite hanya atas engine tervalidasi untuk market ybs (tabel `validation`,
      fallback config/validation.json) -> engine_scores + composite_scores.
 
 Harus IDEMPOTENT: aman dijalankan ulang untuk tanggal yang sama (upsert by key).
@@ -106,8 +107,13 @@ def _score_all(con, symbols: list[str]) -> None:
         if market_of(sym) == "US":  # insider & short-volume hanya utk emiten AS
             el.append(insider_engine.score(sym, ins_counts.get(sym, 0), el[0].as_of,
                                            stale=ins_stale))
-            el.append(shortvol_engine.score(sym, sv_by_sym.get(sym), el[0].as_of,
-                                            stale=sv_stale))
+            # None bila data tak cukup/terlalu tua relatif as_of (paritas lag-1 dgn
+            # backtest) -> TIDAK ikut composite maupun mean sektor. Audit fix:
+            # versi lama memberi placeholder 50 yang mencemari demean sektor dan
+            # menyetir composite berbobot 0.30 tanpa data.
+            svs = shortvol_engine.score(sym, sv_by_sym.get(sym), el[0].as_of)
+            if svs is not None:
+                el.append(svs)
         fdf = con.execute(
             "SELECT period, metric, value FROM fundamentals WHERE symbol = ?", [sym]
         ).df()
