@@ -70,6 +70,18 @@ def load_sectors() -> dict[str, str]:
     return out
 
 
+def load_names() -> dict[str, str]:
+    """Peta ticker -> nama emiten (dari sp500.csv). Dipakai lapisan berita untuk
+    memverifikasi bahwa headline benar-benar menyebut emitennya — feed RSS
+    per-ticker Yahoo sering melampirkan berita yang hanya bersinggungan."""
+    out: dict[str, str] = {}
+    if _SP500_FILE.exists():
+        with open(_SP500_FILE) as f:
+            out = {r["symbol"].strip().upper(): (r.get("name") or "").strip()
+                   for r in csv.DictReader(f) if r.get("symbol") and r.get("name")}
+    return out
+
+
 US_UNIVERSE: list[str] = _load_sp500() or _FALLBACK_US
 
 # --- IDX (Fase 3): LQ45 — saham paling likuid di BEI (suffix .JK utk yfinance) ---
