@@ -22,6 +22,15 @@ def main() -> None:
     # seluruh histori yang sudah ada di DB.
     run(period="1mo", with_fundamentals=False)
 
+    # Digest berita portofolio (butuh skor terbaru -> dijalankan SETELAH scoring).
+    # Sekaligus mengarsipkan headline ke tabel `news` agar lapisan berita bisa
+    # divonis nanti (jobs/news_forward_test.py).
+    try:
+        from jobs import news_digest
+        news_digest.run()
+    except Exception as exc:  # noqa: BLE001 — RSS eksternal, jangan gugurkan refresh
+        print(f"[refresh] news_digest dilewati: {exc}")
+
 
 if __name__ == "__main__":
     main()

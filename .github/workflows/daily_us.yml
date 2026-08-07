@@ -29,7 +29,9 @@ jobs:
           python-version: "3.12"
           cache: pip
       - name: Install deps (inti, tanpa torch/FinBERT)
-        run: pip install duckdb pandas numpy yfinance pyarrow requests python-dotenv
+        # feedparser+vaderSentiment utk digest berita; FinBERT (torch) SENGAJA
+        # tidak dipasang di CI (berat) -> sentimen otomatis fallback ke VADER.
+        run: pip install duckdb pandas numpy yfinance pyarrow requests python-dotenv feedparser vaderSentiment
 
       - name: Restore cache DB (histori short-volume FINRA)
         uses: actions/cache/restore@v4
@@ -56,6 +58,10 @@ jobs:
 
       # Screener di runner yang SAMA (audit fix: dulu workflow terpisah tanpa DB
       # -> gagal 100%). Tanpa secrets Telegram, hanya tercetak di log.
+      - name: Digest berita portofolio (arsipkan headline + snapshot)
+        continue-on-error: true   # RSS eksternal; kegagalannya tak boleh menggugurkan run
+        run: python -m jobs.news_digest
+
       - name: Screener Top-N (cetak / Telegram bila secrets di-set)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -66,6 +72,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add snapshots/latest.json
-          git commit -m "data: snapshot screener harian [skip ci]" || echo "tak ada perubahan"
+          git add snapshots/latest.json snapshots/news_digest.json
+          git commit -m "data: snapshot screener + digest berita harian [skip ci]" || echo "tak ada perubahan"
           git push || echo "push dilewati"

@@ -8,6 +8,10 @@
 
 ---
 
+> 📖 **Baru pakai? Mulai dari [docs/08_cara_pakai.md](docs/08_cara_pakai.md)** —
+> panduan pengguna: setup, alur harian, cara membaca tiap angka, dan (penting)
+> apa yang **tidak boleh** disimpulkan dari skornya.
+
 ## Prinsip non-negosiasi
 
 1. **Tidak ada opini tanpa data terukur.** Setiap sinyal wajib ter-backtest dengan
@@ -132,6 +136,20 @@ ber-data), long-only bulanan top-20, NET 15 bps: **+125.3% vs benchmark equal-we
 *Caveat: universe mengandung survivorship bias dan periode uji didominasi rezim bull —
 angka ini batas atas optimis, bukan janji.*
 
+**Uji kualitas sinyal** ([jobs/effectiveness.py](jobs/effectiveness.py)) — lebih jujur
+daripada kurva ekuitas, karena mengukur sinyalnya sendiri:
+
+| Horizon | IC | t (non-overlap) | Vonis |
+|---|---|---|---|
+| 5–21 hari | +0,006 … +0,017 | +1,1 … +1,5 | tidak signifikan |
+| **42–63 hari** | **+0,027 … +0,028** | **+2,15 / +2,36** | **signifikan ✓** (kuintil monotonik) |
+
+Hit-rate top-20 vs benchmark: **58%** (h21, CI95 44–71%) dan **37,5%** (h63, CI95 19–61%)
+— keduanya **belum** beda dari lempar koin secara statistik. Alpha rata-rata tetap positif
+karena **asimetri**: saat menang +2,81%/+5,35% vs saat kalah −1,84%/−2,16% (1,5×/2,5×).
+Artinya sistem menang lewat **besaran, bukan frekuensi** → horizon 2–3 bulan, jangan
+terkonsentrasi, jangan dinilai dari satu periode. Detail: [docs/08_cara_pakai.md §6](docs/08_cara_pakai.md).
+
 ---
 
 ## Cara Menjalankan
@@ -141,11 +159,14 @@ uv venv --python 3.12 .venv          # atau: python -m venv .venv
 uv pip install --python .venv -r requirements.txt
 python -m jobs.shortvol_ingest       # histori short volume FINRA (run perdana ~20 mnt; resumable)
 python -m jobs.daily_us              # tarik harga+SEC, hitung skor (~12 mnt, 548 saham US+IDX)
+python -m jobs.news_digest           # digest berita relevan-portofolio (config/portfolio.json)
 # Validasi engine (sesekali, bukan harian — butuh histori penuh):
 python -m jobs.backtest_factor event_drift_score event_drift 21,63 US
 python -m jobs.backtest_shortvol     # vonis short-volume (hipotesis a-priori)
 python -m jobs.backtest_idx          # vonis per-market IDX
+python -m jobs.effectiveness         # uji kualitas sinyal: IC, kuintil, hit-rate, per tahun
 python -m jobs.track_record          # simulasi portofolio (composite = engine tervalidasi)
+python -m jobs.news_forward_test     # vonis lapisan berita (butuh arsip >= 200 pasangan)
 .venv/bin/uvicorn app.server:app --port 8000    # dashboard -> http://localhost:8000
 ```
 
