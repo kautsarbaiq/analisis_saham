@@ -1,0 +1,215 @@
+{
+  "as_of": "2026-07-15",
+  "n_simbol": 501,
+  "n_hari": 1272,
+  "ic": [
+    {
+      "horizon_days": 5,
+      "ic_mean": 0.0063,
+      "ic_std": 0.0665,
+      "ic_ir": 0.095,
+      "pct_positive": 60.4,
+      "n_dates": 212,
+      "n_independent": 212,
+      "t_stat_nonoverlap": 1.38,
+      "signifikan": false
+    },
+    {
+      "horizon_days": 10,
+      "ic_mean": 0.0097,
+      "ic_std": 0.0647,
+      "ic_ir": 0.15,
+      "pct_positive": 60.7,
+      "n_dates": 211,
+      "n_independent": 106,
+      "t_stat_nonoverlap": 1.52,
+      "signifikan": false
+    },
+    {
+      "horizon_days": 21,
+      "ic_mean": 0.017,
+      "ic_std": 0.0611,
+      "ic_ir": 0.278,
+      "pct_positive": 61.7,
+      "n_dates": 209,
+      "n_independent": 53,
+      "t_stat_nonoverlap": 1.14,
+      "signifikan": false
+    },
+    {
+      "horizon_days": 42,
+      "ic_mean": 0.0267,
+      "ic_std": 0.0608,
+      "ic_ir": 0.44,
+      "pct_positive": 64.7,
+      "n_dates": 204,
+      "n_independent": 26,
+      "t_stat_nonoverlap": 2.15,
+      "signifikan": true
+    },
+    {
+      "horizon_days": 63,
+      "ic_mean": 0.0282,
+      "ic_std": 0.0631,
+      "ic_ir": 0.448,
+      "pct_positive": 66.0,
+      "n_dates": 200,
+      "n_independent": 17,
+      "t_stat_nonoverlap": 2.36,
+      "signifikan": true
+    }
+  ],
+  "kuintil": [
+    {
+      "horizon_days": 5,
+      "per_kuintil_pct": {
+        "0": 0.314,
+        "1": 0.272,
+        "2": 0.253,
+        "3": 0.294,
+        "4": 0.36
+      },
+      "spread_pct": 0.046,
+      "monotonik": false
+    },
+    {
+      "horizon_days": 10,
+      "per_kuintil_pct": {
+        "0": 0.634,
+        "1": 0.571,
+        "2": 0.563,
+        "3": 0.558,
+        "4": 0.784
+      },
+      "spread_pct": 0.15,
+      "monotonik": false
+    },
+    {
+      "horizon_days": 21,
+      "per_kuintil_pct": {
+        "0": 1.158,
+        "1": 1.207,
+        "2": 1.229,
+        "3": 1.226,
+        "4": 1.585
+      },
+      "spread_pct": 0.427,
+      "monotonik": false
+    },
+    {
+      "horizon_days": 42,
+      "per_kuintil_pct": {
+        "0": 2.404,
+        "1": 2.524,
+        "2": 2.611,
+        "3": 2.762,
+        "4": 3.457
+      },
+      "spread_pct": 1.053,
+      "monotonik": true
+    },
+    {
+      "horizon_days": 63,
+      "per_kuintil_pct": {
+        "0": 3.841,
+        "1": 3.984,
+        "2": 3.992,
+        "3": 4.486,
+        "4": 5.459
+      },
+      "spread_pct": 1.618,
+      "monotonik": true
+    }
+  ],
+  "hit_rate": {
+    "menang": 29,
+    "dari": 50,
+    "hit_rate_pct": 58.0,
+    "ci95_pct": [
+      44.2,
+      70.6
+    ],
+    "lebih_baik_dari_koin": false,
+    "alpha_rata2_pct": 0.86,
+    "alpha_saat_menang_pct": 2.81,
+    "alpha_saat_kalah_pct": -1.84,
+    "asimetri": 1.53
+  },
+  "hit_rate_per_horizon": {
+    "h21": {
+      "menang": 29,
+      "dari": 50,
+      "hit_rate_pct": 58.0,
+      "ci95_pct": [
+        44.2,
+        70.6
+      ],
+      "lebih_baik_dari_koin": false,
+      "alpha_rata2_pct": 0.86,
+      "alpha_saat_menang_pct": 2.81,
+      "alpha_saat_kalah_pct": -1.84,
+      "asimetri": 1.53
+    },
+    "h63": {
+      "menang": 6,
+      "dari": 16,
+      "hit_rate_pct": 37.5,
+      "ci95_pct": [
+        18.5,
+        61.4
+      ],
+      "lebih_baik_dari_koin": false,
+      "alpha_rata2_pct": 0.66,
+      "alpha_saat_menang_pct": 5.35,
+      "alpha_saat_kalah_pct": -2.16,
+      "asimetri": 2.48
+    }
+  },
+  "per_tahun": [
+    {
+      "tahun": 2022,
+      "n_periode": 9,
+      "strategi_pct": -0.28,
+      "benchmark_pct": -0.25,
+      "alpha_pct": -0.03,
+      "menang": 5,
+      "unggul": false
+    },
+    {
+      "tahun": 2023,
+      "n_periode": 12,
+      "strategi_pct": 2.14,
+      "benchmark_pct": 1.46,
+      "alpha_pct": 0.68,
+      "menang": 5,
+      "unggul": true
+    },
+    {
+      "tahun": 2024,
+      "n_periode": 12,
+      "strategi_pct": 3.26,
+      "benchmark_pct": 1.93,
+      "alpha_pct": 1.33,
+      "menang": 7,
+      "unggul": true
+    },
+    {
+      "tahun": 2025,
+      "n_periode": 12,
+      "strategi_pct": 1.68,
+      "benchmark_pct": 1.22,
+      "alpha_pct": 0.46,
+      "menang": 7,
+      "unggul": true
+    },
+    {
+      "tahun": 2026,
+      "n_periode": 5,
+      "strategi_pct": 4.37,
+      "benchmark_pct": 1.68,
+      "alpha_pct": 2.69,
+      "menang": 5,
+      "unggul": true
+    }
+  ]
+}
