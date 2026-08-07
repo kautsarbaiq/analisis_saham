@@ -54,6 +54,33 @@ def api_ohlc(symbol: str) -> dict:
     return data
 
 
+@app.get("/api/effectiveness")
+def api_effectiveness() -> dict:
+    """Uji efektivitas sinyal (IC, kuintil, hit-rate, per tahun) — jobs/effectiveness.py."""
+    import json
+    f = Path(__file__).parent.parent / "snapshots" / "effectiveness.json"
+    return json.loads(f.read_text()) if f.exists() else {}
+
+
+@app.get("/api/news/portfolio")
+def api_news_portfolio() -> dict:
+    """Digest berita relevan-portofolio (dari snapshot; regenerasi via jobs.news_digest).
+
+    Dibaca dari file, BUKAN fetch live: menarik puluhan RSS + FinBERT per request
+    akan membuat dashboard lambat dan membanjiri sumber gratis.
+    """
+    import json
+    f = Path(__file__).parent.parent / "snapshots" / "news_digest.json"
+    if not f.exists():
+        return {"items": [], "portofolio": {}, "status_validasi": "",
+                "hint": "jalankan: python -m jobs.news_digest"}
+    data = json.loads(f.read_text())
+    v = Path(__file__).parent.parent / "snapshots" / "news_validation.json"
+    if v.exists():
+        data["validasi_berita"] = json.loads(v.read_text())
+    return data
+
+
 @app.get("/api/news/{symbol}")
 def api_news(symbol: str) -> dict:
     from src.ingestion.news import aggregate_sentiment, fetch_rss
