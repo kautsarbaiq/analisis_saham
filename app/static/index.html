@@ -19,6 +19,7 @@
       <span class="cmd-go">GO ⏎</span>
     </div>
     <div class="status">
+      <button id="news-btn" class="tr-btn">✦ BERITA</button>
       <button id="tr-btn" class="tr-btn">◷ TRACK RECORD</button>
       <span class="live"><i class="dot"></i> US · EOD</span>
       <span id="clock">--:--:--</span>
@@ -71,6 +72,18 @@
       <div class="tr-chartwrap"><canvas id="tr-canvas"></canvas></div>
       <div class="tr-legend"><span><i style="background:#26a69a"></i>Strategi (net)</span><span><i style="background:#6a7888"></i>Strategi (gross)</span><span><i style="background:#46d3ff"></i>Benchmark (EW universe)</span></div>
       <div id="tr-verdict" class="tr-verdict"></div>
+      <div id="eff-body" class="eff-body"></div>
+    </div>
+  </div>
+
+  <div id="news-overlay" class="tr-overlay" style="display:none">
+    <div class="tr-modal">
+      <div class="tr-head">
+        <span>✦ BERITA BERDAMPAK — relevan dengan portofolio Anda</span>
+        <button id="news-close" class="tr-close">✕</button>
+      </div>
+      <div id="news-port" class="news-port"></div>
+      <div id="news-body" class="news-body"><div class="hint">Memuat…</div></div>
     </div>
   </div>
 
