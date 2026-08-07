@@ -49,6 +49,78 @@ async function boot() {
   document.getElementById("tr-overlay").addEventListener("click", (e) => {
     if (e.target.id === "tr-overlay") closeTrackRecord();
   });
+
+  document.getElementById("news-btn").addEventListener("click", openNews);
+  document.getElementById("news-close").addEventListener("click", closeNews);
+  document.getElementById("news-overlay").addEventListener("click", (e) => {
+    if (e.target.id === "news-overlay") closeNews();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { closeNews(); closeTrackRecord(); }
+  });
+}
+
+function closeNews() { document.getElementById("news-overlay").style.display = "none"; }
+
+const REL_STYLE = {
+  dimiliki: ["#26a69a", "DIMILIKI"], dipantau: ["#46d3ff", "DIPANTAU"],
+  disebut: ["#d2a24a", "DISEBUT"], sesektor: ["#9aa7b4", "SESEKTOR"],
+  pasar: ["#6a7888", "PASAR"],
+};
+
+async function openNews() {
+  const ov = document.getElementById("news-overlay");
+  ov.style.display = "flex";
+  const body = document.getElementById("news-body");
+  const port = document.getElementById("news-port");
+  body.innerHTML = '<div class="hint">Memuat…</div>';
+  try {
+    const d = await (await fetch("/api/news/portfolio")).json();
+    if (!d.items || !d.items.length) {
+      port.innerHTML = "";
+      body.innerHTML = `<div class="hint">Belum ada digest. Jalankan <code>python -m jobs.news_digest</code>` +
+        ` (isi dulu <code>config/portfolio.json</code> agar berita disaring ke saham Anda).</div>`;
+      return;
+    }
+    const p = d.portofolio || {};
+    const chips = (arr, cls) => (arr || []).map((s) => `<span class="nchip ${cls}">${esc(s)}</span>`).join("");
+    const v = d.validasi_berita || {};
+    const vtxt = v.cukup
+      ? `arsip ${v.n_terpasang} berita — sudah cukup untuk divonis (lihat jobs.news_forward_test)`
+      : `arsip ${v.n_arsip || 0} berita, ${v.n_terpasang || 0} terpasang dgn return — <b>belum cukup</b> untuk divonis (butuh ${v.min_n || 200})`;
+    port.innerHTML =
+      `<div class="nrow"><span class="nlab">Dimiliki</span>${chips(p.holdings, "own") || '<span class="hint">— kosong, isi config/portfolio.json</span>'}</div>` +
+      `<div class="nrow"><span class="nlab">Dipantau</span>${chips(p.watch, "watch") || '<span class="hint">—</span>'}</div>` +
+      `<div class="nrow"><span class="nlab">Sektor</span>${chips(p.sektor, "sec") || '<span class="hint">—</span>'}</div>` +
+      `<div class="nnote">⚡ = <b>volume abnormal terukur</b> (komponen engine event_drift yang TERVALIDASI). ` +
+      `Kategori & sentimen = heuristik deskriptif, <b>belum di-backtest</b> — urutan bacaan, bukan prediksi arah. ` +
+      `Status uji-maju: ${vtxt}.</div>`;
+
+    body.innerHTML = d.items.map((i) => {
+      const relKey = (i.relevansi || "pasar").replace("?", "");
+      const [col, lab] = REL_STYLE[relKey] || REL_STYLE.pasar;
+      const ragu = (i.relevansi || "").endsWith("?");
+      const t = i.terukur || {}, h = i.heuristik || {};
+      const sent = h.sentimen == null ? null : h.sentimen;
+      const scol = sent > 0.05 ? "#26a69a" : sent < -0.05 ? "#ef5350" : "#9aa7b4";
+      return `<div class="nitem">
+        <div class="nmeta">
+          <span class="nrel" style="color:${col};border-color:${col}">${lab}${ragu ? "?" : ""}</span>
+          <span class="nsym">${esc(i.symbol || "PASAR")}</span>
+          <span class="ncat">${esc(h.kategori || "umum")}</span>
+          ${t.event_aktif ? `<span class="nev" title="Volume ${t.vol_ratio}x rata-rata 20 hari — terukur">⚡ vol ${t.vol_ratio}x</span>` : ""}
+          ${t.composite != null ? `<span class="ncomp" title="Skor prediktif tervalidasi">P ${t.composite}</span>` : ""}
+          <span class="grow"></span>
+          ${sent != null ? `<span style="color:${scol}">sent ${sent > 0 ? "+" : ""}${sent}</span>` : ""}
+          <span class="nimp" title="Skor urutan tampilan (bukan prediksi)">${i.impact}</span>
+        </div>
+        <a class="ntitle" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
+        <div class="nsrc">${esc(i.source || "")} · ${esc(i.published || "")}${ragu ? " · <i>judul tak menyebut emiten ini — keterkaitan lemah</i>" : ""}</div>
+      </div>`;
+    }).join("");
+  } catch (e) {
+    body.innerHTML = '<div class="hint">Gagal memuat digest berita.</div>';
+  }
 }
 
 function closeTrackRecord() { document.getElementById("tr-overlay").style.display = "none"; }
@@ -85,8 +157,62 @@ async function openTrackRecord() {
       `harga ter-adjust, kuantil per-tanggal, walk-forward OOS). ` +
       `Caveat terukur: survivorship bias (konstituen saat ini) & tanpa slippage di luar biaya — ` +
       `hasil cenderung optimistis. Screener = <b>penyaring ide berbukti</b>, edukasi, bukan jaminan.`;
+    loadEffectiveness();
   } catch (e) {
     mEl.innerHTML = '<div class="tr-mc"><div class="v">Gagal memuat</div></div>';
+  }
+}
+
+async function loadEffectiveness() {
+  const el = document.getElementById("eff-body");
+  if (!el) return;
+  try {
+    const d = await (await fetch("/api/effectiveness")).json();
+    if (!d.ic || !d.ic.length) {
+      el.innerHTML = '<div class="hint">Uji efektivitas belum dijalankan — <code>python -m jobs.effectiveness</code></div>';
+      return;
+    }
+    const icRows = d.ic.map((r) => {
+      const ok = r.signifikan;
+      return `<tr><td>h${r.horizon_days}</td>
+        <td class="num">${r.ic_mean >= 0 ? "+" : ""}${r.ic_mean.toFixed(4)}</td>
+        <td class="num">${r.ic_ir >= 0 ? "+" : ""}${r.ic_ir.toFixed(2)}</td>
+        <td class="num">${r.pct_positive.toFixed(0)}%</td>
+        <td class="num" style="color:${ok ? "#26a69a" : "#9aa7b4"}">${r.t_stat_nonoverlap >= 0 ? "+" : ""}${r.t_stat_nonoverlap.toFixed(2)}</td>
+        <td style="color:${ok ? "#26a69a" : "#9aa7b4"}">${ok ? "signifikan ✓" : "tidak signifikan"}</td></tr>`;
+    }).join("");
+    const yrRows = (d.per_tahun || []).map((y) =>
+      `<tr><td>${y.tahun}</td>
+       <td class="num">${y.strategi_pct >= 0 ? "+" : ""}${y.strategi_pct}%</td>
+       <td class="num">${y.benchmark_pct >= 0 ? "+" : ""}${y.benchmark_pct}%</td>
+       <td class="num" style="color:${y.alpha_pct >= 0 ? "#26a69a" : "#ef5350"}">${y.alpha_pct >= 0 ? "+" : ""}${y.alpha_pct}%</td>
+       <td>${y.unggul ? "✓" : "✗"}</td></tr>`).join("");
+    const h = d.hit_rate_per_horizon || {};
+    const hitTxt = Object.entries(h).map(([hz, r]) =>
+      `<b>${hz}</b>: ${r.hit_rate_pct}% (${r.menang}/${r.dari}, CI95 ${r.ci95_pct[0]}–${r.ci95_pct[1]}%) — ` +
+      `${r.lebih_baik_dari_koin ? "beda dari lempar koin" : "<b>belum</b> beda dari lempar koin"}; ` +
+      `menang ${r.alpha_saat_menang_pct}% vs kalah ${r.alpha_saat_kalah_pct}% (asimetri ${r.asimetri}x)`
+    ).join("<br>");
+
+    el.innerHTML = `
+      <div class="eff-hd">◈ SEBERAPA EFEKTIF SINYALNYA? — uji kualitas sinyal (bukan hasil portofolio)</div>
+      <div class="eff-grid">
+        <div>
+          <div class="eff-sub">Information Coefficient — korelasi rank skor vs return ke depan</div>
+          <table class="eff-tbl"><thead><tr><th>Horizon</th><th class="num">IC</th><th class="num">IR</th><th class="num">% hari +</th><th class="num">t</th><th>vonis</th></tr></thead><tbody>${icRows}</tbody></table>
+          <div class="eff-note">IC 0,02–0,05 = wajar untuk fund kuantitatif nyata. IC &gt; 0,10 hampir selalu tanda bug/look-ahead.
+          Edge di sini <b>baru signifikan pada horizon panjang (h42–h63)</b> — ini alat untuk tesis 2–3 bulan, bukan trading mingguan.</div>
+        </div>
+        <div>
+          <div class="eff-sub">Per tahun — top-20 vs benchmark (h21, non-overlap)</div>
+          <table class="eff-tbl"><thead><tr><th>Tahun</th><th class="num">Strategi</th><th class="num">Bench</th><th class="num">Alpha</th><th></th></tr></thead><tbody>${yrRows}</tbody></table>
+          <div class="eff-note"><b>Hit-rate:</b><br>${hitTxt}<br><br>
+          Artinya: sistem menang lewat <b>besaran</b>, bukan frekuensi. Jangan menilai dari satu periode —
+          dan jangan bertaruh besar pada satu nama.</div>
+        </div>
+      </div>`;
+  } catch (e) {
+    el.innerHTML = '<div class="hint">Gagal memuat uji efektivitas.</div>';
   }
 }
 
