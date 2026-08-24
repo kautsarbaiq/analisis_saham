@@ -1,37 +1,83 @@
 {
-  "as_of": "2026-08-21 20:48:30+00:00",
+  "as_of": "2026-08-24 21:11:52+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
       "CIEN",
       "EL",
       "MOS",
-      "PGR",
-      "SMCI"
+      "SMCI",
+      "WDAY"
     ],
     "sektor": [
       "Consumer Staples",
-      "Financials",
       "Information Technology",
       "Materials"
     ],
     "peers": [
-      "COIN",
-      "WDAY",
       "LITE",
-      "CRH",
-      "KKR",
       "FCX",
-      "HOOD",
+      "CRH",
       "PG",
+      "MRVL",
       "APH",
-      "CL",
-      "TGT",
-      "LIN"
+      "MNST",
+      "SYY",
+      "CF"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
+    {
+      "id": "ca896fc5191d39d3",
+      "symbol": "SMCI",
+      "title": "Super Micro Computer (SMCI)\u2019s Guidance Just Crushed Estimates. Can it Outrun its Legal Troubles?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-smci-guidance-180916677.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 18:09 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.103,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 56.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": -0.103,
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "dc5a7b65dc5983b5",
+      "symbol": "CIEN",
+      "title": "Will Ciena (CIEN) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ciena-cien-beat-estimates-again-161002595.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 16:10 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 55.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.8,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.93
+      }
+    },
     {
       "id": "473b52ac06a8ef30",
       "symbol": "EL",
@@ -44,17 +90,42 @@
       "sentiment": 0.382,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 77.1,
+      "impact": 54.3,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
+        "event_aktif": false,
+        "vol_ratio": 1.27,
+        "composite": 81.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.382,
-        "kebaruan": 0.56
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "0c5a5fadacb6383d",
+      "symbol": "WDAY",
+      "title": "Workday (WDAY) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/workday-wday-reports-next-week-140005679.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-20 14:00 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.382,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 54.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.61,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.382,
+        "kebaruan": 0.0
       }
     },
     {
@@ -69,11 +140,11 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 70.5,
+      "impact": 50.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -94,11 +165,11 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 70.5,
+      "impact": 50.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -119,11 +190,11 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 70.5,
+      "impact": 50.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -133,28 +204,328 @@
       }
     },
     {
-      "id": "c0048df7a88e8b8b",
-      "symbol": "EL",
-      "title": "Estee Lauder's Fiscal 2027 Guidance Achievable as Turnaround Continues, RBC Says",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/estee-lauder-apos-fiscal-2027-154337440.html?.tsrc=rss",
+      "id": "29c3fec8f101259c",
+      "symbol": "APH",
+      "title": "Amphenol (APH) Stock Looks Above Fair Value On Cash Flow But Near Fair Value On Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amphenol-aph-stock-looks-above-190900093.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-20 15:43 UTC",
+      "published": "2026-08-24 19:09 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.813,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 49.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.78,
+        "composite": 62.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.813,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "895eec5da1d616f0",
+      "symbol": "FCX",
+      "title": "Freeport-McMoRan Diversifies Your Return, Not Your Risk",
+      "url": "https://www.trefis.com/articles/612584/freeport-mcmoran-diversifies-your-return-not-your-risk/2026-08-24?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 18:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.206,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 48.4,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.51,
+        "composite": 68.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.206,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "84ca4c5b4895973a",
+      "symbol": "WDAY",
+      "title": "Workday to Report Q2 Earnings: Can Strong Revenues Drive Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/workday-report-q2-earnings-strong-150900790.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 15:09 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.71,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 48.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.61,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.71,
+        "kebaruan": 0.91
+      }
+    },
+    {
+      "id": "4d461dbd6232c07c",
+      "symbol": "SMCI",
+      "title": "The Bull Case For Super Micro Computer (SMCI) Could Change Following New Legal And Export-Control Challenges - Learn Why",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bull-case-super-micro-computer-171001759.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 17:10 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.691,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 47.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.691,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "7cddf610f79015e4",
+      "symbol": "LITE",
+      "title": "Coherent (COHR) & Lumentum Holdings (LITE): Two AI Optics Suppliers Just Beat Earnings. Why Did Investors Punish One of Them?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coherent-cohr-lumentum-holdings-lite-180139462.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 18:01 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.527,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 46.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 69.2
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": -0.527,
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "d189a87e864b7b91",
+      "symbol": "SMCI",
+      "title": "Super Micro (SMCI) Stock Trades Down, Here Is Why",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-smci-stock-trades-200136729.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 20:01 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.599,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 46.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.599,
+        "kebaruan": 0.98
+      }
+    },
+    {
+      "id": "2988453fbc09c4c3",
+      "symbol": "SMCI",
+      "title": "AI Infrastructure Stocks Surge: How Long Can CoreWeave (CRWV) and Super Micro Computer (SMCI) Keep It Up?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-infrastructure-stocks-surge-long-172411864.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 17:24 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.599,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 46.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.599,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "62b2ba25df64d3d9",
+      "symbol": "CIEN",
+      "title": "Ciena CEO Sells 2,952 Shares for $1.3 Million",
+      "url": "https://www.fool.com/coverage/filings/2026/08/19/ciena-ceo-gary-smith-sells-2952-shares-for-13-million/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-19 17:55 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.296,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 46.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.8,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.296,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "ea6d735f3b377a0a",
+      "symbol": "MRVL",
+      "title": "Wells Fargo strongly resets Marvell stock target before earnings",
+      "url": "https://www.thestreet.com/investing/stocks/wells-fargo-strongly-resets-marvell-stock-target-before-earnings?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 18:14 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.477,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 46.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.78,
+        "composite": 63.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.477,
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "6c8f972e8ed405da",
+      "symbol": "SMCI",
+      "title": "Super Micro Computer stock plunges. Why the post-earnings rally is losing steam",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-stock-plunges-172412652.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 17:24 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.318,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 62.6,
+      "impact": 44.4,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 72.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.318,
-        "kebaruan": 0.59
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "4b67e8b405ba3079",
+      "symbol": "SMCI",
+      "title": "Supermicro (SMCI) Stock Looks Cheap Even As AI Demand Stays Strong",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/supermicro-smci-stock-looks-cheap-161036868.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 16:10 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.421,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 44.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.421,
+        "kebaruan": 0.93
+      }
+    },
+    {
+      "id": "fc94e0e5e9bc0b4d",
+      "symbol": "CRH",
+      "title": "Can CRH's Utah Acquisition Strengthen Long-Term Aggregates Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crhs-utah-acquisition-strengthen-long-141000773.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-05 14:10 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.599,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 43.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 67.3
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.599,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "9a085b699a0920ef",
+      "symbol": "LITE",
+      "title": "Lumentum Holdings (LITE) As AI Demand And Fresh Guidance Put Valuation In Focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lumentum-holdings-lite-ai-demand-200922806.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 20:09 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.202,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 43.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 69.2
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.202,
+        "kebaruan": 0.98
       }
     },
     {
@@ -169,11 +540,11 @@
       "sentiment": 0.7,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 62.5,
+      "impact": 42.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -194,11 +565,11 @@
       "sentiment": 0.7,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 62.5,
+      "impact": 42.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -208,53 +579,328 @@
       }
     },
     {
-      "id": "64b16592a40107c1",
-      "symbol": "SMCI",
-      "title": "Earnings Estimates Moving Higher for Super Micro (SMCI): Time to Buy?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-estimates-moving-higher-super-162002005.html?.tsrc=rss",
+      "id": "c2d8744af451dc75",
+      "symbol": "SYY",
+      "title": "Sysco (SYY) Stock Looks Below Fair Value On Cash Flow And Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sysco-syy-stock-looks-below-121034597.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-21 16:20 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.599,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 62.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.66,
-        "composite": 73.5
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.599,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "e474312f6538c9f9",
-      "symbol": "EL",
-      "title": "Estee Lauder Shares Rally as Cosmetics Maker Upgrades Margin Guidance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/estee-lauder-shares-rally-cosmetics-170552415.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 17:05 UTC",
+      "published": "2026-08-19 12:10 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.296,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 60.8,
+      "sentiment": 0.572,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 42.2,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
+        "event_aktif": false,
+        "vol_ratio": 0.48,
+        "composite": 59.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.296,
-        "kebaruan": 0.27
+        "sentimen": 0.572,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "c43b1f94ba707ded",
+      "symbol": "FCX",
+      "title": "This Mining Stock Is Quietly One of the Best Trades in Energy",
+      "url": "https://www.fool.com/investing/2026/08/21/this-mining-stock-is-quietly-one-of-the-best-trade/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-22 00:25 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.743,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 42.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.51,
+        "composite": 68.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.743,
+        "kebaruan": 0.04
+      }
+    },
+    {
+      "id": "738ec4ad0eda77e7",
+      "symbol": "WDAY",
+      "title": "Workday (WDAY) Just Had its Best Trading Day in a Decade. Here\u2019s Why Silver Lake Wants In",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/workday-wday-just-had-best-235327561.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-20 23:53 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.637,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 41.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.61,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.637,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "20017eef7902d609",
+      "symbol": "FCX",
+      "title": "Freeport-McMoRan Stock Ran, And Half The Reason Was Visible Seven Months Early",
+      "url": "https://www.trefis.com/articles/612390/freeport-mcmoran-stock-ran-and-half-the-reason-was-visible-seven-months-early/2026-08-21?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-21 19:05 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.51,
+        "composite": 68.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "80dd1fb7f716da21",
+      "symbol": "MRVL",
+      "title": "Marvell Falls 4% Ahead of August 27 Earnings, Broadcom Slips as Semi-Sector Positioning Shifts",
+      "url": "https://247wallst.com/investing/2026/08/24/marvell-falls-4-ahead-of-august-27-earnings-broadcom-slips/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 18:01 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.78,
+        "composite": 63.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "de16ae25159eaf7e",
+      "symbol": "MRVL",
+      "title": "Marvell\u2019s $120 Billion Google Deal Changes Everything Ahead of Earnings",
+      "url": "https://finance.yahoo.com/m/60852ee6-3abe-3be0-b1c1-c6b99386da7c/marvell%E2%80%99s-%24120-billion-google.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 18:29 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.78,
+        "composite": 63.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "dec341031f059332",
+      "symbol": "SMCI",
+      "title": "Supermicro's 60% Rally Is Starting to Unwind",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/supermicros-60-rally-starting-unwind-172650082.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 17:26 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "1bacff2874dab80f",
+      "symbol": "APH",
+      "title": "Fabrinet Drops After Earnings Dragging Down Peers Like Marvell and Amphenol",
+      "url": "https://247wallst.com/investing/2026/08/18/fabrinet-drops-after-earnings-dragging-down-peers-like-marvell-and-amphenol/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-18 17:45 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.361,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 40.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.78,
+        "composite": 62.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.361,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "96a44add84d595db",
+      "symbol": "CIEN",
+      "title": "Ciena vs. Coherent: Which AI Optical Networking Stock is a Better Buy?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ciena-vs-coherent-ai-optical-133500949.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-20 13:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.8,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "c0048df7a88e8b8b",
+      "symbol": "EL",
+      "title": "Estee Lauder's Fiscal 2027 Guidance Achievable as Turnaround Continues, RBC Says",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/estee-lauder-apos-fiscal-2027-154337440.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-20 15:43 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.318,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 39.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.27,
+        "composite": 81.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.318,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "e8c43d92917136a9",
+      "symbol": "CIEN",
+      "title": "Ciena's Supply Constraints Remain Key Risk Despite Robust Demand, BofA Says",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ciena-apos-supply-constraints-remain-150140448.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-20 15:01 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.415,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.8,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.415,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "851186901fc7dfa9",
+      "symbol": "CIEN",
+      "title": "Can ION Network's Adoption of WL6e Boost CIEN's Optical Momentum?",
+      "url": "https://finance.yahoo.com/technology/articles/ion-networks-adoption-wl6e-boost-125500425.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-20 12:55 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.402,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.8,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.402,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "fdbc0de9dc433ecf",
+      "symbol": "FCX",
+      "title": "Palantir, Freeport Clear Buy Points, Lead Five Stocks To Watch",
+      "url": "https://finance.yahoo.com/m/9057af07-60ab-3c1c-b640-407251f6e2fc/palantir%2C-freeport-clear-buy.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-22 12:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 39.3,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.51,
+        "composite": 68.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.2
       }
     },
     {
@@ -269,11 +915,11 @@
       "sentiment": -0.361,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 59.1,
+      "impact": 39.1,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -283,53 +929,153 @@
       }
     },
     {
-      "id": "7f44b3e2ab239c2c",
-      "symbol": "SMCI",
-      "title": "Supermicro investigation clears CEO in alleged $2.5 billion smuggling scheme while a criminal trial involving a cofounder is set for next year",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/supermicro-investigation-clears-ceo-alleged-204543512.html?.tsrc=rss",
+      "id": "8650a71f4c680bed",
+      "symbol": "WDAY",
+      "title": "Is It Worth Investing in Workday (WDAY) Based on Wall Street's Bullish Views?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-workday-wday-based-133002932.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-20 20:45 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": -0.735,
+      "published": "2026-08-21 13:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.226,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 58.6,
+      "impact": 37.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.66,
-        "composite": 73.5
+        "vol_ratio": 0.61,
+        "composite": 72.4
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": -0.735,
-        "kebaruan": 0.66
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.226,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "c1f9b9742e25c43d",
-      "symbol": "SMCI",
-      "title": "SMCI Stock Alert: What to Know as Super Micro Computer Wraps Investigation",
-      "url": "https://www.barchart.com/story/news/3957231/smci-stock-alert-what-to-know-as-super-micro-computer-wraps-investigation?.tsrc=rss",
+      "id": "a31f833731245577",
+      "symbol": "MNST",
+      "title": "5 Insightful Analyst Questions From Monster\u2019s Q2 Earnings Call",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-insightful-analyst-questions-monster-084500918.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-20 19:45 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.727,
-      "relevansi": "dipantau",
+      "published": "2026-08-15 08:45 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 58.5,
+      "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.66,
-        "composite": 73.5
+        "vol_ratio": 1.26,
+        "composite": 60.0
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "1cb009399eb54288",
+      "symbol": "CF",
+      "title": "CF Industries (CF) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/12/cf-industries-cf-q2-2026-earnings-call-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-13 03:44 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.83,
+        "composite": 58.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "0ef7a9e8c205eef6",
+      "symbol": "CRH",
+      "title": "CRH plc Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://www.barchart.com/story/news/3800232/crh-plc-stock-outlook-is-wall-street-bullish-or-bearish?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-12 11:13 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 67.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "a89ee74c6e419aa9",
+      "symbol": "MNST",
+      "title": "Monster (MNST) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/13/monster-mnst-q2-2026-earnings-call-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-14 00:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.26,
+        "composite": 60.0
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "6369a330e78246b5",
+      "symbol": "SYY",
+      "title": "Sysco Announces Strategic Board Appointments and AI Transformation Initiatives Intended to Accelerate Growth, Long-Term Value Creation",
+      "url": "https://finance.yahoo.com/technology/ai/articles/sysco-announces-strategic-board-appointments-120300336.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-20 12:03 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.727,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.48,
+        "composite": 59.0
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
         "sentimen": 0.727,
-        "kebaruan": 0.64
+        "kebaruan": 0.0
       }
     },
     {
@@ -344,67 +1090,17 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 57.9,
+      "impact": 35.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
+        "event_aktif": false,
+        "vol_ratio": 1.27,
+        "composite": 81.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.48
-      }
-    },
-    {
-      "id": "3a0c46a43daf22c7",
-      "symbol": "EL",
-      "title": "Why Est\u00e9e Lauder (EL) Stock Is Trading Up Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-est-e-lauder-el-224602869.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 22:46 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 57.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.35
-      }
-    },
-    {
-      "id": "0c5c41cff456a290",
-      "symbol": "EL",
-      "title": "Why Est\u00e9e Lauder Stock Jumped Today",
-      "url": "https://www.fool.com/investing/2026/08/19/why-estee-lauder-stock-jumped-today/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 19:35 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 57.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.31
+        "kebaruan": 0.0
       }
     },
     {
@@ -419,11 +1115,11 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 55.5,
+      "impact": 35.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -444,817 +1140,17 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 55.5,
+      "impact": 35.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 72.1
+        "event_aktif": false,
+        "vol_ratio": 1.04,
+        "composite": 72.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "cbaa6754bd951169",
-      "symbol": "COIN",
-      "title": "Coinbase Stock Surged On A Bill Its Own CEO Says It Can Live Without",
-      "url": "https://www.trefis.com/articles/612409/coinbase-stock-surged-on-a-bill-its-own-ceo-says-it-can-live-without/2026-08-21?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 17:41 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 53.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.39,
-        "composite": 71.0
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "964a1b0f3bb4d088",
-      "symbol": "HOOD",
-      "title": "Robinhood shares climb as crypto regulation hopes boost investor sentiment",
-      "url": "https://investorshub.advfn.com/market-news/article/34778/robinhood-shares-climb-as-crypto-regulation-hopes-boost-investor-sentiment?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 09:59 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.772,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 53.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.53,
-        "composite": 66.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.772,
-        "kebaruan": 0.84
-      }
-    },
-    {
-      "id": "472efed8ad0945d8",
-      "symbol": "PGR",
-      "title": "Progressive's July Earnings Decline Y/Y on Escalating Expenses",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/progressives-july-earnings-decline-y-141400223.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 14:14 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 53.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.54,
-        "composite": 75.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.57
-      }
-    },
-    {
-      "id": "85bff4577dd8d97f",
-      "symbol": "FCX",
-      "title": "Dow Jones Futures: Market Rally Repairs Some Damage; Nvidia, CrowdStrike, Warsh In Focus",
-      "url": "https://finance.yahoo.com/m/0e4d198b-0fbe-345f-9a59-99f6074c2273/dow-jones-futures%3A-market.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 20:48 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": -0.494,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 49.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.11,
-        "composite": 67.3
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": -0.494,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "903ace5a7ecb209a",
-      "symbol": "FCX",
-      "title": "Married Puts: The FOMO-Proof Way to Play OVV, ONON, and FCX\u2019s Unusually Active Options",
-      "url": "https://www.barchart.com/story/news/3835705/married-puts-the-fomo-proof-way-to-play-ovv-onon-and-fcxs-unusually-active-options?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-13 17:43 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.659,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 48.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.11,
-        "composite": 67.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.659,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "62b2ba25df64d3d9",
-      "symbol": "CIEN",
-      "title": "Ciena CEO Sells 2,952 Shares for $1.3 Million",
-      "url": "https://www.fool.com/coverage/filings/2026/08/19/ciena-ceo-gary-smith-sells-2952-shares-for-13-million/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 17:55 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 47.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 73.7
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.296,
-        "kebaruan": 0.28
-      }
-    },
-    {
-      "id": "96fcbc42a4bc80c8",
-      "symbol": "EL",
-      "title": "1 Cash-Producing Stock to Consider Right Now and 2 Facing Challenges",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/1-cash-producing-stock-consider-125947257.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 12:59 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.077,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 46.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.077,
-        "kebaruan": 0.88
-      }
-    },
-    {
-      "id": "485633155bde9eab",
-      "symbol": "HOOD",
-      "title": "Moderna, Robinhood, Marvell, Tesla, SpaceX, and More Stocks That Explain Today\u2019s Market",
-      "url": "https://finance.yahoo.com/m/8441cc58-de4e-35b7-8284-d4ebc8ed02e5/moderna%2C-robinhood%2C-marvell%2C.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 20:18 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 46.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.53,
-        "composite": 66.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.98
-      }
-    },
-    {
-      "id": "e603248b8e29bd11",
-      "symbol": "HOOD",
-      "title": "Why is HOOD stock up today?",
-      "url": "https://www.thestreet.com/crypto/markets/why-is-hood-stock-up-today?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 20:20 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 46.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.53,
-        "composite": 66.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "20017eef7902d609",
-      "symbol": "FCX",
-      "title": "Freeport-McMoRan Stock Ran, And Half The Reason Was Visible Seven Months Early",
-      "url": "https://www.trefis.com/articles/612390/freeport-mcmoran-stock-ran-and-half-the-reason-was-visible-seven-months-early/2026-08-21?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 19:05 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 46.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.11,
-        "composite": 67.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "6cbace98c80f6b92",
-      "symbol": "SMCI",
-      "title": "Vertiv Benefits From Margin Gains: Can It Outpace APH and SMCI?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/vertiv-benefits-margin-gains-outpace-151900107.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 15:19 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.612,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 46.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.66,
-        "composite": 73.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.612,
-        "kebaruan": 0.92
-      }
-    },
-    {
-      "id": "71c67d64422bde52",
-      "symbol": "HOOD",
-      "title": "Robinhood Advances 5%, Webull Ticks Up as Bitcoin\u2019s Breakout Lifts Retail Brokerages",
-      "url": "https://247wallst.com/investing/2026/08/21/robinhood-advances-5-webull-ticks-up-as-bitcoins-breakout-lifts-retail-brokerages/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 13:38 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 46.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.53,
-        "composite": 66.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "9e12a8b70664266d",
-      "symbol": "COIN",
-      "title": "Strategy Rallies 8%, MARA Holdings Climbs 6%, Coinbase Jumps 5% as Bitcoin Breaks Out of Its 2026 Range",
-      "url": "https://247wallst.com/investing/2026/08/21/strategy-rallies-8-mara-holdings-climbs-6-coinbase-jumps-5-as-bitcoin-breaks-out-of-its-2026-range/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 13:25 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 45.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.39,
-        "composite": 71.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "2e92fb193abe92c4",
-      "symbol": "EL",
-      "title": "Why Estee Lauder Rallied This Week",
-      "url": "https://www.fool.com/investing/2026/08/20/why-estee-lauder-rallied-this-week/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 20:42 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 44.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.72,
-        "composite": 80.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.66
-      }
-    },
-    {
-      "id": "482694641412858a",
-      "symbol": "COIN",
-      "title": "CFTC Eyes US DeFi and Leveraged Crypto Trading as Selig Prepares Plan B Ahead of Sept. 15 CLARITY Act Vote",
-      "url": "https://www.ccn.com/news/crypto/cftc-us-defi-leveraged-crypto-rules-clarity-act-vote/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 16:27 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.532,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 44.5,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.39,
-        "composite": 71.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.532,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "fc94e0e5e9bc0b4d",
-      "symbol": "CRH",
-      "title": "Can CRH's Utah Acquisition Strengthen Long-Term Aggregates Growth?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/crhs-utah-acquisition-strengthen-long-141000773.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-05 14:10 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.599,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 43.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 68.3
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.599,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "0118ed6e6b35948c",
-      "symbol": "SMCI",
-      "title": "Super Micro Jumps After Probe Clears Senior Management",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-jumps-probe-clears-174210532.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 17:42 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.637,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 43.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.66,
-        "composite": 73.5
-      },
-      "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.637,
-        "kebaruan": 0.62
-      }
-    },
-    {
-      "id": "96a44add84d595db",
-      "symbol": "CIEN",
-      "title": "Ciena vs. Coherent: Which AI Optical Networking Stock is a Better Buy?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ciena-vs-coherent-ai-optical-133500949.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 13:35 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.44,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 73.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.44,
-        "kebaruan": 0.56
-      }
-    },
-    {
-      "id": "e8c43d92917136a9",
-      "symbol": "CIEN",
-      "title": "Ciena's Supply Constraints Remain Key Risk Despite Robust Demand, BofA Says",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ciena-apos-supply-constraints-remain-150140448.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 15:01 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.415,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 73.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.415,
-        "kebaruan": 0.58
-      }
-    },
-    {
-      "id": "851186901fc7dfa9",
-      "symbol": "CIEN",
-      "title": "Can ION Network's Adoption of WL6e Boost CIEN's Optical Momentum?",
-      "url": "https://finance.yahoo.com/technology/articles/ion-networks-adoption-wl6e-boost-125500425.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 12:55 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.402,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 73.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.402,
-        "kebaruan": 0.55
-      }
-    },
-    {
-      "id": "b959f0ccc3a36f0a",
-      "symbol": "PGR",
-      "title": "Progressive (PGR) Stock Looks Near Fair Value As Margin Questions Loom",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/progressive-pgr-stock-looks-near-101031682.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 10:10 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.421,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.54,
-        "composite": 75.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.421,
-        "kebaruan": 0.51
-      }
-    },
-    {
-      "id": "ad83a5cc907b08ec",
-      "symbol": "LITE",
-      "title": "C3.ai vs. Lumentum: What Recent Revenue Trajectories Tell Investors About These Artificial Intelligence Companies",
-      "url": "https://www.fool.com/coverage/charts/2026/08/19/c3-ai-vs-lumentum-what-recent-revenue-trajectories-tell-investors-about-these-artificial-intelligence-companies/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 05:29 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.477,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 41.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 68.7
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.477,
-        "kebaruan": 0.11
-      }
-    },
-    {
-      "id": "5752f1c6604822ba",
-      "symbol": "LITE",
-      "title": "Best Momentum Stocks to Buy for August 21st",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/best-momentum-stocks-buy-august-140000280.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 14:00 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.637,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 41.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 68.7
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.637,
-        "kebaruan": 0.9
-      }
-    },
-    {
-      "id": "2969505ed56a5069",
-      "symbol": "FCX",
-      "title": "Is Freeport-McMoRan (FCX) Undervalued As Insider Selling Meets A Premium P/E?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/freeport-mcmoran-fcx-undervalued-insider-231312643.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-13 23:13 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 41.5,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.11,
-        "composite": 67.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "147cd09873269b6a",
-      "symbol": "PGR",
-      "title": "First American Financial (FAF) Up 4.4% Since Last Earnings Report: Can It Continue?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/first-american-financial-faf-4-153004823.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 15:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 41.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.54,
-        "composite": 75.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.92
-      }
-    },
-    {
-      "id": "05c223dc5405385b",
-      "symbol": "CL",
-      "title": "Colgate Raises 2026 Profit Outlook After Q2 Earnings Beat and Margin Gains",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/colgate-raises-2026-profit-outlook-165600576.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 16:56 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.649,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 40.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 60.5
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.649,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "1bacff2874dab80f",
-      "symbol": "APH",
-      "title": "Fabrinet Drops After Earnings Dragging Down Peers Like Marvell and Amphenol",
-      "url": "https://247wallst.com/investing/2026/08/18/fabrinet-drops-after-earnings-dragging-down-peers-like-marvell-and-amphenol/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-18 17:45 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.361,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 40.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.78,
-        "composite": 64.2
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.361,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "b544a78affb105c4",
-      "symbol": "PG",
-      "title": "The Best Dividend Stock for 2027 and Beyond: Procter & Gamble",
-      "url": "https://www.fool.com/investing/2026/08/21/the-best-dividend-stock-for-2027-and-beyond-procte/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 11:35 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.637,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 39.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 65.0
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.637,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "6fff53d7486298ee",
-      "symbol": "PGR",
-      "title": "Why Is Chubb (CB) Down 0.7% Since Last Earnings Report?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-chubb-cb-down-0-153003299.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 15:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 39.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.54,
-        "composite": 75.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.58
-      }
-    },
-    {
-      "id": "a855b330fc73dadc",
-      "symbol": "COIN",
-      "title": "Stocks trade higher, lifted by crypto, commodities: AlphaCheck",
-      "url": "https://finance.yahoo.com/markets/article/stocks-trade-higher-lifted-by-crypto-commodities-alphacheck-135720189.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-21 13:57 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 39.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.39,
-        "composite": 71.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.9
-      }
-    },
-    {
-      "id": "0ef7a9e8c205eef6",
-      "symbol": "CRH",
-      "title": "CRH plc Stock Outlook: Is Wall Street Bullish or Bearish?",
-      "url": "https://www.barchart.com/story/news/3800232/crh-plc-stock-outlook-is-wall-street-bullish-or-bearish?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-12 11:13 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 36.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 68.3
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "13b8dc0e679cf305",
-      "symbol": "PGR",
-      "title": "Progressive Reports July 2026 Results",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/progressive-reports-july-2026-results-121600427.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 12:16 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 36.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.54,
-        "composite": 75.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.21
       }
     },
     {
@@ -1269,36 +1165,11 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 35.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 73.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.03
-      }
-    },
-    {
-      "id": "4ace33a1e706a43c",
-      "symbol": "CIEN",
-      "title": "AI Networking Stocks Are Rallying on Monday. Marvell Up 8%, Credo Up 8%, Ciena Joins the Move",
-      "url": "https://247wallst.com/investing/2026/08/17/ai-networking-stocks-are-rallying-on-monday-marvell-up-8-credo-up-8-ciena-joins-the-move/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-17 17:06 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 73.7
+        "vol_ratio": 0.8,
+        "composite": 72.4
       },
       "heuristik": {
         "kategori": "umum",
@@ -1308,12 +1179,12 @@
       }
     },
     {
-      "id": "976bcd8165d6e1e9",
-      "symbol": "CIEN",
-      "title": "Coherent, Teradyne, and Ciena Are the S&P 500\u2019s 3 Biggest Decliners on Tuesday",
-      "url": "https://247wallst.com/investing/2026/08/18/coherent-teradyne-and-ciena-are-the-sp-500s-3-biggest-decliners-on-tuesday/?.tsrc=rss",
+      "id": "3a0c46a43daf22c7",
+      "symbol": "EL",
+      "title": "Why Est\u00e9e Lauder (EL) Stock Is Trading Up Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-est-e-lauder-el-224602869.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-18 20:27 UTC",
+      "published": "2026-08-19 22:46 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1322,33 +1193,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 73.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "dfafbb711a1c7a16",
-      "symbol": "PGR",
-      "title": "Progressive Stock: Analyst Estimates & Ratings",
-      "url": "https://www.barchart.com/story/news/3852818/progressive-stock-analyst-estimates-ratings?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-14 13:56 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 35.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.54,
-        "composite": 75.0
+        "vol_ratio": 1.27,
+        "composite": 81.9
       },
       "heuristik": {
         "kategori": "umum",
@@ -1373,6 +1219,31 @@
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.78,
+        "composite": 62.9
+      },
+      "heuristik": {
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.637,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "b544a78affb105c4",
+      "symbol": "PG",
+      "title": "The Best Dividend Stock for 2027 and Beyond: Procter & Gamble",
+      "url": "https://www.fool.com/investing/2026/08/21/the-best-dividend-stock-for-2027-and-beyond-procte/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-21 11:35 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.637,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 35.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
         "composite": 64.2
       },
       "heuristik": {
@@ -1383,43 +1254,68 @@
       }
     },
     {
-      "id": "044627ae8d5c364e",
-      "symbol": "PGR",
-      "title": "Etsy upgraded, TJX downgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/cigna-downgraded-humana-upgraded-wall-134340274.html?.tsrc=rss",
+      "id": "74c5dfa8511c2303",
+      "symbol": "APH",
+      "title": "SentinelOne to Report Q2 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sentinelone-report-q2-earnings-whats-162200486.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-20 13:38 UTC",
-      "event_type": "rating analis",
-      "event_weight": 0.65,
-      "sentiment": 0.202,
-      "relevansi": "dipantau?",
+      "published": "2026-08-24 16:22 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor?",
       "judul_menyebut_emiten": false,
-      "impact": 35.1,
+      "impact": 34.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.54,
-        "composite": 75.0
+        "vol_ratio": 0.78,
+        "composite": 62.9
       },
       "heuristik": {
-        "kategori": "rating analis",
-        "bobot_kategori": 0.65,
-        "sentimen": 0.202,
-        "kebaruan": 0.56
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.93
       }
     },
     {
-      "id": "751f401b9bbf97d1",
+      "id": "79150fbde8539a38",
+      "symbol": "PG",
+      "title": "3 Dividend Stocks to Buy Before August Ends and Hold for Life",
+      "url": "https://247wallst.com/investing/2026/08/23/3-dividend-stocks-to-buy-before-august-ends-and-hold-for-life/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-23 11:00 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 33.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 64.2
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.52
+      }
+    },
+    {
+      "id": "52d38d747e9938dd",
       "symbol": null,
-      "title": "Why Capital One (COF) Could See Both Earnings Growth and Multiple Expansion?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-capital-one-cof-could-131434106.html",
-      "source": "Insider Monkey",
-      "published": "2026-08-20 13:14 UTC",
+      "title": "Walmart stock price target reset by JPMorgan after earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/walmart-stock-price-target-reset-024700402.html",
+      "source": "TheStreet",
+      "published": "2026-08-24 02:47 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.382,
+      "sentiment": 0.0,
       "relevansi": "pasar",
       "judul_menyebut_emiten": null,
-      "impact": 35.1,
+      "impact": 32.2,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": null,
@@ -1428,8 +1324,83 @@
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.382,
-        "kebaruan": 0.55
+        "sentimen": 0.0,
+        "kebaruan": 0.74
+      }
+    },
+    {
+      "id": "f3a589e3d84f7706",
+      "symbol": "PG",
+      "title": "3 Reasons to Buy and Hold This Wide-Moat Dividend King's Stock Forever",
+      "url": "https://www.fool.com/investing/2026/08/19/3-reasons-to-buy-and-hold-this-wide-moat-dividend/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-19 15:20 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 30.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 64.2
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "2d840fb245cd3252",
+      "symbol": "LITE",
+      "title": "Lumentum Stock Sinks. Why Better Times May Be Ahead.",
+      "url": "https://finance.yahoo.com/m/0434e9c8-444c-3946-9061-8637af58d023/lumentum-stock-sinks.-why.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 15:22 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 30.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 69.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "335a2bf65d2b75da",
+      "symbol": "CIEN",
+      "title": "The Shock Record Understates How Far Applied Optoelectronics Stock Can Fall",
+      "url": "https://www.trefis.com/articles/612579/the-shock-record-understates-how-far-applied-optoelectronics-stock-can-fall/2026-08-24?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 19:15 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.382,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 30.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.8,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.382,
+        "kebaruan": 0.97
       }
     },
     {
@@ -1444,92 +1415,117 @@
       "sentiment": 0.0,
       "relevansi": "sesektor?",
       "judul_menyebut_emiten": false,
-      "impact": 34.1,
+      "impact": 29.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 68.3
+        "vol_ratio": 0.82,
+        "composite": 67.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.92
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "0b8e56db9b2b6fc3",
-      "symbol": "SMCI",
-      "title": "If You Invested $1000 in Super Micro Computer a Decade Ago, This is How Much It'd Be Worth Now",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/invested-1000-super-micro-computer-123002378.html?.tsrc=rss",
+      "id": "ae0b06db6cfd13a1",
+      "symbol": "EL",
+      "title": "Estee Lauder Stock Jumped On A Bigger Margin Promise",
+      "url": "https://www.trefis.com/articles/612582/estee-lauder-stock-jumped-on-a-bigger-margin-promise/2026-08-24?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-21 12:30 UTC",
+      "published": "2026-08-24 14:27 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.7,
+      "sentiment": 0.318,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 32.9,
+      "impact": 29.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.66,
-        "composite": 73.5
+        "vol_ratio": 1.27,
+        "composite": 81.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.7,
-        "kebaruan": 0.88
+        "sentimen": 0.318,
+        "kebaruan": 0.9
       }
     },
     {
-      "id": "878d153067225ec4",
-      "symbol": "LITE",
-      "title": "Lumentum's CEO Sells 5,438 Shares for $5 Million. Here's What That Means for Investors.",
-      "url": "https://www.fool.com/coverage/filings/2026/08/18/lumentum-s-ceo-sells-5-438-shares-for-usd5-million-here-s-what-that-means-for-investors/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 03:12 UTC",
-      "event_type": "manajemen",
+      "id": "88ad80a93703d6a6",
+      "symbol": null,
+      "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
+      "url": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
+      "source": "CNBC Markets",
+      "published": "2026-08-24 13:17 UTC",
+      "event_type": "aksi korporasi",
       "event_weight": 0.6,
-      "sentiment": 0.296,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 32.4,
+      "sentiment": 0.202,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 27.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 68.7
+        "vol_ratio": null,
+        "composite": null
       },
       "heuristik": {
-        "kategori": "manajemen",
+        "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
-        "sentimen": 0.296,
-        "kebaruan": 0.08
+        "sentimen": 0.202,
+        "kebaruan": 0.89
       }
     },
     {
-      "id": "9c641f7a4ac8bc5e",
-      "symbol": "TGT",
-      "title": "Pro-DEI Companies Are Doing Just Fine According To New Study",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/pro-dei-companies-doing-just-193017443.html?.tsrc=rss",
+      "id": "118892a11e298c9c",
+      "symbol": "SMCI",
+      "title": "Super Micro Sinks 7% as Taiwan Indicts Employees Over Illegal AI Server Exports to China, Dell Slips",
+      "url": "https://247wallst.com/investing/2026/08/24/super-micro-sinks-7-as-taiwan-indicts-employees-over-illegal-ai-server-exports-to-china-dell-slips/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-20 19:30 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.202,
-      "relevansi": "sesektor?",
+      "published": "2026-08-24 14:41 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.077,
+      "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 32.2,
+      "impact": 26.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.2,
-        "composite": 59.4
+        "vol_ratio": 0.72,
+        "composite": 72.9
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.202,
-        "kebaruan": 0.64
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.077,
+        "kebaruan": 0.91
+      }
+    },
+    {
+      "id": "c19d4217a3a3debc",
+      "symbol": "WDAY",
+      "title": "Investors May Want To Own Workday Before August 27th",
+      "url": "https://247wallst.com/investing/2026/08/24/investors-may-want-to-own-workday-before-august-27th/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-24 12:42 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.077,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.61,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.077,
+        "kebaruan": 0.88
       }
     }
   ]
