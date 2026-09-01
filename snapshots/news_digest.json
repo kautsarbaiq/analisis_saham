@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-31 23:57:25+00:00",
+  "as_of": "2026-09-01 21:22:57+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
@@ -17,340 +17,40 @@
     "peers": [
       "NOW",
       "HOOD",
-      "MNST",
-      "CB",
+      "DG",
+      "PGR",
       "PG",
       "NDAQ",
-      "SYY",
+      "MNST",
       "SNDK",
-      "FTNT"
+      "TXN"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
     {
-      "id": "3eec6979dbd52f12",
-      "symbol": "CRWD",
-      "title": "CrowdStrike Stock Just Set a Fresh Record High, but Is There Still Time to Buy? The Answer Might Surprise You.",
-      "url": "https://www.fool.com/investing/2026/08/31/crowdstrike-stock-record-high-buy-answer-surprise/?.tsrc=rss",
+      "id": "9655055427913683",
+      "symbol": "DG",
+      "title": "Dollar General (DG) Q2 2027 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/31/dollar-general-dg-q2-2027-earnings-call-transcript/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 13:20 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.511,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 81.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.511,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "b64f7eaf1df672b8",
-      "symbol": "CRWD",
-      "title": "CrowdStrike (CRWD) Q2 2027 Earnings Call Transcript",
-      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/31/crowdstrike-crwd-q2-2027-earnings-call-transcript/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 13:49 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 74.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "cfa9de445e433790",
-      "symbol": "CRWD",
-      "title": "Sublime Security Announces Integration with CrowdStrike Falcon Next-Gen SIEM",
-      "url": "https://finance.yahoo.com/technology/ai/articles/sublime-security-announces-integration-crowdstrike-134000034.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 13:40 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.34,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 68.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.34,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "4a0bdff38c989633",
-      "symbol": "CRWD",
-      "title": "OKTA's AI Security Push Gains Momentum Against CRWD & MSFT",
-      "url": "https://finance.yahoo.com/technology/ai/articles/oktas-ai-security-push-gains-155000786.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 15:50 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.586,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 65.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.586,
-        "kebaruan": 0.88
-      }
-    },
-    {
-      "id": "20472db185d6ca0c",
-      "symbol": "CRWD",
-      "title": "CrowdStrike Launches AI Partner Specialization, Defining Cybersecurity\u2019s Ecosystem for the Agentic Era",
-      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-launches-ai-partner-specialization-204000700.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 20:40 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 65.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "8398a5b17c5db39e",
-      "symbol": "CRWD",
-      "title": "Why CrowdStrike (CRWD) Stock Is Trading Up Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-crowdstrike-crwd-stock-trading-180624501.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 18:06 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 65.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "a8bf9f7fca8992f8",
-      "symbol": "CRWD",
-      "title": "CrowdStrike Rallies 4% as Fal.Con Puts Falcon on Google Cloud and Arms Partners With AI Agents",
-      "url": "https://247wallst.com/investing/2026/08/31/crowdstrike-rallies-4-as-fal-con-puts-falcon-on-google-cloud-and-arms-partners-with-ai-agents/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 14:02 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 64.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "38e6cd20c0f995c5",
-      "symbol": "CRWD",
-      "title": "The Zacks Analyst Blog Highlights Okta, Microsoft, CrowdStrike and Cisco Systems",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-okta-144500723.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 14:45 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 64.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.88,
-        "composite": 73.9
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "4f534c7c5f0415b9",
-      "symbol": "SNDK",
-      "title": "A $31 Billion Reason to Buy Sandisk Stock Now",
-      "url": "https://www.barchart.com/story/news/4359253/a-31-billion-reason-to-buy-sandisk-stock-now?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 17:58 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 62.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 60.4
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "ccae058e76ee116a",
-      "symbol": "SNDK",
-      "title": "Qualcomm vs. Sandisk: Comparing Gradual Revenue Contraction Against Rapid Revenue Acceleration",
-      "url": "https://www.fool.com/coverage/charts/2026/08/31/qualcomm-vs-sandisk-comparing-gradual-revenue-contraction-against-rapid-revenue-acceleration/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 12:52 UTC",
+      "published": "2026-08-31 13:21 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 60.7,
+      "impact": 59.2,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 60.4
+        "vol_ratio": 1.51,
+        "composite": 67.8
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.84
-      }
-    },
-    {
-      "id": "5aa928ef7e4be562",
-      "symbol": "CRM",
-      "title": "Salesforce Stock Repriced A Fear, Not A Forecast",
-      "url": "https://www.trefis.com/articles/613714/salesforce-stock-repriced-a-fear-not-a-forecast/2026-08-31?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 16:36 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": -0.494,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": -0.494,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "eecbe5216e997456",
-      "symbol": "CRM",
-      "title": "ETFs to Buy as Salesforce Jumps on Q2 Earnings Beat, Anthropic Gains",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/etfs-buy-salesforce-jumps-q2-142500840.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 14:25 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.34,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.34,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "af9ffd566986f52f",
-      "symbol": "SNPS",
-      "title": "SNPS Q3 Earnings Beat Estimates on EDA and Ansys Strength",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/snps-q3-earnings-beat-estimates-151100379.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-27 15:11 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.494,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 55.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.494,
-        "kebaruan": 0.0
+        "kebaruan": 0.53
       }
     },
     {
@@ -368,8 +68,8 @@
       "impact": 54.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
+        "vol_ratio": 1.22,
+        "composite": 76.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -390,42 +90,42 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 54.8,
+      "impact": 53.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
+        "vol_ratio": 1.22,
+        "composite": 76.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.85
+        "kebaruan": 0.54
       }
     },
     {
-      "id": "eefcba701b3901c4",
-      "symbol": "COIN",
-      "title": "Your Crypto Wallet Could Replace Your Credit Score \u2014 Coinbase's CEO Thinks So",
-      "url": "https://beincrypto.com/onchain-reputation-credit-score-coinbase/?.tsrc=rss",
+      "id": "b433462e3eb1884a",
+      "symbol": "CRWD",
+      "title": "EY Selects CrowdStrike to Power the Trust Layer of EY.ai Value Blueprints",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ey-selects-crowdstrike-power-trust-170500896.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 11:54 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.382,
+      "published": "2026-09-01 17:05 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.691,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 51.0,
+      "impact": 52.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
+        "vol_ratio": 1.39,
+        "composite": 72.9
       },
       "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.382,
-        "kebaruan": 0.83
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.691,
+        "kebaruan": 0.92
       }
     },
     {
@@ -443,8 +143,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.99,
-        "composite": 85.1
+        "vol_ratio": 0.77,
+        "composite": 81.8
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -468,8 +168,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
+        "vol_ratio": 1.22,
+        "composite": 76.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -493,8 +193,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
+        "vol_ratio": 1.22,
+        "composite": 76.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -504,203 +204,328 @@
       }
     },
     {
-      "id": "d69de774239af1a6",
-      "symbol": "SNPS",
-      "title": "Synopsys Q3 2026 earnings beat estimates, raises full-year guidance",
-      "url": "https://qz.com/synopsys-q3-2026-earnings-results-guidance-082726?.tsrc=rss",
+      "id": "e1abd1acedd1a375",
+      "symbol": "CRWD",
+      "title": "5-Star Analyst Revamps CrowdStrike Price Target for 2027",
+      "url": "https://finance.yahoo.com/technology/ai/articles/5-star-analyst-revamps-crowdstrike-201748340.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-27 17:25 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
+      "published": "2026-09-01 20:17 UTC",
+      "event_type": "rating analis",
+      "event_weight": 0.65,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 50.5,
+      "impact": 49.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
+        "vol_ratio": 1.39,
+        "composite": 72.9
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
+        "kategori": "rating analis",
+        "bobot_kategori": 0.65,
         "sentimen": 0.0,
-        "kebaruan": 0.0
+        "kebaruan": 0.96
       }
     },
     {
-      "id": "e099d46bfb1b2668",
+      "id": "4e4a26b58a86bc3f",
       "symbol": "SNDK",
-      "title": "Dear Sandisk Stock Fans, Mark Your Calendars for August 31",
-      "url": "https://www.barchart.com/story/news/4359446/dear-sandisk-stock-fans-mark-your-calendars-for-august-31?.tsrc=rss",
+      "title": "Down More Than 30% From Its Peak, Is Now the Perfect Time to Buy Sandisk Stock?",
+      "url": "https://www.fool.com/investing/2026/09/01/down-more-than-30-from-its-peak-is-now-the-perfect/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 18:14 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.382,
+      "published": "2026-09-01 20:38 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.572,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 49.9,
+      "impact": 48.3,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.63,
+        "event_aktif": false,
+        "vol_ratio": 0.82,
         "composite": 60.4
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.382,
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.572,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "352d8572c7676ef4",
+      "symbol": "CRWD",
+      "title": "CrowdStrike Launches Frontier Models for Cybersecurity, Created with NVIDIA",
+      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-launches-frontier-models-cybersecurity-163600357.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 16:36 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.25,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 47.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.39,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.25,
         "kebaruan": 0.91
       }
     },
     {
-      "id": "8e70aa9987d353a7",
-      "symbol": "COIN",
-      "title": "Coinbase CEO Says Crypto Is 'Updating the Financial System' as Trump Pushes CLARITY Act",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-ceo-says-crypto-updating-170042095.html?.tsrc=rss",
+      "id": "7523937d590b6cd2",
+      "symbol": "CRWD",
+      "title": "Top Research Reports for Toyota Motor, CrowdStrike & Welltower",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-research-reports-toyota-motor-203900129.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-29 17:00 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.532,
+      "published": "2026-09-01 20:39 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.202,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 49.5,
+      "impact": 47.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
+        "vol_ratio": 1.39,
+        "composite": 72.9
       },
       "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.532,
-        "kebaruan": 0.23
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.202,
+        "kebaruan": 0.97
       }
     },
     {
-      "id": "89c15bbfaa740fe0",
-      "symbol": "COIN",
-      "title": "Elon Musk Agrees With Coinbase CEO Brian Armstrong That Some Charities Are 'Net Negative': 'He's Right'",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/elon-musk-agrees-coinbase-ceo-140111611.html?.tsrc=rss",
+      "id": "63d791163c8b4228",
+      "symbol": "HOOD",
+      "title": "Robinhood Stock Upgraded On Growth Outlook; Shares Trade Near Entry",
+      "url": "https://finance.yahoo.com/m/7ed5d379-d668-3b49-8a4c-71bbfbf809e9/robinhood-stock-upgraded-on.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-30 14:01 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.077,
+      "published": "2026-09-01 20:21 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.586,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 47.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.23,
+        "composite": 69.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.586,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "3fbaf8f87f1caf6a",
+      "symbol": "CRWD",
+      "title": "Jensen Huang Says Cyberattacks Will Grow \u2018Exponentially\u2019 \u2014 Nvidia, CrowdStrike Build AI \u2018Superintelligence\u2019 For Cyber Defense",
+      "url": "https://stocktwits.com/news-articles/markets/equity/jensen-huang-says-cyberattacks-will-grow-exponentially-nvidia-crowd-strike-build-ai-superintelligence-for-cyber-defense/cZsoqYTRJMV?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 17:38 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.128,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
       "impact": 46.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
+        "vol_ratio": 1.39,
+        "composite": 72.9
       },
       "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.077,
-        "kebaruan": 0.52
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.128,
+        "kebaruan": 0.92
       }
     },
     {
-      "id": "9c588b94ef422e6a",
-      "symbol": "SNDK",
-      "title": "The Ceiling SanDisk Wrote Into Its Own Contracts",
-      "url": "https://www.trefis.com/articles/613722/the-ceiling-sandisk-wrote-into-its-own-contracts/2026-08-31?.tsrc=rss",
+      "id": "15878561e7331721",
+      "symbol": "CRWD",
+      "title": "CrowdStrike Establishes Cyber Superintelligence Lab, Bringing Frontier AI Research to Cyber Defense for the First Time",
+      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-establishes-cyber-superintelligence-lab-163600842.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 23:35 UTC",
+      "published": "2026-09-01 16:36 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.128,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 46.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.39,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.128,
+        "kebaruan": 0.91
+      }
+    },
+    {
+      "id": "44634ec49558427b",
+      "symbol": "CRM",
+      "title": "Salesforce AI ARR Surges as Agentforce Adoption and Outcome Pricing Gain Momentum",
+      "url": "https://www.marketbeat.com/instant-alerts/event-salesforce-ai-arr-surges-as-agentforce-adoption-and-outcome-pricing-gain-momentum-2026-09-01/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 17:02 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.527,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 45.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.92,
+        "composite": 76.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.527,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "715a3e8526990ccc",
+      "symbol": "HOOD",
+      "title": "Robinhood Markets' Expanded Offerings to Drive Long-Term Revenue Growth, Morgan Stanley Says",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/robinhood-markets-apos-expanded-offerings-152536949.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 15:25 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 44.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.23,
+        "composite": 69.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.382,
+        "kebaruan": 0.89
+      }
+    },
+    {
+      "id": "ea011fa7c73fb5e6",
+      "symbol": "DG",
+      "title": "Dollar General and Dollar Tree Are Recovering, But Not for the Same Reason",
+      "url": "https://www.marketbeat.com/articles/dollar-general-and-dollar-tree-are-recovering-but-not-for-the-same-reason/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-31 16:10 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 46.4,
+      "impact": 44.4,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 1.63,
-        "composite": 60.4
+        "vol_ratio": 1.51,
+        "composite": 67.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.99
+        "kebaruan": 0.57
       }
     },
     {
-      "id": "7e4f35094badc319",
-      "symbol": "COIN",
-      "title": "Bitcoin Could Hit $300,000 by 2030, Says Coinbase CEO Brian Armstrong. Here's Why He's Right.",
-      "url": "https://www.fool.com/investing/2026/08/29/bitcoin-could-hit-300000-by-2030-says-coinbase-ceo/?.tsrc=rss",
+      "id": "40b5690e3f10fd7c",
+      "symbol": "DG",
+      "title": "Dollar General deploys AI across distribution centers, stores",
+      "url": "https://www.supplychaindive.com/news/dollar-general-deploys-ai-across-distribution-centers-stores/828966/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-30 00:20 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
+      "published": "2026-08-31 10:27 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 44.7,
+      "impact": 44.0,
       "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
+        "event_aktif": true,
+        "vol_ratio": 1.51,
+        "composite": 67.8
       },
       "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.33
+        "kebaruan": 0.49
       }
     },
     {
-      "id": "bad332dba8c91e90",
-      "symbol": "CRM",
-      "title": "Apple vs. Salesforce: The Better Stock May Not Be the One You Expect",
-      "url": "https://247wallst.com/investing/2026/08/31/apple-vs-salesforce-the-better-stock-may-not-be-the-one-you-expect/?.tsrc=rss",
+      "id": "e449dfbde3c22a2d",
+      "symbol": "EL",
+      "title": "Est\u00e9e Lauder (EL) Stock Looks Undervalued On Cash Flow Yet Fair On Sales",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/est-e-lauder-el-stock-210641153.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 18:30 UTC",
+      "published": "2026-09-01 21:06 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.44,
+      "sentiment": 0.318,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 44.5,
+      "impact": 43.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
+        "vol_ratio": 0.77,
+        "composite": 81.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.44,
-        "kebaruan": 0.92
+        "sentimen": 0.318,
+        "kebaruan": 0.97
       }
     },
     {
-      "id": "08688bbf8b69e1e0",
-      "symbol": "COIN",
-      "title": "Coinbase And Webull Join Forces In Canada",
-      "url": "https://www.cryptoprowl.com/releases/coinbase-and-webull-join-forces-in-canada-6593?.tsrc=rss",
+      "id": "1316dfb4ac14d128",
+      "symbol": "SNPS",
+      "title": "Is It Worth Investing in Synopsys (SNPS) Based on Wall Street's Bullish Views?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-synopsys-snps-based-133002381.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 19:55 UTC",
+      "published": "2026-09-01 13:30 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.296,
+      "sentiment": 0.226,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 43.1,
+      "impact": 42.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
+        "vol_ratio": 1.22,
+        "composite": 76.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.94
+        "sentimen": 0.226,
+        "kebaruan": 0.87
       }
     },
     {
@@ -715,42 +540,267 @@
       "sentiment": -0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.3,
+      "impact": 40.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.99,
-        "composite": 85.1
+        "vol_ratio": 0.77,
+        "composite": 81.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.296,
-        "kebaruan": 0.77
+        "kebaruan": 0.46
       }
     },
     {
-      "id": "c2d8744af451dc75",
-      "symbol": "SYY",
-      "title": "Sysco (SYY) Stock Looks Below Fair Value On Cash Flow And Earnings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/sysco-syy-stock-looks-below-121034597.html?.tsrc=rss",
+      "id": "c0962d480bbaf980",
+      "symbol": "CRM",
+      "title": "Salesforce (CRM) Backs Workforce AI And Adds New AgentExchange Email Tool",
+      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-crm-backs-workforce-ai-170556600.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-19 12:10 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.572,
-      "relevansi": "sesektor",
+      "published": "2026-09-01 17:05 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.052,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.2,
+      "impact": 40.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.94,
-        "composite": 60.8
+        "vol_ratio": 0.92,
+        "composite": 76.2
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.572,
-        "kebaruan": 0.0
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.052,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "d226b0b794b050ad",
+      "symbol": "COIN",
+      "title": "Jim Cramer sends blunt response to Coinbase rally",
+      "url": "https://www.thestreet.com/crypto/markets/jim-cramer-breaks-silence-on-major-s-p-500-stocks-august-rally?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 20:23 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "2130527a6147453e",
+      "symbol": "COIN",
+      "title": "Coinbase Powers Webull's Crypto Trading Expansion in Canada",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-powers-webulls-crypto-trading-174300179.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 17:43 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.93
+      }
+    },
+    {
+      "id": "7640402f2959f8fa",
+      "symbol": "COIN",
+      "title": "Coinbase at $188: Just Hold Tight Now",
+      "url": "https://247wallst.com/investing/2026/09/01/coinbase-at-188-just-hold-tight-now/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 15:47 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "f90b2d8fc89c365d",
+      "symbol": "CRM",
+      "title": "What's Going On With Salesforce Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/whats-going-salesforce-stock-160621569.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 16:06 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.92,
+        "composite": 76.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "377fbe38187cfc51",
+      "symbol": "CRM",
+      "title": "Agentforce: Scaling the Next Generation of Salesforce (CRM)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/agentforce-scaling-next-generation-salesforce-143929637.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 14:39 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.92,
+        "composite": 76.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "43eab154f6d09a13",
+      "symbol": "CRM",
+      "title": "Prediction: Salesforce Stock Will Trade at $300 on This Date",
+      "url": "https://247wallst.com/investing/2026/09/01/prediction-salesforce-stock-will-trade-at-300-on-this-date/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 14:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.92,
+        "composite": 76.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "b6d7a3026442a80d",
+      "symbol": "COIN",
+      "title": "Crypto Stocks Slide as Bitcoin and Ethereum Hold Flat: Circle Internet and Bitmine Fall 4%, Coinbase Drops 3%",
+      "url": "https://247wallst.com/investing/2026/09/01/crypto-stocks-slide-as-bitcoin-and-ethereum-hold-flat-circle-internet-and-bitmine-fall-4-coinbase-drops-3/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 13:28 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.87
+      }
+    },
+    {
+      "id": "be5aed4201c10cfb",
+      "symbol": "SNPS",
+      "title": "Here's How Much You'd Have If You Invested $1000 in Synopsys a Decade Ago",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heres-much-youd-invested-1000-123002715.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 12:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.22,
+        "composite": 76.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.85
+      }
+    },
+    {
+      "id": "1fbe367ca3d89fe9",
+      "symbol": null,
+      "title": "Firearms retailer files Chapter 11 bankruptcy as gun sales drop",
+      "url": "https://finance.yahoo.com/small-business/articles/firearms-retailer-files-chapter-11-153300921.html",
+      "source": "TheStreet",
+      "published": "2026-08-31 15:33 UTC",
+      "event_type": "bangkrut/gagal bayar",
+      "event_weight": 1.0,
+      "sentiment": -0.542,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 39.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "bangkrut/gagal bayar",
+        "bobot_kategori": 1.0,
+        "sentimen": -0.542,
+        "kebaruan": 0.56
       }
     },
     {
@@ -765,167 +815,42 @@
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.4,
+      "impact": 38.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.41,
-        "composite": 72.4
+        "vol_ratio": 0.91,
+        "composite": 71.4
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.77
+        "kebaruan": 0.46
       }
     },
     {
-      "id": "b0ece6004a14e632",
-      "symbol": "CRM",
-      "title": "Salesforce Announces Upcoming Investor Events",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/salesforce-announces-upcoming-investor-events-202000150.html?.tsrc=rss",
+      "id": "f55e8f2c971428e9",
+      "symbol": "TXN",
+      "title": "Analogue Computing Market Outlook Report 2026-2030 Featuring Profiles of Analog Devices, Texas Instruments, and Intel",
+      "url": "https://finance.yahoo.com/technology/articles/analogue-computing-market-outlook-report-080900733.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 20:20 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-08-31 08:09 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.2,
+      "impact": 38.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
+        "vol_ratio": 1.25,
+        "composite": 59.2
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "5ed473e7d2776d52",
-      "symbol": "COIN",
-      "title": "Bitmine Rises 4% as ETH Holdings Near 5% of Supply, Circle Internet Group Surges 8%, Coinbase Climbs 5%",
-      "url": "https://247wallst.com/investing/2026/08/31/bitmine-rises-4-as-eth-holdings-near-5-of-supply-circle-internet-group-surges-8-coinbase-climbs-5/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 18:06 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "9d8683a4d6ca83ef",
-      "symbol": "CRM",
-      "title": "Zacks Investment Ideas feature highlights: Salesforce, Cisco, Dell, Uber and Robinhood",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-investment-ideas-feature-highlights-151500562.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 15:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "450a737ff7965639",
-      "symbol": "CRM",
-      "title": "Salesforce at $256: Should You Buy It?",
-      "url": "https://247wallst.com/investing/2026/08/31/salesforce-at-256-should-you-buy-it/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 14:40 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "473f7d1069c8714f",
-      "symbol": "CRM",
-      "title": "Understand The Current Buy Rationale for Salesforce",
-      "url": "https://247wallst.com/investing/2026/08/31/understand-the-current-buy-rationale-for-salesforce/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 14:43 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "ca6d189ba90e794e",
-      "symbol": "COIN",
-      "title": "Coinbase Is Adding Perpetual Futures to Its Base App. Here's What Crypto Investors Need to Know.",
-      "url": "https://www.fool.com/investing/2026/08/30/coinbase-is-adding-perpetual-futures-to-its-base-a/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-30 10:10 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 37.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.47
+        "kebaruan": 0.46
       }
     },
     {
@@ -943,14 +868,39 @@
       "impact": 37.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.28,
-        "composite": 67.2
+        "vol_ratio": 0.74,
+        "composite": 61.3
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
         "sentimen": 0.0,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "9a88eb60d1f77a0a",
+      "symbol": "PG",
+      "title": "Why Procter & Gamble\u2019s Quieter Dividend Outpaces Johnson & Johnson\u2019s Growth Story",
+      "url": "https://247wallst.com/investing/2026/09/01/why-procter-gambles-quieter-dividend-outpaces-johnson-johnsons-growth-story/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 13:05 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 37.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.92,
+        "composite": 64.3
+      },
+      "heuristik": {
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.382,
+        "kebaruan": 0.86
       }
     },
     {
@@ -968,8 +918,8 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.99,
-        "composite": 85.1
+        "vol_ratio": 0.77,
+        "composite": 81.8
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -979,78 +929,28 @@
       }
     },
     {
-      "id": "6fff53d7486298ee",
-      "symbol": "CB",
-      "title": "Why Is Chubb (CB) Down 0.7% Since Last Earnings Report?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-chubb-cb-down-0-153003299.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 15:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
+      "id": "23f3b4d162895fa5",
+      "symbol": null,
+      "title": "Denny\u2019s rival dining chain files for Chapter 11 bankruptcy",
+      "url": "https://finance.yahoo.com/small-business/articles/denny-rival-dining-chain-files-153300154.html",
+      "source": "TheStreet",
+      "published": "2026-09-01 15:33 UTC",
+      "event_type": "bangkrut/gagal bayar",
+      "event_weight": 1.0,
       "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 36.5,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.18,
-        "composite": 65.5
+        "vol_ratio": null,
+        "composite": null
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
+        "kategori": "bangkrut/gagal bayar",
+        "bobot_kategori": 1.0,
         "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "40d093d05c8cc3ae",
-      "symbol": "FTNT",
-      "title": "Why Is Fortinet (FTNT) Up 12% Since Last Earnings Report?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-fortinet-ftnt-12-since-153028351.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-28 15:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 36.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.45,
-        "composite": 58.9
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "6369a330e78246b5",
-      "symbol": "SYY",
-      "title": "Sysco Announces Strategic Board Appointments and AI Transformation Initiatives Intended to Accelerate Growth, Long-Term Value Creation",
-      "url": "https://finance.yahoo.com/technology/ai/articles/sysco-announces-strategic-board-appointments-120300336.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-20 12:03 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.727,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 36.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.94,
-        "composite": 60.8
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.727,
-        "kebaruan": 0.0
+        "kebaruan": 0.9
       }
     },
     {
@@ -1068,8 +968,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.99,
-        "composite": 85.1
+        "vol_ratio": 0.77,
+        "composite": 81.8
       },
       "heuristik": {
         "kategori": "umum",
@@ -1093,8 +993,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.99,
-        "composite": 85.1
+        "vol_ratio": 0.77,
+        "composite": 81.8
       },
       "heuristik": {
         "kategori": "umum",
@@ -1118,8 +1018,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
+        "vol_ratio": 1.22,
+        "composite": 76.9
       },
       "heuristik": {
         "kategori": "umum",
@@ -1129,22 +1029,72 @@
       }
     },
     {
-      "id": "0b9d7ca67535b734",
-      "symbol": "SNPS",
-      "title": "Why Synopsys Stock Popped Today",
-      "url": "https://www.fool.com/investing/2026/08/27/why-synopsys-stock-popped-today/?.tsrc=rss",
+      "id": "8166d3402b4cf6a6",
+      "symbol": "HOOD",
+      "title": "Morgan Stanley Upgrades HOOD, Cites Prediction Market Boom for $150 Target",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61557441/robinhood-morgan-stanley-prediction-markets?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-27 15:55 UTC",
+      "published": "2026-09-01 17:43 UTC",
+      "event_type": "rating analis",
+      "event_weight": 0.65,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 34.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.23,
+        "composite": 69.9
+      },
+      "heuristik": {
+        "kategori": "rating analis",
+        "bobot_kategori": 0.65,
+        "sentimen": 0.0,
+        "kebaruan": 0.93
+      }
+    },
+    {
+      "id": "4170c4e3a8c3056d",
+      "symbol": null,
+      "title": "Micron Technology (MU) Gains Driven by Earnings Upgrades",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-gains-driven-145610534.html",
+      "source": "Insider Monkey",
+      "published": "2026-08-31 14:56 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.34,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 34.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.34,
+        "kebaruan": 0.55
+      }
+    },
+    {
+      "id": "8b4b99a6a3745941",
+      "symbol": "DG",
+      "title": "Americans making over $100,000 are shopping somewhere unexpected",
+      "url": "https://www.thestreet.com/economy/americans-earning-over-100000-shopping-dollar-general?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-29 16:47 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 35.5,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 34.5,
       "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.03,
-        "composite": 79.0
+        "event_aktif": true,
+        "vol_ratio": 1.51,
+        "composite": 67.8
       },
       "heuristik": {
         "kategori": "umum",
@@ -1154,51 +1104,26 @@
       }
     },
     {
-      "id": "2a5cbc7aade1347c",
-      "symbol": "PG",
-      "title": "P&G Fiscal 2027 Outlook Brings an 8% Core EPS Headwind Into Focus",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/p-g-fiscal-2027-outlook-152300583.html?.tsrc=rss",
+      "id": "c8a903a35cbffac2",
+      "symbol": "PGR",
+      "title": "State Farm Just Handed $5 Billion Back to Customers. Here\u2019s What That Says About Where Car Insurance Profits Are Headed",
+      "url": "https://247wallst.com/investing/2026/08/24/state-farm-just-handed-5-billion-back-to-customers-heres-what-that-says-about-where-car-insurance-profits-are-headed/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 15:23 UTC",
+      "published": "2026-08-24 14:36 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.0,
+      "sentiment": 0.44,
       "relevansi": "sesektor?",
       "judul_menyebut_emiten": false,
       "impact": 33.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.29,
-        "composite": 65.0
+        "vol_ratio": 1.03,
+        "composite": 64.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "6b6fb821e631982d",
-      "symbol": "CB",
-      "title": "Is Chubb (CB) Fairly Valued On Its Dividend Decision?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/chubb-cb-fairly-valued-dividend-101244900.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-19 10:12 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.44,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 33.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.18,
-        "composite": 65.5
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
         "sentimen": 0.44,
         "kebaruan": 0.0
       }
@@ -1215,17 +1140,67 @@
       "sentiment": 0.0,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 33.1,
+      "impact": 31.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.99,
-        "composite": 85.1
+        "vol_ratio": 0.77,
+        "composite": 81.8
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
         "sentimen": 0.0,
-        "kebaruan": 0.81
+        "kebaruan": 0.5
+      }
+    },
+    {
+      "id": "19413bbbe0206c6b",
+      "symbol": "SNDK",
+      "title": "Sandisk (SNDK) Joins The Strong Buy List, Is The Upside Already Priced In?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-sndk-joins-strong-buy-201438201.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 20:14 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.511,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 31.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 60.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.511,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "fdd3ef050da9a922",
+      "symbol": null,
+      "title": "Snowflake Q2 Earnings: Watch These 3 Numbers Before Buying SNOW Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/snowflake-q2-earnings-watch-3-145950964.html",
+      "source": "Barchart",
+      "published": "2026-08-31 14:59 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 31.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.55
       }
     },
     {
@@ -1240,67 +1215,42 @@
       "sentiment": 0.637,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 32.3,
+      "impact": 30.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.28,
-        "composite": 67.2
+        "vol_ratio": 0.74,
+        "composite": 61.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.637,
-        "kebaruan": 0.88
+        "kebaruan": 0.56
       }
     },
     {
-      "id": "ef45fde07d8c5e2e",
-      "symbol": "FTNT",
-      "title": "Fortinet Launches Free High School Cybersecurity Curriculum to Build the Next Generation of Cyber Defenders",
-      "url": "https://finance.yahoo.com/technology/ai/articles/fortinet-launches-free-high-school-130000831.html?.tsrc=rss",
+      "id": "fd0267f6fdaf5537",
+      "symbol": "CRWD",
+      "title": "Stock Market Today, Sept. 1: Stocks Slide and Oil Surges Amid U.S.-Iran Tension",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/09/01/stock-market-today-sept-1-stocks-slide-and-oil-surges-amid-u-s-iran-tension/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 13:00 UTC",
+      "published": "2026-09-01 21:22 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.557,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 31.3,
+      "sentiment": -0.318,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.45,
-        "composite": 58.9
+        "vol_ratio": 1.39,
+        "composite": 72.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.557,
-        "kebaruan": 0.84
-      }
-    },
-    {
-      "id": "d5188c77fcbe1403",
-      "symbol": "NOW",
-      "title": "ServiceNow Vs. Salesforce: Who\u2019s Better Positioned to Capitalize on AI?",
-      "url": "https://247wallst.com/investing/2026/08/31/servicenow-vs-salesforce-whos-better-positioned-to-capitalize-on-ai/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 12:42 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.44,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 30.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.41,
-        "composite": 72.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.44,
-        "kebaruan": 0.84
+        "sentimen": -0.318,
+        "kebaruan": 0.98
       }
     },
     {
@@ -1318,8 +1268,8 @@
       "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.28,
-        "composite": 67.2
+        "vol_ratio": 0.74,
+        "composite": 61.3
       },
       "heuristik": {
         "kategori": "aksi korporasi",
@@ -1329,203 +1279,253 @@
       }
     },
     {
-      "id": "f9d2fda8c05a6070",
-      "symbol": "COIN",
-      "title": "Brian Armstrong Accuses Elizabeth Warren of Trying to \u2018Kill\u2019 CLARITY Act Ahead of Crucial Vote",
-      "url": "https://www.ccn.com/news/crypto/brian-armstrong-elizabeth-warren-kill-clarity-act-crucial-vote/?.tsrc=rss",
+      "id": "b1266a9c976cc75c",
+      "symbol": "PGR",
+      "title": "Progressive Stock And 2 Dividend Powerhouses For Higher Rates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/progressive-stock-2-dividend-powerhouses-201617360.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-31 14:23 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.258,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 28.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 74.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.258,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "cebcf483ce7322ca",
-      "symbol": "HOOD",
-      "title": "Coinbase and Robinhood Rally as Bitcoin Marches Toward Its Best Week in Months",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-robinhood-rally-bitcoin-marches-035923976.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-29 03:59 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.637,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 28.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 69.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.637,
-        "kebaruan": 0.05
-      }
-    },
-    {
-      "id": "e95576d5501228ff",
-      "symbol": "PG",
-      "title": "Why P&G\u2019s 3% Yield Could Matter More to Long-Term Dividend Investors",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-p-g-3-yield-235725243.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 23:57 UTC",
+      "published": "2026-08-28 20:16 UTC",
       "event_type": "aksi korporasi",
       "event_weight": 0.6,
-      "sentiment": 0.026,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 27.2,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.29,
-        "composite": 65.0
+        "vol_ratio": 1.03,
+        "composite": 64.6
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
-        "sentimen": 0.026,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "4917650b7fe68140",
-      "symbol": "PG",
-      "title": "Is P&G Stock Worth Buying as Growth Slows and Valuation Stays Rich?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/p-g-stock-worth-buying-152300378.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 15:23 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.796,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 26.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.29,
-        "composite": 65.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.796,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "5ef58423f50de03a",
-      "symbol": "EL",
-      "title": "2 Surging  Stocks with Exciting Potential and 1 We Question",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/2-surging-stocks-exciting-potential-093913504.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-26 09:39 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.494,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 26.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.99,
-        "composite": 85.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.494,
+        "sentimen": 0.0,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "b0cb43ea66d26dd5",
-      "symbol": "PG",
-      "title": "Procter & Gamble (PG) Faces New Shareholder Proposals Ahead Of October 2026 Meeting",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-pg-faces-shareholder-222637183.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 22:26 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 26.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.29,
-        "composite": 65.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "26ba78f6bc0dda98",
-      "symbol": "CRM",
-      "title": "3 reasons software stocks are making a comeback",
-      "url": "https://finance.yahoo.com/video/3-reasons-software-stocks-making-201242158.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-08-31 20:12 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 26.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.34,
-        "composite": 76.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "6dfa999fba779589",
+      "id": "f9352489b5a8d53d",
       "symbol": null,
-      "title": "China needs U.S. dollars but is building a hedge against Washington\u2019s sanctions",
-      "url": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
+      "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
+      "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html",
       "source": "CNBC Markets",
-      "published": "2026-08-25 16:00 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.0,
+      "published": "2026-09-01 10:50 UTC",
+      "event_type": "makro/suku bunga",
+      "event_weight": 0.55,
+      "sentiment": 0.459,
       "relevansi": "pasar",
       "judul_menyebut_emiten": null,
-      "impact": 26.0,
+      "impact": 28.5,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": null,
         "composite": null
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
+        "kategori": "makro/suku bunga",
+        "bobot_kategori": 0.55,
+        "sentimen": 0.459,
+        "kebaruan": 0.83
+      }
+    },
+    {
+      "id": "d5188c77fcbe1403",
+      "symbol": "NOW",
+      "title": "ServiceNow Vs. Salesforce: Who\u2019s Better Positioned to Capitalize on AI?",
+      "url": "https://247wallst.com/investing/2026/08/31/servicenow-vs-salesforce-whos-better-positioned-to-capitalize-on-ai/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-31 12:42 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.91,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.52
+      }
+    },
+    {
+      "id": "2f8d8afa0ec47652",
+      "symbol": "COIN",
+      "title": "What Is Cathie Wood Buying Now? Nvidia, SpaceX And Crypto Stocks Led ARK\u2019s August Trades \u2013 While Cutting These Growth Stocks",
+      "url": "https://stocktwits.com/news-articles/markets/equity/cathie-wood-ark-invest-nvidia-spacex-buys-roblox-sell-august/cZsoiDFRJMG?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 10:54 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.273,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 28.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.273,
+        "kebaruan": 0.83
+      }
+    },
+    {
+      "id": "d0223cecf07e5ab1",
+      "symbol": "TXN",
+      "title": "SRC Announces 2026 Award Recipients Recognizing Excellence in Semiconductor Research, Leadership, and Innovation",
+      "url": "https://finance.yahoo.com/technology/articles/src-announces-2026-award-recipients-130000277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 13:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.881,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 27.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.25,
+        "composite": 59.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.881,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "b4d755f7dcb923be",
+      "symbol": "CRM",
+      "title": "Trifecta Technologies Expands AI Capabilities with Anthropic Partnership and Claude Services",
+      "url": "https://finance.yahoo.com/technology/ai/articles/trifecta-technologies-expands-ai-capabilities-143000709.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 14:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.103,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.92,
+        "composite": 76.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.103,
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "f9c67d40ffb7f5fe",
+      "symbol": "COIN",
+      "title": "Why Robinhood Stock Is Jumping When Bitcoin, Other Crypto Plays Are Falling",
+      "url": "https://finance.yahoo.com/m/b46f03b7-ee09-3e0b-b073-b932cc9e8f28/why-robinhood-stock-is.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 13:46 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.103,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.103,
+        "kebaruan": 0.87
+      }
+    },
+    {
+      "id": "36dea2744e75d008",
+      "symbol": "CRM",
+      "title": "Software Stocks Just Did Something They've Done Only Three Times Before",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/software-stocks-just-did-something-194325770.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 19:43 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.92,
+        "composite": 76.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.0
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "f0517ca353456b6b",
+      "symbol": "COIN",
+      "title": "Cathie Wood of ARK Invest Continues to Scoop up Bargain-Priced Crypto Stocks. Here Are 2 Stocks You Should Be Buying Now.",
+      "url": "https://www.fool.com/investing/2026/08/31/cathie-wood-of-ark-invest-continues-to-scoop-up-ba/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-31 20:15 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.153,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.153,
+        "kebaruan": 0.63
+      }
+    },
+    {
+      "id": "0c32dbc4a5295009",
+      "symbol": "HOOD",
+      "title": "Robinhood gets second bullish Wall Street call in two days",
+      "url": "https://www.thestreet.com/crypto/markets/robinhood-gets-second-bullish-wall-street-call-in-two-days?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-01 18:40 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.23,
+        "composite": 69.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
       }
     }
   ]
