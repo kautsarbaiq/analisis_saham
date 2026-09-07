@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-04 21:50:02+00:00",
+  "as_of": "2026-09-07 21:58:55+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
@@ -19,8 +19,8 @@
       "AFL",
       "SNPS",
       "PG",
-      "TXN",
       "ACGL",
+      "TXN",
       "MNST",
       "FLEX",
       "SYY"
@@ -28,6 +28,31 @@
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
+    {
+      "id": "d9b2c5a32c410447",
+      "symbol": "FLEX",
+      "title": "Flex Powers Up AI Ambitions With $4.4B Acquisition Of EPC Power",
+      "url": "https://stocktwits.com/news-articles/markets/equity/flex-powers-up-ai-ambitions-with-4-4-b-acquisition-of-epc-power/cZsuXqoRJvw?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-03 23:05 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 57.7,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.56,
+        "composite": 61.3
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
     {
       "id": "3e7165a5fe650121",
       "symbol": "SNPS",
@@ -40,17 +65,17 @@
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 59.8,
+      "impact": 56.5,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 1.67,
-        "composite": 64.9
+        "vol_ratio": 1.69,
+        "composite": 64.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.67
+        "kebaruan": 0.0
       }
     },
     {
@@ -65,67 +90,42 @@
       "sentiment": 0.44,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 58.0,
+      "impact": 54.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.7,
-        "composite": 69.3
+        "vol_ratio": 0.71,
+        "composite": 69.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.44,
-        "kebaruan": 0.62
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "46935784403ab771",
-      "symbol": "DG",
-      "title": "Will Dollar General\u2019s (DG) Raised Guidance and AI Bet Reshape Its Margin and Expansion Narrative?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dollar-general-dg-raised-guidance-151041422.html?.tsrc=rss",
+      "id": "c2975c89c4d95327",
+      "symbol": "SNPS",
+      "title": "How to Play SNPS Stock as Layoffs Hit Synopsys",
+      "url": "https://www.barchart.com/story/news/4469275/how-to-play-snps-stock-as-layoffs-hit-synopsys?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 15:10 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "published": "2026-09-06 19:30 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.34,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 55.0,
+      "impact": 53.0,
       "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.67,
-        "composite": 68.9
+        "event_aktif": true,
+        "vol_ratio": 1.69,
+        "composite": 64.5
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "e571589090400c7e",
-      "symbol": "HOOD",
-      "title": "Robinhood sends harsh response to AMC CEO's legal threat",
-      "url": "https://www.thestreet.com/crypto/markets/robinhood-stock-slips-on-amc-ceos-legal-threat?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 18:26 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": -0.7,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 54.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 71.1
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": -0.7,
-        "kebaruan": 0.94
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.34,
+        "kebaruan": 0.61
       }
     },
     {
@@ -140,32 +140,107 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 54.6,
+      "impact": 53.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.7,
-        "composite": 69.3
+        "vol_ratio": 0.71,
+        "composite": 69.0
       },
       "heuristik": {
         "kategori": "bangkrut/gagal bayar",
         "bobot_kategori": 1.0,
         "sentimen": 0.0,
-        "kebaruan": 0.31
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "c077db80b5634136",
-      "symbol": "HOOD",
-      "title": "AMC CEO Slams Robinhood Over 'Inexcusable, Vile' Stock Token Trading",
-      "url": "https://finance.yahoo.com/m/96118c5b-2010-3243-a3eb-11b8726a5c0f/amc-ceo-slams-robinhood-over.html?.tsrc=rss",
+      "id": "7e39499457b96c72",
+      "symbol": "NOW",
+      "title": "ServiceNow (NOW) Stock Looks Reasonable On Cash Flow While Earnings Look Stretched",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-now-stock-looks-reasonable-041718507.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 20:18 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": -0.625,
+      "published": "2026-09-05 04:17 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 54.1,
+      "impact": 50.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.71,
+        "composite": 69.0
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.07
+      }
+    },
+    {
+      "id": "46935784403ab771",
+      "symbol": "DG",
+      "title": "Will Dollar General\u2019s (DG) Raised Guidance and AI Bet Reshape Its Margin and Expansion Narrative?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dollar-general-dg-raised-guidance-151041422.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-04 15:10 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "08703ffe3f3412b0",
+      "symbol": "CRWD",
+      "title": "CrowdStrike (CRWD)\u2019s CEO Warns AI Is Exposing Gaps in Legacy Cybersecurity Tools",
+      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-crwd-ceo-warns-ai-221012462.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-06 22:10 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": -0.361,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 49.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.81,
+        "composite": 69.4
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": -0.361,
+        "kebaruan": 0.65
+      }
+    },
+    {
+      "id": "eadbc3216cb5a8c5",
+      "symbol": "HOOD",
+      "title": "Robinhood\u2019s CEO Says States Are Fighting Prediction Markets to Protect Their Own Gambling Tax Money, \u2018There\u2019s a Huge Financial Incentive\u2019",
+      "url": "https://www.barchart.com/story/news/4468417/robinhoods-ceo-says-states-are-fighting-prediction-markets-to-protect-their-own-gambling-tax-money-theres-a-huge-financial-incentive?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-06 17:00 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.34,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 49.3,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.14,
@@ -174,33 +249,33 @@
       "heuristik": {
         "kategori": "manajemen",
         "bobot_kategori": 0.6,
-        "sentimen": -0.625,
-        "kebaruan": 0.97
+        "sentimen": 0.34,
+        "kebaruan": 0.58
       }
     },
     {
-      "id": "68f0b6b5494b64c6",
-      "symbol": "HOOD",
-      "title": "'Detestable, inexcusable, vile': AMC CEO slams Robinhood for tokenized stock offerings",
-      "url": "https://finance.yahoo.com/video/detestable-inexcusable-vile-amc-ceo-162000374.html?.tsrc=rss",
+      "id": "bae731e037fcb45f",
+      "symbol": "CRWD",
+      "title": "CrowdStrike (CRWD) Stock Faces High Expectations After Strong Gains, DA Davidson Stays Bullish",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-crwd-stock-faces-high-144223749.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 16:20 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": -0.625,
+      "published": "2026-09-05 14:42 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.691,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 53.8,
+      "impact": 48.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 71.1
+        "vol_ratio": 0.81,
+        "composite": 69.4
       },
       "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": -0.625,
-        "kebaruan": 0.91
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.691,
+        "kebaruan": 0.21
       }
     },
     {
@@ -215,7 +290,7 @@
       "sentiment": -0.527,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 52.5,
+      "impact": 48.3,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.67,
@@ -225,7 +300,32 @@
         "kategori": "manajemen",
         "bobot_kategori": 0.6,
         "sentimen": -0.527,
-        "kebaruan": 0.84
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "6751f10290a34e9d",
+      "symbol": "CRWD",
+      "title": "Up 90% in 2026, This Cybersecurity Growth Stock Under $300 Is the Best One to Buy Now",
+      "url": "https://www.barchart.com/story/news/4466569/up-90-in-2026-this-cybersecurity-growth-stock-under-300-is-the-best-one-to-buy-now?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-06 10:49 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.778,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 48.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.81,
+        "composite": 69.4
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.778,
+        "kebaruan": 0.49
       }
     },
     {
@@ -240,342 +340,142 @@
       "sentiment": 0.527,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 51.1,
+      "impact": 46.8,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 1.67,
-        "composite": 64.9
+        "vol_ratio": 1.69,
+        "composite": 64.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.527,
-        "kebaruan": 0.87
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "1ebc33853e19216e",
-      "symbol": "HOOD",
-      "title": "AMC CEO Blasts Robinhood Stock Tokens as AMC Shares Rally",
-      "url": "https://www.bankless.com/read/amc-ceo-blasts-robinhood-stock-tokens?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 19:12 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 50.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 71.1
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.296,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "215bcc8fab6a4b22",
+      "id": "b4df9e11646f4b92",
       "symbol": "CRWD",
-      "title": "CrowdStrike Raises Long-Term Growth Targets as AI Opportunity Expands, Oppenheimer Says",
-      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-raises-long-term-growth-180500620.html?.tsrc=rss",
+      "title": "AI\u2019s Next Winners? Investor Bets on Snowflake, CrowdStrike and Palantir",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-next-winners-investor-bets-170009073.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-03 18:05 UTC",
+      "published": "2026-09-05 17:00 UTC",
       "event_type": "suplai/operasional",
       "event_weight": 0.5,
-      "sentiment": 0.7,
+      "sentiment": 0.477,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 50.5,
+      "impact": 46.5,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.81,
-        "composite": 69.7
+        "composite": 69.4
       },
       "heuristik": {
         "kategori": "suplai/operasional",
         "bobot_kategori": 0.5,
-        "sentimen": 0.7,
-        "kebaruan": 0.6
+        "sentimen": 0.477,
+        "kebaruan": 0.25
       }
     },
     {
-      "id": "51358feac37354c0",
-      "symbol": "SNPS",
-      "title": "Marvell Technology Knows Synopsys Is a Huge Threat",
-      "url": "https://247wallst.com/investing/2026/09/03/marvell-technology-knows-synopsys-is-a-huge-threat/?.tsrc=rss",
+      "id": "e8de604efab8aea3",
+      "symbol": "CRWD",
+      "title": "CrowdStrike and Palo Alto Made the SaaSmageddon Survivor List. Can AI Expand Their Moats Faster Than It Compresses Software Prices?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-palo-alto-made-saasmageddon-225017164.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-03 13:22 UTC",
+      "published": "2026-09-04 22:50 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": 0.586,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 46.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.81,
+        "composite": 69.4
+      },
+      "heuristik": {
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": 0.586,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "15119702cfbf4f7d",
+      "symbol": "CRM",
+      "title": "Palantir Stock Leads August Rally -- Nvidia, Salesforce and Super Micro Jump",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-leads-august-rally-215855985.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-07 21:58 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.273,
-      "relevansi": "sesektor",
+      "sentiment": 0.599,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 46.9,
+      "impact": 46.4,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.67,
-        "composite": 64.9
+        "event_aktif": false,
+        "vol_ratio": 0.64,
+        "composite": 69.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.273,
-        "kebaruan": 0.54
+        "sentimen": 0.599,
+        "kebaruan": 0.98
       }
     },
     {
-      "id": "6cd214558622aa61",
+      "id": "0c31ff867c8ef6c0",
       "symbol": "CRWD",
-      "title": "Commvault (CVLT) Turns Cyberattacks Into Automated Recovery Through New CrowdStrike (CRWD) Deal",
-      "url": "https://finance.yahoo.com/technology/articles/commvault-cvlt-turns-cyberattacks-automated-175037526.html?.tsrc=rss",
+      "title": "CrowdStrike (CRWD) Unveiled A Broad AI Security Platform Push",
+      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-crwd-unveiled-broad-ai-001430063.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 17:50 UTC",
+      "published": "2026-09-06 00:14 UTC",
       "event_type": "suplai/operasional",
       "event_weight": 0.5,
-      "sentiment": 0.0,
+      "sentiment": 0.34,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 45.2,
+      "impact": 45.6,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.81,
-        "composite": 69.7
+        "composite": 69.4
       },
       "heuristik": {
         "kategori": "suplai/operasional",
         "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.93
+        "sentimen": 0.34,
+        "kebaruan": 0.35
       }
     },
     {
-      "id": "d43f1ab9a3737a0c",
+      "id": "26d55a9aa3e86001",
       "symbol": "CRWD",
-      "title": "VAST Data and CrowdStrike Deliver First-of-Its-Kind Cybersecurity Across the AI Operating System",
-      "url": "https://finance.yahoo.com/technology/ai/articles/vast-data-crowdstrike-deliver-first-184500271.html?.tsrc=rss",
+      "title": "Brokers Suggest Investing in CrowdStrike (CRWD): Read This Before Placing a Bet",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/brokers-suggest-investing-crowdstrike-crwd-133004050.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 18:45 UTC",
+      "published": "2026-09-07 13:30 UTC",
       "event_type": "suplai/operasional",
       "event_weight": 0.5,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 45.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.7
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "3fb5c1db87b840ee",
-      "symbol": "DG",
-      "title": "DG or TJX: Which Is the Better Value Stock Right Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dg-tjx-better-value-stock-154002572.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 15:40 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.649,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
       "impact": 44.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.67,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.649,
-        "kebaruan": 0.57
-      }
-    },
-    {
-      "id": "614509defbdde219",
-      "symbol": "CRM",
-      "title": "Software Stocks Are Back. 2 Winners, 2 Losers\u2014and Salesforce.",
-      "url": "https://finance.yahoo.com/m/4a55c725-57db-335b-a0da-d718324a7ce2/software-stocks-are-back.-2.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 14:40 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.477,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 44.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.63,
-        "composite": 70.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.477,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "df429eca36033309",
-      "symbol": "CRM",
-      "title": "AI/R Everymind Recognized in Salesforce 2027 Partner of the Year Awards",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ai-r-everymind-recognized-salesforce-132600819.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 13:26 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.459,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 44.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.63,
-        "composite": 70.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.459,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "fbfc2b3552de612e",
-      "symbol": "SNPS",
-      "title": "Is Synopsys Stock Underperforming the Nasdaq?",
-      "url": "https://www.barchart.com/story/news/4424826/is-synopsys-stock-underperforming-the-nasdaq?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 13:47 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 44.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.67,
-        "composite": 64.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.54
-      }
-    },
-    {
-      "id": "5c6404ce4c66af4b",
-      "symbol": "CRM",
-      "title": "Salesforce (CRM) Grew Agentforce and Data 360 ARR More Than 200%. Is AI Finally Becoming Material to Growth?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-crm-grew-agentforce-data-163207657.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 16:32 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.382,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.63,
-        "composite": 70.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.382,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "be6d4cf738093f3e",
-      "symbol": "CRWD",
-      "title": "Jim Cramer Explains Why CrowdStrike (CRWD) Upended the Tech Bear Thesis",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-explains-why-crowdstrike-185416478.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 18:54 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.6,
-      "terukur": {
-        "event_aktif": false,
         "vol_ratio": 0.81,
-        "composite": 69.7
+        "composite": 69.4
       },
       "heuristik": {
         "kategori": "suplai/operasional",
         "bobot_kategori": 0.5,
         "sentimen": 0.0,
-        "kebaruan": 0.61
-      }
-    },
-    {
-      "id": "53587109613cb3d5",
-      "symbol": "CRWD",
-      "title": "Jim Cramer Calls CrowdStrike (CRWD) a Cybersecurity Heavy Hitter",
-      "url": "https://finance.yahoo.com/technology/ai/articles/jim-cramer-calls-crowdstrike-crwd-171714906.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 17:17 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.7
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.59
-      }
-    },
-    {
-      "id": "2c70f0830518340d",
-      "symbol": "CRM",
-      "title": "Marc Benioff's $25 Billion Bet Against the \"SaaSpocalypse\" Earlier This Year Is Now Paying Off for Salesforce Investors, and It's Not Too Late to Join",
-      "url": "https://www.fool.com/investing/2026/09/04/marc-benioffs-billion-bet-saaspocalypse-salesforce/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 11:44 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.63,
-        "composite": 70.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.85
+        "kebaruan": 0.86
       }
     },
     {
@@ -593,7 +493,7 @@
       "impact": 42.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.89,
+        "vol_ratio": 0.95,
         "composite": 63.0
       },
       "heuristik": {
@@ -604,28 +504,328 @@
       }
     },
     {
-      "id": "c788cdcb3e24ead2",
-      "symbol": "CRM",
-      "title": "Salesforce Gains 2.75% as Snowflake Makes Enterprise AI Spending Look Real",
-      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-gains-2-75-snowflake-213002762.html?.tsrc=rss",
+      "id": "3fb5c1db87b840ee",
+      "symbol": "DG",
+      "title": "DG or TJX: Which Is the Better Value Stock Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dg-tjx-better-value-stock-154002572.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-03 21:30 UTC",
+      "published": "2026-09-03 15:40 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.34,
+      "sentiment": 0.649,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.1,
+      "impact": 42.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.63,
-        "composite": 70.0
+        "vol_ratio": 0.67,
+        "composite": 68.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.34,
-        "kebaruan": 0.65
+        "sentimen": 0.649,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "4f3e5b8e09e6f038",
+      "symbol": "FLEX",
+      "title": "EPC Power Announces Sale to Flex for $4.4 Billion",
+      "url": "https://finance.yahoo.com/energy/articles/epc-power-announces-sale-flex-232000770.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-03 23:20 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.56,
+        "composite": 61.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "e3280e91177d0216",
+      "symbol": "FLEX",
+      "title": "Flex to Participate in Upcoming Investor Conference",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/flex-participate-upcoming-investor-conference-200600233.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-03 20:06 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.56,
+        "composite": 61.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "fbfc2b3552de612e",
+      "symbol": "SNPS",
+      "title": "Is Synopsys Stock Underperforming the Nasdaq?",
+      "url": "https://www.barchart.com/story/news/4424826/is-synopsys-stock-underperforming-the-nasdaq?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-03 13:47 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.69,
+        "composite": 64.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "057cf2d15e30a736",
+      "symbol": "DG",
+      "title": "Dollar General (DG) or Dollar Tree (DLTR): Which Stock Is Better?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dollar-general-dg-dollar-tree-124227102.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-05 12:42 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.19
+      }
+    },
+    {
+      "id": "614509defbdde219",
+      "symbol": "CRM",
+      "title": "Software Stocks Are Back. 2 Winners, 2 Losers\u2014and Salesforce.",
+      "url": "https://finance.yahoo.com/m/4a55c725-57db-335b-a0da-d718324a7ce2/software-stocks-are-back.-2.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-04 14:40 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.477,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.64,
+        "composite": 69.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.477,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "c0f7921f31a42bb5",
+      "symbol": "HOOD",
+      "title": "Should You Forget Robinhood and Buy Webull Instead?",
+      "url": "https://www.fool.com/investing/2026/09/06/should-you-forget-robinhood-and-buy-webull-instead/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-06 10:20 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.226,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 71.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.226,
+        "kebaruan": 0.49
+      }
+    },
+    {
+      "id": "df429eca36033309",
+      "symbol": "CRM",
+      "title": "AI/R Everymind Recognized in Salesforce 2027 Partner of the Year Awards",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-r-everymind-recognized-salesforce-132600819.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-04 13:26 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.459,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.64,
+        "composite": 69.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.459,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "ee692565910da2c4",
+      "symbol": "HOOD",
+      "title": "\u2018That Caught Our Attention\u2019: Wall Street\u2019s Just Turned the Most Bullish Since 2022, But Robinhood Says Its Own Customers Are Quietly Selling",
+      "url": "https://www.barchart.com/story/news/4476336/that-caught-our-attention-wall-streets-just-turned-the-most-bullish-since-2022-but-robinhood-says-its-own-customers-are-quietly-selling?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-07 17:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 71.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.91
+      }
+    },
+    {
+      "id": "efdcbde8d087440b",
+      "symbol": "HOOD",
+      "title": "Man turns Robinhood-AMC feud into $2 million gain in 12 hours",
+      "url": "https://www.thestreet.com/crypto/markets/man-turns-robinhood-amc-feud-into-2-million-gain-in-12-hours?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-05 22:38 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.25,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 71.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.25,
+        "kebaruan": 0.32
+      }
+    },
+    {
+      "id": "5c6404ce4c66af4b",
+      "symbol": "CRM",
+      "title": "Salesforce (CRM) Grew Agentforce and Data 360 ARR More Than 200%. Is AI Finally Becoming Material to Growth?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-crm-grew-agentforce-data-163207657.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-04 16:32 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.64,
+        "composite": 69.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "126544721e46627b",
+      "symbol": null,
+      "title": "Gap closed 350 stores and now has an Old Navy problem",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gap-closed-350-stores-now-233354471.html",
+      "source": "TheStreet",
+      "published": "2026-09-06 23:33 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.402,
+      "relevansi": "disebut",
+      "judul_menyebut_emiten": null,
+      "impact": 38.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.402,
+        "kebaruan": 0.67
+      }
+    },
+    {
+      "id": "246c0098e3d7b53b",
+      "symbol": "FLEX",
+      "title": "Jabil Rises 36.2% Year to Date: Should You Buy the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jabil-rises-36-2-date-152000660.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-07 15:20 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 38.9,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.56,
+        "composite": 61.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.89
       }
     },
     {
@@ -640,267 +840,92 @@
       "sentiment": 0.34,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 41.7,
+      "impact": 38.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.7,
-        "composite": 69.3
+        "vol_ratio": 0.71,
+        "composite": 69.0
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.34,
-        "kebaruan": 0.56
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "c3881de442636e30",
-      "symbol": "HOOD",
-      "title": "Why Robinhood Stock Is Falling Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-robinhood-stock-falling-today-183559452.html?.tsrc=rss",
+      "id": "b997352988978b80",
+      "symbol": "CRM",
+      "title": "Salesforce (CRM)\u2019s AI Numbers Just Gave Benioff His Swagger Back",
+      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-crm-ai-numbers-just-205654689.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 18:35 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.153,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 41.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 71.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.153,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "d9b2c5a32c410447",
-      "symbol": "FLEX",
-      "title": "Flex Powers Up AI Ambitions With $4.4B Acquisition Of EPC Power",
-      "url": "https://stocktwits.com/news-articles/markets/equity/flex-powers-up-ai-ambitions-with-4-4-b-acquisition-of-epc-power/cZsuXqoRJvw?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 23:05 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 41.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.5,
-        "composite": 61.6
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.67
-      }
-    },
-    {
-      "id": "b71a7ccfac7e2a8b",
-      "symbol": "NOW",
-      "title": "Why Is Dynatrace (DT) Up 8% Since Last Earnings Report?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-dynatrace-dt-8-since-153021204.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 15:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 41.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.7,
-        "composite": 69.3
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.9
-      }
-    },
-    {
-      "id": "79f4ed7c204a1a9b",
-      "symbol": "HOOD",
-      "title": "'Send Your Lawyers': Robinhood Isn't Backing Down From AMC Over Stock Tokens",
-      "url": "https://decrypt.co/377461/send-your-lawyers-robinhood-not-backing-down-amc?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 18:36 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.019,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 71.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.019,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "3c258ecafb09d81c",
-      "symbol": "CRWD",
-      "title": "The Gap Between CRWD Stock And Its Own Numbers",
-      "url": "https://www.trefis.com/articles/614384/the-gap-between-crwd-stock-and-its-own-numbers/2026-09-04?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 21:39 UTC",
+      "published": "2026-09-06 20:56 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 40.4,
+      "impact": 38.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
+        "vol_ratio": 0.64,
         "composite": 69.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.98
+        "kebaruan": 0.63
       }
     },
     {
-      "id": "66677334cadf7bb5",
-      "symbol": "HOOD",
-      "title": "Cramer Says a Wave of 21 Year Olds on Robinhood Is the Only Reason This Market Has Not Cracked",
-      "url": "https://247wallst.com/investing/2026/09/04/cramer-says-a-wave-of-21-year-olds-on-robinhood-is-the-only-reason-this-market-has-not-cracked-2/?.tsrc=rss",
+      "id": "2c70f0830518340d",
+      "symbol": "CRM",
+      "title": "Marc Benioff's $25 Billion Bet Against the \"SaaSpocalypse\" Earlier This Year Is Now Paying Off for Salesforce Investors, and It's Not Too Late to Join",
+      "url": "https://www.fool.com/investing/2026/09/04/marc-benioffs-billion-bet-saaspocalypse-salesforce/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 20:30 UTC",
+      "published": "2026-09-04 11:44 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
+      "sentiment": 0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 40.3,
+      "impact": 38.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 71.1
+        "vol_ratio": 0.64,
+        "composite": 69.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.97
+        "sentimen": 0.296,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "c83c320d764e7c6e",
-      "symbol": "HOOD",
-      "title": "Robinhood and AMC Clash Over Tokenized Stock Listing",
-      "url": "https://beincrypto.com/robinhood-amc-tokenized-stock-clash/?.tsrc=rss",
+      "id": "6d736fbc8552425a",
+      "symbol": "CRM",
+      "title": "Salesforce (CRM) Expands Agentic AI Footprint Across Enterprise Customer Deployments",
+      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-crm-expands-agentic-ai-210729169.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 19:16 UTC",
+      "published": "2026-09-05 21:07 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
+      "sentiment": 0.103,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 40.3,
+      "impact": 38.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 71.1
+        "vol_ratio": 0.64,
+        "composite": 69.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "05f1f0b9a8639b46",
-      "symbol": "SYY",
-      "title": "Sysco (SYY) Down 2.9% Since Last Earnings Report: Can It Rebound?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/sysco-syy-down-2-9-153025023.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 15:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 39.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 59.5
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.57
-      }
-    },
-    {
-      "id": "ad06ea30ea1f636a",
-      "symbol": "DG",
-      "title": "Dollar stores benefit as shoppers remain under pressure",
-      "url": "https://www.grocerydive.com/news/dollar-general-dollar-tree-grocery-second-quarter-2026/829312/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-02 11:08 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.202,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 38.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.67,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.17
-      }
-    },
-    {
-      "id": "2a6cb4502c55bc3e",
-      "symbol": "DG",
-      "title": "Are Investors Undervaluing Dollar General (DG) Right Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-undervaluing-dollar-general-dg-134003744.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 13:40 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 38.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.67,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.54
+        "sentimen": 0.103,
+        "kebaruan": 0.3
       }
     },
     {
@@ -918,7 +943,7 @@
       "impact": 37.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.23,
+        "vol_ratio": 1.27,
         "composite": 62.5
       },
       "heuristik": {
@@ -929,28 +954,103 @@
       }
     },
     {
-      "id": "22de5c3d146c45b7",
-      "symbol": "SYY",
-      "title": "Sysco's Fiscal 2027 Outlook Puts AI Cost Savings in the Spotlight",
-      "url": "https://finance.yahoo.com/technology/ai/articles/syscos-fiscal-2027-outlook-puts-153400715.html?.tsrc=rss",
+      "id": "ad06ea30ea1f636a",
+      "symbol": "DG",
+      "title": "Dollar stores benefit as shoppers remain under pressure",
+      "url": "https://www.grocerydive.com/news/dollar-general-dollar-tree-grocery-second-quarter-2026/829312/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-02 15:34 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
+      "published": "2026-09-02 11:08 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.202,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 37.7,
+      "impact": 37.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 59.5
+        "vol_ratio": 0.67,
+        "composite": 68.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.202,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "1c755bc1fbec94c5",
+      "symbol": "HOOD",
+      "title": "This Little-Known Altcoin Powering Robinhood's New Blockchain Just Soared By 45%. Is ARB a Buy, Sell, or Hold?",
+      "url": "https://www.fool.com/investing/2026/09/05/this-little-known-altcoin-powering-robinhoods-new/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-06 01:20 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 37.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 71.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.36
+      }
+    },
+    {
+      "id": "991cffe0353cc8ca",
+      "symbol": null,
+      "title": "Scott Galloway issues grim SpaceX stock price forecast",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/scott-galloway-issues-grim-spacex-173300856.html",
+      "source": "TheStreet",
+      "published": "2026-09-06 17:33 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.572,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 37.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
+        "sentimen": -0.572,
+        "kebaruan": 0.59
+      }
+    },
+    {
+      "id": "a5755ef3135106f3",
+      "symbol": "HOOD",
+      "title": "Bitwise's Matt Hougan Names Robinhood, Solana, Uniswap And Ethereum As His Tokenization Basket",
+      "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitwise-robinhood-solana-uniswap-and-ethereum-tokenization-basket/cZszWvtRJDq?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-05 14:53 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 36.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 71.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.23
+        "kebaruan": 0.22
       }
     },
     {
@@ -968,7 +1068,7 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
+        "vol_ratio": 0.89,
         "composite": 66.3
       },
       "heuristik": {
@@ -993,7 +1093,7 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
+        "vol_ratio": 0.89,
         "composite": 66.3
       },
       "heuristik": {
@@ -1004,12 +1104,12 @@
       }
     },
     {
-      "id": "30183409ca4a7835",
-      "symbol": "FLEX",
-      "title": "Why Is Flex (FLEX) Up 3% Since Last Earnings Report?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-flex-flex-3-since-153025830.html?.tsrc=rss",
+      "id": "05f1f0b9a8639b46",
+      "symbol": "SYY",
+      "title": "Sysco (SYY) Down 2.9% Since Last Earnings Report: Can It Rebound?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sysco-syy-down-2-9-153025023.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-08-28 15:30 UTC",
+      "published": "2026-09-03 15:30 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
@@ -1018,8 +1118,8 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.5,
-        "composite": 61.6
+        "vol_ratio": 0.9,
+        "composite": 59.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -1029,12 +1129,62 @@
       }
     },
     {
-      "id": "8c30ee14b259ec58",
-      "symbol": "DG",
-      "title": "Dollar General Corporation Scheduled to Participate in the Goldman Sachs 33rd Annual Global Retailing Conference",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dollar-general-corporation-scheduled-participate-105500667.html?.tsrc=rss",
+      "id": "22de5c3d146c45b7",
+      "symbol": "SYY",
+      "title": "Sysco's Fiscal 2027 Outlook Puts AI Cost Savings in the Spotlight",
+      "url": "https://finance.yahoo.com/technology/ai/articles/syscos-fiscal-2027-outlook-puts-153400715.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-02 10:55 UTC",
+      "published": "2026-09-02 15:34 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.9,
+        "composite": 59.5
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "32f02d2c8ac86d04",
+      "symbol": "NOW",
+      "title": "ServiceNow Leads Five Stocks To Watch Near Buy Points",
+      "url": "https://finance.yahoo.com/m/e86af097-8bdd-3d03-9d3f-71859be83f7d/servicenow-leads-five-stocks.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-05 12:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 36.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.71,
+        "composite": 69.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.18
+      }
+    },
+    {
+      "id": "cdcc5475ec715c85",
+      "symbol": "NOW",
+      "title": "Jim Cramer Breaks Down P/E Multiples Explaining Why NVIDIA (NVDA) Looks Cheaper Than ServiceNow",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-breaks-down-p-111844638.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-05 11:18 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1043,8 +1193,8 @@
       "impact": 36.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.67,
-        "composite": 68.9
+        "vol_ratio": 0.71,
+        "composite": 69.0
       },
       "heuristik": {
         "kategori": "umum",
@@ -1054,12 +1204,12 @@
       }
     },
     {
-      "id": "8ea6792f410e36b0",
+      "id": "2a6cb4502c55bc3e",
       "symbol": "DG",
-      "title": "Dollar General and Dollar Tree send message to Kroger and Publix",
-      "url": "https://www.thestreet.com/retail/dollar-general-and-dollar-tree-send-message-to-kroger-and-publix?.tsrc=rss",
+      "title": "Are Investors Undervaluing Dollar General (DG) Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-undervaluing-dollar-general-dg-134003744.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-01 23:17 UTC",
+      "published": "2026-09-03 13:40 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1075,16 +1225,16 @@
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.01
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "c79c3a365bd697e5",
-      "symbol": "NOW",
-      "title": "How Is ServiceNow's Stock Performance Compared to Other Software - Application Stocks?",
-      "url": "https://www.barchart.com/story/news/4382940/how-is-servicenow-s-stock-performance-compared-to-other-software-application-stocks?.tsrc=rss",
+      "id": "3c258ecafb09d81c",
+      "symbol": "CRWD",
+      "title": "The Gap Between CRWD Stock And Its Own Numbers",
+      "url": "https://www.trefis.com/articles/614384/the-gap-between-crwd-stock-and-its-own-numbers/2026-09-04?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-01 18:14 UTC",
+      "published": "2026-09-04 21:39 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1093,8 +1243,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.7,
-        "composite": 69.3
+        "vol_ratio": 0.81,
+        "composite": 69.4
       },
       "heuristik": {
         "kategori": "umum",
@@ -1104,103 +1254,28 @@
       }
     },
     {
-      "id": "3b339c49a60fef78",
-      "symbol": "CRM",
-      "title": "AI model competition is 'fantastic': DocuSign CEO on what markets got wrong about SaaSpocalypse",
-      "url": "https://finance.yahoo.com/video/ai-model-competition-fantastic-docusign-152543840.html?.tsrc=rss",
+      "id": "04d0296dd9d62e87",
+      "symbol": "PG",
+      "title": "Here's How Many Shares of Procter & Gamble You'd Need for $15,000 in Yearly Dividends",
+      "url": "https://www.fool.com/investing/2026/09/05/shares-procter-gamble-15000-yearly-dividends/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 15:25 UTC",
-      "event_type": "manajemen",
+      "published": "2026-09-05 15:25 UTC",
+      "event_type": "aksi korporasi",
       "event_weight": 0.6,
-      "sentiment": 0.128,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 34.8,
+      "sentiment": 0.296,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 33.1,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.63,
-        "composite": 70.0
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.128,
-        "kebaruan": 0.9
-      }
-    },
-    {
-      "id": "842f4e1693d0d2c2",
-      "symbol": "SYY",
-      "title": "Will Sysco\u2019s (SYY) AI Push and Buyback Pause Reshape Its Capital Allocation and Growth Narrative?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/sysco-syy-ai-push-buyback-002421330.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 00:24 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.382,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 34.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 59.5
+        "composite": 63.4
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
-        "sentimen": 0.382,
-        "kebaruan": 0.36
-      }
-    },
-    {
-      "id": "2d5a710c500d4aa3",
-      "symbol": "MRSH",
-      "title": "How Can Healthcare Inflation Fuel Growth for MRSH, UNH & CNC?",
-      "url": "https://finance.yahoo.com/healthcare/articles/healthcare-inflation-fuel-growth-mrsh-143400225.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 14:34 UTC",
-      "event_type": "makro/suku bunga",
-      "event_weight": 0.55,
-      "sentiment": 0.382,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 34.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.71,
-        "composite": 66.5
-      },
-      "heuristik": {
-        "kategori": "makro/suku bunga",
-        "bobot_kategori": 0.55,
-        "sentimen": 0.382,
-        "kebaruan": 0.55
-      }
-    },
-    {
-      "id": "ac8a3da2da9f4218",
-      "symbol": null,
-      "title": "NextEra, Santee Cooper Point to Real Dollar Savings From AI Deployments",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nextera-santee-cooper-point-real-153136767.html",
-      "source": "POWER Magazine",
-      "published": "2026-09-03 15:31 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "disebut",
-      "judul_menyebut_emiten": null,
-      "impact": 34.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.57
+        "sentimen": 0.296,
+        "kebaruan": 0.22
       }
     },
     {
@@ -1215,207 +1290,132 @@
       "sentiment": 0.202,
       "relevansi": "sesektor?",
       "judul_menyebut_emiten": false,
-      "impact": 34.0,
+      "impact": 32.8,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.79,
-        "composite": 63.0
+        "composite": 62.7
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
         "sentimen": 0.202,
-        "kebaruan": 0.24
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "0f4129502b9b6415",
-      "symbol": "CRWD",
-      "title": "AI Is Driving an Increased Need for Cybersecurity. Here's the Best Way to Invest.",
-      "url": "https://www.fool.com/investing/2026/09/04/ai-is-driving-an-increased-need-for-cybersecurity/?.tsrc=rss",
+      "id": "842f4e1693d0d2c2",
+      "symbol": "SYY",
+      "title": "Will Sysco\u2019s (SYY) AI Push and Buyback Pause Reshape Its Capital Allocation and Growth Narrative?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/sysco-syy-ai-push-buyback-002421330.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 14:05 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.743,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 33.3,
+      "published": "2026-09-03 00:24 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 32.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.7
+        "vol_ratio": 0.9,
+        "composite": 59.5
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.743,
-        "kebaruan": 0.88
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.382,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "da02d439e3e7151e",
-      "symbol": "NOW",
-      "title": "Dow Jones Futures Fall, Techs Rise After Market Rally; Tesla Cybercab, Jobs Report In Focus",
-      "url": "https://finance.yahoo.com/m/dd97f557-8162-348b-8996-795ae7092089/dow-jones-futures-fall%2C-techs.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 12:13 UTC",
-      "event_type": "makro/suku bunga",
-      "event_weight": 0.55,
+      "id": "fef80e7a998b06bd",
+      "symbol": null,
+      "title": "1 Momentum Signal Suggests the Software Apocalypse Is Over. Don\u2019t Rush to Buy Just Yet.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/1-momentum-signal-suggests-software-143003681.html",
+      "source": "Barchart",
+      "published": "2026-09-06 14:30 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
       "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 32.0,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 32.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.7,
-        "composite": 69.3
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.54
+      }
+    },
+    {
+      "id": "2d5a710c500d4aa3",
+      "symbol": "MRSH",
+      "title": "How Can Healthcare Inflation Fuel Growth for MRSH, UNH & CNC?",
+      "url": "https://finance.yahoo.com/healthcare/articles/healthcare-inflation-fuel-growth-mrsh-143400225.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-03 14:34 UTC",
+      "event_type": "makro/suku bunga",
+      "event_weight": 0.55,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 31.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 66.5
       },
       "heuristik": {
         "kategori": "makro/suku bunga",
         "bobot_kategori": 0.55,
-        "sentimen": 0.0,
+        "sentimen": 0.382,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "a2297b9c45942bb4",
+      "symbol": "PG",
+      "title": "1 Stat That Makes Procter & Gamble Hard to Ignore This September",
+      "url": "https://www.fool.com/investing/2026/09/07/stat-makes-procter-gamble-hard-ignore-september/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-07 12:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 30.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.63,
+        "composite": 63.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.44,
         "kebaruan": 0.85
       }
     },
     {
-      "id": "bdf49c8b6bd79b16",
-      "symbol": null,
-      "title": "Tyson Foods Revises 2026 Outlook Due to \u2018Beef Pressures,\u2019 And Stock Takes a Hit",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tyson-foods-revises-2026-outlook-152226353.html",
-      "source": "Investopedia",
-      "published": "2026-09-03 15:22 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 31.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.56
-      }
-    },
-    {
-      "id": "9a55905fc398a00b",
-      "symbol": "CRM",
-      "title": "AI PowerPoint Maker for Sales Decks, Investor Decks and Board Presentations Reaches 12 Million Users in 2026 - Presentations.ai Trusted by Leading Global Enterprise Users",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ai-powerpoint-maker-sales-decks-130000573.html?.tsrc=rss",
+      "id": "827dbb4384cb157a",
+      "symbol": "PG",
+      "title": "Jim Cramer Discusses Procter & Gamble (PG) Valuation and Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-discusses-procter-gamble-203707815.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 13:00 UTC",
+      "published": "2026-09-07 20:37 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.511,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 30.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.63,
-        "composite": 70.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.511,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "bacec25d57731559",
-      "symbol": null,
-      "title": "Stocks and Bonds Gain as Fed Rate Hike Chances Ease",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-bonds-gain-fed-rate-151304284.html",
-      "source": "Barchart",
-      "published": "2026-09-03 15:13 UTC",
-      "event_type": "makro/suku bunga",
-      "event_weight": 0.55,
-      "sentiment": 0.772,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 30.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "makro/suku bunga",
-        "bobot_kategori": 0.55,
-        "sentimen": 0.772,
-        "kebaruan": 0.56
-      }
-    },
-    {
-      "id": "79795b4898a7d239",
-      "symbol": "TXN",
-      "title": "Texas Instruments (TXN) Gains As Market Dips: What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/texas-instruments-txn-gains-market-215002909.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-04 21:50 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.34,
+      "sentiment": 0.382,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 29.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 63.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.34,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "b0984e9719a92785",
-      "symbol": "PG",
-      "title": "Hershey finance exec succeeds retiring CFO",
-      "url": "https://www.cfodive.com/news/hershey-finance-exec-succeeds-retiring-cfo-compensation/829601/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 15:02 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.494,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 29.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.63,
-        "composite": 63.4
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.494,
-        "kebaruan": 0.56
-      }
-    },
-    {
-      "id": "d4597e852cdc93e9",
-      "symbol": "PG",
-      "title": "Procter & Gamble Fabric & Home Care Trends Mixed: Is Growth Ahead?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-fabric-home-care-140600898.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-02 14:06 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.7,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 29.6,
+      "impact": 30.1,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.63,
@@ -1424,33 +1424,33 @@
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.7,
-        "kebaruan": 0.21
+        "sentimen": 0.382,
+        "kebaruan": 0.96
       }
     },
     {
-      "id": "7769a480230b151c",
-      "symbol": "CRM",
-      "title": "9-3-2026: Oil Surges on Iran Tensions, Yields Swing + Tech Holds Up",
-      "url": "https://finance.yahoo.com/video/9-3-2026-oil-surges-021345437.html?.tsrc=rss",
+      "id": "71103b7eccf7c9dd",
+      "symbol": "PG",
+      "title": "Procter & Gamble Margins Under Pressure: Time to Stay Cautious?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-margins-under-pressure-165800939.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-04 02:13 UTC",
+      "published": "2026-09-07 16:58 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.402,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 29.1,
+      "sentiment": -0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.9,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.63,
-        "composite": 70.0
+        "composite": 63.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.402,
-        "kebaruan": 0.71
+        "sentimen": -0.382,
+        "kebaruan": 0.91
       }
     },
     {
@@ -1468,7 +1468,7 @@
       "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.23,
+        "vol_ratio": 1.27,
         "composite": 62.5
       },
       "heuristik": {
@@ -1479,28 +1479,28 @@
       }
     },
     {
-      "id": "f90d144e6954afb5",
-      "symbol": "ACGL",
-      "title": "Arch Capital Group (ACGL) Outpaces Stock Market Gains: What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/arch-capital-group-acgl-outpaces-220003744.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-03 22:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.34,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 28.2,
+      "id": "a9f77cb7c9c46e71",
+      "symbol": null,
+      "title": "The Next Year Will Define Vaxcyte\u2019s (PCVX) Vaccine Gamble",
+      "url": "https://finance.yahoo.com/healthcare/articles/next-define-vaxcyte-pcvx-vaccine-140957301.html",
+      "source": "Insider Monkey",
+      "published": "2026-09-06 14:09 UTC",
+      "event_type": "regulasi/hukum",
+      "event_weight": 0.8,
+      "sentiment": 0.0,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 28.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 63.0
+        "vol_ratio": null,
+        "composite": null
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.34,
-        "kebaruan": 0.66
+        "kategori": "regulasi/hukum",
+        "bobot_kategori": 0.8,
+        "sentimen": 0.0,
+        "kebaruan": 0.54
       }
     },
     {
@@ -1518,7 +1518,7 @@
       "impact": 27.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.23,
+        "vol_ratio": 1.27,
         "composite": 62.5
       },
       "heuristik": {
