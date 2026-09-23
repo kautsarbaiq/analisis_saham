@@ -1,33 +1,112 @@
 {
-  "as_of": "2026-09-22 23:07:04+00:00",
+  "as_of": "2026-09-23 22:35:59+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
       "HPE",
       "INTC",
-      "META",
       "MRSH",
+      "RVTY",
       "WBD"
     ],
     "sektor": [
       "Communication Services",
       "Financials",
+      "Health Care",
       "Information Technology"
     ],
     "peers": [
-      "AMAT",
-      "HIG",
+      "TECH",
       "AMD",
-      "HOOD",
-      "SMCI",
+      "AMAT",
       "ACGL",
+      "META",
+      "HOOD",
+      "HIG",
+      "SMCI",
       "GOOGL",
-      "GOOG",
-      "TTD"
+      "IDXX",
+      "EW",
+      "GOOG"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
+    {
+      "id": "cb6e89763137883c",
+      "symbol": "WBD",
+      "title": "Warner Bros Discovery Stock Surges on Settlement Progress in Paramount Merger Suit",
+      "url": "https://www.tikr.com/blog/warner-bros-discovery-stock-surges-paramount-settlement?ref=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 12:39 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.421,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 80.2,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.87,
+        "composite": 85.1
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.421,
+        "kebaruan": 0.85
+      }
+    },
+    {
+      "id": "2537e91c1834fe47",
+      "symbol": "WBD",
+      "title": "Paramount plans $49 billion debt sale for Warner Bros. merger",
+      "url": "https://qz.com/paramount-49-billion-debt-sale-warner-bros-merger-092326?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 11:39 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": -0.361,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 79.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.87,
+        "composite": 85.1
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": -0.361,
+        "kebaruan": 0.84
+      }
+    },
+    {
+      "id": "0438da76bab7067b",
+      "symbol": "WBD",
+      "title": "Paramount Settled the Warner Bros. Antitrust Fight. Is the Deal Finally Close?",
+      "url": "https://finance.yahoo.com/media-advertising/articles/paramount-settled-warner-bros-antitrust-195440595.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 19:54 UTC",
+      "event_type": "regulasi/hukum",
+      "event_weight": 0.8,
+      "sentiment": -0.382,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 76.6,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.87,
+        "composite": 85.1
+      },
+      "heuristik": {
+        "kategori": "regulasi/hukum",
+        "bobot_kategori": 0.8,
+        "sentimen": -0.382,
+        "kebaruan": 0.95
+      }
+    },
     {
       "id": "f3853865ad782f35",
       "symbol": "WBD",
@@ -40,116 +119,141 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 76.3,
+      "impact": 74.7,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
+        "vol_ratio": 2.87,
+        "composite": 85.1
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
         "sentimen": 0.0,
-        "kebaruan": 0.92
+        "kebaruan": 0.59
       }
     },
     {
-      "id": "f9b261a8a91fa217",
+      "id": "efab10f95c945dc4",
       "symbol": "WBD",
-      "title": "Paramount Skydance Settlement Clears Path for Warner Bros. Deal Close, Morgan Stanley Says",
-      "url": "https://finance.yahoo.com/media-advertising/articles/paramount-skydance-settlement-clears-path-151345580.html?.tsrc=rss",
+      "title": "Warner Bros. Discovery (WBD) Could Be 18% Below Fair Value As Licensing Deal Lands",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/warner-bros-discovery-wbd-could-161749795.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 15:13 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.077,
+      "published": "2026-09-23 16:17 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.572,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 73.2,
+      "impact": 65.7,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
+        "vol_ratio": 2.87,
+        "composite": 85.1
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.077,
-        "kebaruan": 0.88
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.572,
+        "kebaruan": 0.9
       }
     },
     {
-      "id": "454e55d2f0394522",
+      "id": "ad355bf5165b3bcc",
       "symbol": "WBD",
-      "title": "Paramount Skydance Rises 4% on 12-State Settlement, Warner Bros. Discovery Holds Flat as $110B Deal Nears Its Close",
-      "url": "https://247wallst.com/investing/2026/09/22/paramount-skydance-rises-4-on-12-state-settlement-warner-bros-discovery-holds-flat-as-110b-deal-nears-its-close/?.tsrc=rss",
+      "title": "WBD Stock Is Running. Is There Fuel Left?",
+      "url": "https://www.trefis.com/articles/616254/wbd-stock-is-running-is-there-fuel-left/2026-09-23?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 15:00 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
+      "published": "2026-09-23 15:18 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 72.4,
+      "impact": 59.9,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
+        "vol_ratio": 2.87,
+        "composite": 85.1
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.88
+        "kebaruan": 0.89
       }
     },
     {
-      "id": "3583f2ee877f4cd8",
-      "symbol": "WBD",
-      "title": "How Paramount triumphed over state AGs in antitrust settlement",
-      "url": "https://finance.yahoo.com/video/how-paramount-triumphed-over-state-ags-in-antitrust-settlement-134423578.html?.tsrc=rss",
+      "id": "7646201939b1e8e6",
+      "symbol": "INTC",
+      "title": "Intel Falls 2.24% as Muse Keeps the CPU Thesis Alive",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-falls-2-24-muse-183004349.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 13:44 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.494,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 63.3,
+      "published": "2026-09-23 18:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.382,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 59.0,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 71.7
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.494,
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.382,
+        "kebaruan": 0.93
+      }
+    },
+    {
+      "id": "34df8da85f8e9774",
+      "symbol": "INTC",
+      "title": "AMD, Intel and NVIDIA Forecast: Chip Stocks Test Support",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amd-intel-nvidia-forecast-chip-133351049.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 13:33 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.402,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 58.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 71.7
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.402,
         "kebaruan": 0.86
       }
     },
     {
-      "id": "4d99e7d11d8e97ca",
-      "symbol": "META",
-      "title": "Meta doesn't need the best AI model \u2014 it has something better: you.\n\nWhile OpenAI and Anthropic compete on raw model performance, Meta's new agent wins on data. They know what you want to buy before you do, and now they can finally act on it, cutting out the middlemen and becoming the marketplace itself.\n\nWould you actually use an AI agent that knows you this well?\n\nWatch the full episode, In The Loop, on Youtube.",
-      "url": "https://finance.yahoo.com/video/meta-doesnt-best-ai-model-230704784.html?.tsrc=rss",
+      "id": "0d3158c0ca368b9b",
+      "symbol": "INTC",
+      "title": "VYM\u2019s Index Buys on Forecast Yield, So It Held Intel and Walgreens Right Into Their Dividend Cuts",
+      "url": "https://247wallst.com/investing/etf/2026/09/23/vyms-index-buys-on-forecast-yield-so-it-held-intel-and-walgreens-right-into-their-dividend-cuts/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 23:07 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.66,
+      "published": "2026-09-23 22:35 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 63.3,
+      "impact": 58.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
+        "vol_ratio": 0.82,
+        "composite": 71.7
       },
       "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.66,
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": -0.296,
         "kebaruan": 0.99
       }
     },
@@ -165,92 +269,67 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 60.0,
+      "impact": 58.3,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
+        "vol_ratio": 2.87,
+        "composite": 85.1
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.89
+        "kebaruan": 0.56
       }
     },
     {
-      "id": "ae9aa0bbfe40600b",
-      "symbol": "WBD",
-      "title": "Warner Bros. Discovery, Inc. (WBD) Is a Trending Stock: Facts to Know Before Betting on It",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/warner-bros-discovery-inc-wbd-130004939.html?.tsrc=rss",
+      "id": "53f6ea1e06f8a5e5",
+      "symbol": "RVTY",
+      "title": "Revvity (RVTY) Stock Looks Fair On Cash Flow Yet Pricey On Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/revvity-rvty-stock-looks-fair-021416390.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 13:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
+      "published": "2026-09-03 02:14 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.318,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 59.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "1ba67211e2f9e9b6",
-      "symbol": "WBD",
-      "title": "WBD Stock Surges as Paramount Deal Takes an Unexpected Turn",
-      "url": "https://finance.yahoo.com/media-advertising/articles/paramount-just-cleared-major-hurdle-123158548.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 12:31 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "532b136056a5cb83",
-      "symbol": null,
-      "title": "Paramount, Warner Bros. shares rally on report of merger settlement agreement",
-      "url": "https://finance.yahoo.com/markets/stocks/article/paramount-warner-bros-shares-rally-on-report-of-merger-settlement-agreement-134233954.html",
-      "source": "Yahoo Finance",
-      "published": "2026-09-21 13:42 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.66,
-      "relevansi": "disebut",
-      "judul_menyebut_emiten": null,
-      "impact": 57.0,
+      "impact": 53.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
+        "vol_ratio": 1.05,
+        "composite": 69.2
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.318,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "bf08893e047a26d9",
+      "symbol": "RVTY",
+      "title": "Revvity to Acquire Human Cell Design to Advance Human-Relevant Cell Models for Metabolic Disease Drug Discovery",
+      "url": "https://finance.yahoo.com/healthcare/articles/revvity-acquire-human-cell-design-100000948.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-09 10:00 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 51.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 69.2
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
-        "sentimen": 0.66,
-        "kebaruan": 0.53
+        "sentimen": 0.0,
+        "kebaruan": 0.0
       }
     },
     {
@@ -268,8 +347,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -279,28 +358,28 @@
       }
     },
     {
-      "id": "7d915bf1f3434e20",
-      "symbol": "HPE",
-      "title": "Best Value Stocks to Buy Now with the Stock Market at New Highs",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/best-value-stocks-buy-now-204700862.html?.tsrc=rss",
+      "id": "804945110a33e591",
+      "symbol": "INTC",
+      "title": "Intel\u2019s Price Targets Reveal Just How Much Is Riding on Its Turnaround",
+      "url": "https://247wallst.com/investing/2026/09/23/intels-price-targets-reveal-just-how-much-is-riding-on-its-turnaround/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 20:47 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.765,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 50.2,
+      "published": "2026-09-23 14:00 UTC",
+      "event_type": "rating analis",
+      "event_weight": 0.65,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 48.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 69.4
+        "vol_ratio": 0.82,
+        "composite": 71.7
       },
       "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.765,
-        "kebaruan": 0.96
+        "kategori": "rating analis",
+        "bobot_kategori": 0.65,
+        "sentimen": 0.0,
+        "kebaruan": 0.87
       }
     },
     {
@@ -315,67 +394,17 @@
       "sentiment": -0.361,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 49.6,
+      "impact": 48.0,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 3.22,
-        "composite": 85.3
+        "vol_ratio": 2.87,
+        "composite": 85.1
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.361,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "4f6c0c67d9b3c020",
-      "symbol": "INTC",
-      "title": "Intel Is Up 25% in 5 Days. The $145 Price Target Just Moved Too",
-      "url": "https://247wallst.com/investing/2026/09/22/intel-is-up-25-in-5-days-the-145-price-target-just-moved-too/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 19:05 UTC",
-      "event_type": "rating analis",
-      "event_weight": 0.65,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 48.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
-      },
-      "heuristik": {
-        "kategori": "rating analis",
-        "bobot_kategori": 0.65,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "d8b860be4ede8a22",
-      "symbol": "MRSH",
-      "title": "Can Marsh Benefit From Changing Asset Owner Priorities?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/marsh-benefit-changing-asset-owner-165500683.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 16:55 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.67,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 46.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.67,
-        "kebaruan": 0.91
+        "kebaruan": 0.58
       }
     },
     {
@@ -393,8 +422,8 @@
       "impact": 45.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "makro/suku bunga",
@@ -404,53 +433,103 @@
       }
     },
     {
-      "id": "5bd1212fc5ebf8ee",
-      "symbol": "INTC",
-      "title": "Can Intel's Core Ultra Expansion With Googlebook Benefit the Stock?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/intels-core-ultra-expansion-googlebook-152200497.html?.tsrc=rss",
+      "id": "d8b860be4ede8a22",
+      "symbol": "MRSH",
+      "title": "Can Marsh Benefit From Changing Asset Owner Priorities?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marsh-benefit-changing-asset-owner-165500683.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 15:22 UTC",
+      "published": "2026-09-22 16:55 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.459,
+      "sentiment": 0.67,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 44.5,
+      "impact": 45.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.459,
-        "kebaruan": 0.89
+        "sentimen": 0.67,
+        "kebaruan": 0.58
       }
     },
     {
-      "id": "8df9ab1043722242",
-      "symbol": "INTC",
-      "title": "Intel stock up 25% in last 5 days on CPU demand as AI agents gain traction",
-      "url": "https://finance.yahoo.com/technology/article/intel-stock-up-25-in-last-5-days-on-cpu-demand-as-ai-agents-gain-traction-151217555.html?.tsrc=rss",
+      "id": "1c94adc083745506",
+      "symbol": "AMD",
+      "title": "AMD Is Up 187% This Year: Take Profits, or Buy More?",
+      "url": "https://247wallst.com/investing/2026/09/23/amd-is-up-187-this-year-take-profits-or-buy-more/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 15:12 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.44,
-      "relevansi": "dipantau",
+      "published": "2026-09-23 19:10 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.296,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 44.3,
+      "impact": 44.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
+        "vol_ratio": 0.77,
+        "composite": 67.8
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": -0.296,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "5d6ceeaed8e750bb",
+      "symbol": "RVTY",
+      "title": "Revvity (RVTY) Margins Story Faces A Valuation Test Following Its Zacks Upgrade",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/revvity-rvty-margins-story-faces-110627700.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-02 11:06 UTC",
+      "event_type": "rating analis",
+      "event_weight": 0.65,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 44.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 69.2
+      },
+      "heuristik": {
+        "kategori": "rating analis",
+        "bobot_kategori": 0.65,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "517dbadea182968f",
+      "symbol": "RVTY",
+      "title": "Is Revvity Stock a Buy as Growth Improves but Valuation Stays Rich?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/revvity-stock-buy-growth-improves-114900916.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-04 11:49 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.823,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 43.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 69.2
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.44,
-        "kebaruan": 0.88
+        "sentimen": 0.823,
+        "kebaruan": 0.0
       }
     },
     {
@@ -465,117 +544,17 @@
       "sentiment": 0.599,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 44.2,
+      "impact": 42.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 69.4
+        "vol_ratio": 0.54,
+        "composite": 68.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.599,
-        "kebaruan": 0.54
-      }
-    },
-    {
-      "id": "ca911daa050ff0d6",
-      "symbol": "INTC",
-      "title": "Intel Drops as Muse Revives the Server CPU Thesis",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-drops-muse-revives-server-183529238.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 18:35 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.382,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 44.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.382,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "ec220f448492742d",
-      "symbol": "META",
-      "title": "Meta\u2019s new AI agent just got me $250 in flight credits",
-      "url": "https://finance.yahoo.com/video/meta-ai-agent-just-got-214556275.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 21:45 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.361,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 44.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.361,
-        "kebaruan": 0.98
-      }
-    },
-    {
-      "id": "efaf7c29fa2a3a3d",
-      "symbol": "META",
-      "title": "Wells Fargo, Other Bank Stocks Fall as Meta\u2019s Muse Adds Fuel to AI Fears",
-      "url": "https://finance.yahoo.com/m/2f506fad-d70e-32a5-a5b6-8903945156c7/wells-fargo%2C-other-bank.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 21:07 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.202,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.202,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "b929ca44b78148ec",
-      "symbol": "HPE",
-      "title": "Buy Top-Ranked DELL, SMCI & HPE to Form a Powerful AI-Server Portfolio",
-      "url": "https://finance.yahoo.com/technology/ai/articles/buy-top-ranked-dell-smci-115500323.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-21 11:55 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.421,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.421,
-        "kebaruan": 0.51
+        "kebaruan": 0.21
       }
     },
     {
@@ -593,8 +572,8 @@
       "impact": 42.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 69.4
+        "vol_ratio": 0.54,
+        "composite": 68.6
       },
       "heuristik": {
         "kategori": "umum",
@@ -604,137 +583,162 @@
       }
     },
     {
-      "id": "6bda68ebcee338f0",
-      "symbol": "META",
-      "title": "VGT Holders Bought \u2018Tech\u2019 and Own No Google, Meta, or Amazon: The Sector Rule That Decides What\u2019s Inside",
-      "url": "https://247wallst.com/investing/etf/2026/09/22/vgt-holders-bought-tech-and-own-no-google-meta-or-amazon-the-sector-rule-that-decides-whats-inside/?.tsrc=rss",
+      "id": "e56355698a757115",
+      "symbol": "TECH",
+      "title": "Bio-Techne Shareholders Approve Acquisition by Merck KGaA, Darmstadt, Germany",
+      "url": "https://finance.yahoo.com/healthcare/articles/bio-techne-shareholders-approve-acquisition-132000998.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 22:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.128,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 41.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.128,
-        "kebaruan": 0.98
-      }
-    },
-    {
-      "id": "d131e38cbebc9128",
-      "symbol": "INTC",
-      "title": "Intel (INTC) Stock Moves 1.71%: What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-intc-stock-moves-1-214504558.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 21:45 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-09-23 13:20 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.4,
+      "impact": 42.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
+        "vol_ratio": 1.27,
+        "composite": 68.3
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
         "sentimen": 0.0,
-        "kebaruan": 0.98
+        "kebaruan": 0.86
       }
     },
     {
-      "id": "de9785e38d258fc8",
-      "symbol": "META",
-      "title": "Meta\u2019s Muse just changed the AI game",
-      "url": "https://finance.yahoo.com/video/meta-muse-just-changed-ai-213133381.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 21:31 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "b1f3493e110473d3",
-      "symbol": "META",
-      "title": "Meta's Muse AI teams up with Shopify, lifting its stock",
-      "url": "https://finance.yahoo.com/video/metas-muse-ai-teams-up-with-shopify-lifting-its-stock-195026601.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 19:50 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "6d9860efe8a99c10",
-      "symbol": "META",
-      "title": "Meta\u2019s Muse Can Book Your Vacation\u2014and Travel Stocks Are Paying the Price",
-      "url": "https://finance.yahoo.com/m/5e62529c-81f8-3167-b7ec-a763f3299640/meta%E2%80%99s-muse-can-book-your.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 19:19 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "f9c0b52c05463c98",
+      "id": "7eb2b9da0e88e078",
       "symbol": "HPE",
-      "title": "QuEra Computing Collaborates with HPE to Bring Fault-Tolerant Quantum Computing to On-Premises HPC Environments",
-      "url": "https://finance.yahoo.com/technology/ai/articles/quera-computing-collaborates-hpe-bring-130000536.html?.tsrc=rss",
+      "title": "Why Hewlett Packard Enterprise Company (HPE) Was a Top Contributor for Gabelli",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-hewlett-packard-enterprise-company-140621501.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 13:00 UTC",
+      "published": "2026-09-23 14:06 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.202,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 41.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.54,
+        "composite": 68.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.202,
+        "kebaruan": 0.87
+      }
+    },
+    {
+      "id": "c3df0421bd6058a9",
+      "symbol": "HPE",
+      "title": "D&H Distributing Expands Relationship with HPE; Chosen as a North American Distributor of HPE Networking",
+      "url": "https://finance.yahoo.com/technology/articles/d-h-distributing-expands-relationship-130000213.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 13:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.103,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.54,
+        "composite": 68.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.103,
+        "kebaruan": 0.85
+      }
+    },
+    {
+      "id": "b929ca44b78148ec",
+      "symbol": "HPE",
+      "title": "Buy Top-Ranked DELL, SMCI & HPE to Form a Powerful AI-Server Portfolio",
+      "url": "https://finance.yahoo.com/technology/ai/articles/buy-top-ranked-dell-smci-115500323.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-21 11:55 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.421,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.54,
+        "composite": 68.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.421,
+        "kebaruan": 0.17
+      }
+    },
+    {
+      "id": "d2747dba349119f4",
+      "symbol": "INTC",
+      "title": "Prediction: Intel Names a Major Outside Customer for Its Next Factory Process Before 2027",
+      "url": "https://www.fool.com/investing/2026/09/23/prediction-intel-names-a-major-outside-customer-for-its-next-factory-process-before-2027/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 22:07 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 71.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.98
+      }
+    },
+    {
+      "id": "d49615d1d1131ff8",
+      "symbol": "INTC",
+      "title": "Not Intel. Not Nvidia. This Chip Giant Holds an Unbreakable Moat in Next-Gen Data Centers.",
+      "url": "https://www.fool.com/investing/2026/09/23/not-intel-not-nvidia-this-chip-giant-holds-an/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 17:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 71.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "3168ea8178094d6c",
+      "symbol": "INTC",
+      "title": "Intel Skyrocketed 30% Higher in 1 Month: Here\u2019s What to Do Now",
+      "url": "https://247wallst.com/investing/2026/09/23/intel-skyrocketed-30-higher-in-1-month-heres-what-to-do-now/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 13:42 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -743,39 +747,39 @@
       "impact": 39.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 69.4
+        "vol_ratio": 0.82,
+        "composite": 71.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.85
+        "kebaruan": 0.86
       }
     },
     {
-      "id": "f13946682e738518",
-      "symbol": "SMCI",
-      "title": "Can SMCI's Record Backlog Sustain Revenue Momentum in FY27?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/smcis-record-backlog-sustain-revenue-162900825.html?.tsrc=rss",
+      "id": "436618bfb968c96f",
+      "symbol": "RVTY",
+      "title": "Is Revvity Stock Outperforming the Dow?",
+      "url": "https://www.barchart.com/story/news/4750752/is-revvity-stock-outperforming-the-dow?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-21 16:29 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
+      "published": "2026-09-23 10:33 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
       "sentiment": 0.0,
-      "relevansi": "sesektor",
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 39.3,
+      "impact": 39.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 64.7
+        "vol_ratio": 1.05,
+        "composite": 69.2
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.57
+        "kebaruan": 0.82
       }
     },
     {
@@ -793,8 +797,8 @@
       "impact": 39.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "umum",
@@ -804,53 +808,53 @@
       }
     },
     {
-      "id": "0cf711d566a3a858",
-      "symbol": "HPE",
-      "title": "Hewlett Packard Enterprise (HPE) Stock May Be 34% Undervalued On Fresh AI Demand News",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hewlett-packard-enterprise-hpe-stock-131057908.html?.tsrc=rss",
+      "id": "b5ce9ed05f4c7a39",
+      "symbol": "RVTY",
+      "title": "Why Revvity (RVTY) Is Getting Attention Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-revvity-rvty-getting-attention-021210707.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-19 13:10 UTC",
+      "published": "2026-09-23 02:12 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.202,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 37.5,
+      "impact": 39.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 69.4
+        "vol_ratio": 1.05,
+        "composite": 69.2
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.0
+        "sentimen": 0.0,
+        "kebaruan": 0.7
       }
     },
     {
-      "id": "52eed04bf97a99ee",
-      "symbol": null,
-      "title": "Super Ego\u2019s Mimic notches win in court case; settlement coming?",
-      "url": "https://finance.yahoo.com/small-business/articles/super-ego-mimic-notches-win-152948515.html",
-      "source": "FreightWaves",
-      "published": "2026-09-21 15:29 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.827,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 37.0,
+      "id": "f9c0b52c05463c98",
+      "symbol": "HPE",
+      "title": "QuEra Computing Collaborates with HPE to Bring Fault-Tolerant Quantum Computing to On-Premises HPC Environments",
+      "url": "https://finance.yahoo.com/technology/ai/articles/quera-computing-collaborates-hpe-bring-130000536.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-22 13:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 38.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
+        "vol_ratio": 0.54,
+        "composite": 68.6
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.827,
-        "kebaruan": 0.56
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.52
       }
     },
     {
@@ -869,36 +873,11 @@
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.1,
-        "composite": 66.9
+        "composite": 65.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "81c7fcff33404584",
-      "symbol": "HPE",
-      "title": "Can Hewlett Packard Enterprise Stock Keep Running On Orders It Cannot Ship?",
-      "url": "https://www.trefis.com/articles/615862/can-hewlett-packard-enterprise-stock-keep-running-on-orders-it-cannot-ship/2026-09-18?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-18 16:22 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 35.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
       }
@@ -918,8 +897,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "umum",
@@ -943,8 +922,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "umum",
@@ -968,14 +947,89 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "fb8cc37973c714e3",
+      "symbol": "RVTY",
+      "title": "Q2 Rundown: Revvity (NYSE:RVTY) Vs Other Research Tools & Consumables Stocks",
+      "url": "https://finance.yahoo.com/healthcare/articles/q2-rundown-revvity-nyse-rvty-133531218.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-15 13:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 69.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "1c89d5373fcf951b",
+      "symbol": "GOOGL",
+      "title": "Earnings Outlook Remains Upbeat: A Closer Look",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-outlook-remains-upbeat-closer-220500751.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 22:05 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 34.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.32,
+        "composite": 61.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.98
+      }
+    },
+    {
+      "id": "8adb19dd1a9681b9",
+      "symbol": "GOOG",
+      "title": "Alphabet vs. Amazon: Which Anthropic Backer Will Benefit More From the $2 Trillion IPO?",
+      "url": "https://www.fool.com/investing/2026/09/23/alphabet-vs-amazon-which-anthropic-backer-will-ben/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 20:52 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.572,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 32.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.3,
+        "composite": 57.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.572,
+        "kebaruan": 0.96
       }
     },
     {
@@ -990,142 +1044,92 @@
       "sentiment": 0.599,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 32.4,
+      "impact": 30.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 64.7
+        "vol_ratio": 1.09,
+        "composite": 64.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.599,
-        "kebaruan": 0.98
-      }
-    },
-    {
-      "id": "afd5246d60068806",
-      "symbol": "HOOD",
-      "title": "Robinhood CEO Says Crypto Will Beat Sports at Prediction Markets' Own Game",
-      "url": "https://decrypt.co/378889/robinhood-ceo-crypto-will-beat-sports-prediction-markets?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-21 21:46 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 32.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 65.8
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
         "kebaruan": 0.64
       }
     },
     {
-      "id": "466d31627e9f429c",
-      "symbol": null,
-      "title": "Despite Sale, Baron Capital Maintains Outlook on Ventas (VTR)",
-      "url": "https://finance.yahoo.com/real-estate/articles/despite-sale-baron-capital-maintains-145801862.html",
-      "source": "Insider Monkey",
-      "published": "2026-09-21 14:58 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 31.2,
+      "id": "7036b4ea3570abc8",
+      "symbol": "AMAT",
+      "title": "Nvidia and AMD Get the Headlines. The Real AI Winners Might Be Applied Materials and Lam Research.",
+      "url": "https://www.barchart.com/story/news/4751640/nvidia-and-amd-get-the-headlines-the-real-ai-winners-might-be-applied-materials-and-lam-research?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 11:07 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.477,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 30.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
+        "vol_ratio": 0.71,
+        "composite": 67.1
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.55
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.477,
+        "kebaruan": 0.83
       }
     },
     {
-      "id": "43eece934f40547d",
-      "symbol": "AMD",
-      "title": "AMD Stock Has Blown Past Nvidia This Year. Is It Still the Better Buy?",
-      "url": "https://www.fool.com/investing/2026/09/22/amd-stock-has-blown-past-nvidia-this-year-is-it-still-the-better-buy/?.tsrc=rss",
+      "id": "5503ab3befdc6346",
+      "symbol": "SMCI",
+      "title": "SMCI vs. AVT: Which AI Infrastructure Stock is a Better Buy?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/smci-vs-avt-ai-infrastructure-150300193.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 20:20 UTC",
+      "published": "2026-09-23 15:03 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.44,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 30.7,
+      "impact": 30.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.33,
-        "composite": 66.7
+        "vol_ratio": 1.09,
+        "composite": 64.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.44,
-        "kebaruan": 0.96
+        "kebaruan": 0.88
       }
     },
     {
-      "id": "88e5370434a33b2b",
-      "symbol": "SMCI",
-      "title": "Super Micro Computer (SMCI) Is Up 12.1% After Record AI Backlog Sparks Major Capacity Expansion",
-      "url": "https://finance.yahoo.com/technology/ai/articles/super-micro-computer-smci-12-221802270.html?.tsrc=rss",
+      "id": "6fbc5f1b969d95a8",
+      "symbol": "AMD",
+      "title": "AMD Just Hit $1 Trillion. Can Oracle\u2019s 50,000-GPU Deployment Help Justify It?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amd-just-hit-1-trillion-184727280.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-21 22:18 UTC",
+      "published": "2026-09-23 18:47 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.599,
+      "sentiment": 0.402,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 30.7,
+      "impact": 30.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 64.7
+        "vol_ratio": 0.77,
+        "composite": 67.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.599,
-        "kebaruan": 0.65
-      }
-    },
-    {
-      "id": "bdd501ee03b09d52",
-      "symbol": "INTC",
-      "title": "Bitcoin Breaks Out as Nasdaq Hits Records and Oil Slides on Iran Hopes",
-      "url": "https://decrypt.co/378972/bitcoin-breaks-out-nasdaq-hits-records-oil-slides?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 18:46 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.421,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 30.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.421,
-        "kebaruan": 0.93
+        "sentimen": 0.402,
+        "kebaruan": 0.94
       }
     },
     {
@@ -1143,8 +1147,8 @@
       "impact": 29.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.24,
-        "composite": 69.7
+        "vol_ratio": 1.0,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "manajemen",
@@ -1154,78 +1158,78 @@
       }
     },
     {
-      "id": "8ec2b1214db25e2d",
-      "symbol": "AMD",
-      "title": "AMD Stock Just Sent a Huge AI Signal",
-      "url": "https://finance.yahoo.com/technology/ai/articles/amd-stock-just-sent-huge-190755384.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 19:07 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.318,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 29.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.33,
-        "composite": 66.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.318,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "56e794a8db3a10b7",
-      "symbol": "META",
-      "title": "Entegris and Lattice Semiconductor Shares Are Soaring, What You Need To Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/entegris-lattice-semiconductor-shares-soaring-210946251.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 21:09 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.296,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 29.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 72.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "57c04dfea94fdcea",
+      "id": "21d6153e59879516",
       "symbol": "HOOD",
-      "title": "Why Robinhood Markets Crushed it on Monday",
-      "url": "https://www.fool.com/investing/2026/09/21/why-robinhood-markets-crushed-it-on-monday/?.tsrc=rss",
+      "title": "Robinhood Markets, Inc. (HOOD) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/robinhood-markets-inc-hood-sees-214505013.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 00:25 UTC",
+      "published": "2026-09-23 21:45 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.421,
+      "sentiment": 0.272,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
       "impact": 29.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 65.8
+        "vol_ratio": 0.83,
+        "composite": 65.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.421,
-        "kebaruan": 0.68
+        "sentimen": 0.272,
+        "kebaruan": 0.98
+      }
+    },
+    {
+      "id": "afc6b7f71b1d76d8",
+      "symbol": "HPE",
+      "title": "Is SanDisk Stock Amplifying A Risk You Already Own?",
+      "url": "https://www.trefis.com/articles/616274/is-sandisk-stock-amplifying-a-risk-you-already-own/2026-09-23?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 19:27 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.273,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.54,
+        "composite": 68.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.273,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "8ff0277512a9b9cf",
+      "symbol": "GOOGL",
+      "title": "Alphabet (GOOGL) Registers a Bigger Fall Than the Market: Important Facts to Note",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-googl-registers-bigger-fall-214504912.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 21:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.202,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.32,
+        "composite": 61.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.202,
+        "kebaruan": 0.98
       }
     },
     {
@@ -1240,42 +1244,17 @@
       "sentiment": -0.296,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 29.0,
+      "impact": 27.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 67.2
+        "vol_ratio": 0.71,
+        "composite": 67.1
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.296,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "cc6bd72658eb13e1",
-      "symbol": "AMD",
-      "title": "Advanced Micro Devices (AMD) Stock Moves 1.34%: What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-amd-stock-214502827.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 21:45 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.25,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 28.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.33,
-        "composite": 66.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.25,
-        "kebaruan": 0.98
+        "kebaruan": 0.58
       }
     },
     {
@@ -1290,201 +1269,76 @@
       "sentiment": 0.421,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 28.9,
+      "impact": 27.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.43,
-        "composite": 64.2
+        "vol_ratio": 1.12,
+        "composite": 66.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.421,
-        "kebaruan": 0.65
+        "kebaruan": 0.31
       }
     },
     {
-      "id": "c138f9b0d5669ffc",
-      "symbol": "TTD",
-      "title": "Trade Desk Falls 4% as Index-Removal Flows Keep Pressure On; Magnite Drops 3%, AppLovin Pulls Back",
-      "url": "https://247wallst.com/investing/2026/09/22/trade-desk-falls-4-as-index-removal-flows-keep-pressure-on-magnite-drops-3-applovin-pulls-back/?.tsrc=rss",
+      "id": "7b7a990fac386468",
+      "symbol": "IDXX",
+      "title": "IDEXX (IDXX) Stock Trades Below Fair Value Following Its 26% Slide",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/idexx-idxx-stock-trades-below-031523141.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 15:59 UTC",
+      "published": "2026-09-18 03:15 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.296,
+      "sentiment": 0.572,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 28.9,
+      "impact": 27.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 54.1
+        "vol_ratio": 0.7,
+        "composite": 61.0
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.296,
-        "kebaruan": 0.9
+        "sentimen": 0.572,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "ced849a1799e4e22",
-      "symbol": null,
-      "title": "Global diesel shortage from Iran, Ukraine wars to last into 2027",
-      "url": "https://finance.yahoo.com/energy/articles/global-diesel-shortage-iran-ukraine-181721706.html",
-      "source": "Quartz",
-      "published": "2026-09-21 18:17 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": -0.681,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 28.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": -0.681,
-        "kebaruan": 0.59
-      }
-    },
-    {
-      "id": "b234134a5317d288",
-      "symbol": "INTC",
-      "title": "Top Analyst Reports for NVIDIA, Berkshire Hathaway & GE Aerospace",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-reports-nvidia-berkshire-202400005.html?.tsrc=rss",
+      "id": "b42e69ccd83d7d99",
+      "symbol": "TECH",
+      "title": "Bio-Techne Achieves Science Based Targets Validation and Reports Significant Progress Toward Climate Goals",
+      "url": "https://finance.yahoo.com/healthcare/articles/bio-techne-achieves-science-based-103000897.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 20:24 UTC",
+      "published": "2026-09-01 10:30 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.202,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 28.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.96
-      }
-    },
-    {
-      "id": "0f75d82b7a5c43ce",
-      "symbol": "TTD",
-      "title": "The Trade Desk Trades Above Wall Street\u2019s Average Target. Here\u2019s What the Cost Cuts Change",
-      "url": "https://www.tikr.com/blog/the-trade-desk-trades-above-wall-streets-average-target-heres-what-the-cost-cuts-change?ref=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-21 23:36 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.296,
+      "sentiment": 0.557,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 27.8,
+      "impact": 27.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 54.1
+        "vol_ratio": 1.27,
+        "composite": 68.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.296,
-        "kebaruan": 0.67
+        "sentimen": 0.557,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "4aee9b5d766cbda6",
-      "symbol": null,
-      "title": "Stocks and Bonds Climb as Slumping Crude Prices Ease Inflation Risks",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-bonds-climb-slumping-crude-151325897.html",
-      "source": "Barchart",
-      "published": "2026-09-21 15:13 UTC",
-      "event_type": "makro/suku bunga",
-      "event_weight": 0.55,
-      "sentiment": -0.511,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 27.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "makro/suku bunga",
-        "bobot_kategori": 0.55,
-        "sentimen": -0.511,
-        "kebaruan": 0.55
-      }
-    },
-    {
-      "id": "62f19a25e70d0324",
-      "symbol": "GOOG",
-      "title": "INTEGRITY Global Security Launches AI Dome\u2122, Nuclear-Grade Security That Neutralizes All AI Cyberattacks",
-      "url": "https://finance.yahoo.com/technology/ai/articles/integrity-global-security-launches-ai-213000989.html?.tsrc=rss",
+      "id": "a451f619198015af",
+      "symbol": "GOOGL",
+      "title": "Alphabet Inc. (GOOG) Dips More Than Broader Market: What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-inc-goog-dips-more-214504286.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 21:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.798,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 27.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 57.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.798,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "c8a93fe59fca7748",
-      "symbol": "INTC",
-      "title": "Google Just Made a Big Move to Challenge Apple in Laptops",
-      "url": "https://finance.yahoo.com/technology/articles/google-just-made-big-move-123317226.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 12:33 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.077,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 26.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 72.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.077,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "81c56ced245ec32f",
-      "symbol": "AMAT",
-      "title": "Applied Materials (AMAT) Stock Moves 1.77%: What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-amat-stock-moves-214502129.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-22 21:45 UTC",
+      "published": "2026-09-23 21:45 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1493,8 +1347,8 @@
       "impact": 26.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 67.2
+        "vol_ratio": 1.32,
+        "composite": 61.3
       },
       "heuristik": {
         "kategori": "umum",
@@ -1504,28 +1358,178 @@
       }
     },
     {
-      "id": "5fbb332a794e95b3",
-      "symbol": "AMAT",
-      "title": "Applied Materials Commits $5 Billion to India as Chip Manufacturing Expands",
-      "url": "https://finance.yahoo.com/technology/articles/applied-materials-commits-5-billion-014025894.html?.tsrc=rss",
+      "id": "14287c644657ce06",
+      "symbol": "GOOG",
+      "title": "Why Alphabet (GOOGL) Stock Is Down Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-alphabet-googl-stock-down-212205277.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-22 01:40 UTC",
+      "published": "2026-09-23 21:22 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.128,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.3,
+        "composite": 57.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "cdf194a633031f0b",
+      "symbol": "INTC",
+      "title": "Own ON Semiconductor For AI Power, Or Own Micron's Contracts?",
+      "url": "https://www.trefis.com/articles/616324/own-on-semiconductor-for-ai-power-or-own-microns-contracts/2026-09-23?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 20:41 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 71.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "058dbcbc610558b2",
+      "symbol": "META",
+      "title": "Stock Market Today: Small Caps, Gold Miners Spanked Amid Sell-Off; Meta Makes A Bullish Move",
+      "url": "https://finance.yahoo.com/m/f0c95ea3-7b96-3a04-82c0-08260c90b7cc/stock-market-today%3A-small.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 20:59 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
       "impact": 26.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.89,
-        "composite": 67.2
+        "vol_ratio": 1.36,
+        "composite": 66.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.128,
-        "kebaruan": 0.7
+        "sentimen": 0.0,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "2a7f9536c2a86dba",
+      "symbol": "META",
+      "title": "\u2018Consumer Inertia\u2019 Is in Meta Muse\u2019s Crosshairs. These Stocks Are Getting Hammered.",
+      "url": "https://finance.yahoo.com/m/ebc52273-b02c-3566-8362-08c34c405246/%E2%80%98consumer-inertia%E2%80%99-is-in-meta.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 20:42 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.36,
+        "composite": 66.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "424da963fb598caa",
+      "symbol": "HPE",
+      "title": "Cisco Stock Looks Expensive Until You Price The Year It Already Guided",
+      "url": "https://www.trefis.com/articles/616282/cisco-stock-looks-expensive-until-you-price-the-year-it-already-guided/2026-09-23?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 19:16 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.54,
+        "composite": 68.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "5d122508feb64da7",
+      "symbol": "AMAT",
+      "title": "How Far Can Applied Materials Stock Move On You In A Year?",
+      "url": "https://www.trefis.com/articles/616268/how-far-can-applied-materials-stock-move-on-you-in-a-year/2026-09-23?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 15:08 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 25.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.71,
+        "composite": 67.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "2c1fa58c1526aa89",
+      "symbol": "IDXX",
+      "title": "Should You Continue to Hold IDXX Stock in Your Portfolio?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/continue-hold-idxx-stock-portfolio-125300499.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 12:53 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 25.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.7,
+        "composite": 61.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.85
       }
     }
   ]
