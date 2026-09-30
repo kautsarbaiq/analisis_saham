@@ -1,255 +1,305 @@
 {
-  "as_of": "2026-09-29 00:14:36+00:00",
+  "as_of": "2026-09-29 23:37:00+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
       "AMD",
-      "COO",
+      "GNRC",
       "INTC",
       "META",
       "WBD"
     ],
     "sektor": [
       "Communication Services",
-      "Health Care",
+      "Industrials",
       "Information Technology"
     ],
     "peers": [
-      "RVTY",
-      "TECH",
-      "PANW",
+      "IR",
+      "MPWR",
+      "SWKS",
       "SMCI",
-      "TRMB",
-      "GOOGL",
-      "HUM",
+      "JCI",
+      "BLDR",
       "FOX",
+      "GOOGL",
       "TTD"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
     {
-      "id": "8231909e81bffc88",
-      "symbol": "META",
-      "title": "Meta Platforms (META): Are You Going to Buy the Promise?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/meta-platforms-meta-going-buy-225244358.html?.tsrc=rss",
+      "id": "af49f352ca9b5757",
+      "symbol": "AMD",
+      "title": "AMD vs. Nvidia: Which Chip Giant Looks Stronger After Their Latest Acquisitions?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/amd-vs-nvidia-chip-giant-182400957.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 22:52 UTC",
+      "published": "2026-09-29 18:24 UTC",
       "event_type": "merger/akuisisi",
       "event_weight": 0.95,
-      "sentiment": 0.318,
+      "sentiment": 0.382,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 59.8,
+      "impact": 60.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
+        "vol_ratio": 1.01,
+        "composite": 69.7
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
-        "sentimen": 0.318,
-        "kebaruan": 0.97
+        "sentimen": 0.382,
+        "kebaruan": 0.92
       }
     },
     {
-      "id": "c0f3b2fcae74829d",
-      "symbol": "AMD",
-      "title": "AMD Bolsters AI Vision With $8.2B Acquisition Of Fei-Fei Li\u2019s World Labs, Stock Drops 4%",
-      "url": "https://stocktwits.com/news-articles/markets/equity/amd-bolsters-ai-vision-with-8-2-b-acquisition-of-fei-fei-li-s-world-labs-stock-drops-4/cZMjIGORBXQ?.tsrc=rss",
+      "id": "e19b98f5478315ec",
+      "symbol": "WBD",
+      "title": "Paramount Just Launched a $44 Billion Debt Sale to Buy Warner Bros.",
+      "url": "https://247wallst.com/investing/2026/09/29/paramount-just-launched-a-44-billion-debt-sale-to-buy-warner-bros/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 21:37 UTC",
+      "published": "2026-09-29 17:05 UTC",
       "event_type": "merger/akuisisi",
       "event_weight": 0.95,
-      "sentiment": 0.25,
+      "sentiment": -0.25,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 59.0,
+      "impact": 58.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
+        "vol_ratio": 1.03,
+        "composite": 81.6
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
-        "sentimen": 0.25,
+        "sentimen": -0.25,
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "50c8486bd83d1c2b",
+      "symbol": "META",
+      "title": "Meta's own fine print says you're responsible for every purchase its Muse AI agent makes with your card",
+      "url": "https://finance.yahoo.com/technology/ai/articles/metas-own-fine-print-says-210000032.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 21:00 UTC",
+      "event_type": "regulasi/hukum",
+      "event_weight": 0.8,
+      "sentiment": 0.477,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 57.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "regulasi/hukum",
+        "bobot_kategori": 0.8,
+        "sentimen": 0.477,
         "kebaruan": 0.96
       }
     },
     {
-      "id": "3f0898526a7d5394",
+      "id": "df7d48f4b6e16603",
       "symbol": "AMD",
-      "title": "AMD to Buy AI Company World Labs for $8.2 Billion",
-      "url": "https://finance.yahoo.com/m/099809d4-15e2-3103-b500-04b67ba9144a/amd-to-buy-ai-company-world.html?.tsrc=rss",
+      "title": "AMD Expands AI Expertise With World Labs Acquisition",
+      "url": "https://finance.yahoo.com/m/1d377f15-dbae-3e08-b0fa-e90a5fa6b069/amd-expands-ai-expertise-with.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 20:51 UTC",
+      "published": "2026-09-29 20:08 UTC",
       "event_type": "merger/akuisisi",
       "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 56.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "5961b09509cd327e",
-      "symbol": "AMD",
-      "title": "AMD will acquire Fei-Fei Li\u2019s World Labs for $8.2 billion",
-      "url": "https://finance.yahoo.com/technology/ai/articles/amd-acquire-fei-fei-li-203933879.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 20:39 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 56.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "27451a32865f1abb",
-      "symbol": "AMD",
-      "title": "AMD to Acquire World Labs to Advance the Future of AI Compute",
-      "url": "https://finance.yahoo.com/technology/ai/articles/amd-acquire-world-labs-advance-200500432.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 20:05 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 56.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "8ee00625dd01005d",
-      "symbol": "WBD",
-      "title": "After Clearing a Major Hurdle to Acquire Warner Bros, Is Paramount Skydance an Obvious Buy Down 25.7%?",
-      "url": "https://www.fool.com/investing/2026/09/25/after-clearing-a-major-hurdle-to-acquire-warner-br/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-25 18:20 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 51.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 81.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "d7e739e2ed315f92",
-      "symbol": "WBD",
-      "title": "Paramount Skydance launches $7.5B leveraged loan for Warner Bros Discovery acquisition",
-      "url": "https://pitchbook.com/news/articles/paramount-skydance-launches-7-5b-leveraged-loan-for-warner-bros-discovery-acquisition?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-25 12:12 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 51.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 81.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "59adc5e70d820fd9",
-      "symbol": "COO",
-      "title": "CooperCompanies (COO) Keeps CooperSurgical and Expands Buybacks. What Did the Strategic Review Reveal?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/coopercompanies-coo-keeps-coopersurgical-expands-095115464.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-24 09:51 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
       "sentiment": 0.103,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 51.5,
+      "impact": 57.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
+        "vol_ratio": 1.01,
+        "composite": 69.7
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.103,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "b1c5cc6eb289bc0e",
+      "symbol": "GNRC",
+      "title": "Bloom Energy Sinks 6% as Traders Take Profits on a 190% YTD Run; Generac and Cummins Pull Back",
+      "url": "https://247wallst.com/investing/2026/09/24/bloom-energy-sinks-6-as-traders-take-profits-on-a-190-ytd-run-generac-and-cummins-pull-back/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-24 14:12 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.612,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 56.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.8
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.103,
+        "sentimen": 0.612,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "eb962b9c045535b9",
-      "symbol": "INTC",
-      "title": "Intel Drops 4% on Oil-Driven Rate Fears, NVIDIA Rises 3% on Record $150B Buyback; Taiwan Semiconductor Slips",
-      "url": "https://247wallst.com/investing/2026/09/28/intel-drops-4-on-oil-driven-rate-fears-nvidia-rises-3-on-record-150b-buyback-taiwan-semiconductor-slips/?.tsrc=rss",
+      "id": "27c88815b3b6cc43",
+      "symbol": "WBD",
+      "title": "Warner Bros. Discovery (WBD) Stock May Have More Room Following Merger Clearance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/warner-bros-discovery-wbd-stock-210804121.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 14:33 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": -0.421,
+      "published": "2026-09-29 21:08 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 51.5,
+      "impact": 56.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 1.03,
+        "composite": 81.6
       },
       "heuristik": {
-        "kategori": "aksi korporasi",
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "dde9b322fa791ab5",
+      "symbol": "AMD",
+      "title": "AMD to acquire World Labs for $8.2B in AI infrastructure push",
+      "url": "https://www.proactiveinvestors.com/companies/news/1099325/amd-to-acquire-world-labs-for-8-2b-in-ai-infrastructure-push-1099325.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 16:42 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 56.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.01,
+        "composite": 69.7
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "085998757a1a56a8",
+      "symbol": "META",
+      "title": "Meta & Anthropic CEOs: 'Whoever wins AI, wins'",
+      "url": "https://finance.yahoo.com/video/meta-anthropic-ceos-whoever-wins-220208252.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 22:02 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.813,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 56.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "manajemen",
         "bobot_kategori": 0.6,
-        "sentimen": -0.421,
+        "sentimen": 0.813,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "4b516339dd4724c9",
+      "symbol": "META",
+      "title": "Meta\u2019s Muse Earned a \u201c20% Bump on the Multiple.\u201d Now Earnings Have to Catch Up",
+      "url": "https://www.tikr.com/blog/metas-muse-earned-a-20-bump-on-the-multiple-now-earnings-have-to-catch-up?ref=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 19:54 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 55.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "2c5de5cbfa49700c",
+      "symbol": "META",
+      "title": "Why Cathie Wood Keeps Loading Up on Meta",
+      "url": "https://247wallst.com/investing/2026/09/29/why-cathie-wood-keeps-loading-up-on-meta/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 19:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 55.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "0f8e149e8064e8cc",
+      "symbol": "INTC",
+      "title": "AMD at 4 Milestones: Total Return From the Intel Settlement to the $1 Trillion Club",
+      "url": "https://247wallst.com/investing/2026/09/29/amd-at-4-milestones-total-return-from-the-intel-settlement-to-the-1-trillion-club/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 14:10 UTC",
+      "event_type": "regulasi/hukum",
+      "event_weight": 0.8,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 52.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 71.3
+      },
+      "heuristik": {
+        "kategori": "regulasi/hukum",
+        "bobot_kategori": 0.8,
+        "sentimen": 0.0,
         "kebaruan": 0.86
       }
     },
@@ -265,501 +315,201 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 51.4,
+      "impact": 49.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 81.0
+        "vol_ratio": 1.03,
+        "composite": 81.6
       },
       "heuristik": {
         "kategori": "regulasi/hukum",
         "bobot_kategori": 0.8,
         "sentimen": 0.0,
-        "kebaruan": 0.68
+        "kebaruan": 0.36
       }
     },
     {
-      "id": "24c48417f2b94350",
-      "symbol": "HUM",
-      "title": "Humana (HUM) Jumped, But What Is Drawing Fresh Attention Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/humana-hum-jumped-drawing-fresh-020854822.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-27 02:08 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.45,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 47.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 60.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.45,
-        "kebaruan": 0.35
-      }
-    },
-    {
-      "id": "d993fc4034b19689",
-      "symbol": "META",
-      "title": "MongoDB Plunges 18% as Meta Taps CEO To Lead New AI Platform | Closing Bell",
-      "url": "https://finance.yahoo.com/video/mongodb-plunges-18-meta-taps-203513778.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 20:35 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 47.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "1e39f6255365cb41",
-      "symbol": "META",
-      "title": "MongoDB Stock Crashes Nearly 20% After CEO Desai Leaves to Meta",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/mongodb-stock-crashes-nearly-20-204547121.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 20:45 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 47.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "0571f6d1c79ff079",
-      "symbol": "HUM",
-      "title": "Humana Stock Jumps. Why It Could Be a Big Winner in Next Medicare Star Ratings.",
-      "url": "https://finance.yahoo.com/m/e0429216-c482-3080-8f33-fa0955238ce3/humana-stock-jumps.-why-it.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-25 21:09 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.586,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 47.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 60.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.586,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "80a75e683da41b28",
-      "symbol": "PANW",
-      "title": "Virtualization Security Market Report 2026: Capitalize on 21.3% CAGR as revenue hits $9.68B by 2030\u2014Benchmark VMware, Trend Micro, Palo Alto Networks, Crowdstrike and SentinelOne to Secure Cloud and Zero-Trust Advantage",
-      "url": "https://finance.yahoo.com/technology/articles/virtualization-security-market-report-2026-092700358.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 09:27 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.7,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 47.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 65.2
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.7,
-        "kebaruan": 0.79
-      }
-    },
-    {
-      "id": "7bbec5f11fa4eac9",
+      "id": "b5e9752f69b03145",
       "symbol": "AMD",
-      "title": "Advanced Micro Devices (AMD) Suffers a Larger Drop Than the General Market: Key Insights",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-amd-suffers-204502750.html?.tsrc=rss",
+      "title": "Could Advanced Micro Devices Stock Help You Become a Millionaire?",
+      "url": "https://www.fool.com/investing/2026/09/29/could-advanced-micro-devices-stock-help-you-become/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 20:45 UTC",
+      "published": "2026-09-29 19:52 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.494,
+      "sentiment": 0.572,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 45.2,
+      "impact": 45.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
+        "vol_ratio": 1.01,
+        "composite": 69.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.494,
+        "sentimen": 0.572,
         "kebaruan": 0.94
       }
     },
     {
-      "id": "26457d9ac06f7c07",
-      "symbol": "COO",
-      "title": "Activist investor urges Cooper Companies to replace CEO, sell some assets",
-      "url": "https://www.medtechdive.com/news/activist-investor-urges-cooper-companies-to-replace-ceo-sell-some-assets/830910/?.tsrc=rss",
+      "id": "af28a9338f0cbe2b",
+      "symbol": "META",
+      "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+      "url": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/apple%2C-meta%2C-iovance%2C.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-21 11:47 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.178,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 44.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.178,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "697e043c5566cace",
-      "symbol": "INTC",
-      "title": "Intel vs. Nvidia: Which Semiconductor Stock Is a Better Buy in 2026?",
-      "url": "https://www.fool.com/coverage/better-buy/2026/09/28/intel-vs-nvidia-which-semiconductor-stock-is-a-better-buy-in-2026/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 21:06 UTC",
+      "published": "2026-09-29 20:52 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.44,
+      "sentiment": 0.527,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 44.6,
+      "impact": 45.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 1.19,
+        "composite": 69.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.44,
+        "sentimen": 0.527,
         "kebaruan": 0.95
       }
     },
     {
-      "id": "ea60fc33c187226c",
+      "id": "d5b0978f0c9e4757",
       "symbol": "INTC",
-      "title": "Intel vs. Qualcomm: Which Chip Stock Is a Better Buy in 2026?",
-      "url": "https://www.fool.com/coverage/better-buy/2026/09/28/intel-vs-qualcomm-which-chip-stock-is-a-better-buy-in-2026/?.tsrc=rss",
+      "title": "Will Advantech\u2019s WEDA Edge Alignment Clarify Intel\u2019s (INTC) AI Strategy Amid Training Uncertainty?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/advantech-weda-edge-alignment-clarify-130534572.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 19:35 UTC",
+      "published": "2026-09-29 13:05 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.44,
+      "sentiment": -0.34,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 44.5,
+      "impact": 43.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 1.05,
+        "composite": 71.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.44,
-        "kebaruan": 0.93
+        "sentimen": -0.34,
+        "kebaruan": 0.85
       }
     },
     {
-      "id": "60562422fbe3be5c",
-      "symbol": "TTD",
-      "title": "Reddit vs. The Trade Desk: Here's the Better Media Stock to Buy in 2026",
-      "url": "https://www.fool.com/coverage/better-buy/2026/09/26/reddit-vs-the-trade-desk-here-s-the-better-media-stock-to-buy-in-2026/?.tsrc=rss",
+      "id": "005a4a53062afd8b",
+      "symbol": "AMD",
+      "title": "AMD takes on Nvidia with aggressive $8.2 billion bet on AI\u2019s next era",
+      "url": "https://www.thestreet.com/investing/stocks/amd-acquisition-world-labs-compete-nvidia-advance-robotics-physical-ai?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-26 22:05 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.44,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 43.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 55.8
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.44,
-        "kebaruan": 0.29
-      }
-    },
-    {
-      "id": "2a06f8ab40d0eb99",
-      "symbol": "INTC",
-      "title": "Intel Shares Tumble 5% as Fresh AI Risks Rattle Chip Stocks",
-      "url": "https://finance.yahoo.com/technology/ai/articles/intel-shares-tumble-5-fresh-163531929.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 16:35 UTC",
+      "published": "2026-09-29 22:07 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.34,
+      "sentiment": -0.153,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 43.3,
+      "impact": 41.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 1.01,
+        "composite": 69.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.34,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "3ac252acc5ef8827",
-      "symbol": "META",
-      "title": "Why Meta (META) Stock Is Trading Lower Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-meta-meta-stock-trading-230236657.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 23:02 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.296,
+        "sentimen": -0.153,
         "kebaruan": 0.97
       }
     },
     {
-      "id": "1fc923246fa2a8d9",
-      "symbol": "AMD",
-      "title": "AMD\u2019s $8.2B bet on World Labs is a direct shot at Nvidia\u2019s AI dominance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/amd-8-2b-bet-world-204722980.html?.tsrc=rss",
+      "id": "dd6f8a67370ff178",
+      "symbol": "GNRC",
+      "title": "Is Generac Holdings Inc. (GNRC) Stock a Top AI Infrastructure Play After $2.4 Billion Amazon Deal?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/generac-holdings-inc-gnrc-stock-064555046.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 20:47 UTC",
+      "published": "2026-09-22 06:45 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.202,
+      "sentiment": 0.599,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.2,
+      "impact": 41.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
+        "vol_ratio": 0.67,
+        "composite": 68.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "39fb770daf0009c7",
-      "symbol": "PANW",
-      "title": "Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play?",
-      "url": "https://www.barchart.com/story/news/4832135/analysts-raise-palo-alto-networks-stock-price-targets-what-s-the-best-panw-play?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 12:45 UTC",
-      "event_type": "rating analis",
-      "event_weight": 0.65,
-      "sentiment": 0.765,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 42.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 65.2
-      },
-      "heuristik": {
-        "kategori": "rating analis",
-        "bobot_kategori": 0.65,
-        "sentimen": 0.765,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "3f4038b657b74434",
-      "symbol": "WBD",
-      "title": "Netflix and Paramount Skydance Are Both Down Over 20%. Here's the 1 to Buy With $500 and Never Look at Again.",
-      "url": "https://www.fool.com/investing/2026/09/28/netflix-and-paramount-skydance-are-both-down-over/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 15:23 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 42.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 81.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "8343be5388b64c2b",
-      "symbol": "META",
-      "title": "Scoop: Meta elevates Tucker Bounds to lead comms; David Ginsberg shifts to new AI role",
-      "url": "https://www.axios.com/2026/09/28/meta-david-ginsberg-tucker-bounds#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-AI?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 20:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.153,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 41.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.153,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "95b72c465b334002",
-      "symbol": "HUM",
-      "title": "Why Humana (HUM) Stock Is Up Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-humana-hum-stock-today-024037558.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-26 02:40 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 41.6,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 60.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.03
-      }
-    },
-    {
-      "id": "2dcf8115c1b02bec",
-      "symbol": "COO",
-      "title": "A Failed Auction and a 15% Drop: Is Cooper Companies (COO) a Value Trap or a Bargain?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/failed-auction-15-drop-cooper-000244689.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-21 00:02 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.542,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.542,
+        "sentimen": 0.599,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "07c43752649dd9f6",
-      "symbol": "AMD",
-      "title": "AMD just spent $8.2 billion to enlist the 'Godmother of AI'",
-      "url": "https://finance.yahoo.com/technology/article/amd-just-spent-82-billion-to-enlist-the-godmother-of-ai-230634166.html?.tsrc=rss",
+      "id": "5a6356d7eb832640",
+      "symbol": "WBD",
+      "title": "Paramount Skydance Falls 3% as $44.4B Bond Sale for Warner Deal Reaches Investors; Netflix Ticks Up, Warner Bros. Discovery Holds Flat",
+      "url": "https://247wallst.com/investing/2026/09/29/paramount-skydance-falls-3-as-44-4b-bond-sale-for-warner-deal-reaches-investors-netflix-ticks-up-warner-bros-discovery-holds-flat/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 23:06 UTC",
+      "published": "2026-09-29 17:49 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
+      "sentiment": 0.052,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 40.4,
+      "impact": 40.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
+        "vol_ratio": 1.03,
+        "composite": 81.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.98
+        "sentimen": 0.052,
+        "kebaruan": 0.91
       }
     },
     {
-      "id": "c1f63f63a31033ec",
-      "symbol": "AMD",
-      "title": "AMD buys firm founded by AI 'godmother' Fei-Fei Li",
-      "url": "https://finance.yahoo.com/technology/ai/articles/amd-buys-firm-founded-ai-211614246.html?.tsrc=rss",
+      "id": "119b240fe0a1f822",
+      "symbol": "GNRC",
+      "title": "Generac Is Becoming an AI Power Play. Amazon Just Made That Case Bigger.",
+      "url": "https://www.barchart.com/story/news/4804900/generac-is-becoming-an-ai-power-play-amazon-just-made-that-case-bigger?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 21:16 UTC",
+      "published": "2026-09-25 17:36 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.477,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.477,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "998e55fd939c3068",
+      "symbol": "META",
+      "title": "Meta Platforms (META) Could Be 30% Undervalued On Its Enterprise AI Push",
+      "url": "https://finance.yahoo.com/technology/ai/articles/meta-platforms-meta-could-30-210736669.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 21:07 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -768,48 +518,23 @@
       "impact": 40.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 69.9
+        "vol_ratio": 1.19,
+        "composite": 69.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.95
+        "kebaruan": 0.96
       }
     },
     {
-      "id": "adadd6f54ea8ed33",
-      "symbol": "META",
-      "title": "Meta elevates Bounds to lead PR, shifts Ginsberg to AI unit - Axios",
-      "url": "https://finance.yahoo.com/technology/ai/articles/meta-elevates-bounds-lead-pr-213113892.html?.tsrc=rss",
+      "id": "356fa96f22761088",
+      "symbol": "AMD",
+      "title": "AMD Makes $8.2 Billion Bet on AI's Next Big Market",
+      "url": "https://finance.yahoo.com/technology/ai/articles/amd-makes-8-2-billion-190528941.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 21:31 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "6f07e17cc676e4c7",
-      "symbol": "INTC",
-      "title": "Here's Why Intel (INTC) Fell More Than Broader Market",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-intel-intc-fell-204503805.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 20:45 UTC",
+      "published": "2026-09-29 19:05 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -818,23 +543,23 @@
       "impact": 40.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 1.01,
+        "composite": 69.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.94
+        "kebaruan": 0.93
       }
     },
     {
-      "id": "9343f6b0b258255c",
+      "id": "dccbff475aa1efd1",
       "symbol": "META",
-      "title": "Meta\u2019s Muse Is BLOWING Minds\u2026. But At What Cost?",
-      "url": "https://247wallst.com/videos/metas-muse-is-blowing-minds-but-at-what-cost/?.tsrc=rss",
+      "title": "Meta Stock Rises Higher as Enterprise AI Becomes a Fourth Pillar",
+      "url": "https://finance.yahoo.com/technology/ai/articles/meta-stock-rises-higher-enterprise-191407710.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 20:38 UTC",
+      "published": "2026-09-29 19:14 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -843,33 +568,83 @@
       "impact": 40.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
+        "vol_ratio": 1.19,
+        "composite": 69.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.94
+        "kebaruan": 0.93
       }
     },
     {
-      "id": "426787bc3ba311c5",
-      "symbol": "INTC",
-      "title": "Intel Stock Falls Over 4.8% as OpenShell Preserves an x86 Route",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-stock-falls-over-4-164441763.html?.tsrc=rss",
+      "id": "b37e04d84cccfa4d",
+      "symbol": "AMD",
+      "title": "AMD Stock Rises as $8.2 Billion World Labs Bet Raises Bar",
+      "url": "https://finance.yahoo.com/technology/ai/articles/amd-stock-rises-8-2-180938516.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 16:44 UTC",
+      "published": "2026-09-29 18:09 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 39.9,
+      "impact": 40.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 1.01,
+        "composite": 69.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "078d8e1d4f08569c",
+      "symbol": "INTC",
+      "title": "Intel Stock Fell Nearly 6% in a Day. Here\u2019s the Foundry Deadline That Matters More",
+      "url": "https://www.tikr.com/blog/intel-stock-fell-nearly-6-in-a-day-heres-the-foundry-deadline-that-matters-more?ref=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 15:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.026,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 71.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.026,
+        "kebaruan": 0.87
+      }
+    },
+    {
+      "id": "97130d83710d6731",
+      "symbol": "INTC",
+      "title": "Intel Stock Is Up 246% Over the Past Year. Here\u2019s What This Week\u2019s Pullback Signals",
+      "url": "https://www.tikr.com/blog/intel-stock-is-up-246-over-the-past-year-heres-what-this-weeks-pullback-signals?ref=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 16:31 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 71.3
       },
       "heuristik": {
         "kategori": "umum",
@@ -879,178 +654,53 @@
       }
     },
     {
-      "id": "1c107a1740825858",
-      "symbol": "WBD",
-      "title": "Paramount Is Taking a $44 Billion Step Toward Warner Bros.",
-      "url": "https://finance.yahoo.com/media-advertising/articles/paramount-taking-44-billion-step-151050100.html?.tsrc=rss",
+      "id": "ce54dc7a0ee73894",
+      "symbol": "SWKS",
+      "title": "Q2 Earnings Highs And Lows: Skyworks Solutions (NASDAQ:SWKS) Vs The Rest Of The Analog Semiconductors Stocks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/q2-earnings-highs-lows-skyworks-202236394.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 15:10 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "published": "2026-09-28 20:22 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.026,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
       "impact": 39.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 81.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "b81aa7f124252fa2",
-      "symbol": "SMCI",
-      "title": "Wall Street Sees Super Micro\u2019s Revenue Jumping 72% This Fiscal Year. Here\u2019s Why Earnings May Rise Only 20%",
-      "url": "https://www.tikr.com/blog/wall-street-sees-super-micros-revenue-jumping-72-this-fiscal-year-heres-why-earnings-may-rise-only-20?ref=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 14:59 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.599,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 39.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.3,
-        "composite": 65.2
+        "vol_ratio": 0.41,
+        "composite": 65.4
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.599,
+        "sentimen": -0.026,
+        "kebaruan": 0.61
+      }
+    },
+    {
+      "id": "c92455b57e16f906",
+      "symbol": "INTC",
+      "title": "What Changed For Intel Stock, And What Did Not?",
+      "url": "https://www.trefis.com/articles/616955/what-changed-for-intel-stock-and-what-did-not/2026-09-29?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 14:02 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 71.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
         "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "09888cfe92477c05",
-      "symbol": "COO",
-      "title": "The Cooper Companies (COO) Faces Near-Term Pressure from Slowing Contact Lens Demand",
-      "url": "https://finance.yahoo.com/healthcare/articles/cooper-companies-coo-faces-near-145526217.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-14 14:55 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.402,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.402,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "6531d8e7b2084ebf",
-      "symbol": "COO",
-      "title": "Is Cooper Companies (COO) Undervalued After Opening Its New Vision Centre?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/cooper-companies-coo-undervalued-opening-211119339.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-26 21:11 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.25,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.25,
-        "kebaruan": 0.28
-      }
-    },
-    {
-      "id": "a0218695bb4b8ca5",
-      "symbol": "COO",
-      "title": "COO Unveils New Innovation Hub & Lens Launch Plans to Aid CooperVision",
-      "url": "https://finance.yahoo.com/healthcare/articles/coo-unveils-innovation-hub-lens-133100015.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-24 13:31 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.382,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.382,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "c412ddd52834cc7e",
-      "symbol": "COO",
-      "title": "Is Jana Partners Right that Cooper (COO) Needs a Different Kind of Leadership?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jana-partners-cooper-coo-needs-014922022.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 01:49 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 38.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.68
-      }
-    },
-    {
-      "id": "b1045c066c4d0201",
-      "symbol": "WBD",
-      "title": "WBD\u2019s $110 Billion Deal is Closer to Closing. What Does It Mean for WBD and PSKY?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/wbd-110-billion-deal-closer-224600050.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-27 22:46 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 38.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 81.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.64
       }
     },
     {
@@ -1068,8 +718,8 @@
       "impact": 38.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 81.0
+        "vol_ratio": 1.03,
+        "composite": 81.6
       },
       "heuristik": {
         "kategori": "umum",
@@ -1079,12 +729,37 @@
       }
     },
     {
-      "id": "e56355698a757115",
-      "symbol": "TECH",
-      "title": "Bio-Techne Shareholders Approve Acquisition by Merck KGaA, Darmstadt, Germany",
-      "url": "https://finance.yahoo.com/healthcare/articles/bio-techne-shareholders-approve-acquisition-132000998.html?.tsrc=rss",
+      "id": "1c107a1740825858",
+      "symbol": "WBD",
+      "title": "Paramount Is Taking a $44 Billion Step Toward Warner Bros.",
+      "url": "https://finance.yahoo.com/media-advertising/articles/paramount-taking-44-billion-step-151050100.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-23 13:20 UTC",
+      "published": "2026-09-28 15:10 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 38.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 81.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.54
+      }
+    },
+    {
+      "id": "77ef8bea498a0b87",
+      "symbol": "IR",
+      "title": "3 Reasons to Sell IR and 1 Stock to Buy Instead",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-ir-1-172624642.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-31 17:26 UTC",
       "event_type": "merger/akuisisi",
       "event_weight": 0.95,
       "sentiment": 0.0,
@@ -1093,8 +768,8 @@
       "impact": 37.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.75,
-        "composite": 65.4
+        "vol_ratio": 1.2,
+        "composite": 67.8
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
@@ -1129,12 +804,37 @@
       }
     },
     {
-      "id": "b0ada228843cacea",
-      "symbol": "COO",
-      "title": "How Is Cooper Companies' Stock Performance Compared to Other Medical Instruments & Supplies Stocks?",
-      "url": "https://www.barchart.com/story/news/4681048/how-is-cooper-companies-stock-performance-compared-to-other-medical-instruments-supplies-stocks?.tsrc=rss",
+      "id": "6f86cbc613488e07",
+      "symbol": "IR",
+      "title": "Reflecting On Gas and Liquid Handling Stocks\u2019 Q2 Earnings: Ingersoll Rand (NYSE:IR)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/reflecting-gas-liquid-handling-stocks-154440743.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-18 14:37 UTC",
+      "published": "2026-09-18 15:44 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.2,
+        "composite": 67.8
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "cdb4f2600e1a0152",
+      "symbol": "GNRC",
+      "title": "Amazon's $8 Billion Generac Deal Shows AI's New Power Bottleneck",
+      "url": "https://www.marketbeat.com/articles/amazons-8-billion-generac-deal-shows-ais-new-power-bottleneck/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-22 11:25 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1143,8 +843,83 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 69.4
+        "vol_ratio": 0.67,
+        "composite": 68.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "42ee5e1336b38ec1",
+      "symbol": "GNRC",
+      "title": "Bull of the Day: Generac Holdings (GNRC)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bull-day-generac-holdings-gnrc-093000479.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-24 09:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "c599cab6e4ac1370",
+      "symbol": "GNRC",
+      "title": "Generac and Build-A-Bear have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/generac-build-bear-highlighted-zacks-091400556.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-24 09:14 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "36824f3b25b40ba4",
+      "symbol": "GNRC",
+      "title": "Is Generac Holdings Stock Underperforming the Nasdaq?",
+      "url": "https://www.barchart.com/story/news/4796975/is-generac-holdings-stock-underperforming-the-nasdaq?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-25 11:12 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.8
       },
       "heuristik": {
         "kategori": "umum",
@@ -1165,7 +940,7 @@
       "sentiment": 0.296,
       "relevansi": "pasar",
       "judul_menyebut_emiten": null,
-      "impact": 35.0,
+      "impact": 33.4,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": null,
@@ -1175,32 +950,57 @@
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.296,
-        "kebaruan": 0.71
+        "kebaruan": 0.39
       }
     },
     {
-      "id": "f96a6a2710d93f9a",
-      "symbol": "HUM",
-      "title": "Sector Update: Healthcare Stocks Higher Late Afternoon",
-      "url": "https://finance.yahoo.com/healthcare/articles/sector-healthcare-stocks-higher-afternoon-195011048.html?.tsrc=rss",
+      "id": "ff5ac0c8e152a617",
+      "symbol": "INTC",
+      "title": "ProSearch Appoints Donovan Bell as Director of AI Delivery Transformation",
+      "url": "https://finance.yahoo.com/technology/ai/articles/prosearch-appoints-donovan-bell-director-154400346.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-25 19:50 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-09-29 15:44 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
       "sentiment": 0.0,
-      "relevansi": "sesektor?",
+      "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 34.5,
+      "impact": 33.4,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 60.4
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 71.3
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
         "sentimen": 0.0,
-        "kebaruan": 0.0
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "59135f8481013fe0",
+      "symbol": "WBD",
+      "title": "Former Disney CEO Bob Chapek on being blindsided by Bob Iger",
+      "url": "https://finance.yahoo.com/video/former-disney-ceo-bob-chapek-110000045.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 11:00 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 33.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 81.6
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.0,
+        "kebaruan": 0.82
       }
     },
     {
@@ -1254,6 +1054,56 @@
       }
     },
     {
+      "id": "9324e53ffc5f59db",
+      "symbol": "AMD",
+      "title": "Why Muse is Winning the Agentic AI Race",
+      "url": "https://finance.yahoo.com/technology/ai/articles/why-muse-winning-agentic-ai-190700974.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 19:07 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.527,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 31.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.01,
+        "composite": 69.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.527,
+        "kebaruan": 0.93
+      }
+    },
+    {
+      "id": "ee87f8e2eefa3847",
+      "symbol": "TTD",
+      "title": "Magnite Surges 6% as a 53% YTD Gain Separates It From Ad-Tech Peers; Trade Desk and AppLovin Tread Water",
+      "url": "https://247wallst.com/investing/2026/09/29/magnite-surges-6-as-a-53-ytd-gain-separates-it-from-ad-tech-peers-trade-desk-and-applovin-tread-water/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 15:22 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.527,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 31.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 55.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.527,
+        "kebaruan": 0.88
+      }
+    },
+    {
       "id": "15fd2bdfbff97be1",
       "symbol": "SMCI",
       "title": "Super Micro Computer (SMCI) Falls More Steeply Than Broader Market: What Investors Need to Know",
@@ -1265,67 +1115,17 @@
       "sentiment": 0.599,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 32.2,
+      "impact": 30.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.3,
-        "composite": 65.2
+        "vol_ratio": 0.78,
+        "composite": 64.1
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.599,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "51971306f95cf056",
-      "symbol": "TRMB",
-      "title": "AI\u2019s buzz in trucking is justified: Trimble panel",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ai-buzz-trucking-justified-trimble-214003818.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 21:40 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.402,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 30.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.46,
-        "composite": 63.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.402,
-        "kebaruan": 0.96
-      }
-    },
-    {
-      "id": "b52762a85fc2c286",
-      "symbol": "TTD",
-      "title": "Trade Desk Is Down 68% This Year. Is It Time to Sell, or Is This a Lifetime Opportunity?",
-      "url": "https://247wallst.com/investing/2026/09/28/trade-desk-is-down-68-this-year-is-it-time-to-sell-or-is-this-a-lifetime-opportunity/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-28 19:29 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.421,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 30.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 55.8
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.421,
-        "kebaruan": 0.93
+        "kebaruan": 0.62
       }
     },
     {
@@ -1349,6 +1149,56 @@
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "f3be0ee54ae87a11",
+      "symbol": "GNRC",
+      "title": "1 Mid-Cap Stock for Long-Term Investors and 2 We Ignore",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/1-mid-cap-stock-long-140802398.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 14:08 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.361,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 68.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.361,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "33c4a9ffff4ab9f2",
+      "symbol": "MPWR",
+      "title": "What Monolithic Power Systems (MPWR)'s Foundry Deal and Dividend Move Mean For Shareholders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/monolithic-power-systems-mpwr-foundry-121122898.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-14 12:11 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.88,
+        "composite": 65.8
+      },
+      "heuristik": {
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
         "sentimen": 0.0,
         "kebaruan": 0.0
       }
@@ -1379,28 +1229,78 @@
       }
     },
     {
-      "id": "357f13ba09f461bd",
-      "symbol": "INTC",
-      "title": "Chip stocks fall as AI breach fuels safety concerns, but Nvidia bucks the trend: Chart of the Day",
-      "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-ai-breach-fuels-safety-concerns-but-nvidia-bucks-the-trend-chart-of-the-day-151753993.html?.tsrc=rss",
+      "id": "95e8ed438b382d01",
+      "symbol": "MPWR",
+      "title": "GLOBALFOUNDRIES (GFS) and Monolithic Power (MPWR) Are Scaling Up. Can the Growth Last?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/globalfoundries-gfs-monolithic-power-mpwr-213506787.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 15:17 UTC",
+      "published": "2026-09-28 21:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.88,
+        "composite": 65.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.63
+      }
+    },
+    {
+      "id": "317b6b599ccc215c",
+      "symbol": "TTD",
+      "title": "The Trade Desk Stock Slides 18% Over 9 Straight Down Days",
+      "url": "https://www.trefis.com/articles/616922/the-trade-desk-stock-slides-18-over-9-straight-down-days/2026-09-29?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 15:37 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.226,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 28.1,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 0.87,
+        "composite": 55.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.226,
-        "kebaruan": 0.87
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "4ac5117643ef10db",
+      "symbol": "BLDR",
+      "title": "Builders FirstSource (BLDR) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/builders-firstsource-bldr-suffers-larger-215002486.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-23 21:50 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.637,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 27.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.5,
+        "composite": 62.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.637,
+        "kebaruan": 0.0
       }
     },
     {
@@ -1418,14 +1318,64 @@
       "impact": 27.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.52,
-        "composite": 56.5
+        "vol_ratio": 0.44,
+        "composite": 58.0
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.637,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "1a5eac5bb65673b8",
+      "symbol": "IR",
+      "title": "Ingersoll Rand (IR) Looks Cheap As Aftermarket Growth Supports The Bull Case",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ingersoll-rand-ir-looks-cheap-201951705.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-24 20:19 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.625,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 27.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.2,
+        "composite": 67.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.625,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "d5dccb7ecbb060d6",
+      "symbol": "SMCI",
+      "title": "NTAP Stock Hits Record High: NetApp Expands Strategic Partnerships With SAP, Oracle, and Supermicro To Drive Cloud Infrastructure",
+      "url": "https://stocktwits.com/news-articles/markets/equity/ntap-stock-hits-record-high-net-app-expands-strategic-partnerships-with-sap-oracle-and-supermicro-to-drive-cloud-infrastructure/cZMZOeERBWg?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 19:47 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.103,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 27.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.78,
+        "composite": 64.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.103,
+        "kebaruan": 0.94
       }
     },
     {
@@ -1443,8 +1393,8 @@
       "impact": 27.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.52,
-        "composite": 56.5
+        "vol_ratio": 0.44,
+        "composite": 58.0
       },
       "heuristik": {
         "kategori": "umum",
@@ -1454,37 +1404,62 @@
       }
     },
     {
-      "id": "f93580f327288ad7",
-      "symbol": "META",
-      "title": "Why Atlassian (TEAM) Stock Is Down Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-atlassian-team-stock-down-001436323.html?.tsrc=rss",
+      "id": "6bde5dc3714fa7f6",
+      "symbol": "TTD",
+      "title": "Why Did TTD, OPEN, QS Stocks Tumble To 52-Week Lows Today?",
+      "url": "https://stocktwits.com/news-articles/markets/equity/why-did-ttd-open-qs-stocks-tumble-to-52-week-lows-today/cZMmZDDRBX8?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-29 00:14 UTC",
+      "published": "2026-09-29 02:44 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 26.5,
+      "sentiment": -0.202,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 27.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 68.9
+        "vol_ratio": 0.87,
+        "composite": 55.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.99
+        "sentimen": -0.202,
+        "kebaruan": 0.7
       }
     },
     {
-      "id": "991396acd9ef4563",
-      "symbol": "INTC",
-      "title": "Nvidia, Micron, Meta, Kodiak Sciences, MongoDB, SpaceX, and More Stocks That Explain Today\u2019s Market",
-      "url": "https://finance.yahoo.com/m/ba97269c-c17b-3431-8c63-dea920eefd66/nvidia%2C-micron%2C-meta%2C-kodiak.html?.tsrc=rss",
+      "id": "7c522640066c7895",
+      "symbol": "GOOGL",
+      "title": "Bot Traffic Will Be \u201c1000X\u201d Bigger Than Human Traffic in Just Five Years, According to Cloudflare CEO",
+      "url": "https://www.tikr.com/blog/bot-traffic-will-be-1000x-bigger-than-human-traffic-in-just-five-years-according-to-cloudflare-ceo?ref=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 20:33 UTC",
+      "published": "2026-09-29 22:17 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.0,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 57.8
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.0,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "3e01c69a10593a15",
+      "symbol": "META",
+      "title": "What we know about Trump's meeting with Alex Karp, Jensen Huang, & other AI leaders",
+      "url": "https://finance.yahoo.com/video/know-trumps-meeting-alex-karp-194043343.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 19:40 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1493,8 +1468,8 @@
       "impact": 26.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.92,
-        "composite": 72.3
+        "vol_ratio": 1.19,
+        "composite": 69.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -1504,28 +1479,53 @@
       }
     },
     {
-      "id": "9f35e5264f824beb",
-      "symbol": "TTD",
-      "title": "The Trade Desk (TTD) Declines More Than Market: Some Information for Investors",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-ttd-declines-more-204506678.html?.tsrc=rss",
+      "id": "566e478cd14ed72c",
+      "symbol": "INTC",
+      "title": "Silicon Valley's Leading CIOs, CISOs and Technology Executives to Gather October 6 for HMG Strategy's 18th Annual Silicon Valley C-Level Technology Leadership Summit; More Than 115 Technology Leaders Already Registered",
+      "url": "https://finance.yahoo.com/technology/articles/silicon-valleys-leading-cios-cisos-180400562.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 20:45 UTC",
+      "published": "2026-09-29 18:04 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 71.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "023dec2b391d64ec",
+      "symbol": "SMCI",
+      "title": "NetApp and Supermicro Collaborate to Power AI at Any Scale",
+      "url": "https://finance.yahoo.com/technology/ai/articles/netapp-supermicro-collaborate-power-ai-173000202.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-29 17:30 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 26.2,
+      "impact": 26.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.56,
-        "composite": 55.8
+        "vol_ratio": 0.78,
+        "composite": 64.1
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.94
+        "kebaruan": 0.91
       }
     }
   ]
