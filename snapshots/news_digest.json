@@ -1,60 +1,206 @@
 {
-  "as_of": "2026-10-02 22:50:00+00:00",
+  "as_of": "2026-10-05 23:12:00+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
       "ACN",
       "CCL",
-      "COO",
-      "SNPS",
-      "WBD"
+      "IR",
+      "PTC",
+      "SNPS"
     ],
     "sektor": [
-      "Communication Services",
       "Consumer Discretionary",
-      "Health Care",
+      "Industrials",
       "Information Technology"
     ],
     "peers": [
-      "META",
-      "COHR",
-      "MPWR",
-      "AMZN",
+      "TRMB",
       "HD",
-      "INTC",
-      "CMG",
-      "TECH",
-      "IQV",
-      "CVS",
-      "TMUS",
-      "GOOG"
+      "CTSH",
+      "GD",
+      "AMZN",
+      "LOW",
+      "VRSK",
+      "MSFT",
+      "HWM"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
     {
-      "id": "54cff817b922075b",
-      "symbol": "ACN",
-      "title": "Accenture (ACN) Soars 15.8% as Q4 Earnings, AI Bookings Crush Disruption Fears",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/accenture-acn-soars-15-8-002914087.html?.tsrc=rss",
+      "id": "6b70953f87437974",
+      "symbol": "PTC",
+      "title": "PTC Soars 33% on $22.6 Billion All-Cash Schneider Electric Buyout: \u201cCertain and Compelling Value\u201d",
+      "url": "https://www.tikr.com/blog/ptc-soars-33-on-22-6-billion-all-cash-schneider-electric-buyout-certain-and-compelling-value?ref=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 00:29 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": -0.71,
+      "published": "2026-10-05 18:43 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.226,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 81.0,
+      "impact": 78.5,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
+        "vol_ratio": 9.47,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.226,
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "993bfd59872a4417",
+      "symbol": "PTC",
+      "title": "Top Midday Stories: PTC to Be Acquired by Schneider Electric for $23.7 Billion; C.H. Robinson to Acquire RXO for $5.8 Billion",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-ptc-acquired-160447067.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 16:04 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.202,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 78.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 9.47,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.202,
+        "kebaruan": 0.87
+      }
+    },
+    {
+      "id": "800a18ee06690a99",
+      "symbol": "PTC",
+      "title": "PTC Inc. (PTC) Climbs 36% as Schneider Puts Whopping Premium on Takeover Bid \u2014 Here\u2019s What\u2019s Next",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ptc-inc-ptc-climbs-36-210452470.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 21:04 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 76.4,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 9.47,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "37e3925b176a5d46",
+      "symbol": "PTC",
+      "title": "Nvidia, Intel, Micron, XP Inc., PTC, Vaxcyte, Western Digital, and More Stocks That Explain Today\u2019s Market",
+      "url": "https://finance.yahoo.com/m/29d68e20-e649-3819-9021-a07b7ebc77c5/nvidia%2C-intel%2C-micron%2C-xp.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 18:31 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.516,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 65.2,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 9.47,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.516,
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "63c5d99c74ba97f4",
+      "symbol": "PTC",
+      "title": "Why PTC (PTC) Stock Is Trading Up Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-ptc-ptc-stock-trading-221100233.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 22:11 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 60.3,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 9.47,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "242c1fdf405051a1",
+      "symbol": "SNPS",
+      "title": "A $1 Billion Reason to Buy Synopsys Stock",
+      "url": "https://www.barchart.com/story/news/4965455/a-1-billion-reason-to-buy-synopsys-stock?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 16:11 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 56.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 75.9
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.87
+      }
+    },
+    {
+      "id": "8eced9499cb4827e",
+      "symbol": "CCL",
+      "title": "Carnival and CarMax Pop on Strong Earnings, but Challenges Remain",
+      "url": "https://www.marketbeat.com/articles/carnival-and-carmax-pop-on-strong-earnings-but-challenges-remain/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-03 15:50 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.382,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 55.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 74.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": -0.71,
-        "kebaruan": 0.67
+        "sentimen": 0.382,
+        "kebaruan": 0.2
       }
     },
     {
@@ -69,542 +215,67 @@
       "sentiment": 0.44,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 79.5,
+      "impact": 54.9,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
+        "event_aktif": false,
+        "vol_ratio": 1.0,
+        "composite": 70.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.44,
-        "kebaruan": 0.91
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "2f893fed7c549c26",
+      "id": "fdc24b6c9ac554bf",
       "symbol": "ACN",
-      "title": "Accenture Q4 Earnings Call Sees AI Demand Broaden Into FY27",
-      "url": "https://finance.yahoo.com/technology/ai/articles/accenture-q4-earnings-call-sees-130000263.html?.tsrc=rss",
+      "title": "Why Accenture (ACN) International Revenue Trends Deserve Your Attention",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-accenture-acn-international-revenue-121510547.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 13:00 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": -0.128,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 76.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": -0.128,
-        "kebaruan": 0.84
-      }
-    },
-    {
-      "id": "409115d753a24126",
-      "symbol": "SNPS",
-      "title": "How Do OpenAI And AWS Deals Reshape Synopsys's Design Automation Outlook?",
-      "url": "https://www.trefis.com/articles/617384/how-do-openai-and-aws-deals-reshape-synopsyss-design-automation-outlook/2026-10-02?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 07:55 UTC",
+      "published": "2026-10-05 12:15 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 74.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.77
-      }
-    },
-    {
-      "id": "89a8dfa4625004f9",
-      "symbol": "ACN",
-      "title": "Accenture (ACN) Q4 2026 Earnings Call Transcript",
-      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/01/accenture-acn-q4-2026-earnings-call-transcript/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 02:28 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 74.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.7
-      }
-    },
-    {
-      "id": "9de0d77f2d4eb3cc",
-      "symbol": "SNPS",
-      "title": "Synopsys is becoming a major AI player: CEO discusses OpenAI, Amazon deals",
-      "url": "https://finance.yahoo.com/video/synopsys-becoming-major-ai-player-202701381.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-01 20:27 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.178,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 67.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.178,
-        "kebaruan": 0.61
-      }
-    },
-    {
-      "id": "1cfb0f7233a987ed",
-      "symbol": "ACN",
-      "title": "ACN Q3 Deep Dive: Broad-Based Growth and AI Momentum Drive Strong Results",
-      "url": "https://finance.yahoo.com/technology/ai/articles/acn-q3-deep-dive-broad-080603427.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 08:06 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.71,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 66.5,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.71,
-        "kebaruan": 0.78
-      }
-    },
-    {
-      "id": "70abd79a06ad9cf4",
-      "symbol": "COHR",
-      "title": "What Needs To Be True To Buy Coherent Stock Now?",
-      "url": "https://www.trefis.com/articles/617427/what-needs-to-be-true-to-buy-coherent-stock-now/2026-10-02?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 13:24 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.421,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 66.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.7,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.421,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "7a2ae7c99f8bdf92",
-      "symbol": "ACN",
-      "title": "Accenture Lost 15% Over a Year: One Analyst Says It Will Rise 30% on AI and Digital Transformation",
-      "url": "https://247wallst.com/investing/2026/10/02/accenture-lost-15-over-a-year-one-analyst-says-it-will-rise-30-on-ai-and-digital-transformation/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 11:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.318,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 62.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.318,
-        "kebaruan": 0.82
-      }
-    },
-    {
-      "id": "4fe1184c24391ea9",
-      "symbol": "SNPS",
-      "title": "Synopsys Is the Nasdaq 100\u2019s Top Stock Today. The Target Says It\u2019s Not Done",
-      "url": "https://247wallst.com/investing/2026/10/02/synopsys-is-the-nasdaq-100s-top-stock-today-the-target-says-its-not-done/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 18:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.202,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 62.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "973a3b48aef7b6c1",
-      "symbol": "SNPS",
-      "title": "Synopsys (SNPS) Bags New Multi-Billion Dollar Deals, Shares Spike",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/synopsys-snps-bags-multi-billion-030302988.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 03:03 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 62.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.71
-      }
-    },
-    {
-      "id": "c9786821db4c854c",
-      "symbol": "SNPS",
-      "title": "Micron, Accenture, Google, IBM, Fair Isaac, Synopsys, and More Stocks That Explain Today\u2019s Market",
-      "url": "https://finance.yahoo.com/m/ff733662-6b3b-3329-895d-f9bd4d70a5b2/micron%2C-accenture%2C-google%2C.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-01 20:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.318,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 61.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.318,
-        "kebaruan": 0.61
-      }
-    },
-    {
-      "id": "5cdba38f83463723",
-      "symbol": "SNPS",
-      "title": "Why Synopsys Stock\u2019s 13% Jump Followed a $1 Billion Amazon Deal",
-      "url": "https://www.tikr.com/blog/why-synopsys-stocks-13-jump-followed-a-1-billion-amazon-deal?ref=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 00:07 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.178,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 60.6,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.178,
-        "kebaruan": 0.67
-      }
-    },
-    {
-      "id": "a5138a345dc2b68a",
-      "symbol": "ACN",
-      "title": "Accenture (ACN) Stock Could Be Undervalued On A 33% Five Year Slide",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/accenture-acn-stock-could-undervalued-220519537.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 22:05 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 60.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "d041f292e0a3e6d3",
-      "symbol": "WBD",
-      "title": "Paramount Shareholders to Get Stock Warrants in Huge Financing Deal for Warner Acquisition",
-      "url": "https://finance.yahoo.com/m/fd5e1726-c799-3e36-a2b8-69339066b603/paramount-shareholders-to-get.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 17:19 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.318,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.5,
+      "impact": 54.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.91,
-        "composite": 78.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.318,
-        "kebaruan": 0.9
-      }
-    },
-    {
-      "id": "2fe03662621de2e8",
-      "symbol": "SNPS",
-      "title": "What Is Driving The Move In Synopsys Stock?",
-      "url": "https://www.trefis.com/articles/617409/what-is-driving-the-move-in-synopsys-stock/2026-10-02?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 08:47 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.79
-      }
-    },
-    {
-      "id": "71a13cd82f597fea",
-      "symbol": "WBD",
-      "title": "Paramount to adopt Skydance name as landmark Warner Bros. merger nears close",
-      "url": "https://finance.yahoo.com/media-advertising/articles/paramount-adopt-skydance-name-landmark-143603481.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 14:36 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.25,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 58.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.91,
-        "composite": 78.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.25,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "593890b9a1ce2f36",
-      "symbol": "SNPS",
-      "title": "Synopsys Stock Surges On AI-Driven Transformation Of Engineering",
-      "url": "https://finance.yahoo.com/m/7171a30c-54f6-33a0-b8d7-3d042ce5bc4d/synopsys-stock-surges-on.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-01 20:26 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 58.6,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.93,
-        "composite": 73.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.61
-      }
-    },
-    {
-      "id": "83aa1b9c8daccc2f",
-      "symbol": "HD",
-      "title": "3 Profitable Stocks We Approach with Caution",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-profitable-stocks-approach-caution-093403429.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 09:34 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.44,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 57.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.54,
-        "composite": 66.2
+        "vol_ratio": 1.0,
+        "composite": 70.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.44,
-        "kebaruan": 0.8
+        "sentimen": 0.0,
+        "kebaruan": 0.81
       }
     },
     {
-      "id": "9c5fc6f9202538ef",
-      "symbol": "HD",
-      "title": "Is Home Depot (HD) A Bargain After Its Buyback Pause And Share Price Slide?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/home-depot-hd-bargain-buyback-100650027.html?.tsrc=rss",
+      "id": "15fb4b0f8f0b6a00",
+      "symbol": "SNPS",
+      "title": "Synopsys Initiates $1 Billion Accelerated Share Repurchase Agreement",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/synopsys-initiates-1-billion-accelerated-130000176.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 10:06 UTC",
+      "published": "2026-10-05 13:00 UTC",
       "event_type": "aksi korporasi",
       "event_weight": 0.6,
-      "sentiment": 0.459,
-      "relevansi": "sesektor",
+      "sentiment": 0.66,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 57.6,
+      "impact": 53.7,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.54,
-        "composite": 66.2
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 75.9
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
-        "sentimen": 0.459,
-        "kebaruan": 0.8
-      }
-    },
-    {
-      "id": "c43d1b5bd3ecf38d",
-      "symbol": "WBD",
-      "title": "David Ellison Says \u2018We\u2019re Not Rewriting History\u2019 With Paramount, Warner Bros. Merger \u2014 \u2018Together, We Are Skydance\u2019",
-      "url": "https://stocktwits.com/news-articles/markets/equity/david-ellison-says-not-rewriting-history-with-paramount-warner-bros-merger-skydance/cZDjLZ5RBKQ?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 15:14 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 56.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.91,
-        "composite": 78.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.88
-      }
-    },
-    {
-      "id": "fd987645cb5ee1c4",
-      "symbol": "WBD",
-      "title": "Paramount to become Skydance after megamerger with Warner Bros. closes",
-      "url": "https://finance.yahoo.com/markets/article/paramount-to-become-skydance-after-megamerger-with-warner-bros-closes-142501876.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 14:25 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 56.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.91,
-        "composite": 78.0
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "545d23e45af78efa",
-      "symbol": "CCL",
-      "title": "CCL Q3 Earnings Call Highlights Demand Strength, 2027 Bookings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ccl-q3-earnings-call-highlights-130000517.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-30 13:00 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.402,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 55.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.0,
-        "composite": 72.6
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.402,
-        "kebaruan": 0.18
+        "sentimen": 0.66,
+        "kebaruan": 0.82
       }
     },
     {
@@ -619,217 +290,342 @@
       "sentiment": 0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 55.2,
+      "impact": 53.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.0,
-        "composite": 72.6
+        "vol_ratio": 0.82,
+        "composite": 74.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.296,
-        "kebaruan": 0.35
-      }
-    },
-    {
-      "id": "59adc5e70d820fd9",
-      "symbol": "COO",
-      "title": "CooperCompanies (COO) Keeps CooperSurgical and Expands Buybacks. What Did the Strategic Review Reveal?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/coopercompanies-coo-keeps-coopersurgical-expands-095115464.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-24 09:51 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.103,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 51.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 71.9
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.103,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "232abdc762c2a403",
-      "symbol": "COHR",
-      "title": "Your Coherent Stock Thesis Has One Loose End",
-      "url": "https://www.trefis.com/articles/617434/your-coherent-stock-thesis-has-one-loose-end/2026-10-02?.tsrc=rss",
+      "id": "2f893fed7c549c26",
+      "symbol": "ACN",
+      "title": "Accenture Q4 Earnings Call Sees AI Demand Broaden Into FY27",
+      "url": "https://finance.yahoo.com/technology/ai/articles/accenture-q4-earnings-call-sees-130000263.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 14:04 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.318,
-      "relevansi": "sesektor",
+      "published": "2026-10-02 13:00 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.128,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 49.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.7,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.318,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "8eb11dfced685ce7",
-      "symbol": "COHR",
-      "title": "Coherent Stock Jumped 10% on Bernstein\u2019s Call. Here\u2019s Where Shares Could Go Further.",
-      "url": "https://www.tikr.com/blog/coherent-stock-jumped-10-on-bernsteins-call-heres-where-shares-could-go-further?ref=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 01:46 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.296,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 47.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.7,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.69
-      }
-    },
-    {
-      "id": "1cab83e9aaf0e6d4",
-      "symbol": "HD",
-      "title": "Is It Worth Investing in Home Depot (HD) Based on Wall Street's Bullish Views?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-home-depot-hd-123003100.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 12:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.226,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 47.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.54,
-        "composite": 66.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.226,
-        "kebaruan": 0.84
-      }
-    },
-    {
-      "id": "3976ae7e6ebcd344",
-      "symbol": "CMG",
-      "title": "Chipotle Is Down 14% Compared to McDonald's 24%. But There's an Even Better Restaurant Stock to Buy in October.",
-      "url": "https://www.fool.com/investing/2026/10/02/chipotle-is-down-compared-to-mcdonalds-but-th/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 07:25 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.593,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 47.5,
+      "impact": 51.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 65.9
+        "vol_ratio": 1.0,
+        "composite": 70.6
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": -0.128,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "77ef8bea498a0b87",
+      "symbol": "IR",
+      "title": "3 Reasons to Sell IR and 1 Stock to Buy Instead",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-ir-1-172624642.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-31 17:26 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 51.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
-        "sentimen": 0.593,
-        "kebaruan": 0.77
+        "sentimen": 0.0,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "dbb488e7d626a0c6",
-      "symbol": "ACN",
-      "title": "EPAM, DXC, Everforth, EXL, and Grid Dynamics Stocks Trade Up, What You Need To Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/epam-dxc-everforth-exl-grid-224507189.html?.tsrc=rss",
+      "id": "409115d753a24126",
+      "symbol": "SNPS",
+      "title": "How Do OpenAI And AWS Deals Reshape Synopsys's Design Automation Outlook?",
+      "url": "https://www.trefis.com/articles/617384/how-do-openai-and-aws-deals-reshape-synopsyss-design-automation-outlook/2026-10-02?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-01 22:45 UTC",
+      "published": "2026-10-02 07:55 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 75.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "f7ea3c808ed0de36",
+      "symbol": "IR",
+      "title": "Ingersoll Rand (IR) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/ingersoll-rand-ir-q2-2026-earnings-call-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-08 01:46 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 68.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "6f86cbc613488e07",
+      "symbol": "IR",
+      "title": "Reflecting On Gas and Liquid Handling Stocks\u2019 Q2 Earnings: Ingersoll Rand (NYSE:IR)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/reflecting-gas-liquid-handling-stocks-154440743.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-18 15:44 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 68.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "4e1fdc3ca11c0606",
+      "symbol": "PTC",
+      "title": "Stock Market Today, Oct. 5: Tech Momentum Lifts Nasdaq as Treasury Yields Surge",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/05/stock-market-today-oct-5-tech-momentum-lifts-nasdaq-as-treasury-yields-surge/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 21:33 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.273,
+      "sentiment": 0.202,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 47.5,
+      "impact": 48.2,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 4.37,
-        "composite": 71.6
+        "vol_ratio": 9.47,
+        "composite": 71.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.273,
-        "kebaruan": 0.65
+        "sentimen": 0.202,
+        "kebaruan": 0.94
       }
     },
     {
-      "id": "334adfdf678b5108",
+      "id": "5ee1c86061adb29f",
       "symbol": "CCL",
-      "title": "Carnival CEO Sends Surprising Signal on U.S. Consumers",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/carnival-ceo-sends-surprising-signal-142634263.html?.tsrc=rss",
+      "title": "Carnival Corp Generates Strong Free Cash Flow - What's the Best CCL Play?",
+      "url": "https://www.barchart.com/story/news/4950860/carnival-corp-generates-strong-free-cash-flow-what-s-the-best-ccl-play?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-30 14:26 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.273,
+      "published": "2026-10-04 13:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.922,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 46.7,
+      "impact": 47.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 74.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.922,
+        "kebaruan": 0.49
+      }
+    },
+    {
+      "id": "f3b69ad68390a11a",
+      "symbol": "ACN",
+      "title": "Is Accenture (ACN) Really Priced Like Its Best Days Are Over?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/accenture-acn-really-priced-best-173337701.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-04 17:33 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.789,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 46.2,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.0,
-        "composite": 72.6
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.273,
-        "kebaruan": 0.2
-      }
-    },
-    {
-      "id": "12c34d2ceafb050b",
-      "symbol": "COO",
-      "title": "Cooper Companies Director Kurzius Buys $549,300 in Shares. Is the Eye Care Stock About to Rally?",
-      "url": "https://www.fool.com/coverage/filings/2026/10/02/cooper-companies-director-kurzius-buys-usd549-300-in-shares-is-the-eye-care-stock-about-to-rally/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 17:31 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.66,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 46.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 71.9
+        "composite": 70.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.66,
-        "kebaruan": 0.91
+        "sentimen": 0.789,
+        "kebaruan": 0.55
+      }
+    },
+    {
+      "id": "e5e4da7aab2a1740",
+      "symbol": "PTC",
+      "title": "Sector Update: Tech Stocks Mixed Late Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-mixed-afternoon-194240806.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 19:42 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 46.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 9.47,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "baa4e1a7116331f3",
+      "symbol": "PTC",
+      "title": "Sector Update: Tech Stocks Mixed Monday Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-mixed-monday-173522926.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 17:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 45.9,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 9.47,
+        "composite": 71.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.89
+      }
+    },
+    {
+      "id": "d0cd75a31908cd96",
+      "symbol": "SNPS",
+      "title": "Synopsys (SNPS) Has a Strong Design Business. Is Its Growth Worth the Premium?",
+      "url": "https://finance.yahoo.com/technology/articles/synopsys-snps-strong-design-business-015401736.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-04 01:54 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.778,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 45.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 75.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.778,
+        "kebaruan": 0.34
+      }
+    },
+    {
+      "id": "736ad6d4b59a7793",
+      "symbol": "ACN",
+      "title": "Accenture vs. Microsoft: Which Technology Stock Is a Better Buy in 2026?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/10/04/accenture-vs-microsoft-which-technology-stock-is-a-better-buy-in-2026/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-04 15:58 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 42.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.0,
+        "composite": 70.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.53
+      }
+    },
+    {
+      "id": "1a5eac5bb65673b8",
+      "symbol": "IR",
+      "title": "Ingersoll Rand (IR) Looks Cheap As Aftermarket Growth Supports The Bull Case",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ingersoll-rand-ir-looks-cheap-201951705.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-24 20:19 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.625,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 41.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 68.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.625,
+        "kebaruan": 0.0
       }
     },
     {
@@ -844,117 +640,142 @@
       "sentiment": 0.572,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 45.3,
+      "impact": 41.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.0,
-        "composite": 72.6
+        "vol_ratio": 0.82,
+        "composite": 74.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.572,
-        "kebaruan": 0.82
-      }
-    },
-    {
-      "id": "2c538262df5de3cd",
-      "symbol": "COHR",
-      "title": "Wall Street Backs Coherent, Rocket Lab and Vertiv",
-      "url": "https://247wallst.com/investing/2026/10/01/wall-street-backs-coherent-rocket-lab-and-vertiv/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-01 23:58 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.052,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 45.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.7,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.052,
-        "kebaruan": 0.66
-      }
-    },
-    {
-      "id": "26457d9ac06f7c07",
-      "symbol": "COO",
-      "title": "Activist investor urges Cooper Companies to replace CEO, sell some assets",
-      "url": "https://www.medtechdive.com/news/activist-investor-urges-cooper-companies-to-replace-ceo-sell-some-assets/830910/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-21 11:47 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.178,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 44.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 71.9
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.178,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "564b2275deb66e71",
-      "symbol": "WBD",
-      "title": "Paramount and Warner Bros. Discovery to Merge Into Skydance (SKYD). Will Skydance Achieve David Ellison\u2019s \u201cQuality Storytelling\u201d Vision?",
-      "url": "https://www.fool.com/investing/2026/10/02/paramount-and-warner-bros-discovery-to-merge-into-skydance-skyd-will-skydance-achieve-david-ellisons-quality-storytelling-vision/?.tsrc=rss",
+      "id": "8bffbd6330a8882a",
+      "symbol": "ACN",
+      "title": "Accenture (ACN) Was Supposed to Be an AI Casualty. Is the Market Changing Its Mind?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/accenture-acn-supposed-ai-casualty-043234381.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 20:32 UTC",
+      "published": "2026-10-03 04:32 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.25,
+      "sentiment": -0.527,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.91,
-        "composite": 78.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.25,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "96e12684d37b47c4",
-      "symbol": "CCL",
-      "title": "Carnival Corporation Team Members Around the World Unite To Celebrate International Coastal Cleanup Day",
-      "url": "https://finance.yahoo.com/media-advertising/articles/carnival-corporation-team-members-around-140000573.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-30 14:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.572,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.2,
+      "impact": 41.0,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.0,
-        "composite": 72.6
+        "composite": 70.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.572,
-        "kebaruan": 0.19
+        "sentimen": -0.527,
+        "kebaruan": 0.04
+      }
+    },
+    {
+      "id": "eeb1412971f69f29",
+      "symbol": "IR",
+      "title": "Ingersoll Rand (IR) Buys Lone Star Blower To Grow Mission Critical Industrial Reach",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ingersoll-rand-ir-buys-lone-150947091.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-08-04 15:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.511,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 68.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.511,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "ce0344083e9c998b",
+      "symbol": "SNPS",
+      "title": "Where Could Synopsys Stock Be A Year From Now?",
+      "url": "https://www.trefis.com/articles/617537/where-could-synopsys-stock-be-a-year-from-now/2026-10-05?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 15:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 75.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "f48fc0804758f3e7",
+      "symbol": "CCL",
+      "title": "Carnival Is Half Booked for FY27: Can Record Pricing Hold?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/carnival-half-booked-fy27-record-131100266.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 13:11 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 74.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.83
+      }
+    },
+    {
+      "id": "57359062e57cdf7b",
+      "symbol": "CCL",
+      "title": "Stocktwits Retail Therapy: Consumer Stocks Face Heat But Carnival, Mattel And Stitch Fix Buck The Trend",
+      "url": "https://stocktwits.com/news-articles/markets/equity/stocktwits-retail-therapy-consumer-stocks-face-heat-but-carnival-mattel-and-stitch-fix-buck-the-trend/cZDpNWdRBSB?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 05:29 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.82,
+        "composite": 74.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.72
       }
     },
     {
@@ -969,142 +790,42 @@
       "sentiment": 0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.0,
+      "impact": 38.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.0,
-        "composite": 72.6
+        "vol_ratio": 0.82,
+        "composite": 74.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.296,
-        "kebaruan": 0.71
-      }
-    },
-    {
-      "id": "7ef05a986c1dcd56",
-      "symbol": "AMZN",
-      "title": "More Amazon Prime settlement payments are on the way. Who qualifies?",
-      "url": "https://finance.yahoo.com/personal-finance/banking/article/more-amazon-prime-settlement-payments-are-on-the-way-who-qualifies-175450367.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 17:54 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.248,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 41.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.95,
-        "composite": 67.0
-      },
-      "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.248,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "2dcf8115c1b02bec",
-      "symbol": "COO",
-      "title": "A Failed Auction and a 15% Drop: Is Cooper Companies (COO) a Value Trap or a Bargain?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/failed-auction-15-drop-cooper-000244689.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-21 00:02 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.542,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 40.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 71.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.542,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "c81ce5baa44e13ab",
-      "symbol": "WBD",
-      "title": "David Ellison To Put PSKY Executives In Charge Of Warner Bros. Film Business After $110B Deal, Says Report",
-      "url": "https://stocktwits.com/news-articles/markets/equity/david-ellison-to-put-psky-executives-in-charge-of-warner-bros-film-business-after-110-billion-deal/cZDjqErRBK8?.tsrc=rss",
+      "id": "1e33ae45df1f67d0",
+      "symbol": "VRSK",
+      "title": "All You Need to Know About Verisk (VRSK) Rating Upgrade to Buy",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/know-verisk-vrsk-rating-upgrade-150003792.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 22:29 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-09-29 15:00 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.4,
+      "impact": 37.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.91,
-        "composite": 78.0
+        "vol_ratio": 0.83,
+        "composite": 62.5
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
         "sentimen": 0.0,
-        "kebaruan": 0.98
-      }
-    },
-    {
-      "id": "2a2b7169ea3625d3",
-      "symbol": "HD",
-      "title": "How Risky Is Home Depot Stock?",
-      "url": "https://www.trefis.com/articles/617281/how-risky-is-home-depot-stock/2026-10-01?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 00:51 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.202,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 39.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.54,
-        "composite": 66.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.202,
-        "kebaruan": 0.68
-      }
-    },
-    {
-      "id": "ca4133b4a231325a",
-      "symbol": "WBD",
-      "title": "Skydance will be name of combined Paramount-Warner Bros. Discovery",
-      "url": "https://www.axios.com/2026/10/02/paramount-skydance-warner-bros-new-name#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-media?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 14:12 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.91,
-        "composite": 78.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.86
+        "kebaruan": 0.0
       }
     },
     {
@@ -1119,101 +840,76 @@
       "sentiment": -0.202,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 39.4,
+      "impact": 37.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.0,
-        "composite": 72.6
+        "vol_ratio": 0.82,
+        "composite": 74.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.202,
-        "kebaruan": 0.38
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "188da7227f7879c1",
-      "symbol": "CMG",
-      "title": "Takeover Chatter Just Put Chipotle Stock in the Spotlight",
-      "url": "https://www.barchart.com/story/news/4883538/takeover-chatter-just-put-chipotle-stock-in-the-spotlight?.tsrc=rss",
+      "id": "4fe1184c24391ea9",
+      "symbol": "SNPS",
+      "title": "Synopsys Is the Nasdaq 100\u2019s Top Stock Today. The Target Says It\u2019s Not Done",
+      "url": "https://247wallst.com/investing/2026/10/02/synopsys-is-the-nasdaq-100s-top-stock-today-the-target-says-its-not-done/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-30 15:32 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 38.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.32,
-        "composite": 65.9
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.21
-      }
-    },
-    {
-      "id": "6531d8e7b2084ebf",
-      "symbol": "COO",
-      "title": "Is Cooper Companies (COO) Undervalued After Opening Its New Vision Centre?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/cooper-companies-coo-undervalued-opening-211119339.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-26 21:11 UTC",
+      "published": "2026-10-02 18:00 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.25,
+      "sentiment": 0.202,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 38.0,
+      "impact": 37.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 71.9
+        "vol_ratio": 1.19,
+        "composite": 75.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.25,
+        "sentimen": 0.202,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "e56355698a757115",
-      "symbol": "TECH",
-      "title": "Bio-Techne Shareholders Approve Acquisition by Merck KGaA, Darmstadt, Germany",
-      "url": "https://finance.yahoo.com/healthcare/articles/bio-techne-shareholders-approve-acquisition-132000998.html?.tsrc=rss",
+      "id": "ce69eb814460f3ff",
+      "symbol": "CTSH",
+      "title": "Cognizant Schedules Third Quarter 2026 Earnings Release and Conference Call",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cognizant-schedules-third-quarter-2026-120000616.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-23 13:20 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
+      "published": "2026-10-02 12:00 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 37.7,
+      "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.86,
-        "composite": 63.2
+        "vol_ratio": 0.5,
+        "composite": 65.1
       },
       "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
         "sentimen": 0.0,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "b0ada228843cacea",
-      "symbol": "COO",
-      "title": "How Is Cooper Companies' Stock Performance Compared to Other Medical Instruments & Supplies Stocks?",
-      "url": "https://www.barchart.com/story/news/4681048/how-is-cooper-companies-stock-performance-compared-to-other-medical-instruments-supplies-stocks?.tsrc=rss",
+      "id": "a5138a345dc2b68a",
+      "symbol": "ACN",
+      "title": "Accenture (ACN) Stock Could Be Undervalued On A 33% Five Year Slide",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/accenture-acn-stock-could-undervalued-220519537.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-18 14:37 UTC",
+      "published": "2026-10-02 22:05 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1222,8 +918,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 71.9
+        "vol_ratio": 1.0,
+        "composite": 70.6
       },
       "heuristik": {
         "kategori": "umum",
@@ -1233,12 +929,12 @@
       }
     },
     {
-      "id": "c412ddd52834cc7e",
-      "symbol": "COO",
-      "title": "Is Jana Partners Right that Cooper (COO) Needs a Different Kind of Leadership?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jana-partners-cooper-coo-needs-014922022.html?.tsrc=rss",
+      "id": "41cc109648e76510",
+      "symbol": "IR",
+      "title": "Ingersoll Rand to Participate in Upcoming Investor Conferences",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ingersoll-rand-participate-upcoming-investor-203000084.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-28 01:49 UTC",
+      "published": "2026-08-26 20:30 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1247,14 +943,114 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 71.9
+        "vol_ratio": 0.85,
+        "composite": 68.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "654c9041bb1e4b77",
+      "symbol": "IR",
+      "title": "Is Ingersoll Rand Stock Underperforming the S&P 500?",
+      "url": "https://www.barchart.com/story/news/4574579/is-ingersoll-rand-stock-underperforming-the-s-p-500?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-12 17:33 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 68.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "2fe03662621de2e8",
+      "symbol": "SNPS",
+      "title": "What Is Driving The Move In Synopsys Stock?",
+      "url": "https://www.trefis.com/articles/617409/what-is-driving-the-move-in-synopsys-stock/2026-10-02?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-02 08:47 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 75.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "003d4ece2bc53292",
+      "symbol": "ACN",
+      "title": "What is Accenture\u2019s (ACN) Economic Moat, and is it Widening or Narrowing?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/accenture-acn-economic-moat-widening-003604766.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-03 00:36 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.0,
+        "composite": 70.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "35a2416b8212b96c",
+      "symbol": "AMZN",
+      "title": "Pinterest stock dips as company names Amazon veteran as CFO",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pinterest-stock-dips-company-names-205412517.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 20:54 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.178,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 35.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.1,
+        "composite": 64.5
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.178,
+        "kebaruan": 0.93
       }
     },
     {
@@ -1283,178 +1079,28 @@
       }
     },
     {
-      "id": "8fe2e5f724ba28c5",
-      "symbol": "AMZN",
-      "title": "How Much Could Better Retail Margins Add to Amazon\u2019s Value?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/much-could-better-retail-margins-175622301.html?.tsrc=rss",
+      "id": "b295ce70f14f7905",
+      "symbol": "MSFT",
+      "title": "Microsoft cutting off a best-seller with no extension on Oct. 13",
+      "url": "https://www.thestreet.com/technology/microsoft-ending-support-for-a-beloved-best-seller-on-oct-13?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 17:56 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.649,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 32.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.95,
-        "composite": 67.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.649,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "6249cef846960d3a",
-      "symbol": "CVS",
-      "title": "Chicago multifamily developer acquires seven-story Gold Coast building for residential conversion",
-      "url": "https://finance.yahoo.com/real-estate/articles/chicago-multifamily-developer-acquires-seven-114500727.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-09-30 11:45 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 31.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.86,
-        "composite": 62.8
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.16
-      }
-    },
-    {
-      "id": "0526fc359c511336",
-      "symbol": null,
-      "title": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
-      "url": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html",
-      "source": "CNBC Markets",
-      "published": "2026-09-28 04:04 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.296,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 31.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.296,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "c838a616073e17e4",
-      "symbol": "INTC",
-      "title": "Intel Sold Stock at $95. It Now Trades at $120. Who Won?",
-      "url": "https://www.tikr.com/blog/intel-sold-stock-at-95-it-now-trades-at-120-who-won?ref=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 11:02 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.572,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 31.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.93,
-        "composite": 66.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.572,
-        "kebaruan": 0.82
-      }
-    },
-    {
-      "id": "dc461e30b87a0578",
-      "symbol": "TMUS",
-      "title": "National Advertising Division Finds Certain T-Mobile T-Fiber Claims Supported, Recommends Modification to Contract Claim",
-      "url": "https://finance.yahoo.com/media-advertising/articles/national-advertising-division-finds-certain-140000025.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-01 14:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.649,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 30.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 62.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.649,
-        "kebaruan": 0.52
-      }
-    },
-    {
-      "id": "f85214d7841d13c1",
-      "symbol": "META",
-      "title": "Cramer Warned Viewers That Meta\u2019s AI Would Crush This Stock, and Someone Just Bet Millions It Won\u2019t",
-      "url": "https://247wallst.com/investing/2026/10/02/intuit-wasnt-on-cramers-muse-casualty-list-and-traders-just-piled-into-its-october-calls/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 19:10 UTC",
+      "published": "2026-10-05 23:12 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": -0.402,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 30.2,
+      "impact": 30.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.52,
-        "composite": 69.8
+        "vol_ratio": 1.23,
+        "composite": 62.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.402,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "e9dd1623392c3961",
-      "symbol": "INTC",
-      "title": "One Reason Intel Stock Looks Better Than Its Price",
-      "url": "https://www.trefis.com/articles/617426/one-reason-intel-stock-looks-better-than-its-price/2026-10-02?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-02 09:53 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.44,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 29.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.93,
-        "composite": 66.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.44,
-        "kebaruan": 0.8
+        "kebaruan": 0.97
       }
     },
     {
@@ -1483,53 +1129,403 @@
       }
     },
     {
-      "id": "0b7660468d87eb60",
-      "symbol": "INTC",
-      "title": "Trump Floats Intel-Style Government Equity Stakes in OpenAI and Anthropic: 'I Have Many Deals Like That' (UPDATED)",
-      "url": "https://finance.yahoo.com/technology/ai/articles/trump-reportedly-says-government-might-015421566.html?.tsrc=rss",
+      "id": "c1e92c93a4c3576c",
+      "symbol": "GD",
+      "title": "GD vs. LMT: Which Defense Dividend Stock Will Crush Retirement Income Goals?",
+      "url": "https://247wallst.com/investing/2026/09/26/gd-vs-lmt-which-defense-dividend-stock-will-crush-retirement-income-goals/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-02 11:54 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.361,
+      "published": "2026-09-26 12:10 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": -0.026,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
       "impact": 29.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.93,
-        "composite": 66.0
+        "vol_ratio": 1.05,
+        "composite": 65.1
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.361,
-        "kebaruan": 0.83
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": -0.026,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "c5cba20df766fdb2",
-      "symbol": "MPWR",
-      "title": "Monolithic Power (MPWR) is a Great Momentum Stock: Should You Buy?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/monolithic-power-mpwr-great-momentum-150002244.html?.tsrc=rss",
+      "id": "d6da878e65a06d61",
+      "symbol": "GD",
+      "title": "Can Virginia-Class Submarine Demand Support General Dynamics' Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/virginia-class-submarine-demand-support-122100378.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-09-30 15:00 UTC",
+      "published": "2026-09-30 12:21 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.625,
+      "sentiment": 0.71,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 28.8,
+      "impact": 28.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.68,
-        "composite": 67.1
+        "vol_ratio": 1.05,
+        "composite": 65.1
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.625,
-        "kebaruan": 0.21
+        "sentimen": 0.71,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "db1bc2cd1faa9bde",
+      "symbol": null,
+      "title": "Strive CEO: Bitcoin Could \u2018Go to Infinity' as Dollar Debt Crisis Breaks",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/strive-ceo-bitcoin-could-infinity-015100441.html",
+      "source": "BeInCrypto",
+      "published": "2026-09-23 01:51 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": -0.765,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 28.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": -0.765,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "716a58317041e527",
+      "symbol": "IR",
+      "title": "Gates Gains From Business Strength Amid Persisting Headwinds",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gates-gains-business-strength-amid-121000250.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-02 12:10 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.681,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 28.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 68.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.681,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "dd239b951cde2fe0",
+      "symbol": "AMZN",
+      "title": "Amazon stock is trading at its lowest valuation ever as a public company, despite AI boom",
+      "url": "https://finance.yahoo.com/markets/stocks/article/amazon-stock-is-trading-at-its-lowest-valuation-ever-as-a-public-company-despite-ai-boom-154718912.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 15:47 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.226,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.1,
+        "composite": 64.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.226,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "d88af6a4852e8043",
+      "symbol": "AMZN",
+      "title": "Amazon, LA Olympics Organizer Take Over 39-Acre Site Formerly Home To Forever 21",
+      "url": "https://www.bisnow.com/news/los-angeles/industrial/with-a-lease-to-la28-and-a-sale-to-amazon-former-forever-21-hq-is-no-longer-vacant?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 21:42 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.178,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.1,
+        "composite": 64.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.178,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "087c588890af9c48",
+      "symbol": "GD",
+      "title": "General Dynamics (GD), What Is Behind The Fresh Attention?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/general-dynamics-gd-behind-fresh-150611254.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-02 15:06 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.527,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.05,
+        "composite": 65.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.527,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "3ee14adb871a6deb",
+      "symbol": "AMZN",
+      "title": "Pinterest Appoints James Dibbo Chief Financial Officer",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pinterest-appoints-james-dibbo-chief-201500959.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 20:15 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.0,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.1,
+        "composite": 64.5
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "b33dfad107126e41",
+      "symbol": "HWM",
+      "title": "What Howmet Aerospace (HWM)'s Expanding Free Cash Flow Margin Means For Shareholders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/howmet-aerospace-hwm-expanding-free-111222569.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-30 11:12 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.511,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.66,
+        "composite": 62.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.511,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "a8d9992283468e20",
+      "symbol": "MSFT",
+      "title": "Meta And Microsoft Reportedly Trim Anthropic Reliance as Internal AI Tools Take Center Stage",
+      "url": "https://stocktwits.com/news-articles/markets/equity/meta-and-microsoft-reportedly-trim-anthropic-reliance-as-internal-ai-tools-take-center-stage/cZDqQVcRBjr?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 23:06 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.23,
+        "composite": 62.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.96
+      }
+    },
+    {
+      "id": "d774c58bbda99709",
+      "symbol": "CTSH",
+      "title": "Is Cognizant\u2019s AI-Led Delivery Shift Altering The Investment Case For Cognizant Technology Solutions (CTSH)?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/cognizant-ai-led-delivery-shift-190859908.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-04 19:08 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.178,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.5,
+        "composite": 65.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.178,
+        "kebaruan": 0.58
+      }
+    },
+    {
+      "id": "2cf3101188b975e1",
+      "symbol": "MSFT",
+      "title": "Microsoft (MSFT) Exceeds Market Returns: Some Facts to Consider",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-msft-exceeds-market-returns-204502810.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 20:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.23,
+        "composite": 62.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.93
+      }
+    },
+    {
+      "id": "5808231e612962c4",
+      "symbol": "MSFT",
+      "title": "What Anthropic and Microsoft are saying about 'AI consciousness'",
+      "url": "https://finance.yahoo.com/video/anthropic-microsoft-saying-ai-consciousness-205547406.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 20:55 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.23,
+        "composite": 62.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.93
+      }
+    },
+    {
+      "id": "2aea5963a31a3d6d",
+      "symbol": "HWM",
+      "title": "Howmet Rises 21.4% in Past Year: Should You Buy the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/howmet-rises-21-4-past-162600653.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 16:26 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 25.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.66,
+        "composite": 62.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.87
+      }
+    },
+    {
+      "id": "7e1ddc241fa45d38",
+      "symbol": "SNPS",
+      "title": "Prediction: This Under-the-Radar AI Stock Will Soar Over the Next Decade",
+      "url": "https://www.fool.com/investing/2026/10/05/prediction-this-under-the-radar-ai-stock-will-soar/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-05 16:43 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 25.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 75.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "1799c26879609890",
+      "symbol": "LOW",
+      "title": "Lowe's (LOW) Dips More Than Broader Market: What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lowes-low-dips-more-broader-204504492.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-09-30 20:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.428,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 25.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.83,
+        "composite": 63.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.428,
+        "kebaruan": 0.0
       }
     }
   ]
