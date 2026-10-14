@@ -504,7 +504,7 @@
         "mean_reversion": 0.0,
         "event_drift": 30.82,
         "insider": 0.0,
-        "shortvol_level": 29.02
+        "shortvol_level": 29.01
       },
       "confidence": "normal",
       "as_of": "2026-10-12"
@@ -562,19 +562,6 @@
       "as_of": "2026-10-12"
     },
     {
-      "symbol": "ORCL",
-      "score": 59.3,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 21.39,
-        "insider": 0.0,
-        "shortvol_level": 37.95
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-12"
-    },
-    {
       "symbol": "TTD",
       "score": 59.3,
       "breakdown": {
@@ -583,6 +570,19 @@
         "event_drift": 25.15,
         "insider": 0.0,
         "shortvol_level": 34.18
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-12"
+    },
+    {
+      "symbol": "ORCL",
+      "score": 59.3,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 21.39,
+        "insider": 0.0,
+        "shortvol_level": 37.95
       },
       "confidence": "normal",
       "as_of": "2026-10-12"
