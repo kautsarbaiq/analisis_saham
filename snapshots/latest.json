@@ -1,45 +1,45 @@
 {
-  "as_of": "2026-10-20",
+  "as_of": "2026-10-21",
   "validated_engines": {},
   "top_us": [
     {
-      "symbol": "LHX",
-      "score": 73.7,
+      "symbol": "CCI",
+      "score": 75.1,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 30.78,
+        "event_drift": 44.37,
         "insider": 0.0,
-        "shortvol_level": 42.89
+        "shortvol_level": 30.69
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "CCI",
-      "score": 73.6,
+      "symbol": "LHX",
+      "score": 73.3,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 44.45,
+        "event_drift": 30.67,
         "insider": 0.0,
-        "shortvol_level": 29.18
+        "shortvol_level": 42.59
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "PTC",
-      "score": 72.3,
+      "score": 72.0,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 24.32,
+        "event_drift": 23.65,
         "insider": 0.0,
-        "shortvol_level": 47.98
+        "shortvol_level": 48.32
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "CMG",
@@ -47,610 +47,610 @@
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 30.61,
+        "event_drift": 30.48,
         "insider": 0.0,
-        "shortvol_level": 39.64
+        "shortvol_level": 39.85
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "AMT",
-      "score": 69.6,
+      "symbol": "HAS",
+      "score": 69.0,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 34.86,
+        "event_drift": 42.5,
         "insider": 0.0,
-        "shortvol_level": 34.71
+        "shortvol_level": 26.47
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "AMZN",
-      "score": 67.4,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 28.94,
-        "insider": 0.0,
-        "shortvol_level": 38.45
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "CSGP",
-      "score": 67.3,
+      "score": 68.8,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 32.65,
+        "event_drift": 32.56,
         "insider": 0.0,
-        "shortvol_level": 34.64
+        "shortvol_level": 36.22
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "AMT",
+      "score": 68.1,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 34.78,
+        "insider": 0.0,
+        "shortvol_level": 33.37
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "BKNG",
-      "score": 66.8,
+      "score": 66.5,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 22.15,
+        "event_drift": 22.02,
         "insider": 0.0,
-        "shortvol_level": 44.63
+        "shortvol_level": 44.43
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "NOC",
-      "score": 66.0,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 29.14,
-        "insider": 0.0,
-        "shortvol_level": 36.86
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "CRH",
-      "score": 65.9,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 22.62,
-        "insider": 0.0,
-        "shortvol_level": 43.3
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "MCD",
-      "score": 65.6,
+      "score": 66.3,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 25.7,
+        "event_drift": 25.57,
         "insider": 0.0,
-        "shortvol_level": 39.86
+        "shortvol_level": 40.76
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "NRG",
-      "score": 64.6,
+      "symbol": "UAL",
+      "score": 65.4,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 26.32,
+        "event_drift": 31.33,
         "insider": 0.0,
-        "shortvol_level": 38.32
+        "shortvol_level": 34.11
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "MSCI",
-      "score": 63.7,
+      "symbol": "NOC",
+      "score": 65.4,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 26.73,
+        "event_drift": 29.03,
         "insider": 0.0,
-        "shortvol_level": 37.01
+        "shortvol_level": 36.38
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "AMZN",
+      "score": 65.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 28.81,
+        "insider": 0.0,
+        "shortvol_level": 36.16
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "VRTX",
+      "score": 64.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 28.35,
+        "insider": 0.0,
+        "shortvol_level": 36.43
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "TSCO",
+      "score": 64.5,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 23.62,
+        "insider": 0.0,
+        "shortvol_level": 40.85
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "TMO",
+      "score": 64.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 29.45,
+        "insider": 0.0,
+        "shortvol_level": 34.6
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "FICO",
-      "score": 63.7,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 38.6,
-        "insider": 0.0,
-        "shortvol_level": 25.12
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "EFX",
-      "score": 63.5,
+      "score": 63.9,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
         "event_drift": 38.35,
         "insider": 0.0,
-        "shortvol_level": 25.15
+        "shortvol_level": 25.58
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "COO",
-      "score": 63.2,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 21.94,
-        "insider": 0.0,
-        "shortvol_level": 41.26
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "STZ",
-      "score": 63.1,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 31.23,
-        "insider": 0.0,
-        "shortvol_level": 31.92
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "BLDR",
-      "score": 63.0,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 22.9,
-        "insider": 0.0,
-        "shortvol_level": 40.07
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "APH",
-      "score": 62.9,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 23.81,
-        "insider": 0.0,
-        "shortvol_level": 39.05
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "HLT",
-      "score": 62.9,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 27.37,
-        "insider": 0.0,
-        "shortvol_level": 35.49
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "TMO",
-      "score": 62.8,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 28.26,
-        "insider": 0.0,
-        "shortvol_level": 34.54
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "PCG",
-      "score": 62.8,
+      "score": 63.4,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 22.6,
+        "event_drift": 22.99,
         "insider": 0.0,
-        "shortvol_level": 40.16
+        "shortvol_level": 40.45
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "BNY",
-      "score": 62.5,
+      "symbol": "COF",
+      "score": 63.3,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 23.8,
+        "event_drift": 26.04,
         "insider": 0.0,
-        "shortvol_level": 38.73
+        "shortvol_level": 37.29
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "ORLY",
-      "score": 62.4,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 22.15,
-        "insider": 0.0,
-        "shortvol_level": 40.28
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "TSCO",
-      "score": 62.0,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 23.75,
-        "insider": 0.0,
-        "shortvol_level": 38.29
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "VRTX",
-      "score": 61.8,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 28.48,
-        "insider": 0.0,
-        "shortvol_level": 33.35
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "PG",
-      "score": 61.8,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 24.44,
-        "insider": 0.0,
-        "shortvol_level": 37.34
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "ECL",
-      "score": 61.7,
+      "symbol": "CRH",
+      "score": 63.1,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
         "event_drift": 22.48,
         "insider": 0.0,
-        "shortvol_level": 39.22
+        "shortvol_level": 40.59
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "HAS",
-      "score": 61.4,
+      "symbol": "HLT",
+      "score": 62.7,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 37.05,
+        "event_drift": 28.36,
         "insider": 0.0,
-        "shortvol_level": 24.39
+        "shortvol_level": 34.36
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "RTX",
-      "score": 61.4,
+      "symbol": "SMCI",
+      "score": 62.7,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 27.59,
+        "event_drift": 36.57,
         "insider": 0.0,
-        "shortvol_level": 33.82
+        "shortvol_level": 26.14
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "COF",
-      "score": 61.0,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 22.67,
-        "insider": 0.0,
-        "shortvol_level": 38.28
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
       "symbol": "META",
-      "score": 60.8,
+      "score": 62.4,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 26.22,
+        "event_drift": 27.06,
         "insider": 0.0,
-        "shortvol_level": 34.58
+        "shortvol_level": 35.29
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "UAL",
-      "score": 60.6,
+      "symbol": "ICE",
+      "score": 62.1,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 26.0,
+        "event_drift": 22.73,
+        "insider": 0.0,
+        "shortvol_level": 39.41
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "EFX",
+      "score": 61.6,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 38.25,
+        "insider": 0.0,
+        "shortvol_level": 23.33
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "UDR",
+      "score": 61.5,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 24.14,
+        "insider": 0.0,
+        "shortvol_level": 37.4
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "COO",
+      "score": 61.5,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 21.81,
+        "insider": 0.0,
+        "shortvol_level": 39.68
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "MSCI",
+      "score": 61.2,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 26.65,
         "insider": 0.0,
         "shortvol_level": 34.59
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "AVGO",
-      "score": 60.6,
+      "symbol": "CTVA",
+      "score": 61.2,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 23.81,
+        "event_drift": 21.77,
         "insider": 0.0,
-        "shortvol_level": 36.77
+        "shortvol_level": 39.39
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "BKR",
-      "score": 60.5,
+      "symbol": "MMM",
+      "score": 61.0,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 22.65,
+        "event_drift": 33.35,
         "insider": 0.0,
-        "shortvol_level": 37.88
+        "shortvol_level": 27.66
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "FIS",
+      "symbol": "ORLY",
+      "score": 61.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 22.02,
+        "insider": 0.0,
+        "shortvol_level": 38.96
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "BLDR",
+      "score": 61.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 22.79,
+        "insider": 0.0,
+        "shortvol_level": 38.18
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "BNY",
+      "score": 60.9,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 23.72,
+        "insider": 0.0,
+        "shortvol_level": 37.15
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "APH",
+      "score": 60.7,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 23.55,
+        "insider": 0.0,
+        "shortvol_level": 37.12
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "DHR",
       "score": 60.4,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 22.67,
+        "event_drift": 27.55,
         "insider": 0.0,
-        "shortvol_level": 37.72
+        "shortvol_level": 32.83
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "HD",
-      "score": 60.3,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 26.78,
-        "insider": 0.0,
-        "shortvol_level": 33.53
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "MRNA",
+      "symbol": "PNR",
       "score": 60.2,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 41.68,
+        "event_drift": 26.3,
         "insider": 0.0,
-        "shortvol_level": 18.57
+        "shortvol_level": 33.87
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "HWM",
+      "symbol": "ECL",
       "score": 60.2,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 17.7,
+        "event_drift": 22.34,
         "insider": 0.0,
-        "shortvol_level": 42.5
+        "shortvol_level": 37.82
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "ICE",
+      "symbol": "ETR",
       "score": 60.1,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 22.81,
+        "event_drift": 22.99,
         "insider": 0.0,
-        "shortvol_level": 37.32
+        "shortvol_level": 37.09
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "CVS",
+      "symbol": "STZ",
       "score": 60.0,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 21.94,
+        "event_drift": 28.11,
         "insider": 0.0,
-        "shortvol_level": 38.1
+        "shortvol_level": 31.88
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "IR",
-      "score": 60.0,
+      "symbol": "AVGO",
+      "score": 59.8,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 22.9,
+        "event_drift": 23.55,
         "insider": 0.0,
-        "shortvol_level": 37.07
+        "shortvol_level": 36.28
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "CTVA",
+      "symbol": "FIS",
+      "score": 59.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 22.59,
+        "insider": 0.0,
+        "shortvol_level": 37.24
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "UBER",
+      "score": 59.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 22.79,
+        "insider": 0.0,
+        "shortvol_level": 37.01
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "NRG",
+      "score": 59.8,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 20.11,
+        "insider": 0.0,
+        "shortvol_level": 39.64
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "BKR",
       "score": 59.7,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 21.91,
+        "event_drift": 22.58,
         "insider": 0.0,
-        "shortvol_level": 37.78
+        "shortvol_level": 37.15
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "SPG",
+      "symbol": "MRNA",
       "score": 59.5,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 24.95,
+        "event_drift": 41.55,
         "insider": 0.0,
-        "shortvol_level": 34.56
+        "shortvol_level": 18.0
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "PNR",
+      "symbol": "SBAC",
       "score": 59.5,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 26.4,
+        "event_drift": 31.65,
         "insider": 0.0,
-        "shortvol_level": 33.09
+        "shortvol_level": 27.88
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "NFLX",
+      "symbol": "HD",
       "score": 59.5,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 23.96,
+        "event_drift": 26.65,
         "insider": 0.0,
-        "shortvol_level": 35.54
+        "shortvol_level": 32.85
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "GLW",
-      "score": 59.1,
+      "symbol": "PEG",
+      "score": 59.5,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 23.81,
+        "event_drift": 22.99,
         "insider": 0.0,
-        "shortvol_level": 35.27
+        "shortvol_level": 36.46
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "UBER",
+      "symbol": "PG",
+      "score": 59.3,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 24.53,
+        "insider": 0.0,
+        "shortvol_level": 34.77
+      },
+      "confidence": "normal",
+      "as_of": "2026-10-21"
+    },
+    {
+      "symbol": "DIS",
       "score": 59.0,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 22.9,
+        "event_drift": 30.01,
         "insider": 0.0,
-        "shortvol_level": 36.14
+        "shortvol_level": 28.96
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     },
     {
-      "symbol": "TSN",
-      "score": 59.0,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 21.99,
-        "insider": 0.0,
-        "shortvol_level": 36.98
-      },
-      "confidence": "normal",
-      "as_of": "2026-10-20"
-    },
-    {
-      "symbol": "STX",
+      "symbol": "GOOG",
       "score": 58.8,
       "breakdown": {
         "technical": 0.0,
         "mean_reversion": 0.0,
-        "event_drift": 23.81,
+        "event_drift": 27.06,
         "insider": 0.0,
-        "shortvol_level": 34.98
+        "shortvol_level": 31.7
       },
       "confidence": "normal",
-      "as_of": "2026-10-20"
+      "as_of": "2026-10-21"
     }
   ],
   "top_idx": []
