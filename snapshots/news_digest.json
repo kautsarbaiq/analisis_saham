@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-10-21 23:47:05+00:00",
+  "as_of": "2026-10-22 22:47:20+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
       "CCI",
-      "CMG",
       "HAS",
       "LHX",
-      "PTC"
+      "PTC",
+      "TSCO"
     ],
     "sektor": [
       "Consumer Discretionary",
@@ -17,419 +17,344 @@
     ],
     "peers": [
       "CSGP",
+      "ALLE",
       "AMT",
-      "BKNG",
-      "MCD",
-      "UAL",
-      "NOC",
-      "AMZN",
       "FICO",
-      "SMCI",
-      "EFX",
+      "UAL",
+      "BKNG",
       "UDR",
-      "APH"
+      "SMCI",
+      "AMZN",
+      "NOC",
+      "ADBE",
+      "ORLY"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
     {
-      "id": "96a039ea94d176be",
-      "symbol": "HAS",
-      "title": "Hasbro Soars 11% as Magic: The Gathering Tops $600 Million and Outlook Rises: \u201cOur Superpower\u201d",
-      "url": "https://www.tikr.com/blog/hasbro-soars-11-as-magic-the-gathering-tops-600-million-and-outlook-rises-our-superpower?ref=yahoofinance&.tsrc=rss",
+      "id": "06d79b03c316b7e5",
+      "symbol": "TSCO",
+      "title": "Tractor Supply Q3 Earnings Beat on Sales Growth, Margins Fall",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tractor-supply-q3-earnings-beat-164000009.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-20 20:33 UTC",
+      "published": "2026-10-22 16:40 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.511,
+      "sentiment": 0.382,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 78.7,
+      "impact": 78.8,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
+        "vol_ratio": 2.32,
+        "composite": 73.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.511,
-        "kebaruan": 0.62
+        "sentimen": 0.382,
+        "kebaruan": 0.9
       }
     },
     {
-      "id": "e2997b9b8303cf92",
-      "symbol": "HAS",
-      "title": "Hasbro Stock Gains Focus After Earnings Beat",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-stock-gains-focus-earnings-032350309.html?.tsrc=rss",
+      "id": "d0d23df69260c22e",
+      "symbol": "TSCO",
+      "title": "Tractor Supply (TSCO) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tractor-supply-tsco-q3-2026-earnings-call-transcript/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 03:23 UTC",
+      "published": "2026-10-22 18:15 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.34,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 77.5,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.34,
-        "kebaruan": 0.71
-      }
-    },
-    {
-      "id": "ff5f78be93f482aa",
-      "symbol": "UAL",
-      "title": "Stock Market Today, Oct. 21: Airline Shares Rise After United Issues Stronger Revenue Guidance",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/21/stock-market-today-oct-21-airline-shares-rise-after-united-issues-stronger-revenue-guidance/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 21:53 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.765,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 69.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.17,
-        "composite": 65.4
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.765,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "e322af2c88ebe8b3",
-      "symbol": "HAS",
-      "title": "Target vs. Hasbro: Which Dividend Stock Pays You More in 10 Years?",
-      "url": "https://www.tikr.com/blog/target-vs-hasbro-which-dividend-stock-pays-you-more-in-10-years?ref=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-20 22:31 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 66.2,
+      "impact": 75.1,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.65
-      }
-    },
-    {
-      "id": "8c79bb584fa30142",
-      "symbol": "HAS",
-      "title": "Outside Big Tech, Tuesday's Earnings Winners Jumped as Much as 11%",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/outside-big-tech-tuesdays-earnings-110800452.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 11:08 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.477,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 65.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
+        "vol_ratio": 2.32,
+        "composite": 73.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.477,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "d4f1c31e94a5ee16",
+      "symbol": "TSCO",
+      "title": "What Tractor Supply (TSCO) Said on Its Q3 Earnings Call",
+      "url": "https://www.marketbeat.com/instant-alerts/transcript-what-tractor-supply-tsco-said-on-its-q3-earnings-call-2026-10-22/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 18:04 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 75.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.32,
+        "composite": 73.5
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
+      }
+    },
+    {
+      "id": "daf77ceb0db3f73f",
+      "symbol": "TSCO",
+      "title": "Compared to Estimates, Tractor Supply (TSCO) Q3 Earnings: A Look at Key Metrics",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/compared-estimates-tractor-supply-tsco-123006149.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 12:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 74.7,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.32,
+        "composite": 73.5
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.84
+      }
+    },
+    {
+      "id": "a28592fa631efadf",
+      "symbol": "TSCO",
+      "title": "Tractor Supply (TSCO) Q3 Earnings and Revenues Surpass Estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tractor-supply-tsco-q3-earnings-110502932.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 11:05 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 74.6,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.32,
+        "composite": 73.5
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
         "kebaruan": 0.82
       }
     },
     {
-      "id": "77ef4ce8e712c3df",
-      "symbol": "SMCI",
-      "title": "Stock Market Today, Oct. 21: Super Micro Computer Raises Full-Year Revenue Guidance on Strong AI Demand",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/21/stock-market-today-oct-21-super-micro-computer-raises-full-year-revenue-guidance-on-strong-ai-demand/?.tsrc=rss",
+      "id": "a4398742e2db45af",
+      "symbol": "TSCO",
+      "title": "Tractor Supply Recovers, Gains 4% as Management Celebrates \u201cStep Forward\u201d",
+      "url": "https://www.tikr.com/blog/tractor-supply-recovers-gains-4-as-management-celebrates-step-forward?ref=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 21:21 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.772,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 62.0,
+      "published": "2026-10-22 17:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.727,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 67.3,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.28,
-        "composite": 62.7
+        "vol_ratio": 2.32,
+        "composite": 73.5
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.772,
-        "kebaruan": 0.96
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.727,
+        "kebaruan": 0.91
       }
     },
     {
-      "id": "5c37b7380cebb0ef",
-      "symbol": "SMCI",
-      "title": "Analysts revamp Super Micro stock price targets after 10% surge on revenue boost",
-      "url": "https://www.thestreet.com/investing/stocks/analysts-revamp-super-micro-stock-price-targets-after-10-surge-on-revenue-boost-smci?.tsrc=rss",
+      "id": "f006874d97340f19",
+      "symbol": "TSCO",
+      "title": "Tractor Supply\u2019s (NASDAQ:TSCO) Q3 2026 sales top estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tractor-supply-nasdaq-tsco-q3-110718858.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 20:42 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.765,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 61.9,
+      "published": "2026-10-22 11:07 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.202,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 61.6,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.28,
-        "composite": 62.7
+        "vol_ratio": 2.32,
+        "composite": 73.5
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.765,
-        "kebaruan": 0.96
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.202,
+        "kebaruan": 0.82
       }
     },
     {
-      "id": "29b3aadf3bb59f36",
-      "symbol": "UAL",
-      "title": "UAL Q3 deep dive: premium offerings, loyalty, and Starlink drive share gains amid cost headwinds",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ual-q3-deep-dive-premium-211039577.html?.tsrc=rss",
+      "id": "5a92ccb74c09ea1f",
+      "symbol": "ALLE",
+      "title": "Allegion Soars 11% as Q3 Beat Fuels Raised 2026 Outlook on \u201cSteady Momentum\u201d",
+      "url": "https://www.tikr.com/blog/allegion-soars-11-as-q3-beat-fuels-raised-2026-outlook-on-steady-momentum?ref=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 21:10 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.796,
+      "published": "2026-10-22 20:15 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 61.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.17,
-        "composite": 65.4
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.796,
-        "kebaruan": 0.96
-      }
-    },
-    {
-      "id": "aeb64ad5d7ff0b70",
-      "symbol": "HAS",
-      "title": "Update: Dow Rebounds After Two-Day Decline Amid Solid Earnings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dow-rebounds-two-day-decline-205147793.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-20 20:51 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.153,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
       "impact": 61.2,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
+        "vol_ratio": 1.98,
+        "composite": 69.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.153,
-        "kebaruan": 0.62
+        "sentimen": 0.0,
+        "kebaruan": 0.95
       }
     },
     {
-      "id": "fe8ff49b17ee09a4",
-      "symbol": "UAL",
-      "title": "United Airlines cuts outlook as soaring fuel costs offset travel demand",
-      "url": "https://finance.yahoo.com/video/united-airlines-cuts-outlook-as-soaring-fuel-costs-offset-travel-demand-145649627.html?.tsrc=rss",
+      "id": "1a5dcbf034caca82",
+      "symbol": "ALLE",
+      "title": "Allegion (ALLE) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/22/allegion-alle-q3-2026-earnings-call-transcript/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 14:56 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.026,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 61.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.17,
-        "composite": 65.4
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.026,
-        "kebaruan": 0.88
-      }
-    },
-    {
-      "id": "4228488afcd6e87f",
-      "symbol": "UDR",
-      "title": "UDR, Inc. Raises Full-Year 2026 Guidance Ranges and Provides Preliminary Third Quarter 2026 Results",
-      "url": "https://finance.yahoo.com/real-estate/articles/udr-inc-raises-full-2026-120100839.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 12:01 UTC",
+      "published": "2026-10-22 17:03 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 60.7,
+      "impact": 61.0,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 61.5
+        "vol_ratio": 1.98,
+        "composite": 69.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.83
+        "kebaruan": 0.9
       }
     },
     {
-      "id": "fad672292761ecea",
-      "symbol": "HAS",
-      "title": "HAS Q3 Deep Dive: Magic Momentum, Licensing Expansion, and Cost Discipline Drive Upside",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-deep-dive-magic-momentum-111839802.html?.tsrc=rss",
+      "id": "250147c2fca36a7c",
+      "symbol": "ALLE",
+      "title": "Allegion plc Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-allegion-plc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 11:18 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.6,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.82
-      }
-    },
-    {
-      "id": "d349ab0649595099",
-      "symbol": "HAS",
-      "title": "Why Hasbro Stock Jumped Today",
-      "url": "https://www.fool.com/investing/2026/10/20/why-hasbro-stock-jumped-today/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-20 22:32 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 58.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.65
-      }
-    },
-    {
-      "id": "be8afa7e91784ec7",
-      "symbol": "HAS",
-      "title": "Why Is Hasbro (HAS) Stock Soaring Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-hasbro-stock-soaring-today-201350634.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-20 20:13 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 58.6,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.24,
-        "composite": 69.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.62
-      }
-    },
-    {
-      "id": "9a6e22184b62adfc",
-      "symbol": "UDR",
-      "title": "UDR, Inc. Announces Dates for Third Quarter 2026 Earnings Release, Webcast, and Conference Call",
-      "url": "https://finance.yahoo.com/real-estate/articles/udr-inc-announces-dates-third-201600217.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-15 20:16 UTC",
+      "published": "2026-10-22 17:04 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 56.5,
+      "impact": 61.0,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 61.5
+        "vol_ratio": 1.98,
+        "composite": 69.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.0
+        "kebaruan": 0.91
       }
     },
     {
-      "id": "ff64a2d9cd33d41c",
-      "symbol": "CMG",
-      "title": "CMG Stock Drops After TD Cowen Downgrade Ahead Of Earnings, Analyst Warns Of \u2018Challenging\u2019 2027",
-      "url": "https://stocktwits.com/news-articles/markets/equity/cmg-stock-drops-after-td-cowen-downgrade-ahead-of-earnings-analyst-warns-of-challenging-2027/cZxM9gpRBvu?.tsrc=rss",
+      "id": "752ec44ddaf94b07",
+      "symbol": "TSCO",
+      "title": "Tractor Supply taps former Home Depot exec as chief technology, digital officer",
+      "url": "https://www.retaildive.com/news/tractor-supply-hires-home-depot-vet-chief-digital-technology-officer/833724/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 18:23 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": -0.103,
+      "published": "2026-10-22 15:43 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 56.1,
+      "impact": 59.9,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.32,
+        "composite": 73.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.89
+      }
+    },
+    {
+      "id": "a5239ae37e0b0d0a",
+      "symbol": "HAS",
+      "title": "Hasbro (HAS) Stock Climbs As Q3 Earnings Spotlight Wizards Strength",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-stock-climbs-q3-earnings-061839676.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 06:18 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.494,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 59.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
+        "vol_ratio": 1.43,
+        "composite": 72.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": -0.103,
-        "kebaruan": 0.92
+        "sentimen": 0.494,
+        "kebaruan": 0.76
+      }
+    },
+    {
+      "id": "d0759198ab1a650c",
+      "symbol": "CCI",
+      "title": "Crown Castle's Q3 AFFO Beats Estimates on Lower Expenses",
+      "url": "https://finance.yahoo.com/real-estate/articles/crown-castles-q3-affo-beats-161500292.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 16:15 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.296,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 57.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.25,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": -0.296,
+        "kebaruan": 0.89
       }
     },
     {
@@ -447,8 +372,8 @@
       "impact": 56.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
+        "vol_ratio": 0.58,
+        "composite": 72.4
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
@@ -458,128 +383,78 @@
       }
     },
     {
-      "id": "f78c73e293d8cd50",
-      "symbol": "CCI",
-      "title": "Compared to Estimates, Crown Castle (CCI) Q3 Earnings: A Look at Key Metrics",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/compared-estimates-crown-castle-cci-210001178.html?.tsrc=rss",
+      "id": "e2997b9b8303cf92",
+      "symbol": "HAS",
+      "title": "Hasbro Stock Gains Focus After Earnings Beat",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-stock-gains-focus-earnings-032350309.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 21:00 UTC",
+      "published": "2026-10-21 03:23 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.0,
+      "sentiment": 0.34,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 55.3,
+      "impact": 55.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
+        "vol_ratio": 1.43,
+        "composite": 72.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.96
+        "sentimen": 0.34,
+        "kebaruan": 0.38
       }
     },
     {
-      "id": "c4dcc9fa9c04fe46",
-      "symbol": "CCI",
-      "title": "Crown Castle: Q3 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/crown-castle-q3-earnings-snapshot-202608343.html?.tsrc=rss",
+      "id": "2031bbbed1795c75",
+      "symbol": "CSGP",
+      "title": "CoStar Soars 6% on Keefe Bruyette Price Target Hike as Zillow, Lennar Rally",
+      "url": "https://www.tikr.com/blog/costar-soars-6-on-keefe-bruyette-price-target-hike-as-zillow-lennar-rally?ref=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 20:26 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
+      "published": "2026-10-22 17:36 UTC",
+      "event_type": "rating analis",
+      "event_weight": 0.65,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 55.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "d658ab7d45eb8ad3",
-      "symbol": "CCI",
-      "title": "Crown Castle Reports Third Quarter 2026 Results and Updates Outlook for Full Year 2026",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/crown-castle-reports-third-quarter-201500817.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 20:15 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 55.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "2aabf239ca0c2d51",
-      "symbol": "SMCI",
-      "title": "Dow Jones Futures Fall; Meta, Tesla Are Earnings Movers After SpaceX Leads Bullish Nasdaq Move",
-      "url": "https://finance.yahoo.com/m/2bd9a8b9-7491-307a-8f54-b091a90905b0/dow-jones-futures-fall%3B-meta%2C.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 23:47 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 54.5,
+      "impact": 54.8,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.28,
-        "composite": 62.7
+        "vol_ratio": 1.54,
+        "composite": 70.3
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
+        "kategori": "rating analis",
+        "bobot_kategori": 0.65,
         "sentimen": 0.0,
-        "kebaruan": 1.0
+        "kebaruan": 0.91
       }
     },
     {
-      "id": "1693e3be06ff1245",
-      "symbol": "PTC",
-      "title": "PTC's Q4 2026 Earnings: What to Expect",
-      "url": "https://www.barchart.com/story/news/8263587/ptc-s-q4-2026-earnings-what-to-expect?.tsrc=rss",
+      "id": "430cfe8caa8c7e6f",
+      "symbol": "LHX",
+      "title": "L3Harris (LHX) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/l3harris-lhx-earnings-expected-grow-130025981.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 07:36 UTC",
+      "published": "2026-10-22 13:00 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 54.4,
+      "impact": 54.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
+        "vol_ratio": 1.15,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.77
+        "kebaruan": 0.85
       }
     },
     {
@@ -597,14 +472,214 @@
       "impact": 54.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
+        "vol_ratio": 0.58,
+        "composite": 72.4
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.382,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "bed5526ff95feddf",
+      "symbol": "CCI",
+      "title": "Crown Castle (CCI) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/21/crown-castle-cci-q3-2026-earnings-call-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 01:14 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.25,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.68
+      }
+    },
+    {
+      "id": "a2406fa6d65ebd37",
+      "symbol": "CCI",
+      "title": "Crown Castle Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-crown-castle-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 00:49 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.25,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.68
+      }
+    },
+    {
+      "id": "1e3e9a3de8e849a9",
+      "symbol": "CCI",
+      "title": "What Crown Castle (CCI) Said on Its Q3 Earnings Call",
+      "url": "https://www.marketbeat.com/instant-alerts/transcript-what-crown-castle-cci-said-on-its-q3-earnings-call-2026-10-21/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 00:04 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.25,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.67
+      }
+    },
+    {
+      "id": "f78c73e293d8cd50",
+      "symbol": "CCI",
+      "title": "Compared to Estimates, Crown Castle (CCI) Q3 Earnings: A Look at Key Metrics",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/compared-estimates-crown-castle-cci-210001178.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 21:00 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.25,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.63
+      }
+    },
+    {
+      "id": "c4dcc9fa9c04fe46",
+      "symbol": "CCI",
+      "title": "Crown Castle: Q3 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crown-castle-q3-earnings-snapshot-202608343.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 20:26 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.25,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.62
+      }
+    },
+    {
+      "id": "1693e3be06ff1245",
+      "symbol": "PTC",
+      "title": "PTC's Q4 2026 Earnings: What to Expect",
+      "url": "https://www.barchart.com/story/news/8263587/ptc-s-q4-2026-earnings-what-to-expect?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 07:36 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 52.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.58,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.44
+      }
+    },
+    {
+      "id": "364b29316ed29da4",
+      "symbol": "ADBE",
+      "title": "Adobe and BWT Alpine Formula One Team Partner to Fuel Fan Engagement with AI-powered Experiences",
+      "url": "https://finance.yahoo.com/technology/ai/articles/adobe-bwt-alpine-formula-one-124500241.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 12:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.649,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 52.2,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.58,
+        "composite": 62.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.649,
+        "kebaruan": 0.84
+      }
+    },
+    {
+      "id": "0cef3e6719d602fa",
+      "symbol": "ADBE",
+      "title": "Adobe (ADBE) Gains AI Momentum On A Narrative That Still Sees Value",
+      "url": "https://finance.yahoo.com/technology/ai/articles/adobe-adbe-gains-ai-momentum-151217277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 15:12 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.586,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 51.8,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.58,
+        "composite": 62.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.586,
+        "kebaruan": 0.88
       }
     },
     {
@@ -619,176 +694,126 @@
       "sentiment": 0.527,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 52.8,
+      "impact": 51.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.65,
-        "composite": 73.3
+        "vol_ratio": 1.15,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
         "sentimen": 0.527,
-        "kebaruan": 0.92
+        "kebaruan": 0.58
       }
     },
     {
-      "id": "c2fbefca1e231bf8",
-      "symbol": "CMG",
-      "title": "TD Cowen downgrades Chipotle, cuts target on soft October sales",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/td-cowen-downgrades-chipotle-cuts-142639469.html?.tsrc=rss",
+      "id": "97fd4a5bc7542918",
+      "symbol": "ADBE",
+      "title": "Should Value Investors Buy Adobe (ADBE) Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/value-investors-buy-adobe-adbe-124002106.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 14:26 UTC",
-      "event_type": "rating analis",
-      "event_weight": 0.65,
-      "sentiment": -0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 51.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
-      },
-      "heuristik": {
-        "kategori": "rating analis",
-        "bobot_kategori": 0.65,
-        "sentimen": -0.296,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "f8aeb00a1d962858",
-      "symbol": "UAL",
-      "title": "United Airlines (UAL) stock trades up, here is why",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/united-airlines-ual-stock-trades-221439165.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 22:14 UTC",
+      "published": "2026-10-22 12:40 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.421,
+      "sentiment": 0.34,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 50.6,
+      "impact": 49.1,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.17,
-        "composite": 65.4
+        "vol_ratio": 1.58,
+        "composite": 62.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.421,
-        "kebaruan": 0.98
+        "sentimen": 0.34,
+        "kebaruan": 0.84
       }
     },
     {
-      "id": "ab743b35feeb0483",
-      "symbol": "CCI",
-      "title": "Crown Castle to Report Q3 Earnings: What's in Store for the Stock?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/crown-castle-report-q3-earnings-153200174.html?.tsrc=rss",
+      "id": "8cbe205ee3ab7831",
+      "symbol": "CSGP",
+      "title": "AI Uncertainty Challenges CoStar\u2019s (CSGP) Residential Property Platforms",
+      "url": "https://finance.yahoo.com/real-estate/articles/ai-uncertainty-challenges-costar-csgp-132526471.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-16 15:32 UTC",
+      "published": "2026-10-22 13:25 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.273,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 48.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.54,
+        "composite": 70.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.273,
+        "kebaruan": 0.85
+      }
+    },
+    {
+      "id": "ff5f78be93f482aa",
+      "symbol": "UAL",
+      "title": "Stock Market Today, Oct. 21: Airline Shares Rise After United Issues Stronger Revenue Guidance",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/21/stock-market-today-oct-21-airline-shares-rise-after-united-issues-stronger-revenue-guidance/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 21:53 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "sentiment": 0.765,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 50.5,
+      "impact": 47.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
+        "vol_ratio": 1.32,
+        "composite": 65.4
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
+        "sentimen": 0.765,
+        "kebaruan": 0.64
       }
     },
     {
-      "id": "77fe9e0d265b8ec2",
-      "symbol": "UDR",
-      "title": "UDR, Inc. Announces Appointment of Scott McCallum as Executive Vice President \u2013 Chief Investment Officer",
-      "url": "https://finance.yahoo.com/real-estate/articles/udr-inc-announces-appointment-scott-201600497.html?.tsrc=rss",
+      "id": "c6fbc1c4519088dc",
+      "symbol": "LHX",
+      "title": "L3Harris Appoints ATI Chair, President and Chief Executive Officer Kimberly Fields to Board of Directors",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/l3harris-appoints-ati-chair-president-105500609.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-14 20:16 UTC",
+      "published": "2026-10-22 10:55 UTC",
       "event_type": "manajemen",
       "event_weight": 0.6,
       "sentiment": 0.0,
-      "relevansi": "sesektor",
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 49.0,
+      "impact": 47.1,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 61.5
+        "event_aktif": false,
+        "vol_ratio": 1.15,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "manajemen",
         "bobot_kategori": 0.6,
         "sentimen": 0.0,
-        "kebaruan": 0.0
+        "kebaruan": 0.82
       }
     },
     {
-      "id": "b8d65926959ec5ff",
-      "symbol": "CMG",
-      "title": "Chipotle Sinks 4.1% on TD Cowen Downgrade: \u201cLackluster Start to Q4\u201d",
-      "url": "https://www.tikr.com/blog/chipotle-sinks-4-1-on-td-cowen-downgrade-lackluster-start-to-q4?ref=yahoofinance&.tsrc=rss",
+      "id": "23d9c869e456595e",
+      "symbol": "ALLE",
+      "title": "Why Allegion (ALLE) stock is up today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-allegion-alle-stock-today-171753045.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 15:42 UTC",
-      "event_type": "rating analis",
-      "event_weight": 0.65,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 48.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
-      },
-      "heuristik": {
-        "kategori": "rating analis",
-        "bobot_kategori": 0.65,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "074942c2d492fd78",
-      "symbol": "SMCI",
-      "title": "Update: US Equity Indexes Rise as Blockbuster SpaceX Results, Super Micro Computer's Fiscal Q1 Update Boosts AI Trade",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-blockbuster-213900431.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 21:39 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.878,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 48.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.28,
-        "composite": 62.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.878,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "807dde07f07e205f",
-      "symbol": "UDR",
-      "title": "UDR and Apollo Form $2B Apartment Venture",
-      "url": "https://www.credaily.com/briefs/udr-and-apollo-form-2b-apartment-venture/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 16:49 UTC",
+      "published": "2026-10-22 17:17 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -797,64 +822,64 @@
       "impact": 46.0,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.0,
-        "composite": 61.5
+        "vol_ratio": 1.98,
+        "composite": 69.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.9
+        "kebaruan": 0.91
       }
     },
     {
-      "id": "d58c7ee979210c35",
-      "symbol": "CMG",
-      "title": "Here Are Wednesday\u2019s Top Wall Street Analyst Research Calls: Applied Digital, Chipotle Mexican Grill, Cirrus Logic, Costco, Digital Realty Trust, Intuitive Surgical, Netflix, Robinhood Markets, Zscaler, and More",
-      "url": "https://247wallst.com/investing/2026/10/21/here-are-wednesdays-top-wall-street-analyst-research-calls-applied-digital-chipotle-mexican-grill-cirrus-logic-costco-digital-realty-trust-intuitive-surgical-netflix-robinhood-markets/?.tsrc=rss",
+      "id": "e322af2c88ebe8b3",
+      "symbol": "HAS",
+      "title": "Target vs. Hasbro: Which Dividend Stock Pays You More in 10 Years?",
+      "url": "https://www.tikr.com/blog/target-vs-hasbro-which-dividend-stock-pays-you-more-in-10-years?ref=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 12:02 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.625,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 45.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.625,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "2b5e49117f67cb3f",
-      "symbol": "CCI",
-      "title": "Should Dividend Cut Require Action From Crown Castle (CCI) Investors?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dividend-cut-require-action-crown-161351888.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-16 16:13 UTC",
+      "published": "2026-10-20 22:31 UTC",
       "event_type": "aksi korporasi",
       "event_weight": 0.6,
-      "sentiment": -0.273,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 45.7,
+      "impact": 44.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
+        "vol_ratio": 1.43,
+        "composite": 72.9
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
-        "sentimen": -0.273,
-        "kebaruan": 0.0
+        "sentimen": 0.0,
+        "kebaruan": 0.31
+      }
+    },
+    {
+      "id": "d0dfe56b43e61374",
+      "symbol": "NOC",
+      "title": "Lockheed Martin Rises 9% as Record Backlog Lifts Outlook; RTX Gains 2%, Northrop Grumman Advances 3%",
+      "url": "https://247wallst.com/investing/2026/10/22/lockheed-martin-rises-9-as-record-backlog-lifts-outlook-rtx-gains-2-northrop-grumman-advances-3/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 13:47 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.34,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 44.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.95,
+        "composite": 64.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.34,
+        "kebaruan": 0.86
       }
     },
     {
@@ -869,17 +894,42 @@
       "sentiment": 0.511,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 45.4,
+      "impact": 43.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
+        "vol_ratio": 1.25,
+        "composite": 77.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.511,
-        "kebaruan": 0.96
+        "kebaruan": 0.62
+      }
+    },
+    {
+      "id": "8c79bb584fa30142",
+      "symbol": "HAS",
+      "title": "Outside Big Tech, Tuesday's Earnings Winners Jumped as Much as 11%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/outside-big-tech-tuesdays-earnings-110800452.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 11:08 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.477,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 43.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.43,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.477,
+        "kebaruan": 0.49
       }
     },
     {
@@ -894,326 +944,226 @@
       "sentiment": 0.572,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 45.1,
+      "impact": 43.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.65,
-        "composite": 73.3
+        "vol_ratio": 1.15,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.572,
-        "kebaruan": 0.77
+        "kebaruan": 0.43
       }
     },
     {
-      "id": "63266b77c976a956",
-      "symbol": "APH",
-      "title": "Amphenol (APH) Reports Next Week: Wall Street Expects Earnings Growth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/amphenol-aph-reports-next-week-130008073.html?.tsrc=rss",
+      "id": "52266f2dfddbb45e",
+      "symbol": "LHX",
+      "title": "What Is Drawing Fresh Attention To L3Harris Technologies (LHX)?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/drawing-fresh-attention-l3harris-technologies-091413568.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 13:00 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.382,
-      "relevansi": "sesektor",
+      "published": "2026-10-22 09:14 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.318,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 44.6,
+      "impact": 42.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.09,
-        "composite": 60.7
+        "vol_ratio": 1.15,
+        "composite": 70.8
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.382,
-        "kebaruan": 0.85
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.318,
+        "kebaruan": 0.8
       }
     },
     {
-      "id": "5575c2c575776659",
-      "symbol": "NOC",
-      "title": "NOC's Q3 Earnings Call Highlights 2027 Growth and B-21 Spending",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nocs-q3-earnings-call-highlights-130000635.html?.tsrc=rss",
+      "id": "4017102cd5da451a",
+      "symbol": "FICO",
+      "title": "Brown Advisory Exits Fair Isaac Corporation (FICO) Amid Fundamental and Regulatory Concerns",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/brown-advisory-exits-fair-isaac-134412764.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 13:00 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.382,
+      "published": "2026-10-22 13:44 UTC",
+      "event_type": "regulasi/hukum",
+      "event_weight": 0.8,
+      "sentiment": 0.318,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 44.6,
+      "impact": 41.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.07,
+        "vol_ratio": 0.32,
+        "composite": 65.7
+      },
+      "heuristik": {
+        "kategori": "regulasi/hukum",
+        "bobot_kategori": 0.8,
+        "sentimen": 0.318,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "163adc4aea3f7a99",
+      "symbol": "UAL",
+      "title": "United (UAL) Stock Jumps As Q3 Earnings Meet Margin Pressure",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/united-ual-stock-jumps-q3-021134280.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 02:11 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.153,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.32,
         "composite": 65.4
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.382,
-        "kebaruan": 0.85
+        "sentimen": 0.153,
+        "kebaruan": 0.7
       }
     },
     {
-      "id": "f61a323099267a8a",
-      "symbol": "EFX",
-      "title": "EFX Q3 Deep Dive: AI-Driven Cost Efficiencies and Mortgage Market Headwinds Shape Outlook",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/efx-q3-deep-dive-ai-115839593.html?.tsrc=rss",
+      "id": "4246d7e274c46c9f",
+      "symbol": "ORLY",
+      "title": "Does Earnings Preview Change The Bull Case For O'Reilly Stock (ORLY)?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/does-earnings-preview-change-bull-201133832.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 11:58 UTC",
+      "published": "2026-10-22 20:11 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.382,
+      "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 44.5,
+      "impact": 41.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.15,
-        "composite": 61.6
+        "vol_ratio": 1.01,
+        "composite": 62.1
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.382,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "8ce82a566c8d6b2e",
-      "symbol": "LHX",
-      "title": "L3Harris Opens Next\u2011Generation Solid Rocket Motor Facility to Boost Production Capacity",
-      "url": "https://finance.yahoo.com/technology/articles/l3harris-opens-next-generation-solid-210000645.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-20 21:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.511,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.65,
-        "composite": 73.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.511,
-        "kebaruan": 0.63
-      }
-    },
-    {
-      "id": "763eb0b47f666a66",
-      "symbol": "CMG",
-      "title": "Why Chipotle (CMG) stock is trading lower today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-chipotle-cmg-stock-trading-232639431.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 23:26 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.296,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "a07088a7b381e0ad",
-      "symbol": "PTC",
-      "title": "PTC (PTC) Stock Gets Fair Value Boost As Analysts Reset Around Schneider Deal",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ptc-ptc-stock-gets-fair-190920702.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-07 19:09 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.751,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.751,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "d74fe286d1fa88c6",
-      "symbol": "CMG",
-      "title": "What Could Chipotle Stock Be Worth In Three Years?",
-      "url": "https://www.trefis.com/articles/619737/what-could-chipotle-stock-be-worth-in-three-years/2026-10-21?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 19:03 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.226,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.226,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "d83a0112a9e92a1b",
-      "symbol": "LHX",
-      "title": "L3Harris and Divergent Sign Teaming Agreement to Increase Production of Affordable Mass Munitions",
-      "url": "https://finance.yahoo.com/technology/articles/l3harris-divergent-sign-teaming-agreement-200000873.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-13 20:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.67,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 42.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.65,
-        "composite": 73.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.67,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "2c26ce9e8980775d",
-      "symbol": "CCI",
-      "title": "Is It Wise to Retain Crown Castle Stock in Your Portfolio Right Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/wise-retain-crown-castle-stock-121200316.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-19 12:12 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.477,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 41.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.477,
-        "kebaruan": 0.17
-      }
-    },
-    {
-      "id": "621ad87fd7208c53",
-      "symbol": "CMG",
-      "title": "As Chipotle Fights Soft Sales, Can Higher Prices Revive the Stock?",
-      "url": "https://finance.yahoo.com/m/d046bd93-75c4-3bd9-a709-7ceb5cff87b7/as-chipotle-fights-soft.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 20:03 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.077,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 41.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.077,
+        "sentimen": 0.0,
         "kebaruan": 0.95
       }
     },
     {
-      "id": "270e4c15725d4117",
-      "symbol": "LHX",
-      "title": "How Is L3Harris' R&D Spending Driving Defense Technology Innovation?",
-      "url": "https://finance.yahoo.com/technology/articles/l3harris-r-d-spending-driving-135800259.html?.tsrc=rss",
+      "id": "688baf92e4ec2713",
+      "symbol": "UDR",
+      "title": "What to Expect From UDR's Q3 2026 Earnings Report",
+      "url": "https://www.barchart.com/story/news/8328455/what-to-expect-from-udr-s-q3-2026-earnings-report?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-14 13:58 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.477,
-      "relevansi": "dipantau",
+      "published": "2026-10-22 16:39 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.3,
+      "impact": 41.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.65,
-        "composite": 73.3
+        "vol_ratio": 1.43,
+        "composite": 65.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "113837537e471464",
+      "symbol": "ADBE",
+      "title": "Tax Paralysis: When Fear of Capital Gains Creates a Bigger Risk",
+      "url": "https://www.kiplinger.com/investing/why-avoiding-capital-gains-can-sometimes-cost-you-more?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 12:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.202,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 40.7,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.58,
+        "composite": 62.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.477,
-        "kebaruan": 0.0
+        "sentimen": -0.202,
+        "kebaruan": 0.84
       }
     },
     {
-      "id": "b4b60016a321b180",
+      "id": "a8b50ce8c03f73b3",
       "symbol": "LHX",
-      "title": "L3Harris Advances US Navy Next Generation Jammer Low Band Program with $876 Million Award",
-      "url": "https://finance.yahoo.com/technology/articles/l3harris-advances-us-navy-next-160000638.html?.tsrc=rss",
+      "title": "Did New Missile Plant Just Shift L3Harris Technologies (LHX) Investment Narrative?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/did-missile-plant-just-shift-201722240.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-19 16:00 UTC",
+      "published": "2026-10-22 20:17 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.34,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 40.0,
+      "impact": 40.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.65,
-        "composite": 73.3
+        "vol_ratio": 1.15,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.34,
-        "kebaruan": 0.22
+        "sentimen": 0.0,
+        "kebaruan": 0.95
       }
     },
     {
-      "id": "c7f530c6bb92a9fa",
-      "symbol": "CMG",
-      "title": "Chipotle Mexican Grill (CMG) Reports Next Week: What to Know Ahead of the Release",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/chipotle-mexican-grill-cmg-reports-130009807.html?.tsrc=rss",
+      "id": "29b3aadf3bb59f36",
+      "symbol": "UAL",
+      "title": "UAL Q3 deep dive: premium offerings, loyalty, and Starlink drive share gains amid cost headwinds",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ual-q3-deep-dive-premium-211039577.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 13:00 UTC",
+      "published": "2026-10-21 21:10 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.796,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 40.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.32,
+        "composite": 65.4
+      },
+      "heuristik": {
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.796,
+        "kebaruan": 0.63
+      }
+    },
+    {
+      "id": "74a348af2df22592",
+      "symbol": "LHX",
+      "title": "Why Did L3Harris Technologies (LHX) Land A $876 Million Navy Jammer Contract?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-l3harris-technologies-lhx-122144581.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 12:21 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1222,14 +1172,164 @@
       "impact": 39.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 70.3
+        "vol_ratio": 1.15,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.85
+        "kebaruan": 0.84
+      }
+    },
+    {
+      "id": "aeb64ad5d7ff0b70",
+      "symbol": "HAS",
+      "title": "Update: Dow Rebounds After Two-Day Decline Amid Solid Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dow-rebounds-two-day-decline-205147793.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-20 20:51 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.153,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 39.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.43,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.153,
+        "kebaruan": 0.29
+      }
+    },
+    {
+      "id": "80b057a1e542ec41",
+      "symbol": "HAS",
+      "title": "Zacks Investment Ideas feature highlights: Accenture, Hasbro and MSCI",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-investment-ideas-feature-highlights-080800045.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 08:08 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.43,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.78
+      }
+    },
+    {
+      "id": "bdd7467c082f87bb",
+      "symbol": "ORLY",
+      "title": "O'Reilly Automotive (ORLY) Earnings Expected to Grow: Should You Buy?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/oreilly-automotive-orly-earnings-expected-130021867.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 13:00 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 39.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.01,
+        "composite": 62.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.52
+      }
+    },
+    {
+      "id": "4228488afcd6e87f",
+      "symbol": "UDR",
+      "title": "UDR, Inc. Raises Full-Year 2026 Guidance Ranges and Provides Preliminary Third Quarter 2026 Results",
+      "url": "https://finance.yahoo.com/real-estate/articles/udr-inc-raises-full-2026-120100839.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 12:01 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 39.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.43,
+        "composite": 65.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.5
+      }
+    },
+    {
+      "id": "ccc8e7631fced62d",
+      "symbol": "CSGP",
+      "title": "Homes.com Report: Home Prices Edge Higher Even as Sales Decline and Inventory Expands",
+      "url": "https://finance.yahoo.com/real-estate/articles/homes-com-report-home-prices-130000011.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 13:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.103,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 38.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.54,
+        "composite": 70.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.103,
+        "kebaruan": 0.52
+      }
+    },
+    {
+      "id": "fad672292761ecea",
+      "symbol": "HAS",
+      "title": "HAS Q3 Deep Dive: Magic Momentum, Licensing Expansion, and Cost Discipline Drive Upside",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-deep-dive-magic-momentum-111839802.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 11:18 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 38.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.43,
+        "composite": 72.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.49
       }
     },
     {
@@ -1244,67 +1344,67 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 39.7,
+      "impact": 38.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
+        "vol_ratio": 0.58,
+        "composite": 72.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.84
+        "kebaruan": 0.51
       }
     },
     {
-      "id": "259550c204de9155",
-      "symbol": "CSGP",
-      "title": "CoStar Poised to Beat Q3 Adjusted EPS Estimates, Raise Full-Year Adjusted EBITDA and Margin Guidance, RBC Says",
-      "url": "https://finance.yahoo.com/real-estate/articles/costar-poised-beat-q3-adjusted-144329794.html?.tsrc=rss",
+      "id": "1237156b9989902d",
+      "symbol": "NOC",
+      "title": "Electronic Warfare Systems Market Size, Share, Growth Analysis, and Forecast, 2026-2035 | AI-Enabled, Multi-Domain Defense Demand to Drive 12.8% CAGR and USD 55.8 Billion by 2035",
+      "url": "https://finance.yahoo.com/technology/articles/electronic-warfare-systems-market-size-132900924.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-16 14:43 UTC",
+      "published": "2026-10-22 13:29 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.25,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 39.0,
+      "sentiment": 0.382,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 37.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 68.8
+        "vol_ratio": 0.95,
+        "composite": 64.1
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.25,
-        "kebaruan": 0.0
+        "sentimen": 0.382,
+        "kebaruan": 0.86
       }
     },
     {
-      "id": "ec0e5d7bd49ec3d1",
-      "symbol": "PTC",
-      "title": "/C O R R E C T I O N - PTC Inc./",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ptc-announces-servigistics-renewal-u-120000738.html?.tsrc=rss",
+      "id": "d349ab0649595099",
+      "symbol": "HAS",
+      "title": "Why Hasbro Stock Jumped Today",
+      "url": "https://www.fool.com/investing/2026/10/20/why-hasbro-stock-jumped-today/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-19 16:58 UTC",
+      "published": "2026-10-20 22:32 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 36.7,
+      "impact": 37.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
+        "vol_ratio": 1.43,
+        "composite": 72.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.24
+        "kebaruan": 0.31
       }
     },
     {
@@ -1322,12 +1422,87 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.82,
-        "composite": 68.1
+        "vol_ratio": 1.26,
+        "composite": 68.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "9a6e22184b62adfc",
+      "symbol": "UDR",
+      "title": "UDR, Inc. Announces Dates for Third Quarter 2026 Earnings Release, Webcast, and Conference Call",
+      "url": "https://finance.yahoo.com/real-estate/articles/udr-inc-announces-dates-third-201600217.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-15 20:16 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.43,
+        "composite": 65.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "af98bc6644366058",
+      "symbol": "ORLY",
+      "title": "Will O'Reilly Automotive (ORLY) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/oreilly-automotive-orly-beat-estimates-151003198.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-13 15:10 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.01,
+        "composite": 62.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "ec0e5d7bd49ec3d1",
+      "symbol": "PTC",
+      "title": "/C O R R E C T I O N - PTC Inc./",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ptc-announces-servigistics-renewal-u-120000738.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-19 16:58 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.58,
+        "composite": 72.4
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
       }
@@ -1344,192 +1519,17 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 36.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.15
-      }
-    },
-    {
-      "id": "c61131cfa6a1c5e9",
-      "symbol": "PTC",
-      "title": "Schneider Just Paid Up for PTC\u2014Is the SaaSpocalypse Overdone?",
-      "url": "https://www.marketbeat.com/articles/schneider-just-paid-up-for-ptc-is-the-saaspocalypse-overdone/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-10 13:45 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.38,
-        "composite": 72.0
+        "vol_ratio": 0.58,
+        "composite": 72.4
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "74832ca6c3e3e627",
-      "symbol": "CCI",
-      "title": "Unlocking Q3 Potential of Crown Castle (CCI): Exploring Wall Street Estimates for Key Metrics",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/unlocking-q3-potential-crown-castle-121524002.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-16 12:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 35.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.38,
-        "composite": 75.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "88368d2b3423df33",
-      "symbol": null,
-      "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
-      "url": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
-      "source": "CNBC Markets",
-      "published": "2026-10-15 13:42 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": -0.681,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 35.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": -0.681,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "3bf61bdeb3254640",
-      "symbol": "NOC",
-      "title": "Defense Earnings Week Opens With Three Raised Forecasts and Two Record Backlogs",
-      "url": "https://finance.yahoo.com/news/defense-earnings-week-opens-three-120200237.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 12:02 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.128,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 35.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.07,
-        "composite": 65.4
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.128,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "86722ee95316523c",
-      "symbol": "NOC",
-      "title": "Northrop Grumman (NOC): Is This Dividend Stock Trading at a Discount?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/northrop-grumman-noc-dividend-stock-175035149.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 17:50 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 33.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.07,
-        "composite": 65.4
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.92
-      }
-    },
-    {
-      "id": "580737c33a154b37",
-      "symbol": "FICO",
-      "title": "How Much Of Fair Isaac\u2019s Growth Comes From Its Mortgage Score Price?",
-      "url": "https://www.trefis.com/articles/619672/how-much-of-fair-isaacs-growth-comes-from-its-mortgage-score-price/2026-10-21?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 22:04 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.599,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 32.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.27,
-        "composite": 63.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.599,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "22965482f1d36826",
-      "symbol": "MCD",
-      "title": "Can MCD's Menu Innovation Offset Slower U.S. Comparable Sales Growth?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/mcds-menu-innovation-offset-slower-123000523.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 12:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.637,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 32.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 66.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.637,
-        "kebaruan": 0.84
       }
     }
   ]
