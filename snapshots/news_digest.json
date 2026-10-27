@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-23 23:33:55+00:00",
+  "as_of": "2026-10-26 23:17:00+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
@@ -44,7 +44,7 @@
       "sentiment": 0.612,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 66.0,
+      "impact": 61.6,
       "terukur": {
         "event_aktif": true,
         "vol_ratio": 3.05,
@@ -54,7 +54,57 @@
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.612,
-        "kebaruan": 0.87
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "dffeb279a86cba05",
+      "symbol": "CCI",
+      "title": "Crown Castle (CCI) Shares Just Climbed, So What Is Driving Attention Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crown-castle-cci-shares-just-231404094.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-24 23:14 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.296,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 60.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 3.05,
+        "composite": 73.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.296,
+        "kebaruan": 0.32
+      }
+    },
+    {
+      "id": "130fd346e6b4d5d7",
+      "symbol": "UDR",
+      "title": "UDR (UDR) Could Be 11% Undervalued Following Its Guidance Reset",
+      "url": "https://finance.yahoo.com/real-estate/articles/udr-udr-could-11-undervalued-160721790.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-25 16:07 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 59.3,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.59,
+        "composite": 63.8
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.55
       }
     },
     {
@@ -69,17 +119,17 @@
       "sentiment": 0.226,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 63.0,
+      "impact": 58.8,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.46,
+        "vol_ratio": 2.49,
         "composite": 63.1
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.226,
-        "kebaruan": 0.85
+        "kebaruan": 0.0
       }
     },
     {
@@ -94,7 +144,7 @@
       "sentiment": -0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 62.8,
+      "impact": 58.5,
       "terukur": {
         "event_aktif": true,
         "vol_ratio": 3.05,
@@ -104,7 +154,57 @@
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.296,
-        "kebaruan": 0.87
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "e8618dd65cf46d45",
+      "symbol": "AMT",
+      "title": "Does Higher Data Center Guidance Change The Bull Case For American Tower Stock (AMT)?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/does-higher-data-center-guidance-231609487.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-24 23:16 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 58.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.49,
+        "composite": 63.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.32
+      }
+    },
+    {
+      "id": "3e9ee96de6dcceae",
+      "symbol": "AMT",
+      "title": "American Tower (AMT) Heads Into Earnings As Its Undervalued Narrative Faces A Big Test",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/american-tower-amt-heads-earnings-130755116.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-24 13:07 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 57.4,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 2.49,
+        "composite": 63.1
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.18
       }
     },
     {
@@ -119,7 +219,7 @@
       "sentiment": 0.637,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 61.1,
+      "impact": 56.9,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.19,
@@ -129,7 +229,32 @@
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.637,
-        "kebaruan": 0.85
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "6dbe6ddf317617dd",
+      "symbol": "TSCO",
+      "title": "Is Earnings Beat Altering The Investment Case For Tractor Supply (TSCO)?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-beat-altering-investment-case-041854914.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-24 04:18 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 56.8,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.8,
+        "composite": 64.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.06
       }
     },
     {
@@ -144,85 +269,10 @@
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 59.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.56,
-        "composite": 63.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.57
-      }
-    },
-    {
-      "id": "a5239ae37e0b0d0a",
-      "symbol": "HAS",
-      "title": "Hasbro (HAS) Stock Climbs As Q3 Earnings Spotlight Wizards Strength",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-stock-climbs-q3-earnings-061839676.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-22 06:18 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.494,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 57.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 75.6
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.494,
-        "kebaruan": 0.42
-      }
-    },
-    {
-      "id": "4228488afcd6e87f",
-      "symbol": "UDR",
-      "title": "UDR, Inc. Raises Full-Year 2026 Guidance Ranges and Provides Preliminary Third Quarter 2026 Results",
-      "url": "https://finance.yahoo.com/real-estate/articles/udr-inc-raises-full-2026-120100839.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 12:01 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 57.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.56,
-        "composite": 63.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.17
-      }
-    },
-    {
-      "id": "9a6e22184b62adfc",
-      "symbol": "UDR",
-      "title": "UDR, Inc. Announces Dates for Third Quarter 2026 Earnings Release, Webcast, and Conference Call",
-      "url": "https://finance.yahoo.com/real-estate/articles/udr-inc-announces-dates-third-201600217.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-15 20:16 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
       "impact": 56.5,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 1.56,
+        "vol_ratio": 1.59,
         "composite": 63.8
       },
       "heuristik": {
@@ -230,56 +280,6 @@
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
         "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "da9cce4e788d954c",
-      "symbol": "BX",
-      "title": "Is Blackstone a Buy After Its Latest Earnings Report?",
-      "url": "https://www.fool.com/investing/2026/10/23/is-blackstone-a-buy-after-its-latest-earnings-report/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 17:55 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 55.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.19,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.92
-      }
-    },
-    {
-      "id": "4e19f0507f59cf43",
-      "symbol": "CSGP",
-      "title": "CoStar Group to Report Q3 Earnings: What's in Store for the Stock?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/costar-group-report-q3-earnings-164800718.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 16:48 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 55.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.36,
-        "composite": 72.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.9
       }
     },
     {
@@ -308,28 +308,28 @@
       }
     },
     {
-      "id": "9cc39b58416e5ac3",
-      "symbol": "CCI",
-      "title": "SpaceX Is Coming for the Phone Companies, but the Tower Owners Win Either Way",
-      "url": "https://247wallst.com/investing/2026/10/23/spacex-is-coming-for-the-phone-companies-but-the-tower-owners-win-either-way/?.tsrc=rss",
+      "id": "8c5d1ab2034c3323",
+      "symbol": "CSGP",
+      "title": "CoStar (CSGP) reports Q3: everything you need to know ahead of earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/costar-csgp-reports-q3-everything-035047027.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 12:45 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.735,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 53.1,
+      "published": "2026-10-26 03:50 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 54.1,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.05,
-        "composite": 73.3
+        "event_aktif": false,
+        "vol_ratio": 1.36,
+        "composite": 72.8
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.735,
-        "kebaruan": 0.85
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.72
       }
     },
     {
@@ -358,18 +358,18 @@
       }
     },
     {
-      "id": "324fd227ef89eaad",
+      "id": "9fc83073cf165352",
       "symbol": "CCI",
-      "title": "SpaceX\u2019s 80,000 Cell Site Push A Win For ASTS, Ericsson, Nokia, NextNav, Among Others, Says Roth Capital",
-      "url": "https://stocktwits.com/news-articles/markets/equity/space-x-s-80-000-cell-site-push-a-win-for-asts-ericsson-nokia-next-nav-among-others-says-roth-capital/cZxywyDRBUI?.tsrc=rss",
+      "title": "These 3 REITs Own the Towers Behind America\u2019s Wireless Networks. Which Pays Best?",
+      "url": "https://247wallst.com/investing/2026/10/26/these-3-reits-own-the-towers-behind-americas-wireless-networks-which-pays-best/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 23:33 UTC",
+      "published": "2026-10-26 11:15 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.586,
+      "sentiment": 0.637,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 52.3,
+      "impact": 52.0,
       "terukur": {
         "event_aktif": true,
         "vol_ratio": 3.05,
@@ -378,33 +378,83 @@
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.586,
-        "kebaruan": 1.0
+        "sentimen": 0.637,
+        "kebaruan": 0.82
       }
     },
     {
-      "id": "901f66122d38e506",
-      "symbol": "AMT",
-      "title": "Crown Castle, American Tower Stocks Catch A SpaceX Boost \u2014 Which Tower REIT Does Wall Street Favor?",
-      "url": "https://stocktwits.com/news-articles/markets/equity/crown-castle-american-tower-stocks-catch-a-space-x-boost-which-tower-reit-does-wall-street-favor/cZxyJWoRBx2?.tsrc=rss",
+      "id": "5ed6c06a591edfc3",
+      "symbol": "CCI",
+      "title": "SpaceX Could Be a Game Changer for These 2 Dividend Stocks",
+      "url": "https://www.fool.com/investing/2026/10/25/spacex-could-be-a-game-changer-for-these-2-dividend-stocks/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 08:13 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.66,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 52.0,
+      "published": "2026-10-25 18:21 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 51.9,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.46,
-        "composite": 63.1
+        "vol_ratio": 3.05,
+        "composite": 73.3
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.66,
-        "kebaruan": 0.78
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.0,
+        "kebaruan": 0.58
+      }
+    },
+    {
+      "id": "4e19f0507f59cf43",
+      "symbol": "CSGP",
+      "title": "CoStar Group to Report Q3 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/costar-group-report-q3-earnings-164800718.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 16:48 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.36,
+        "composite": 72.8
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "da9cce4e788d954c",
+      "symbol": "BX",
+      "title": "Is Blackstone a Buy After Its Latest Earnings Report?",
+      "url": "https://www.fool.com/investing/2026/10/23/is-blackstone-a-buy-after-its-latest-earnings-report/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 17:55 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
       }
     },
     {
@@ -419,7 +469,7 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 51.0,
+      "impact": 50.5,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.35,
@@ -429,182 +479,32 @@
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.11
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "f151a17f992b7733",
+      "id": "9cc39b58416e5ac3",
       "symbol": "CCI",
-      "title": "SpaceX Just Made Cell Towers Cool Again. Verizon, AT&T, and T-Mobile Are Paying the Price",
-      "url": "https://www.fool.com/investing/2026/10/23/spacex-just-made-cell-towers-cool-again-verizon-at-and-t-and-t-mobile-are-paying-the-price/?.tsrc=rss",
+      "title": "SpaceX Is Coming for the Phone Companies, but the Tower Owners Win Either Way",
+      "url": "https://247wallst.com/investing/2026/10/23/spacex-is-coming-for-the-phone-companies-but-the-tower-owners-win-either-way/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 18:51 UTC",
+      "published": "2026-10-23 12:45 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.318,
+      "sentiment": 0.735,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 49.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.05,
-        "composite": 73.3
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.318,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "c34db14ddefd06d7",
-      "symbol": "TSCO",
-      "title": "TSCO Q3 deep dive: margin pressures persist despite sales momentum and operational actions",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tsco-q3-deep-dive-margin-123239693.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 12:32 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.318,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
       "impact": 48.9,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 1.8,
-        "composite": 64.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.318,
-        "kebaruan": 0.84
-      }
-    },
-    {
-      "id": "569db3942dcb30f2",
-      "symbol": "CCI",
-      "title": "SpaceX Cell Site Report Hits Verizon, AT&T, Lifts These Tower Plays",
-      "url": "https://finance.yahoo.com/m/60b84efe-efdb-325f-b128-26b71dc0392f/spacex-cell-site-report-hits.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 20:54 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.25,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 48.8,
-      "terukur": {
-        "event_aktif": true,
         "vol_ratio": 3.05,
         "composite": 73.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.25,
-        "kebaruan": 0.96
-      }
-    },
-    {
-      "id": "ee1c203e2b48d75d",
-      "symbol": "HAS",
-      "title": "Best Momentum Stock to Buy for October 23rd",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/best-momentum-stock-buy-october-130000308.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 13:00 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.637,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 48.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 75.6
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.637,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "39a52e121137ab75",
-      "symbol": "TSCO",
-      "title": "Tractor Supply (TSCO) Stock Slides As Q3 Results Expose Margin Strain",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tractor-supply-tsco-stock-slides-181331514.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 18:13 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.202,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 48.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.8,
-        "composite": 64.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.202,
-        "kebaruan": 0.92
-      }
-    },
-    {
-      "id": "39d26e05c503b515",
-      "symbol": "HAS",
-      "title": "Best Income Stocks to Buy for October 23rd",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/best-income-stocks-buy-october-080900212.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 08:09 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.637,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 48.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 75.6
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.637,
-        "kebaruan": 0.78
-      }
-    },
-    {
-      "id": "1b782f33c672fd51",
-      "symbol": "NDAQ",
-      "title": "NDAQ Q3 deep dive: AI solutions, tokenization, and recurring revenue drive robust growth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ndaq-q3-deep-dive-ai-105639843.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 10:56 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.691,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 47.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.29,
-        "composite": 65.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.691,
-        "kebaruan": 0.82
+        "sentimen": 0.735,
+        "kebaruan": 0.0
       }
     },
     {
@@ -619,7 +519,7 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 47.2,
+      "impact": 44.2,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.36,
@@ -629,72 +529,172 @@
         "kategori": "rating analis",
         "bobot_kategori": 0.65,
         "sentimen": 0.0,
-        "kebaruan": 0.58
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "1e2d1408554411d1",
-      "symbol": "CCI",
-      "title": "SpaceX wants to be America's fourth phone carrier \u2014 tower owners are cashing in",
-      "url": "https://finance.yahoo.com/markets/article/spacex-wants-to-be-americas-fourth-phone-carrier--tower-owners-are-cashing-in-162059593.html?.tsrc=rss",
+      "id": "0d6aa873c3b45960",
+      "symbol": "AMT",
+      "title": "American Tower (AMT) Stock Could Still Be A Bargain Following A 22% Run",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/american-tower-amt-stock-could-080713244.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 16:20 UTC",
+      "published": "2026-10-24 08:07 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 46.0,
+      "sentiment": 0.202,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 44.1,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 3.05,
-        "composite": 73.3
+        "vol_ratio": 2.49,
+        "composite": 63.1
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.9
+        "sentimen": 0.202,
+        "kebaruan": 0.11
       }
     },
     {
-      "id": "4b9d2281e4083eb8",
-      "symbol": "CCI",
-      "title": "SpaceX eyes purchase of 80,000 cell tower sites in latest telecom push",
-      "url": "https://finance.yahoo.com/video/spacex-eyes-purchase-of-80000-cell-tower-sites-in-latest-telecom-push-133921038.html?.tsrc=rss",
+      "id": "39d26e05c503b515",
+      "symbol": "HAS",
+      "title": "Best Income Stocks to Buy for October 23rd",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/best-income-stocks-buy-october-080900212.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 13:39 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
+      "published": "2026-10-23 08:09 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.637,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 45.8,
+      "impact": 44.1,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.05,
-        "composite": 73.3
+        "event_aktif": false,
+        "vol_ratio": 1.12,
+        "composite": 75.6
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.86
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.637,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "6350ca8014e0147a",
-      "symbol": "TSCO",
-      "title": "Tractor Supply: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.fool.com/earnings/takeaways/2026/10/22/tractor-supply-3-key-takeaways-for-long-term-investors/?.tsrc=rss",
+      "id": "ee1c203e2b48d75d",
+      "symbol": "HAS",
+      "title": "Best Momentum Stock to Buy for October 23rd",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/best-momentum-stock-buy-october-130000308.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 02:55 UTC",
+      "published": "2026-10-23 13:00 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.637,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 44.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.12,
+        "composite": 75.6
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.637,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "7c6d5e1ba505f419",
+      "symbol": "UDR",
+      "title": "Can UDR (UDR) Stay Undervalued After Its $2b Joint Venture?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/udr-udr-stay-undervalued-2b-140747635.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-25 14:07 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 45.1,
+      "impact": 44.1,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.59,
+        "composite": 63.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.53
+      }
+    },
+    {
+      "id": "569db3942dcb30f2",
+      "symbol": "CCI",
+      "title": "SpaceX Cell Site Report Hits Verizon, AT&T, Lifts These Tower Plays",
+      "url": "https://finance.yahoo.com/m/60b84efe-efdb-325f-b128-26b71dc0392f/spacex-cell-site-report-hits.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 20:54 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.25,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 44.0,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 3.05,
+        "composite": 73.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.25,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "c6e4c8d0d61aa97b",
+      "symbol": "BKNG",
+      "title": "Booking vs. Five Below: Is the Travel Giant or Specialty Retailer the Better Stock to Buy in 2026?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/10/24/booking-vs-five-below-is-the-travel-giant-or-specialty-retailer-the-better-stock-to-buy-in-2026/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-24 22:03 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 43.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.87,
+        "composite": 64.6
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.44,
+        "kebaruan": 0.3
+      }
+    },
+    {
+      "id": "39a52e121137ab75",
+      "symbol": "TSCO",
+      "title": "Tractor Supply (TSCO) Stock Slides As Q3 Results Expose Margin Strain",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tractor-supply-tsco-stock-slides-181331514.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 18:13 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.202,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 43.5,
       "terukur": {
         "event_aktif": true,
         "vol_ratio": 1.8,
@@ -703,98 +703,23 @@
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.71
+        "sentimen": -0.202,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "41998c2b9155a1fa",
-      "symbol": "AMT",
-      "title": "Unlocking Q3 Potential of American Tower (AMT): Exploring Wall Street Estimates for Key Metrics",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/unlocking-q3-potential-american-tower-121505454.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-22 12:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 44.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.46,
-        "composite": 63.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.51
-      }
-    },
-    {
-      "id": "6ef6ee8dea1b1cf6",
-      "symbol": "FICO",
-      "title": "What to Expect From Fair Isaac\u2019s Next Quarterly Earnings Report",
-      "url": "https://www.barchart.com/story/news/8361521/what-to-expect-from-fair-isaacs-next-quarterly-earnings-report?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 11:17 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.318,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 43.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.29,
-        "composite": 66.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.318,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "e8011e908db23703",
-      "symbol": "COF",
-      "title": "Capital One (COF) Stock Shrugs At Q3 Earnings Strength",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/capital-one-cof-stock-shrugs-042924448.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-22 04:29 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.494,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 43.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.95,
-        "composite": 63.6
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.494,
-        "kebaruan": 0.4
-      }
-    },
-    {
-      "id": "054eb5ec85698ad3",
+      "id": "1d86c8c8dabb036c",
       "symbol": "AMZN",
-      "title": "Dow Jones Futures: Microsoft, Google, Amazon Lead Earnings Wave; What To Do Amid Mixed Signals",
-      "url": "https://finance.yahoo.com/m/cdb9c13b-db57-3551-acd0-7507e9d69b5a/dow-jones-futures%3A-microsoft%2C.html?.tsrc=rss",
+      "title": "Dow Jones Futures: Elon Musk-Led Tesla Leads Market Higher; Amazon, Alphabet, Microsoft Earnings On Deck",
+      "url": "https://finance.yahoo.com/m/4f45ec30-6388-381f-b8f7-2aed6d460b6f/dow-jones-futures%3A-elon.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 23:09 UTC",
+      "published": "2026-10-26 22:03 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.178,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 43.2,
+      "impact": 43.1,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.71,
@@ -804,82 +729,57 @@
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.178,
-        "kebaruan": 0.99
+        "kebaruan": 0.97
       }
     },
     {
-      "id": "0d0748e1db8ae8be",
-      "symbol": "ICE",
-      "title": "IntercontinentalExchange (ICE) Reports Next Week: Wall Street Expects Earnings Growth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/intercontinentalexchange-ice-reports-next-week-130025313.html?.tsrc=rss",
+      "id": "366c980ab35fa095",
+      "symbol": "AMZN",
+      "title": "Tech Earnings Are the Market\u2019s Biggest Story This Week: Here\u2019s Why Microsoft, Amazon, Intel, SanDisk, and Alphabet Will Drive the Stock Market\u2019s Next Move",
+      "url": "https://247wallst.com/videos/tech-earnings-are-the-markets-biggest-story-this-week-heres-why-microsoft-amazon-intel-sandisk-and-alphabet-will-drive-the-stock-markets-next-move/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-22 13:00 UTC",
+      "published": "2026-10-26 21:15 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.382,
+      "sentiment": 0.178,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 42.9,
+      "impact": 43.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 66.9
+        "vol_ratio": 0.71,
+        "composite": 63.8
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.382,
-        "kebaruan": 0.52
+        "sentimen": 0.178,
+        "kebaruan": 0.96
       }
     },
     {
-      "id": "807dde07f07e205f",
-      "symbol": "UDR",
-      "title": "UDR and Apollo Form $2B Apartment Venture",
-      "url": "https://www.credaily.com/briefs/udr-and-apollo-form-2b-apartment-venture/?.tsrc=rss",
+      "id": "1c89e6964b40dfcd",
+      "symbol": "HAS",
+      "title": "Stocktwits Retail Therapy: Defensive Bets Hold Firm As Hasbro, Kohl\u2019s, Boston Beer Lead Weekly Consumer Gains",
+      "url": "https://stocktwits.com/news-articles/markets/equity/stocktwits-retail-therapy-defensive-bets-hold-firm-as-hasbro-kohl-s-boston-beer-lead-weekly-consumer-gains/cZUdpr4RBy2?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 16:49 UTC",
+      "published": "2026-10-26 05:41 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
+      "sentiment": 0.361,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.56,
-        "composite": 63.8
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.24
-      }
-    },
-    {
-      "id": "8c79bb584fa30142",
-      "symbol": "HAS",
-      "title": "Outside Big Tech, Tuesday's Earnings Winners Jumped as Much as 11%",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/outside-big-tech-tuesdays-earnings-110800452.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 11:08 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.477,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 42.1,
+      "impact": 42.8,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.12,
         "composite": 75.6
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.477,
-        "kebaruan": 0.16
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.361,
+        "kebaruan": 0.74
       }
     },
     {
@@ -904,6 +804,31 @@
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.511,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "4b9d2281e4083eb8",
+      "symbol": "CCI",
+      "title": "SpaceX eyes purchase of 80,000 cell tower sites in latest telecom push",
+      "url": "https://finance.yahoo.com/video/spacex-eyes-purchase-of-80000-cell-tower-sites-in-latest-telecom-push-133921038.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 13:39 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 41.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 3.05,
+        "composite": 73.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
         "kebaruan": 0.0
       }
     },
@@ -933,68 +858,18 @@
       }
     },
     {
-      "id": "049f2515bd03f268",
-      "symbol": "BX",
-      "title": "Blackstone\u2019s Burgeoning AI Business and Inflows Spark a Rally",
-      "url": "https://www.thedailyupside.com/finance/private-equity/blackstones-burgeoning-ai-business-and-inflows-spark-a-rally/?.tsrc=rss",
+      "id": "8ce073e6164685af",
+      "symbol": "TSCO",
+      "title": "Tractor Supply's Q3 Beat Plants the Seeds for a Stock Rebound",
+      "url": "https://www.marketbeat.com/articles/tractor-supplys-q3-beat-plants-the-seeds-for-a-stock-rebound/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 04:01 UTC",
+      "published": "2026-10-23 13:45 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.226,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 41.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.19,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.226,
-        "kebaruan": 0.73
-      }
-    },
-    {
-      "id": "9c6e1462720a9c53",
-      "symbol": "NDAQ",
-      "title": "Learn Why The Bull Case For Nasdaq (NDAQ) Could Change Following Earnings Beat",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/learn-why-bull-case-nasdaq-201250357.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 20:12 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 41.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.29,
-        "composite": 65.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "d17720db82e816aa",
-      "symbol": "TSCO",
-      "title": "2 cash-producing stocks for long-term investors and 1 we find risky",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/2-cash-producing-stocks-long-173639238.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 17:36 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.202,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 41.1,
+      "impact": 41.5,
       "terukur": {
         "event_aktif": true,
         "vol_ratio": 1.8,
@@ -1003,208 +878,108 @@
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.202,
-        "kebaruan": 0.91
+        "sentimen": 0.0,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "8cbe205ee3ab7831",
-      "symbol": "CSGP",
-      "title": "AI Uncertainty Challenges CoStar\u2019s (CSGP) Residential Property Platforms",
-      "url": "https://finance.yahoo.com/real-estate/articles/ai-uncertainty-challenges-costar-csgp-132526471.html?.tsrc=rss",
+      "id": "807dde07f07e205f",
+      "symbol": "UDR",
+      "title": "UDR and Apollo Form $2B Apartment Venture",
+      "url": "https://www.credaily.com/briefs/udr-and-apollo-form-2b-apartment-venture/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-22 13:25 UTC",
+      "published": "2026-10-21 16:49 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.273,
-      "relevansi": "dipantau",
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.8,
+      "impact": 41.5,
       "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.36,
-        "composite": 72.8
+        "event_aktif": true,
+        "vol_ratio": 1.59,
+        "composite": 63.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.273,
-        "kebaruan": 0.52
+        "sentimen": 0.0,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "b3bbefb1f6945916",
-      "symbol": "BX",
-      "title": "Blackstone Opportunistic Funds Fall 3.2% as Rates Bite",
-      "url": "https://www.credaily.com/briefs/blackstone-opportunistic-funds-fall-3-2-as-rates-bite/?.tsrc=rss",
+      "id": "e8011e908db23703",
+      "symbol": "COF",
+      "title": "Capital One (COF) Stock Shrugs At Q3 Earnings Strength",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/capital-one-cof-stock-shrugs-042924448.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 16:53 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.026,
-      "relevansi": "dipantau",
+      "published": "2026-10-22 04:29 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.494,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.3,
+      "impact": 41.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.19,
-        "composite": 69.5
+        "vol_ratio": 0.95,
+        "composite": 63.6
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.026,
-        "kebaruan": 0.9
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.494,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "1abb4c5743e6b0e6",
-      "symbol": "NDAQ",
-      "title": "Here's What Key Metrics Tell Us About Nasdaq (NDAQ) Q3 Earnings (Revised)",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/heres-key-metrics-tell-us-064800400.html?.tsrc=rss",
+      "id": "62fe1b4b027a572a",
+      "symbol": "ICE",
+      "title": "What's in Store for Intercontinental Exchange This Earnings Season?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/whats-store-intercontinental-exchange-earnings-144600167.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 06:48 UTC",
+      "published": "2026-10-26 14:46 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.3,
+      "impact": 40.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.29,
-        "composite": 65.8
+        "vol_ratio": 0.81,
+        "composite": 66.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.76
+        "kebaruan": 0.87
       }
     },
     {
-      "id": "a157544b046d600e",
-      "symbol": "BX",
-      "title": "Blackstone Bet on Chips Drove a Debt Boom That\u2019s Upending Credit",
-      "url": "https://finance.yahoo.com/technology/ai/articles/blackstone-bet-chips-drove-debt-111500562.html?.tsrc=rss",
+      "id": "0d0748e1db8ae8be",
+      "symbol": "ICE",
+      "title": "IntercontinentalExchange (ICE) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intercontinentalexchange-ice-reports-next-week-130025313.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 11:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.026,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.19,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.026,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "84801e488d7b09a4",
-      "symbol": "BX",
-      "title": "Blackstone's $2.3 Billion CoreWeave Bet Sparked a Trillion-Dollar AI Lending Boom",
-      "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62564739/blackstone-coreweave-ai-lending-boom?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 15:36 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.19,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "4d0577da39842a83",
-      "symbol": "HAS",
-      "title": "Hasbro (HAS) Is Up 5.83% in One Week: What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-5-83-one-week-150002744.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 15:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 75.6
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.88
-      }
-    },
-    {
-      "id": "daa9ed0d89d5ab38",
-      "symbol": "BX",
-      "title": "BX Q3 deep dive: AI infrastructure, fundraising momentum, and real estate crosscurrents",
-      "url": "https://finance.yahoo.com/technology/ai/articles/bx-q3-deep-dive-ai-132039168.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-23 13:20 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 39.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.19,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.86
-      }
-    },
-    {
-      "id": "4017102cd5da451a",
-      "symbol": "FICO",
-      "title": "Brown Advisory Exits Fair Isaac Corporation (FICO) Amid Fundamental and Regulatory Concerns",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/brown-advisory-exits-fair-isaac-134412764.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-22 13:44 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.318,
+      "published": "2026-10-22 13:00 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.382,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 39.8,
+      "impact": 40.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.29,
-        "composite": 66.0
+        "vol_ratio": 0.81,
+        "composite": 66.9
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.318,
-        "kebaruan": 0.53
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.382,
+        "kebaruan": 0.0
       }
     },
     {
@@ -1233,18 +1008,93 @@
       }
     },
     {
-      "id": "cb5864d4da1f894d",
-      "symbol": "BX",
-      "title": "Blackstone (BX) Stock Jumps As Q3 Results Put Margins Center Stage",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/blackstone-bx-stock-jumps-q3-101544379.html?.tsrc=rss",
+      "id": "be9e9b2d9fc057c6",
+      "symbol": "HAS",
+      "title": "Hasbro and Campbell's have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-campbells-highlighted-zacks-bull-120100391.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 10:15 UTC",
+      "published": "2026-10-26 12:01 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
       "impact": 39.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.12,
+        "composite": 75.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.83
+      }
+    },
+    {
+      "id": "4ccfbecde1dacf8a",
+      "symbol": "HAS",
+      "title": "Bull of the Day: Hasbro (HAS)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bull-day-hasbro-080000145.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-26 08:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.12,
+        "composite": 75.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.77
+      }
+    },
+    {
+      "id": "8cbe205ee3ab7831",
+      "symbol": "CSGP",
+      "title": "AI Uncertainty Challenges CoStar\u2019s (CSGP) Residential Property Platforms",
+      "url": "https://finance.yahoo.com/real-estate/articles/ai-uncertainty-challenges-costar-csgp-132526471.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-22 13:25 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.273,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 38.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.36,
+        "composite": 72.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.273,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "20741933f3a0b74a",
+      "symbol": "BX",
+      "title": "Blackstone: 3 Key Takeaways for Long-Term Investors",
+      "url": "https://www.fool.com/earnings/takeaways/2026/10/24/blackstone-3-key-takeaways-for-long-term-investors/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-24 19:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 36.8,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 1.19,
@@ -1254,32 +1104,82 @@
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.81
+        "kebaruan": 0.27
       }
     },
     {
-      "id": "f8eb1383cfa50309",
-      "symbol": "SMCI",
-      "title": "Credo Soars 7% as Super Micro\u2019s $4 Billion Forecast Hike Signals \u201cIncreased Demand for AI Platforms\u201d",
-      "url": "https://www.tikr.com/blog/credo-soars-7-as-super-micros-4-billion-forecast-hike-signals-increased-demand-for-ai-platforms?ref=yahoofinance&.tsrc=rss",
+      "id": "dd1026a7f3055d1a",
+      "symbol": "HAS",
+      "title": "Why Hasbro Stock Surged This Week",
+      "url": "https://www.fool.com/coverage/market-movers/2026/10/24/why-hasbro-stock-surged-this-week/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 17:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.527,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 39.3,
+      "published": "2026-10-24 16:33 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 36.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 64.1
+        "vol_ratio": 1.12,
+        "composite": 75.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.23
+      }
+    },
+    {
+      "id": "d17720db82e816aa",
+      "symbol": "TSCO",
+      "title": "2 cash-producing stocks for long-term investors and 1 we find risky",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-cash-producing-stocks-long-173639238.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 17:36 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.202,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.8,
+        "composite": 64.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.202,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "3f622e35edb3f7df",
+      "symbol": "COF",
+      "title": "Capital One Earnings: After a Double Beat the Rally Is On",
+      "url": "https://www.marketbeat.com/articles/capital-one-earnings-after-a-double-beat-the-rally-is-on/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 14:20 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.95,
+        "composite": 63.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.527,
-        "kebaruan": 0.91
+        "sentimen": 0.0,
+        "kebaruan": 0.0
       }
     },
     {
@@ -1294,7 +1194,7 @@
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 38.9,
+      "impact": 36.5,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": 0.95,
@@ -1304,157 +1204,82 @@
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.48
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "2cef7d1d10edb981",
-      "symbol": "AMT",
-      "title": "SpaceX Reportedly Eyes 80,000 Cell Sites In Push To Become Fourth US Wireless Carrier: T, TMUS, VZ Stocks Slip After-Hours",
-      "url": "https://stocktwits.com/news-articles/markets/equity/space-x-reportedly-eyes-80-000-cell-sites-in-push-to-become-fourth-us-wireless-carrier-t-tmus-vz-stocks-slip-after-hours/cZxwFlZRBDk?.tsrc=rss",
+      "id": "9c6e1462720a9c53",
+      "symbol": "NDAQ",
+      "title": "Learn Why The Bull Case For Nasdaq (NDAQ) Could Change Following Earnings Beat",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/learn-why-bull-case-nasdaq-201250357.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-22 22:47 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 37.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.46,
-        "composite": 63.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.65
-      }
-    },
-    {
-      "id": "80b057a1e542ec41",
-      "symbol": "HAS",
-      "title": "Zacks Investment Ideas feature highlights: Accenture, Hasbro and MSCI",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-investment-ideas-feature-highlights-080800045.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-22 08:08 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 37.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 75.6
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.45
-      }
-    },
-    {
-      "id": "d02304448164be72",
-      "symbol": "COF",
-      "title": "COF Q3 Earnings Call Highlights Integration and Spending Plans",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/cof-q3-earnings-call-highlights-130000195.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 13:00 UTC",
+      "published": "2026-10-23 20:12 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 37.4,
+      "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.95,
-        "composite": 63.6
+        "vol_ratio": 1.29,
+        "composite": 65.8
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.18
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "a1969ebfce899af5",
-      "symbol": "AMZN",
-      "title": "Amazon CEO Andy Jassy Says AI Inference Is Still 10 Times Too Expensive, Claims Amazon Chips Offer Answer",
-      "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62571409/amazon-ai-inference-cost-trainium-jassy?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+      "id": "a157544b046d600e",
+      "symbol": "BX",
+      "title": "Blackstone Bet on Chips Drove a Debt Boom That\u2019s Upending Credit",
+      "url": "https://finance.yahoo.com/technology/ai/articles/blackstone-bet-chips-drove-debt-111500562.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-23 18:28 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.34,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 37.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.71,
-        "composite": 63.8
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.34,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "6908366d6fd75739",
-      "symbol": "PTC",
-      "title": "PTC Launches PTC Jetstream to Make Enterprise Collaboration a Connected Part of the Product Development Lifecycle",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ptc-launches-ptc-jetstream-enterprise-123000967.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-10-21 12:30 UTC",
+      "published": "2026-10-23 11:15 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
+      "sentiment": 0.026,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 36.4,
+      "impact": 35.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.35,
-        "composite": 71.9
+        "vol_ratio": 1.19,
+        "composite": 69.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.18
+        "sentimen": 0.026,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "fad672292761ecea",
-      "symbol": "HAS",
-      "title": "HAS Q3 Deep Dive: Magic Momentum, Licensing Expansion, and Cost Discipline Drive Upside",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-deep-dive-magic-momentum-111839802.html?.tsrc=rss",
+      "id": "b3bbefb1f6945916",
+      "symbol": "BX",
+      "title": "Blackstone Opportunistic Funds Fall 3.2% as Rates Bite",
+      "url": "https://www.credaily.com/briefs/blackstone-opportunistic-funds-fall-3-2-as-rates-bite/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-21 11:18 UTC",
+      "published": "2026-10-23 16:53 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
+      "sentiment": -0.026,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 36.3,
+      "impact": 35.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.12,
-        "composite": 75.6
+        "vol_ratio": 1.19,
+        "composite": 69.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.16
+        "sentimen": -0.026,
+        "kebaruan": 0.0
       }
     },
     {
@@ -1483,12 +1308,12 @@
       }
     },
     {
-      "id": "c9c6a8dd240a26b7",
-      "symbol": "CSGP",
-      "title": "Baillie Gifford sees CoStar and Duolingo stocks rebounding",
-      "url": "https://qz.com/baillie-gifford-costar-duolingo-stock-comeback-100726?.tsrc=rss",
+      "id": "daa9ed0d89d5ab38",
+      "symbol": "BX",
+      "title": "BX Q3 deep dive: AI infrastructure, fundraising momentum, and real estate crosscurrents",
+      "url": "https://finance.yahoo.com/technology/ai/articles/bx-q3-deep-dive-ai-132039168.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-07 12:15 UTC",
+      "published": "2026-10-23 13:20 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1497,8 +1322,108 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.36,
-        "composite": 72.8
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "cb5864d4da1f894d",
+      "symbol": "BX",
+      "title": "Blackstone (BX) Stock Jumps As Q3 Results Put Margins Center Stage",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/blackstone-bx-stock-jumps-q3-101544379.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 10:15 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "84801e488d7b09a4",
+      "symbol": "BX",
+      "title": "Blackstone's $2.3 Billion CoreWeave Bet Sparked a Trillion-Dollar AI Lending Boom",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62564739/blackstone-coreweave-ai-lending-boom?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 15:36 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.19,
+        "composite": 69.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "4d0577da39842a83",
+      "symbol": "HAS",
+      "title": "Hasbro (HAS) Is Up 5.83% in One Week: What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hasbro-5-83-one-week-150002744.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-23 15:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.12,
+        "composite": 75.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "6908366d6fd75739",
+      "symbol": "PTC",
+      "title": "PTC Launches PTC Jetstream to Make Enterprise Collaboration a Connected Part of the Product Development Lifecycle",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ptc-launches-ptc-jetstream-enterprise-123000967.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-21 12:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.35,
+        "composite": 71.9
       },
       "heuristik": {
         "kategori": "umum",
@@ -1530,6 +1455,81 @@
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "c61131cfa6a1c5e9",
+      "symbol": "PTC",
+      "title": "Schneider Just Paid Up for PTC\u2014Is the SaaSpocalypse Overdone?",
+      "url": "https://www.marketbeat.com/articles/schneider-just-paid-up-for-ptc-is-the-saaspocalypse-overdone/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-10 13:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.35,
+        "composite": 71.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "518b4262097712c1",
+      "symbol": "PTC",
+      "title": "Why did investors react so negatively to Schneider-PTC deal? M&A expert weighs in",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-investors-react-negatively-133612042.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-13 13:36 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.35,
+        "composite": 71.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "507151095714158a",
+      "symbol": "ADBE",
+      "title": "The Market is Misinformed About Adobe\u2019s AI Risks and Blind to Its Margins",
+      "url": "https://247wallst.com/investing/2026/10/26/the-market-is-misinformed-about-adobes-ai-risks-and-blind-to-its-margins/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-10-26 14:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.751,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 33.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.72,
+        "composite": 63.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.751,
+        "kebaruan": 0.87
       }
     }
   ]
