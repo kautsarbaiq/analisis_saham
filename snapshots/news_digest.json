@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-12 00:19:50+00:00",
+  "as_of": "2026-11-13 01:19:47+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
@@ -17,17 +17,17 @@
     ],
     "peers": [
       "GPN",
+      "TTWO",
       "HII",
       "XYZ",
-      "TTWO",
       "BA",
       "CRH",
-      "VRSK",
-      "CTVA",
+      "MMM",
       "NEM",
-      "ICE",
-      "FOX",
-      "NFLX"
+      "CTVA",
+      "NDAQ",
+      "DIS",
+      "FOX"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
@@ -44,17 +44,17 @@
       "sentiment": 0.718,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 82.5,
+      "impact": 60.9,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
+        "event_aktif": false,
+        "vol_ratio": 1.4,
+        "composite": 74.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.718,
-        "kebaruan": 0.96
+        "kebaruan": 0.64
       }
     },
     {
@@ -69,192 +69,42 @@
       "sentiment": 0.382,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 78.6,
+      "impact": 57.0,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
+        "event_aktif": false,
+        "vol_ratio": 1.4,
+        "composite": 74.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.382,
-        "kebaruan": 0.86
+        "kebaruan": 0.53
       }
     },
     {
-      "id": "ae5a133cb116c906",
+      "id": "7e582d02d0fedc08",
       "symbol": "TTD",
-      "title": "Rocket Lab and The Trade Desk Are 2 Beaten-Down Stocks to Buy Before 2027",
-      "url": "https://www.fool.com/investing/2026/11/10/rocket-lab-and-the-trade-desk-are-2-beaten-down-stocks-to-buy-before-2027/?.tsrc=rss",
+      "title": "The Trade Desk Beats on Revenue, But the Fine Print Matters",
+      "url": "https://www.marketbeat.com/articles/the-trade-desk-beats-on-revenue-but-the-fine-print-matters/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-10 20:07 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 74.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.58
-      }
-    },
-    {
-      "id": "b446a614623b2ccc",
-      "symbol": "TTD",
-      "title": "Stock Market Today, Nov. 10: Trade Desk Jumps After Q3 Results Show Revenue Topped Estimates",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-trade-desk-jumps-after-q3-results-show-revenue-topped-estimates/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-10 22:12 UTC",
+      "published": "2026-11-11 12:35 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.0,
+      "sentiment": 0.329,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 73.6,
+      "impact": 56.2,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
+        "event_aktif": false,
+        "vol_ratio": 1.4,
+        "composite": 74.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.61
-      }
-    },
-    {
-      "id": "9c0b8eaefc3b6062",
-      "symbol": "TTD",
-      "title": "Competitive Headwinds Keep Coming For The Trade Desk",
-      "url": "https://www.mediapost.com/publications/article/419344/competitive-headwinds-keep-coming-for-the-trade-de.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 14:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.178,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 61.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.178,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "1314157f2f7a0789",
-      "symbol": "FOX",
-      "title": "Fox's $22 Billion Roku Acquisition Reshapes Its Streaming Business",
-      "url": "https://www.marketbeat.com/articles/foxs-22-billion-roku-acquisition-reshapes-its-streaming-business/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-10 17:25 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 60.5,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.01,
-        "composite": 60.6
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.55
-      }
-    },
-    {
-      "id": "96be9bf3735b1785",
-      "symbol": "TTD",
-      "title": "The Trade Desk\u2019s Zo\u00eb Mann: Publishers Find New Leverage as Outcomes Beat Cheap Reach",
-      "url": "https://www.beet.tv/2026/11/the-trade-desks-zoe-mann-publishers-find-new-leverage-as-outcomes-beat-cheap-reach.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 18:34 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.026,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 60.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.026,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "aaf87a0898ad16de",
-      "symbol": "TTD",
-      "title": "Trade Desk Faces Competitive Headwinds Despite Political Ad Boost, Wedbush Says",
-      "url": "https://finance.yahoo.com/media-advertising/articles/trade-desk-faces-competitive-headwinds-200018799.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-10 20:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.143,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.8,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.143,
-        "kebaruan": 0.58
-      }
-    },
-    {
-      "id": "879aa1ee81962ed3",
-      "symbol": "TTD",
-      "title": "Trade Desk (TTD) Stock Rallies While Q3 Results Reveal Margin Strain",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-ttd-stock-rallies-010849155.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 01:08 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.052,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 59.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 3.06,
-        "composite": 74.9
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.052,
-        "kebaruan": 0.65
+        "sentimen": 0.329,
+        "kebaruan": 0.48
       }
     },
     {
@@ -272,8 +122,8 @@
       "impact": 55.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 76.1
+        "vol_ratio": 0.56,
+        "composite": 74.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -283,28 +133,28 @@
       }
     },
     {
-      "id": "0f277ceed92362e3",
-      "symbol": "MOS",
-      "title": "How Rare Is Mosaic's Ten-Year Record Low Profit Margin?",
-      "url": "https://www.trefis.com/stock/mos/articles/624049/how-rare-is-mosaics-ten-year-record-low-profit-margin/2026-11-10?.tsrc=rss",
+      "id": "9ab185dfc7e90c99",
+      "symbol": "TTD",
+      "title": "The Trade Desk Inc (TTD) (Q3 2026) Earnings Call Highlights: Revenue Beats Guidance but Flat ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-inc-ttd-q3-210207695.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-10 21:10 UTC",
+      "published": "2026-11-12 21:02 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.202,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 55.5,
+      "impact": 55.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 1.4,
+        "composite": 74.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.202,
-        "kebaruan": 0.6
+        "sentimen": 0.0,
+        "kebaruan": 0.93
       }
     },
     {
@@ -322,8 +172,8 @@
       "impact": 54.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 76.0
+        "vol_ratio": 0.49,
+        "composite": 76.7
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -333,28 +183,28 @@
       }
     },
     {
-      "id": "af990de7a16f6d4f",
+      "id": "1ed38723fc4f9eaf",
       "symbol": "FISV",
-      "title": "Fiserv preps debit network sale",
-      "url": "https://www.paymentsdive.com/news/fiserv-preps-debit-network-sale/874395/?.tsrc=rss",
+      "title": "Fiserv Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://www.barchart.com/story/news/8797933/fiserv-stock-outlook-is-wall-street-bullish-or-bearish?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-11 16:30 UTC",
+      "published": "2026-11-12 12:23 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 54.8,
+      "impact": 54.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.11,
-        "composite": 79.7
+        "vol_ratio": 0.85,
+        "composite": 79.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.87
+        "kebaruan": 0.82
       }
     },
     {
@@ -372,14 +222,64 @@
       "impact": 54.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 76.1
+        "vol_ratio": 0.56,
+        "composite": 74.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.382,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "0f277ceed92362e3",
+      "symbol": "MOS",
+      "title": "How Rare Is Mosaic's Ten-Year Record Low Profit Margin?",
+      "url": "https://www.trefis.com/stock/mos/articles/624049/how-rare-is-mosaics-ten-year-record-low-profit-margin/2026-11-10?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-10 21:10 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.202,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.58,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.202,
+        "kebaruan": 0.27
+      }
+    },
+    {
+      "id": "af990de7a16f6d4f",
+      "symbol": "FISV",
+      "title": "Fiserv preps debit network sale",
+      "url": "https://www.paymentsdive.com/news/fiserv-preps-debit-network-sale/874395/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-11 16:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 79.6
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.54
       }
     },
     {
@@ -397,39 +297,14 @@
       "impact": 53.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 0.58,
+        "composite": 77.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.25,
         "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "7ee3d7c07648c603",
-      "symbol": "TTWO",
-      "title": "Take-Two's Zelnick on Success of the GTA Franchise",
-      "url": "https://finance.yahoo.com/video/twos-zelnick-success-gta-franchise-191053524.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 19:10 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.572,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 51.7,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 68.6
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.572,
-        "kebaruan": 0.9
       }
     },
     {
@@ -447,8 +322,8 @@
       "impact": 51.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 76.0
+        "vol_ratio": 0.49,
+        "composite": 76.7
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -472,8 +347,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 76.0
+        "vol_ratio": 0.49,
+        "composite": 76.7
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -497,8 +372,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 76.0
+        "vol_ratio": 0.49,
+        "composite": 76.7
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -522,8 +397,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 76.1
+        "vol_ratio": 0.56,
+        "composite": 74.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -547,8 +422,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 76.1
+        "vol_ratio": 0.56,
+        "composite": 74.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -572,8 +447,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 0.58,
+        "composite": 77.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -597,8 +472,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 0.58,
+        "composite": 77.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -622,8 +497,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 76.1
+        "vol_ratio": 0.56,
+        "composite": 74.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -647,8 +522,8 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 76.1
+        "vol_ratio": 0.56,
+        "composite": 74.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -658,53 +533,103 @@
       }
     },
     {
-      "id": "455b0787545f085c",
-      "symbol": "FOX",
-      "title": "Fox Stock Faces New Risk From $22 Billion Deal",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/fox-stock-faces-risk-22-183234823.html?.tsrc=rss",
+      "id": "2a0f87f20128f8ca",
+      "symbol": "GPN",
+      "title": "GPN Stock On Track For Its Worst Day In About 19 Months As Private Equity Firms Reportedly Abandon Takeover Talks",
+      "url": "https://stocktwits.com/news-articles/markets/equity/gpn-stock-on-track-for-its-worst-day-in-about-19-months-as-private-equity-firms-reportedly-abandon-takeover-talks/cNGC3PyR9OR?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-11 18:32 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.273,
+      "published": "2026-11-12 19:18 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": -0.791,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 48.7,
+      "impact": 50.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.9,
+        "composite": 71.0
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": -0.791,
+        "kebaruan": 0.91
+      }
+    },
+    {
+      "id": "95c986704d5d5ce3",
+      "symbol": "TTWO",
+      "title": "Grand Theft Auto VI Makes Take-Two Stock Look Like a Steal",
+      "url": "https://finance.yahoo.com/m/71d9f72e-471f-3b18-a9fd-e82af767e21b/grand-theft-auto-vi-makes.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 16:02 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.318,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 49.0,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.01,
-        "composite": 60.6
+        "vol_ratio": 1.63,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.273,
-        "kebaruan": 0.89
+        "sentimen": 0.318,
+        "kebaruan": 0.87
       }
     },
     {
-      "id": "b2ca4d7852f2af29",
-      "symbol": "NFLX",
-      "title": "Netflix (NFLX) Stock May Be a \u2018Loser\u2019 This Year, But You Can Still Scalp Profits From It",
-      "url": "https://www.barchart.com/story/news/8783928/netflix-nflx-stock-may-be-a-loser-this-year-but-you-can-still-scalp-profits-from-it?.tsrc=rss",
+      "id": "12e9fbca999b9b7e",
+      "symbol": "CTVA",
+      "title": "Corteva's Core Profitability Miss, Outlook Cut Spell Trouble, Analysts Say",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/corteva-apos-core-profitability-miss-191731035.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-11 16:32 UTC",
+      "published": "2026-11-12 19:17 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.593,
+      "sentiment": -0.511,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 46.8,
+      "impact": 46.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 58.6
+        "vol_ratio": 0.67,
+        "composite": 64.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.593,
-        "kebaruan": 0.87
+        "sentimen": -0.511,
+        "kebaruan": 0.91
+      }
+    },
+    {
+      "id": "487688f8a947ef81",
+      "symbol": "TTWO",
+      "title": "GTA VI Needs To Hit $1.9B In Sales To Meet Investor Expectations, Says BofA \u2013  Analyst Sees 33% Potential Upside In TTWO Stock",
+      "url": "https://stocktwits.com/news-articles/markets/equity/gta-vi-needs-to-hit-billion-in-sales-to-meet-investor-expectations-bofa/cNGCcZdR9az?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 17:44 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 45.9,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.63,
+        "composite": 70.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.89
       }
     },
     {
@@ -719,17 +644,17 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 46.6,
+      "impact": 45.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.11,
-        "composite": 79.7
+        "vol_ratio": 0.85,
+        "composite": 79.6
       },
       "heuristik": {
         "kategori": "manajemen",
         "bobot_kategori": 0.6,
         "sentimen": 0.0,
-        "kebaruan": 0.72
+        "kebaruan": 0.4
       }
     },
     {
@@ -744,91 +669,41 @@
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 46.4,
+      "impact": 44.7,
       "terukur": {
         "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 68.6
+        "vol_ratio": 1.63,
+        "composite": 70.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.97
+        "kebaruan": 0.65
       }
     },
     {
-      "id": "3abaf54aadf1458d",
-      "symbol": "FOX",
-      "title": "5 Stocks Analysts Just Upgraded",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/5-stocks-analysts-just-upgraded-222146322.html?.tsrc=rss",
+      "id": "5dcaf0a0c16957d0",
+      "symbol": "TTD",
+      "title": "Trade Desk's $153M Q3 Free Cash Flow: Can the Momentum Continue?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desks-153m-q3-free-120100943.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-10 22:21 UTC",
-      "event_type": "rating analis",
-      "event_weight": 0.65,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 46.3,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.01,
-        "composite": 60.6
-      },
-      "heuristik": {
-        "kategori": "rating analis",
-        "bobot_kategori": 0.65,
-        "sentimen": 0.0,
-        "kebaruan": 0.61
-      }
-    },
-    {
-      "id": "1d3c23fbf7d6a10e",
-      "symbol": "TTWO",
-      "title": "GTA VI Is Days Away: Don't Expect GTA V-Style Returns From Take-Two Stock at 5.7 Times Sales",
-      "url": "https://www.fool.com/investing/2026/11/11/gta-vi-days-away-don-t-expect-gta-v-style-returns-from-take-two-stock-at-5-7-times-sales/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 22:31 UTC",
+      "published": "2026-11-12 12:01 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
+      "sentiment": 0.511,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 46.2,
+      "impact": 44.7,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 68.6
+        "event_aktif": false,
+        "vol_ratio": 1.4,
+        "composite": 74.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "fdc41e4fa2a1e701",
-      "symbol": "FOX",
-      "title": "Fox (FOXA) Closes Roku Deal And Puts Anthony Wood In Digital Leadership",
-      "url": "https://finance.yahoo.com/media-advertising/articles/fox-foxa-closes-roku-deal-121537749.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 12:15 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 45.5,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.01,
-        "composite": 60.6
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
+        "sentimen": 0.511,
         "kebaruan": 0.81
       }
     },
@@ -844,42 +719,17 @@
       "sentiment": 0.511,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 45.3,
+      "impact": 43.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.11,
-        "composite": 79.7
+        "vol_ratio": 0.85,
+        "composite": 79.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.511,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "886021780f71ba7b",
-      "symbol": "FISV",
-      "title": "Fiserv Soars 26% in a Week on a $1 Billion Savings Plan: Buybacks Return \u201cEarlier Than Anticipated\u201d",
-      "url": "https://www.tikr.com/blog/fiserv-soars-26-in-a-week-on-a-1-billion-savings-plan-buybacks-return-earlier-than-anticipated?ref=yahoofinance&tlnk=yf-261109-28f4xcgh&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-09 19:37 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 44.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.11,
-        "composite": 79.7
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.24
+        "kebaruan": 0.62
       }
     },
     {
@@ -897,14 +747,64 @@
       "impact": 43.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.57,
-        "composite": 76.1
+        "vol_ratio": 0.56,
+        "composite": 74.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.818,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "f4a8c0dc2c2daa1b",
+      "symbol": "TTWO",
+      "title": "GTA 6 needs $1.9bn opening weekend to satisfy investors, says Bank of America",
+      "url": "https://www.proactiveinvestors.com/companies/news/1101705/gta-6-needs-1-9bn-opening-weekend-to-satisfy-investors-says-bank-of-america-1101705.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 19:12 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.459,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 43.6,
+      "terukur": {
+        "event_aktif": true,
+        "vol_ratio": 1.63,
+        "composite": 70.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.459,
+        "kebaruan": 0.91
+      }
+    },
+    {
+      "id": "9bb40df002c95cd3",
+      "symbol": "GPN",
+      "title": "Global Payments Sinks 12% as CD&R and GTCR Walk Away From Buyout Talks",
+      "url": "https://www.tikr.com/blog/global-payments-sinks-12-as-cdr-and-gtcr-walk-away-from-buyout-talks?ref=yahoofinance&tlnk=yf-261112-cg4hg22g&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 21:05 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 42.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.9,
+        "composite": 71.0
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
       }
     },
     {
@@ -919,17 +819,42 @@
       "sentiment": -0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 43.2,
+      "impact": 41.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 76.0
+        "vol_ratio": 0.49,
+        "composite": 76.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.296,
-        "kebaruan": 0.96
+        "kebaruan": 0.63
+      }
+    },
+    {
+      "id": "4e7730d256096192",
+      "symbol": "CTVA",
+      "title": "Corteva Inc (CTVA) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/12/corteva-inc-ctva-q3-2026-earnings-call-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 21:31 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 64.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.94
       }
     },
     {
@@ -944,117 +869,92 @@
       "sentiment": -0.318,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.4,
+      "impact": 40.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 0.58,
+        "composite": 77.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": -0.318,
-        "kebaruan": 0.75
+        "kebaruan": 0.42
       }
     },
     {
-      "id": "6286d8428142f35d",
-      "symbol": "HII",
-      "title": "HII Q3 deep dive: margin expansion and contract wins drive upbeat outlook",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hii-q3-deep-dive-margin-233100278.html?.tsrc=rss",
+      "id": "9c0b8eaefc3b6062",
+      "symbol": "TTD",
+      "title": "Competitive Headwinds Keep Coming For The Trade Desk",
+      "url": "https://www.mediapost.com/publications/article/419344/competitive-headwinds-keep-coming-for-the-trade-de.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-10-31 23:31 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.572,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 42.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 70.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.572,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "6bd5877a86fbe241",
-      "symbol": "CTVA",
-      "title": "Corteva Reports Third-Quarter 2026 Results; Updates FY 2026 Outlook",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/corteva-reports-third-quarter-2026-213000063.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 21:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 41.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 65.5
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "0a9a0b7de119c9ba",
-      "symbol": "BA",
-      "title": "Embraer In Buy Zone After Earnings. Here's How Boeing, Airbus Compare.",
-      "url": "https://finance.yahoo.com/m/72d464f4-cda5-374f-9353-766c54ceea23/embraer-in-buy-zone-after.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 21:02 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 41.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.59,
-        "composite": 66.9
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "87b2d3e403dc9d4e",
-      "symbol": "TTWO",
-      "title": "JPMorgan names top Mid & Small Cap stock pick",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-names-top-mid-small-201832036.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-11 20:18 UTC",
+      "published": "2026-11-11 14:00 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.202,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 41.1,
+      "sentiment": 0.178,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.8,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 68.6
+        "event_aktif": false,
+        "vol_ratio": 1.4,
+        "composite": 74.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.92
+        "sentimen": 0.178,
+        "kebaruan": 0.5
+      }
+    },
+    {
+      "id": "0cea82e84e362c26",
+      "symbol": "TTD",
+      "title": "Has Trade Desk Stock Become A Different Bet?",
+      "url": "https://www.trefis.com/stock/ttd/articles/624647/has-trade-desk-stock-become-a-different-bet/2026-11-12?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 15:46 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.4,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "4d588540a0f97b71",
+      "symbol": "VLTO",
+      "title": "Reasons Why Investors Can Consider Buying Veralto Stock Now",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/reasons-why-investors-consider-buying-131900916.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 13:19 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.56,
+        "composite": 74.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.83
       }
     },
     {
@@ -1072,13 +972,113 @@
       "impact": 39.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.98,
-        "composite": 66.7
+        "vol_ratio": 0.57,
+        "composite": 66.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": -0.296,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "0a9a0b7de119c9ba",
+      "symbol": "BA",
+      "title": "Embraer In Buy Zone After Earnings. Here's How Boeing, Airbus Compare.",
+      "url": "https://finance.yahoo.com/m/72d464f4-cda5-374f-9353-766c54ceea23/embraer-in-buy-zone-after.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-11 21:02 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 39.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.53,
+        "composite": 68.2
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.6
+      }
+    },
+    {
+      "id": "d8d2f0b62257035d",
+      "symbol": "FISV",
+      "title": "What Is Fiserv (FISV) Planning With Its Debit Networks And Clover AI?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/fiserv-fisv-planning-debit-networks-060950107.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 06:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 79.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.73
+      }
+    },
+    {
+      "id": "96be9bf3735b1785",
+      "symbol": "TTD",
+      "title": "The Trade Desk\u2019s Zo\u00eb Mann: Publishers Find New Leverage as Outcomes Beat Cheap Reach",
+      "url": "https://www.beet.tv/2026/11/the-trade-desks-zoe-mann-publishers-find-new-leverage-as-outcomes-beat-cheap-reach.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-11 18:34 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.026,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 38.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.4,
+        "composite": 74.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.026,
+        "kebaruan": 0.57
+      }
+    },
+    {
+      "id": "4b3483eecc84ba89",
+      "symbol": "MOS",
+      "title": "Mosaic's Phosphate Recovery Likely to Take Time Despite Cost Cuts, RBC Says",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/mosaic-apos-phosphate-recovery-likely-170721132.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-09 17:07 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.224,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 37.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.58,
+        "composite": 77.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.224,
         "kebaruan": 0.0
       }
     },
@@ -1094,17 +1094,17 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 39.2,
+      "impact": 37.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 0.58,
+        "composite": 77.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.74
+        "kebaruan": 0.41
       }
     },
     {
@@ -1119,7 +1119,7 @@
       "sentiment": 0.511,
       "relevansi": "disebut",
       "judul_menyebut_emiten": null,
-      "impact": 38.8,
+      "impact": 37.2,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": null,
@@ -1129,66 +1129,41 @@
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.511,
-        "kebaruan": 0.45
+        "kebaruan": 0.12
       }
     },
     {
-      "id": "4b3483eecc84ba89",
-      "symbol": "MOS",
-      "title": "Mosaic's Phosphate Recovery Likely to Take Time Despite Cost Cuts, RBC Says",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/mosaic-apos-phosphate-recovery-likely-170721132.html?.tsrc=rss",
+      "id": "fb47654d555a42a4",
+      "symbol": "GPN",
+      "title": "This Fintech Is Getting Clobbered. Buyouts Are Tough These Days.",
+      "url": "https://finance.yahoo.com/m/8af6d01f-70e9-3b46-9296-815d7604b0c1/this-fintech-is-getting.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-09 17:07 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.224,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 38.8,
+      "published": "2026-11-12 19:30 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": -0.128,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 36.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 0.9,
+        "composite": 71.0
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.224,
-        "kebaruan": 0.21
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": -0.128,
+        "kebaruan": 0.91
       }
     },
     {
-      "id": "9628537de929c9a7",
-      "symbol": "FISV",
-      "title": "Michael Burry Is Betting a Buyer Will Pay Up to $120 a Share for Fiserv",
-      "url": "https://247wallst.com/investing/2026/11/08/michael-burry-is-betting-a-buyer-will-pay-up-to-120-a-share-for-fiserv/?.tsrc=rss",
+      "id": "7c2f96942c7e1bd5",
+      "symbol": "MMM",
+      "title": "Global Nuclear, Biological & Chemical Decontamination Equipment Market Forecast (2026-2032) Featuring Profiles of 3M Company, Chemring Group, Dragerwerk, DuPont de Nemours, Ecolab and Other Key Players",
+      "url": "https://finance.yahoo.com/healthcare/articles/global-nuclear-biological-chemical-decontamination-152800716.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-08 21:17 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.202,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 37.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.11,
-        "composite": 79.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "51d17f7ea17a0a5b",
-      "symbol": "CTVA",
-      "title": "Corteva's Q3 Earnings on the Horizon: Key Insights for Investors",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/cortevas-q3-earnings-horizon-key-170600643.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-05 17:06 UTC",
+      "published": "2026-11-09 15:28 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
@@ -1197,8 +1172,8 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 65.5
+        "vol_ratio": 0.54,
+        "composite": 65.6
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -1208,78 +1183,28 @@
       }
     },
     {
-      "id": "20b2a9781247a083",
-      "symbol": "CTVA",
-      "title": "Gear Up for Corteva, Inc. (CTVA) Q3 Earnings: Wall Street Estimates for Key Metrics",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/gear-corteva-inc-ctva-q3-131513923.html?.tsrc=rss",
+      "id": "1a103f70db781532",
+      "symbol": "MMM",
+      "title": "MMM Stock Climbed to an 8.5-Year High on a $7.35 Billion Forever Chemicals Settlement. The Overhang Could Finally Be Lifting.",
+      "url": "https://www.barchart.com/story/news/8776353/mmm-stock-climbed-to-an-8-5-year-high-on-a-7-35-billion-forever-chemicals-settlement-the-overhang-could-finally-be-lifting?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-06 13:15 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
+      "published": "2026-11-11 13:37 UTC",
+      "event_type": "regulasi/hukum",
+      "event_weight": 0.8,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 65.5
+        "vol_ratio": 0.54,
+        "composite": 65.6
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
+        "kategori": "regulasi/hukum",
+        "bobot_kategori": 0.8,
         "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "d8d3ce3e87704ffd",
-      "symbol": "VRSK",
-      "title": "Verisk Stock Earnings Beat Has The Bull Case Changed?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/verisk-stock-earnings-beat-bull-111229216.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-06 11:12 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 36.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.6,
-        "composite": 65.9
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "31a029b8d5b1f5b5",
-      "symbol": "VRSK",
-      "title": "What Verisk Analytics (VRSK) Said on Its Q3 Earnings Call",
-      "url": "https://www.marketbeat.com/instant-alerts/transcript-what-verisk-analytics-vrsk-said-on-its-q3-earnings-call-2026-11-06/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-07 00:14 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 36.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.6,
-        "composite": 65.9
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
+        "kebaruan": 0.5
       }
     },
     {
@@ -1297,8 +1222,8 @@
       "impact": 36.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 76.0
+        "vol_ratio": 0.49,
+        "composite": 76.7
       },
       "heuristik": {
         "kategori": "umum",
@@ -1322,8 +1247,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.83,
-        "composite": 74.7
+        "vol_ratio": 0.58,
+        "composite": 77.3
       },
       "heuristik": {
         "kategori": "umum",
@@ -1347,8 +1272,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.61,
-        "composite": 76.0
+        "vol_ratio": 0.49,
+        "composite": 76.7
       },
       "heuristik": {
         "kategori": "umum",
@@ -1358,178 +1283,253 @@
       }
     },
     {
-      "id": "858ccbbee6194dfe",
-      "symbol": "FISV",
-      "title": "Why Michael Burry Says Fiserv Stock Could Surge as Much as 94% From Here",
-      "url": "https://www.barchart.com/story/news/8719726/why-michael-burry-says-fiserv-stock-could-surge-as-much-as-94-from-here?.tsrc=rss",
+      "id": "489bcffd7e9f90ff",
+      "symbol": "BA",
+      "title": "Boeing layoffs raise new fears about its financial future",
+      "url": "https://www.thestreet.com/investing/boeing-bca-5-percent-december-layoffs-737-787?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-07 20:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "published": "2026-11-12 17:33 UTC",
+      "event_type": "suplai/operasional",
+      "event_weight": 0.5,
+      "sentiment": -0.421,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 35.5,
+      "impact": 35.1,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.11,
-        "composite": 79.7
+        "vol_ratio": 0.53,
+        "composite": 68.2
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
+        "kategori": "suplai/operasional",
+        "bobot_kategori": 0.5,
+        "sentimen": -0.421,
+        "kebaruan": 0.89
       }
     },
     {
-      "id": "090197297b37b291",
+      "id": "150bd2740f882eb1",
       "symbol": "XYZ",
-      "title": "Block, Estee Lauder Among Stocks With Rising Profit Estimates",
-      "url": "https://finance.yahoo.com/m/a5902321-442a-3246-ba8f-475de232d9d1/block%2C-estee-lauder-among.html?.tsrc=rss",
+      "title": "Payments and Fintech Firms Pair Third Quarter Results With Higher 2026 Outlooks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/payments-fintech-firms-pair-third-140000726.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-10 18:38 UTC",
+      "published": "2026-11-12 14:00 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor?",
       "judul_menyebut_emiten": false,
-      "impact": 32.3,
+      "impact": 33.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.98,
-        "composite": 69.4
+        "vol_ratio": 0.74,
+        "composite": 68.7
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.56
+        "kebaruan": 0.84
       }
     },
     {
-      "id": "88aaf5dd6adfda59",
-      "symbol": "BA",
-      "title": "BA Stock Layoffs: What to Know About the Latest Boeing Job Cuts",
-      "url": "https://www.barchart.com/story/news/8759977/ba-stock-layoffs-what-to-know-about-the-latest-boeing-job-cuts?.tsrc=rss",
+      "id": "7abeb088869e1941",
+      "symbol": "FISV",
+      "title": "CSI arms community lenders for commercial banking fight",
+      "url": "https://www.bankingdive.com/news/csi-core-provider-community-banks-commercial-banking/874508/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-10 15:18 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": -0.296,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 32.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.59,
-        "composite": 66.9
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": -0.296,
-        "kebaruan": 0.52
-      }
-    },
-    {
-      "id": "dcb860077f94769f",
-      "symbol": "CTVA",
-      "title": "Corteva\u2019s First Report Since the Vylor Split and Franco-Nevada\u2019s Gold-Defying Run Both Face a Test",
-      "url": "https://247wallst.com/investing/2026/11/10/cortevas-first-report-since-the-vylor-split-and-franco-nevadas-gold-defying-run-both-face-a-test/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-10 14:09 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 31.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 65.5
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.5
-      }
-    },
-    {
-      "id": "e44422ec64b7889c",
-      "symbol": "XYZ",
-      "title": "Barclays and Scotiabank Both Raised Block (XYZ) Targets, Here\u2019s Where They Disagree on the Rating",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/barclays-scotiabank-both-raised-block-161533452.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-10 16:15 UTC",
+      "published": "2026-11-12 16:00 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.67,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 30.8,
+      "sentiment": -0.382,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.98,
-        "composite": 69.4
+        "vol_ratio": 0.85,
+        "composite": 79.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.67,
-        "kebaruan": 0.53
+        "sentimen": -0.382,
+        "kebaruan": 0.87
       }
     },
     {
-      "id": "3fb62eb3fb8f6e6d",
-      "symbol": "NFLX",
-      "title": "Netflix Wipes Out Five Years of Gains",
-      "url": "https://app.moby.co/home/news/news-netflix-wipes-out-five-years-of-gains?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "id": "07e3516d2cf59a9b",
+      "symbol": "CTVA",
+      "title": "Corteva Stock\u2019s Wild Ride Continues. This Time, Blame Brazil.",
+      "url": "https://finance.yahoo.com/m/8b58180a-6642-3b20-826c-b0e1ff71f2dd/corteva-stock%E2%80%99s-wild-ride.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-11 21:22 UTC",
+      "published": "2026-11-12 21:18 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.34,
+      "sentiment": -0.34,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
       "impact": 29.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.58,
-        "composite": 58.6
+        "vol_ratio": 0.67,
+        "composite": 64.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.34,
+        "kebaruan": 0.94
+      }
+    },
+    {
+      "id": "6912c9c9d92f17e9",
+      "symbol": "DIS",
+      "title": "Disney\u2019s New CEO Is Helping the Stock Recapture Its Magic",
+      "url": "https://finance.yahoo.com/m/93b15602-05d7-3575-95ab-78b254e78dc9/disney%E2%80%99s-new-ceo-is-helping.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 15:53 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.296,
+      "relevansi": "sesektor?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.66,
+        "composite": 60.6
+      },
+      "heuristik": {
+        "kategori": "manajemen",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.296,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "83ba62b2840e3349",
+      "symbol": "XYZ",
+      "title": "XYZ vs. PLTR: Which Stock Should Value Investors Buy Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/xyz-vs-pltr-stock-value-154001059.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 15:40 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.34,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.74,
+        "composite": 68.7
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.34,
-        "kebaruan": 0.93
+        "kebaruan": 0.86
       }
     },
     {
-      "id": "dab7b0cda2e4ea73",
-      "symbol": "HII",
-      "title": "HII and Navy Break Ground on New Customer Support Complex at Ingalls Shipbuilding",
-      "url": "https://finance.yahoo.com/economy/policy/articles/hii-navy-break-ground-customer-003000883.html?.tsrc=rss",
+      "id": "4b10c3a07f92e5ae",
+      "symbol": "MMM",
+      "title": "As Organic Sales Growth Accelerates, 3M Seems Attractive",
+      "url": "https://www.barchart.com/story/news/8745912/as-organic-sales-growth-accelerates-3m-seems-attractive?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-11 00:30 UTC",
+      "published": "2026-11-10 00:10 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.402,
+      "sentiment": 0.67,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 28.7,
+      "impact": 28.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.69,
-        "composite": 70.8
+        "vol_ratio": 0.54,
+        "composite": 65.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.402,
-        "kebaruan": 0.64
+        "sentimen": 0.67,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "9398d5a5162bdba3",
+      "symbol": "XYZ",
+      "title": "Bank of America\u2019s Matthew O\u2019Neill Is Positive on Block (XYZ) for Early 2027. One Question Remains",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-matthew-o-neill-231307777.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 23:13 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.178,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.74,
+        "composite": 68.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.178,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "37bfc9f92145c376",
+      "symbol": "MMM",
+      "title": "Can 3M Sustain Operating Margin Momentum Amid Sales Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3m-sustain-operating-margin-momentum-170000002.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-11 17:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 28.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.54,
+        "composite": 65.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.55
+      }
+    },
+    {
+      "id": "a21c1d0885162a32",
+      "symbol": "BA",
+      "title": "$500 Invested in Boeing Today Could Be Worth This Much in 3 Years",
+      "url": "https://www.fool.com/investing/2026/11/12/usd500-invested-in-boeing-today-could-be-worth-this-much-in-3-years/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-12 13:05 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.226,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 27.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.53,
+        "composite": 68.2
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.226,
+        "kebaruan": 0.82
       }
     }
   ]
