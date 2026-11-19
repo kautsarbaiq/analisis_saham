@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-18",
+  "as_of": "2026-11-19",
   "validated_engines": {},
   "top_us": [
     {
@@ -140,7 +140,7 @@
         "mean_reversion": 0.0,
         "event_drift": 23.03,
         "insider": 0.0,
-        "shortvol_level": 46.07
+        "shortvol_level": 46.06
       },
       "confidence": "normal",
       "as_of": "2026-11-17"
@@ -166,7 +166,7 @@
         "mean_reversion": 0.0,
         "event_drift": 33.07,
         "insider": 0.0,
-        "shortvol_level": 35.62
+        "shortvol_level": 35.61
       },
       "confidence": "normal",
       "as_of": "2026-11-17"
@@ -179,7 +179,7 @@
         "mean_reversion": 0.0,
         "event_drift": 38.31,
         "insider": 0.0,
-        "shortvol_level": 30.21
+        "shortvol_level": 30.2
       },
       "confidence": "normal",
       "as_of": "2026-11-17"
@@ -354,19 +354,6 @@
       "as_of": "2026-11-17"
     },
     {
-      "symbol": "V",
-      "score": 63.1,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 18.66,
-        "insider": 0.0,
-        "shortvol_level": 44.43
-      },
-      "confidence": "normal",
-      "as_of": "2026-11-17"
-    },
-    {
       "symbol": "BAC",
       "score": 63.1,
       "breakdown": {
@@ -374,7 +361,20 @@
         "mean_reversion": 0.0,
         "event_drift": 23.03,
         "insider": 0.0,
-        "shortvol_level": 40.07
+        "shortvol_level": 40.06
+      },
+      "confidence": "normal",
+      "as_of": "2026-11-17"
+    },
+    {
+      "symbol": "V",
+      "score": 63.1,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 18.66,
+        "insider": 0.0,
+        "shortvol_level": 44.42
       },
       "confidence": "normal",
       "as_of": "2026-11-17"
@@ -387,7 +387,7 @@
         "mean_reversion": 0.0,
         "event_drift": 19.24,
         "insider": 0.0,
-        "shortvol_level": 43.84
+        "shortvol_level": 43.83
       },
       "confidence": "normal",
       "as_of": "2026-11-17"
@@ -400,7 +400,7 @@
         "mean_reversion": 0.0,
         "event_drift": 31.44,
         "insider": 0.0,
-        "shortvol_level": 31.64
+        "shortvol_level": 31.63
       },
       "confidence": "normal",
       "as_of": "2026-11-17"
@@ -608,7 +608,7 @@
         "mean_reversion": 0.0,
         "event_drift": 34.09,
         "insider": 0.0,
-        "shortvol_level": 27.73
+        "shortvol_level": 27.71
       },
       "confidence": "normal",
       "as_of": "2026-11-17"
