@@ -1,527 +1,81 @@
 {
-  "as_of": "2026-11-24 04:51:27+00:00",
+  "as_of": "2026-11-25 03:46:29+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
-      "DELL",
+      "COF",
+      "DVN",
       "FIS",
-      "HPE",
       "NVDA",
       "V"
     ],
     "sektor": [
+      "Energy",
       "Financials",
       "Information Technology"
     ],
     "peers": [
-      "COF",
       "NOW",
-      "PANW",
       "SNDK",
+      "WMB",
+      "PANW",
+      "BAC",
       "NDAQ",
-      "BAC"
+      "WRB",
+      "BKR",
+      "SLB"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
     {
-      "id": "1d71413ec5491717",
-      "symbol": "DELL",
-      "title": "Advanced Micro Devices vs. Dell Technologies: Comparing Revenue Trends Amid the Artificial Intelligence Boom",
-      "url": "https://www.fool.com/coverage/charts/2026/11/23/advanced-micro-devices-vs-dell-technologies-comparing-revenue-trends-amid-the-artificial-intelligence-boom/?.tsrc=rss",
+      "id": "4d7686146110da98",
+      "symbol": "COF",
+      "title": "Will Cards & Acquisition Synergies Sustain COF's Revenue Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cards-acquisition-synergies-sustain-cofs-144800390.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 17:22 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.625,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 80.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.625,
-        "kebaruan": 0.84
-      }
-    },
-    {
-      "id": "85c615bec5c91201",
-      "symbol": "HPE",
-      "title": "HPE Stock Retreats From Market Rally Despite Earnings Beat. Strong AI Demand Isn\u2019t Enough.",
-      "url": "https://finance.yahoo.com/m/42d4b2b6-fa8b-3c24-8736-09ba00afc7b1/hpe-stock-retreats-from.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 23:08 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": -0.494,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 80.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": -0.494,
-        "kebaruan": 0.92
-      }
-    },
-    {
-      "id": "59849c87ef982ae2",
-      "symbol": "NVDA",
-      "title": "Nvidia Corp. (NVDA) Has Made Investors a Fortune \u2014 Is Now Time to Book Profits?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-corp-nvda-made-investors-044731067.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 04:47 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.44,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 79.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.44,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "f047fa0ec37ecd77",
-      "symbol": "HPE",
-      "title": "HPE Stock Drops 8% After-Hours As Q1 Outlook Marginally Falls Short Of Expectations",
-      "url": "https://stocktwits.com/news-articles/markets/equity/hpe-stock-drops-8-after-hours-as-q1-outlook-marginally-falls-short-of-expectations/cNbrYexR9jA?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 00:10 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 75.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "70a961ecfe996715",
-      "symbol": "HPE",
-      "title": "Hewlett Packard Enterprise Q4 Earnings Call Highlights",
-      "url": "https://www.marketbeat.com/instant-alerts/transcript-hewlett-packard-enterprise-q4-earnings-call-highlights-2026-11-23/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 01:13 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 75.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.95
-      }
-    },
-    {
-      "id": "e2a1e79c1b8adabe",
-      "symbol": "HPE",
-      "title": "Hewlett Packard Enterprise (HPE) Reports Q4 Earnings: What Key Metrics Have to Say",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hewlett-packard-enterprise-hpe-reports-230001978.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 23:00 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 75.1,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.91
-      }
-    },
-    {
-      "id": "1e71f14406336694",
-      "symbol": "HPE",
-      "title": "HPE delivers quarterly results beat, raises guidance; stocks slips after big rally",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hpe-delivers-quarterly-results-beat-213236911.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 21:32 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 75.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "2f530e23efe24ff4",
-      "symbol": "HPE",
-      "title": "Hewlett Packard Enterprise (HPE) Surpasses Q4 Earnings and Revenue Estimates",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hewlett-packard-enterprise-hpe-surpasses-212502770.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 21:25 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 75.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "bfecc40881fee5bc",
-      "symbol": "NVDA",
-      "title": "Nvidia shares soar more than 30% after Huang reinstated as CEO",
-      "url": "https://www.cnn.com/2026/11/23/markets/us-stocks-rebound-intl?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 04:23 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.296,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 70.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.296,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "632b2387ba9f316b",
-      "symbol": "DELL",
-      "title": "Dell Stock Jumps 20% as AI Hardware Rallies on Nvidia CEO News on Nov. 23",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dell-stock-jumps-20-ai-170313857.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 17:03 UTC",
-      "event_type": "manajemen",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 67.2,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
-      },
-      "heuristik": {
-        "kategori": "manajemen",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "37d0e9549106b034",
-      "symbol": "HPE",
-      "title": "Sunway Group Accelerates Secure and Sovereign Enterprise-wide Artificial Intelligence With HPE",
-      "url": "https://finance.yahoo.com/technology/ai/articles/sunway-group-accelerates-secure-sovereign-030000590.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 03:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.67,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 67.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.67,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "0c73ac0cd39aacd1",
-      "symbol": "NVDA",
-      "title": "Stocks climb as Huang's return to Nvidia lifts investor optimism",
-      "url": "https://www.euronews.com/2026/11/24/stocks-climb-as-huangs-return-to-nvidia-lifts-investor-optimism?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 04:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.542,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 65.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.542,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "27aab46ef0a670a7",
-      "symbol": "HPE",
-      "title": "Nasdaq, Dow, S&P 500 Futures Gain As Jensen Huang\u2019s Return To Nvidia Sparks $3T Market Rally: SOXS, IBRX, HPE, TSM In Focus",
-      "url": "https://stocktwits.com/news-articles/markets/equity/stock-market-today-nasdaq-dow-futures-rise-jensen-huang-returns-nvidia/cNbrsSNR9jM?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 02:13 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.527,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 65.6,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.71,
-        "composite": 77.8
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.527,
-        "kebaruan": 0.96
-      }
-    },
-    {
-      "id": "dd0be9672aa9fd33",
-      "symbol": "NVDA",
-      "title": "Nvidia employee hugs Jensen Huang after comeback speech",
-      "url": "https://www.cnn.com/2026/11/23/business/video/nvidia-employee-hugs-jensen-huang-after-comeback-speech-hnk-digvid?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 04:16 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.494,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 65.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.494,
-        "kebaruan": 0.99
-      }
-    },
-    {
-      "id": "6229a76f0f41dd8b",
-      "symbol": "DELL",
-      "title": "Nvidia, Dell, Micron, Anthropic, CrowdStrike, UnitedHealth, and More Stocks That Explain Today\u2019s Market",
-      "url": "https://finance.yahoo.com/m/76a3103b-f3de-364f-8cd8-90e453a902d8/nvidia%2C-dell%2C-micron%2C.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 21:27 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 65.0,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
-      },
-      "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
-      }
-    },
-    {
-      "id": "bc51e15d0f5959dc",
-      "symbol": "NVDA",
-      "title": "Nvidia scandal lands on Southeast Asia as US blacklists Singapore's Megaspeed",
-      "url": "http://www.intellinews.com/nvidia-scandal-lands-on-southeast-asia-as-us-blacklists-singapore-s-megaspeed-487816/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 04:51 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.44,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 64.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.44,
-        "kebaruan": 1.0
-      }
-    },
-    {
-      "id": "7a4107a372649884",
-      "symbol": "DELL",
-      "title": "Dell Technologies (DELL) Roars Back, Gets 2 Major Catalysts Working in Its Favor",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dell-technologies-dell-roars-back-030939608.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 03:09 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.402,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 64.4,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.402,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "57c17cc2aa882989",
-      "symbol": "DELL",
-      "title": "Dell Wants Up to 45% More on Signed AI Deals. IREN Has a Big Problem",
-      "url": "https://www.tikr.com/blog/dell-wants-up-to-45-more-on-signed-ai-deals-iren-has-a-big-problem?ref=yahoofinance&tlnk=yf-261123-6945q259&.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 19:38 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.402,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 63.9,
-      "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.402,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "7584d5b40b6b490a",
-      "symbol": "DELL",
-      "title": "Dear Dell Stock Fans, Mark Your Calendars for November 24",
-      "url": "https://www.barchart.com/story/news/8971295/dear-dell-stock-fans-mark-your-calendars-for-november-24?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 20:43 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-11-24 14:48 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
       "sentiment": 0.382,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 63.7,
+      "impact": 59.7,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 67.6
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
         "sentimen": 0.382,
-        "kebaruan": 0.88
+        "kebaruan": 0.82
       }
     },
     {
-      "id": "83b442e31205b7df",
-      "symbol": "NVDA",
-      "title": "Watch these chip stocks for bargain buys after Nvidia\u2019s post-reinstatement rally",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/watch-chip-stocks-bargain-buys-040218865.html?.tsrc=rss",
+      "id": "dcb3f8fc183a0d95",
+      "symbol": "DVN",
+      "title": "Devon Energy Corp (DVN) (Q3 2026) Earnings Call Highlights: Record Production, $2 Billion Free ...",
+      "url": "https://finance.yahoo.com/energy/articles/devon-energy-corp-dvn-q3-170403468.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-24 04:02 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.202,
+      "published": "2026-11-09 17:04 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.66,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 62.4,
+      "impact": 57.1,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 67.1
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.202,
-        "kebaruan": 0.98
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.66,
+        "kebaruan": 0.0
       }
     },
     {
@@ -536,17 +90,17 @@
       "sentiment": 0.382,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 58.2,
+      "impact": 56.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.382,
-        "kebaruan": 0.77
+        "kebaruan": 0.45
       }
     },
     {
@@ -564,8 +118,8 @@
       "impact": 53.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -575,103 +129,128 @@
       }
     },
     {
-      "id": "8d9068f986066f27",
-      "symbol": "DELL",
-      "title": "Own HP Stock? Memory Costs Are The Risk",
-      "url": "https://www.trefis.com/stock/hpq/articles/627662/own-hp-stock-memory-costs-are-the-risk/2026-11-23?.tsrc=rss",
+      "id": "fe424a44882648af",
+      "symbol": "DVN",
+      "title": "Devon Energy Q3 Earnings Call Highlights Permian Focus and Buybacks",
+      "url": "https://finance.yahoo.com/energy/articles/devon-energy-q3-earnings-call-194500617.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 23:58 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.273,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 48.9,
+      "published": "2026-11-10 19:45 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.273,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 53.2,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 67.1
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.273,
-        "kebaruan": 0.93
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.273,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "c16f3c9cf10f6f96",
-      "symbol": "NVDA",
-      "title": "What Is Kymera and Why Did an Eczema Pill Outperform All AI Stocks on Monday?",
-      "url": "https://beincrypto.com/what-is-kymera-eczema-pill-stock/?.tsrc=rss",
+      "id": "9c0e2c54d3bf0d8c",
+      "symbol": "COF",
+      "title": "Why Is Capital One (COF) Down 10.8% Since Last Earnings Report?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-capital-one-cof-down-153003215.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-24 04:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-11-19 15:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
       "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 46.5,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.5,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 67.6
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.99
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "0033c3cf6e65a8e1",
-      "symbol": "NVDA",
-      "title": "Asia FX subdued as dollar holds near 20-mth high on AI rally",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/asia-fx-subdued-dollar-holds-040917671.html?.tsrc=rss",
+      "id": "b8fc16ef141e3411",
+      "symbol": "FIS",
+      "title": "A $1,500,000 Portfolio in Fidelity National Information Services, Broadstone Net Lease and Kraft Heinz Pays $96,293 a Year in Dividends. Here\u2019s What Happens if One Cuts",
+      "url": "https://www.tikr.com/blog/a-1500000-portfolio-in-fidelity-national-information-services-broadstone-net-lease-and-kraft-heinz-pays-97606-a-year-in-dividends-heres-what-happens-if-one-cuts?ref=yahoofinancedividend&tlnk=yf-261124-mv3867pj&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-24 04:09 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 46.4,
+      "published": "2026-11-24 20:35 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": -0.296,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 50.4,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 2.42,
-        "composite": 67.2
+        "event_aktif": false,
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.99
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": -0.296,
+        "kebaruan": 0.9
       }
     },
     {
-      "id": "107f9c168fd65c2f",
-      "symbol": "DELL",
-      "title": "Tech stocks surge as Nvidia rally adds $2 trillion to Nasdaq 100",
-      "url": "https://www.proactiveinvestors.com/companies/news/1102286/tech-stocks-surge-as-nvidia-rally-adds-2-trillion-to-nasdaq-100-1102286.html?.tsrc=rss",
+      "id": "5770eef59eb974bd",
+      "symbol": "DVN",
+      "title": "How Many Shares of Devon Energy or EOG Resources Pay $1,000 a Month in Dividends?",
+      "url": "https://www.tikr.com/blog/how-many-shares-of-devon-energy-or-eog-resources-pay-1000-a-month-in-dividends?ref=yahoofinancedividend&tlnk=yf-261122-64v947hq&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 19:20 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 45.8,
+      "published": "2026-11-22 10:50 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.44,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 47.9,
       "terukur": {
-        "event_aktif": true,
-        "vol_ratio": 1.91,
-        "composite": 70.2
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 67.1
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.86
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.44,
+        "kebaruan": 0.1
+      }
+    },
+    {
+      "id": "e21b9b08753a832b",
+      "symbol": "BAC",
+      "title": "Is Bank of America's Attractive Valuation Enough to Buy the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-americas-attractive-valuation-enough-151600285.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 15:16 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 46.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.02,
+        "composite": 61.5
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.44,
+        "kebaruan": 0.82
       }
     },
     {
@@ -689,12 +268,37 @@
       "impact": 45.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
         "kategori": "manajemen",
         "bobot_kategori": 0.6,
+        "sentimen": 0.273,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "6094edd4dda48ca8",
+      "symbol": "DVN",
+      "title": "What Do Rate Hikes Imply for Devon Energy (DVN)?",
+      "url": "https://finance.yahoo.com/economy/policy/articles/rate-hikes-imply-devon-energy-170945305.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-14 17:09 UTC",
+      "event_type": "makro/suku bunga",
+      "event_weight": 0.55,
+      "sentiment": 0.273,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 44.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 67.1
+      },
+      "heuristik": {
+        "kategori": "makro/suku bunga",
+        "bobot_kategori": 0.55,
         "sentimen": 0.273,
         "kebaruan": 0.0
       }
@@ -714,8 +318,8 @@
       "impact": 43.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
         "kategori": "aksi korporasi",
@@ -725,78 +329,78 @@
       }
     },
     {
-      "id": "9daf7e9cc21e5ebf",
-      "symbol": "FIS",
-      "title": "U.S. Bancorp or Fidelity National Information Services: Only One Gets My Dividend Dollars for the Next 10 Years",
-      "url": "https://www.tikr.com/blog/u-s-bancorp-or-fidelity-national-information-services-only-one-gets-my-dividend-dollars-for-the-next-10-years?ref=yahoofinancedividend&tlnk=yf-261112-vgqmmj74&.tsrc=rss",
+      "id": "9f226de3b3d86df2",
+      "symbol": "DVN",
+      "title": "Devon Energy Corporation (DVN) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/devon-energy-corporation-dvn-attracting-130004904.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-12 16:52 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
+      "published": "2026-11-20 13:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.637,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 43.0,
+      "impact": 41.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 1.03,
+        "composite": 67.1
       },
       "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.637,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "797f637de25f357d",
-      "symbol": "FIS",
-      "title": "3 High-Yield Dividend Stocks to Buy Now and 2 to Avoid Despite the Yield",
-      "url": "https://www.fool.com/investing/2026/11/21/3-high-yield-dividend-stocks-to-buy-now-and-2-to-avoid-despite-the-yield/?.tsrc=rss",
+      "id": "8fdf1bf908005d15",
+      "symbol": "COF",
+      "title": "Trump Revives Push for Card Rate Cap: What It Means for C, JPM & COF",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-revives-push-card-rate-140900997.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-21 16:51 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": -0.296,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 41.5,
+      "published": "2026-11-23 14:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 41.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 0.73,
+        "composite": 67.6
       },
       "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": -0.296,
-        "kebaruan": 0.16
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.47
       }
     },
     {
-      "id": "c5cdc87b3b5270bd",
-      "symbol": "NOW",
-      "title": "ServiceNow stock: catalysts, technicals, and outlook after the selloff",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-stock-catalysts-technicals-outlook-212029012.html?.tsrc=rss",
+      "id": "73c242366f5cc87e",
+      "symbol": "NVDA",
+      "title": "Jensen Huang Reportedly Says Succession Plan Risks \u2018Unnecessary Hierarchy\u2019 At Nvidia \u2014 Crypto Bettors Wager on Another Exit",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63613509/nvidia-ceo-jensen-huang-succession-plan-polymarket-prediction-market?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 21:20 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
+      "published": "2026-11-25 03:01 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.077,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 41.0,
+      "impact": 41.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.72,
-        "composite": 65.4
+        "vol_ratio": 1.14,
+        "composite": 75.0
       },
       "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.89
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.077,
+        "kebaruan": 0.99
       }
     },
     {
@@ -814,8 +418,8 @@
       "impact": 40.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
         "kategori": "umum",
@@ -825,28 +429,178 @@
       }
     },
     {
-      "id": "7fa2ba4e6e6119ef",
-      "symbol": "BAC",
-      "title": "Bank of America Names 5 Stocks to Buy Before Christmas 2026",
-      "url": "https://beincrypto.com/bank-of-america-year-end-stock-picks/?.tsrc=rss",
+      "id": "797f637de25f357d",
+      "symbol": "FIS",
+      "title": "3 High-Yield Dividend Stocks to Buy Now and 2 to Avoid Despite the Yield",
+      "url": "https://www.fool.com/investing/2026/11/21/3-high-yield-dividend-stocks-to-buy-now-and-2-to-avoid-despite-the-yield/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-22 10:24 UTC",
+      "published": "2026-11-21 16:51 UTC",
       "event_type": "merger/akuisisi",
       "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 39.8,
+      "sentiment": -0.296,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 40.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.95,
-        "composite": 62.2
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
+        "sentimen": -0.296,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "444862022c5adfb7",
+      "symbol": "NOW",
+      "title": "Global Workflow Market Size, Trends, and Forecast Report 2026 | Capitalize on 22.5% CAGR as IBM, Oracle, SAP, ServiceNow, and Appian Accelerate AI and Cloud Automation Through 2030",
+      "url": "https://finance.yahoo.com/technology/articles/global-workflow-market-size-trends-143400424.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 14:34 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 40.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.59,
+        "composite": 66.2
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.41
+        "kebaruan": 0.81
+      }
+    },
+    {
+      "id": "664c622a1a9157c7",
+      "symbol": "NVDA",
+      "title": "Dow Jones Futures Fall; Trump Says 'Not Too Late' For U.S. To Take Nvidia Stake",
+      "url": "https://finance.yahoo.com/m/d96603c1-fe7f-3bf3-8158-0728b464d469/dow-jones-futures-fall%3B-trump.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 03:46 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 75.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 1.0
+      }
+    },
+    {
+      "id": "e7fe25e0f3c27b06",
+      "symbol": "NVDA",
+      "title": "Breaking down Nvidia\u2019s \u2018boardroom blunder\u2019",
+      "url": "https://www.cnn.com/2026/11/24/business/video/kiss-cam-bid-vod-hrzn?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 02:45 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 75.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.98
+      }
+    },
+    {
+      "id": "8a0fa3457c0db2e0",
+      "symbol": "COF",
+      "title": "What Capital One Financial Holders Got Wrong Before The Slide",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/capital-one-financial-holders-got-021556542.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-18 02:15 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.477,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 67.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.477,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "c5cdc87b3b5270bd",
+      "symbol": "NOW",
+      "title": "ServiceNow stock: catalysts, technicals, and outlook after the selloff",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-stock-catalysts-technicals-outlook-212029012.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-23 21:20 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 39.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.59,
+        "composite": 66.2
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.57
+      }
+    },
+    {
+      "id": "fc4d61fa084f3800",
+      "symbol": "COF",
+      "title": "Cap One pursues payments modernization",
+      "url": "https://www.paymentsdive.com/news/cap-one-pursues-payments-modernization/875673/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 22:34 UTC",
+      "event_type": "regulasi/hukum",
+      "event_weight": 0.8,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 38.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 67.6
+      },
+      "heuristik": {
+        "kategori": "regulasi/hukum",
+        "bobot_kategori": 0.8,
+        "sentimen": 0.0,
+        "kebaruan": 0.92
       }
     },
     {
@@ -864,8 +618,8 @@
       "impact": 38.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.77,
-        "composite": 70.5
+        "vol_ratio": 0.53,
+        "composite": 71.0
       },
       "heuristik": {
         "kategori": "umum",
@@ -875,37 +629,37 @@
       }
     },
     {
-      "id": "1b4370302a20915e",
-      "symbol": "PANW",
-      "title": "Phillip Securities Just Upgraded Palo Alto Networks With a $418 Target. Here\u2019s What Changed",
-      "url": "https://www.tikr.com/blog/phillip-securities-just-upgraded-palo-alto-networks-with-a-418-target-heres-what-changed?ref=yahoofinance&tlnk=yf-261123-fv6fq7vh&.tsrc=rss",
+      "id": "da2a5f9475c4c6ca",
+      "symbol": "DVN",
+      "title": "DVN Short Strangle Takes Advantage of High Implied Volatility",
+      "url": "https://www.barchart.com/story/news/8913023/dvn-short-strangle-takes-advantage-of-high-implied-volatility?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 19:29 UTC",
-      "event_type": "rating analis",
-      "event_weight": 0.65,
-      "sentiment": 0.296,
-      "relevansi": "sesektor",
+      "published": "2026-11-19 12:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.25,
+      "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 37.5,
+      "impact": 38.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 65.2
+        "vol_ratio": 1.03,
+        "composite": 67.1
       },
       "heuristik": {
-        "kategori": "rating analis",
-        "bobot_kategori": 0.65,
-        "sentimen": 0.296,
-        "kebaruan": 0.87
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.25,
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "9c0e2c54d3bf0d8c",
-      "symbol": "COF",
-      "title": "Why Is Capital One (COF) Down 10.8% Since Last Earnings Report?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-capital-one-cof-down-153003215.html?.tsrc=rss",
+      "id": "4f0e4afb253419f3",
+      "symbol": "WRB",
+      "title": "Why Is W.R. Berkley (WRB) Up 6% Since Last Earnings Report?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-w-r-berkley-wrb-153005851.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-19 15:30 UTC",
+      "published": "2026-11-18 15:30 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
@@ -914,8 +668,8 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 67.0
+        "vol_ratio": 0.66,
+        "composite": 60.1
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -925,128 +679,453 @@
       }
     },
     {
-      "id": "3221f274f34d1c51",
-      "symbol": "V",
-      "title": "Dividend Hikes of Up to 16% Roll In, From Payments and Payroll to Oil",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dividend-hikes-16-roll-payments-130000827.html?.tsrc=rss",
+      "id": "ca467d73e3b838fa",
+      "symbol": "COF",
+      "title": "Dan Loeb and 8 Other Big Funds Bought Capital One Financial. Berkshire Hathaway and 14 Others Sold. Who\u2019s Right?",
+      "url": "https://www.tikr.com/blog/dan-loeb-and-8-other-big-funds-bought-capital-one-financial-berkshire-hathaway-and-14-others-sold-whos-right?ref=yahoofinance&tlnk=yf-261122-7jjqjrjj&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 13:00 UTC",
+      "published": "2026-11-22 11:07 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 36.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 67.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.1
+      }
+    },
+    {
+      "id": "8f49cc095838bde3",
+      "symbol": "DVN",
+      "title": "Devon Energy (DVN) Loses 13.4% in 4 Weeks, Here's Why a Trend Reversal May be Around the Corner",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/devon-energy-dvn-loses-13-133501348.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-10 13:35 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.052,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 36.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 67.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.052,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "1972bf9018eba5a0",
+      "symbol": "NVDA",
+      "title": "Dow, S&P 500, Nasdaq Futures Edge Lower Amid Tech Selloff Ahead Of Key Inflation Data: DELL, AMBA, SOXL, MSTR In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-edge-lower-amid-tech-selloff-ahead-of-key-inflation-data-dell-amba-soxl-mstr-in-focus/cNbHbLoR9lJ?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 03:20 UTC",
+      "event_type": "makro/suku bunga",
+      "event_weight": 0.55,
+      "sentiment": -0.296,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 35.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 75.0
+      },
+      "heuristik": {
+        "kategori": "makro/suku bunga",
+        "bobot_kategori": 0.55,
+        "sentimen": -0.296,
+        "kebaruan": 0.99
+      }
+    },
+    {
+      "id": "b478917cdd6532d3",
+      "symbol": "DVN",
+      "title": "What Is Devon Getting For All That Spending?",
+      "url": "https://www.trefis.com/stock/dvn/articles/625257/what-is-devon-getting-for-all-that-spending/2026-11-16?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-16 16:13 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 35.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.03,
+        "composite": 67.1
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "b9a9939ddf43d65c",
+      "symbol": "WMB",
+      "title": "How Many Shares of Kinder Morgan or Williams Pay $1,000 a Month in Dividends?",
+      "url": "https://www.tikr.com/blog/how-many-shares-of-kinder-morgan-or-williams-pay-1000-a-month-in-dividends?ref=yahoofinancedividend&tlnk=yf-261119-p39q63w5&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-19 17:35 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.612,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 35.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.81,
+        "composite": 63.7
+      },
+      "heuristik": {
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.612,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "696ff082d73a0d07",
+      "symbol": "NVDA",
+      "title": "Lattice Semiconductor (LSCC) Could Be 37% Below Fair Value On AI Chip Optimism",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lattice-semiconductor-lscc-could-37-031232846.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 03:12 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.802,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 34.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 75.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.802,
+        "kebaruan": 0.99
+      }
+    },
+    {
+      "id": "717b82db45388976",
+      "symbol": "SNDK",
+      "title": "Sandisk Stock Split Puts AI Memory Volatility Back In Focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-split-puts-ai-171623726.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 17:16 UTC",
       "event_type": "aksi korporasi",
       "event_weight": 0.6,
       "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 32.9,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 33.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
+        "vol_ratio": 1.14,
+        "composite": 64.6
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
         "sentimen": 0.0,
-        "kebaruan": 0.78
+        "kebaruan": 0.85
       }
     },
     {
-      "id": "09365e196f04168a",
-      "symbol": "V",
-      "title": "Klarna Expands Collaboration With Visa, Bringing Flexible Payments to Merchants Using Visa Acceptance Platform",
-      "url": "https://finance.yahoo.com/technology/articles/klarna-expands-collaboration-visa-bringing-133000131.html?.tsrc=rss",
+      "id": "0158a3f89a1e03d0",
+      "symbol": "BKR",
+      "title": "Flexible Pipes - Global Strategic Business Report 2026: Capitalize on the $1.7 Billion Market by 2032 as Baker Hughes, TechnipFMC, Strohm, and FlexSteel Vie for Share",
+      "url": "https://finance.yahoo.com/energy/articles/flexible-pipes-global-strategic-business-145400240.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 13:30 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.649,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 31.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.649,
-        "kebaruan": 0.78
-      }
-    },
-    {
-      "id": "e758fbac162710b8",
-      "symbol": "SNDK",
-      "title": "Sandisk (SNDK) Stock Looks Below Fair Value After Its 179% Run",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-sndk-stock-looks-below-200804651.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 20:08 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.572,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 31.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 63.8
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.572,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "1ffcd92edcd6a6db",
-      "symbol": "PANW",
-      "title": "Palo Alto Networks, Inc. (PANW) is Attracting Investor Attention: Here is What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-networks-inc-panw-130004294.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 13:00 UTC",
+      "published": "2026-11-24 14:54 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.477,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 30.1,
+      "impact": 30.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 65.2
+        "vol_ratio": 0.56,
+        "composite": 59.8
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.477,
-        "kebaruan": 0.78
+        "kebaruan": 0.82
       }
     },
     {
-      "id": "0225fa820a147727",
-      "symbol": "V",
-      "title": "Coinbase Global vs. Visa: Which Financial Stock Is a Better Buy for 2027?",
-      "url": "https://www.fool.com/coverage/better-buy/2026/11/23/coinbase-global-vs-visa-which-financial-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+      "id": "2b7dae6316dc0b3b",
+      "symbol": "SNDK",
+      "title": "Micron vs. Sandisk: Which AI Memory Stock Is the Better Buy?",
+      "url": "https://www.fool.com/investing/2026/11/24/micron-vs-sandisk-which-ai-memory-stock-is-the-better-buy/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 15:50 UTC",
+      "published": "2026-11-24 20:25 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.44,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 30.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 30.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
+        "vol_ratio": 1.14,
+        "composite": 64.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.44,
-        "kebaruan": 0.81
+        "kebaruan": 0.9
+      }
+    },
+    {
+      "id": "8d6af1900685fb96",
+      "symbol": "PANW",
+      "title": "Intuit vs. Palo Alto Networks: Which Technology Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/24/intuit-vs-palo-alto-networks-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 19:20 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 30.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.74,
+        "composite": 63.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.88
+      }
+    },
+    {
+      "id": "97a3a82ad971f212",
+      "symbol": "V",
+      "title": "Visa, Mastercard Seen Gaining From Expansion of Tokenized Payments, UBS Says",
+      "url": "https://finance.yahoo.com/technology/articles/visa-mastercard-seen-gaining-expansion-180943092.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 18:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.421,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 30.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 67.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.421,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "5a62da57f23ba25c",
+      "symbol": "V",
+      "title": "iwoca and Visa launch credit card to widen SME funding choice",
+      "url": "https://finance.yahoo.com/small-business/articles/iwoca-visa-launch-credit-card-000100356.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 00:01 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 30.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 67.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "0df8c87294538648",
+      "symbol": "V",
+      "title": "CME vs. Visa: Which Financial Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/24/cme-vs-visa-which-financial-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 13:48 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 67.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.8
+      }
+    },
+    {
+      "id": "54e229ba0e4dcf21",
+      "symbol": "BAC",
+      "title": "JPMorgan and Bank of America Just Sold Off. One Looks Better for Retirees",
+      "url": "https://247wallst.com/investing/2026/11/24/jpmorgan-and-bank-of-america-just-sold-off-one-looks-better-for-retirees/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 13:17 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.02,
+        "composite": 61.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.8
+      }
+    },
+    {
+      "id": "c29738d44087bfdb",
+      "symbol": "V",
+      "title": "Visa (V) Broadens Checkout Options On Its Acceptance Platform",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/visa-v-broadens-checkout-options-111840301.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 11:18 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.459,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 67.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.459,
+        "kebaruan": 0.77
+      }
+    },
+    {
+      "id": "f2676d046ccfb87f",
+      "symbol": "PANW",
+      "title": "Accenture vs. Palo Alto Networks: Which Tech Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/24/accenture-vs-palo-alto-networks-which-tech-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 12:28 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.74,
+        "composite": 63.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.78
+      }
+    },
+    {
+      "id": "0d19ec637bc74768",
+      "symbol": "NVDA",
+      "title": "3 Stocks Investors Are Watching For Corporate Governance And Litigation Demand",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-investors-watching-corporate-031221183.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 03:12 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.318,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 29.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 75.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": -0.318,
+        "kebaruan": 0.99
+      }
+    },
+    {
+      "id": "f8ee452ecaad230f",
+      "symbol": null,
+      "title": "Why France is at risk of recession \u2014 and what could keep it out of one",
+      "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
+      "source": "CNBC Markets",
+      "published": "2026-11-24 11:15 UTC",
+      "event_type": "makro/suku bunga",
+      "event_weight": 0.55,
+      "sentiment": -0.599,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 29.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "makro/suku bunga",
+        "bobot_kategori": 0.55,
+        "sentimen": -0.599,
+        "kebaruan": 0.77
       }
     },
     {
@@ -1064,8 +1143,8 @@
       "impact": 29.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.76,
-        "composite": 62.6
+        "vol_ratio": 0.99,
+        "composite": 60.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -1075,187 +1154,237 @@
       }
     },
     {
-      "id": "8fdf1bf908005d15",
-      "symbol": "COF",
-      "title": "Trump Revives Push for Card Rate Cap: What It Means for C, JPM & COF",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-revives-push-card-rate-140900997.html?.tsrc=rss",
+      "id": "a4a84aefbebaf078",
+      "symbol": "WMB",
+      "title": "Williams CEO Chad Zamarin Urges House Action Following Senate Passage of Bipartisan Permitting Reform",
+      "url": "https://finance.yahoo.com/energy/articles/williams-ceo-chad-zamarin-urges-192600049.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 14:09 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.382,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 29.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 67.0
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.382,
-        "kebaruan": 0.79
-      }
-    },
-    {
-      "id": "9db724d49935ea80",
-      "symbol": "SNDK",
-      "title": "Jensen Huang back as Nvidia CEO after 12 days: Shares surge 30%",
-      "url": "https://finance.yahoo.com/video/jensen-huang-back-as-nvidia-ceo-after-12-days-shares-surge-30-161302539.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 16:13 UTC",
+      "published": "2026-11-20 19:26 UTC",
       "event_type": "manajemen",
       "event_weight": 0.6,
-      "sentiment": 0.296,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 29.1,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 63.8
+        "vol_ratio": 0.81,
+        "composite": 63.7
       },
       "heuristik": {
         "kategori": "manajemen",
         "bobot_kategori": 0.6,
-        "sentimen": 0.296,
-        "kebaruan": 0.82
-      }
-    },
-    {
-      "id": "98375081fdf1ee98",
-      "symbol": "NOW",
-      "title": "Palantir Rips 10% to Lead Software Stocks. Cloudflare and ServiceNow Also Join \u2018Jensen Rally\u2019",
-      "url": "https://247wallst.com/videos/palantir-rips-10-to-lead-software-stocks-cloudflare-and-servicenow-also-join-jensen-rally/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 20:08 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.296,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 28.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.72,
-        "composite": 65.4
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "8728cfa2cd8a3480",
-      "symbol": "V",
-      "title": "Klarna Expands Visa Partnership to Offer Flexible Payment Options Across Four Major Markets",
-      "url": "https://investorshub.advfn.com/market-news/article/40555/klarna-expands-visa-partnership-to-offer-flexible-payment-options-across-four-major-markets?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 15:01 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.318,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 28.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.318,
-        "kebaruan": 0.8
-      }
-    },
-    {
-      "id": "2391ce875dfb8a33",
-      "symbol": "SNDK",
-      "title": "Citi Says Micron and SanDisk Selloff Is Overdone as AI Memory Demand Holds Up",
-      "url": "https://finance.yahoo.com/technology/ai/articles/citi-says-micron-sandisk-selloff-161237544.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 16:12 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.128,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 26.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 63.8
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.128,
-        "kebaruan": 0.82
-      }
-    },
-    {
-      "id": "35f05703d2a9db51",
-      "symbol": null,
-      "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
-      "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
-      "source": "CNBC Markets",
-      "published": "2026-11-13 21:18 UTC",
-      "event_type": "makro/suku bunga",
-      "event_weight": 0.55,
-      "sentiment": -0.67,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 26.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "makro/suku bunga",
-        "bobot_kategori": 0.55,
-        "sentimen": -0.67,
+        "sentimen": 0.0,
         "kebaruan": 0.0
       }
     },
     {
-      "id": "6b594ad73766ff9a",
-      "symbol": "NOW",
-      "title": "Leading CHROs and Business Executives to Convene at i4cp's 2027 Next Practices Now Conference",
-      "url": "https://finance.yahoo.com/small-business/articles/leading-chros-business-executives-convene-212500658.html?.tsrc=rss",
+      "id": "cab5083927aa6a80",
+      "symbol": "WMB",
+      "title": "Williams Companies Slashed Its Dividend in 2016. Here\u2019s What $1,000 Invested Then Is Worth Today",
+      "url": "https://247wallst.com/investing/2026/11/21/williams-companies-slashed-its-dividend-in-2016-heres-what-1000-invested-then-is-worth-today/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 21:25 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-11-21 22:47 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 26.0,
+      "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.72,
-        "composite": 65.4
+        "vol_ratio": 0.81,
+        "composite": 63.7
+      },
+      "heuristik": {
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "0225fa820a147727",
+      "symbol": "V",
+      "title": "Coinbase Global vs. Visa: Which Financial Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/23/coinbase-global-vs-visa-which-financial-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-23 15:50 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 28.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 67.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.5
+      }
+    },
+    {
+      "id": "29b3788ec0dd7b1a",
+      "symbol": "COF",
+      "title": "Mid-market firms\u2019 optimism grows despite economic uncertainty",
+      "url": "https://www.cfodive.com/news/middle-market-firms-grow-more-optimistic-despite-uncertainty/875113/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-18 20:36 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.674,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 28.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.73,
+        "composite": 67.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.674,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "7d396a61c77e50b2",
+      "symbol": "BKR",
+      "title": "Baker Hughes and McDermott Win Contract for Major Australian LNG Project",
+      "url": "https://finance.yahoo.com/energy/articles/baker-hughes-mcdermott-win-contract-004000683.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-20 00:40 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.586,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 27.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.56,
+        "composite": 59.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.586,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "f1f13696b8abf29c",
+      "symbol": "NVDA",
+      "title": "South Korea's chipmakers rally on Huang's return",
+      "url": "http://www.intellinews.com/south-korea-s-chipmakers-rally-on-huang-s-return-488025/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 03:21 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 75.0
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.89
+        "kebaruan": 0.99
       }
     },
     {
-      "id": "2c1a07101053d5cf",
-      "symbol": "SNDK",
-      "title": "Prediction: This Will Be Sandisk\u2019s Stock Price by the End of 2027",
-      "url": "https://www.fool.com/investing/2026/11/23/prediction-this-will-be-sandisks-stock-price-by-the-end-of-2027/?.tsrc=rss",
+      "id": "e8bc7083d4596e9d",
+      "symbol": "NVDA",
+      "title": "Tech firms back in crosshairs as Huang rally reverses",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/tech-firms-back-crosshairs-huang-024219799.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 22:16 UTC",
+      "published": "2026-11-25 02:42 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 1.14,
+        "composite": 75.0
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.98
+      }
+    },
+    {
+      "id": "98d6f6fe3339b9f3",
+      "symbol": "V",
+      "title": "Klarna expands Visa partnership across North America and Europe",
+      "url": "https://www.electronicpaymentsinternational.com/news/klarna-expands-visa-partnership-across-north-america-and-europe/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 09:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.103,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 26.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.85,
+        "composite": 67.5
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.103,
+        "kebaruan": 0.74
+      }
+    },
+    {
+      "id": "4736730943599fd1",
+      "symbol": "BKR",
+      "title": "INPEX Awards Baker Hughes-McDermott Contract for Ichthys LNG Expansion",
+      "url": "https://finance.yahoo.com/energy/articles/inpex-awards-baker-hughes-mcdermott-150900943.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-20 15:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.459,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 26.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.56,
+        "composite": 59.8
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.459,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "9d370328deab18c5",
+      "symbol": "BAC",
+      "title": "BankAmeriDeals: How Bank of America customers can stack extra cash back on everyday buys",
+      "url": "https://finance.yahoo.com/personal-finance/credit-cards/article/bankamerideals-guide-205828052.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 20:58 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
@@ -1264,8 +1393,8 @@
       "impact": 26.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.14,
-        "composite": 63.8
+        "vol_ratio": 1.02,
+        "composite": 61.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -1275,253 +1404,128 @@
       }
     },
     {
-      "id": "fcb1a7dd97545f8e",
+      "id": "4bdfb619f8175e64",
       "symbol": "PANW",
-      "title": "Palo Alto Has \u201ca Really Good Chance of Being a Trillion Dollar Business,\u201d Says Chamath. Here\u2019s What It Takes",
-      "url": "https://www.tikr.com/blog/palo-alto-has-a-really-good-chance-of-being-a-trillion-dollar-business-says-chamath-heres-what-it-takes?ref=yahoofinance&tlnk=yf-261123-f9mpmcjw&.tsrc=rss",
+      "title": "Could You Have Seen Palo Alto Networks' Run Coming?",
+      "url": "https://www.trefis.com/stock/panw/articles/628394/could-you-have-seen-palo-alto-networks-run-coming/2026-11-24?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 23:32 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.667,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 25.8,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.27,
-        "composite": 65.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.667,
-        "kebaruan": 0.92
-      }
-    },
-    {
-      "id": "e7f28e335c70d8f5",
-      "symbol": "V",
-      "title": "Klarna stock surges on Visa partnership expansion",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/klarna-stock-surges-visa-partnership-155426625.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 15:54 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 25.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.82
-      }
-    },
-    {
-      "id": "442a47fe857938a5",
-      "symbol": "V",
-      "title": "Visa Launches New A.I. Agent Wallet",
-      "url": "https://www.cryptoprowl.com/releases/visa-launches-new-ai-agent-wallet-8025?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 14:34 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 25.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.8
-      }
-    },
-    {
-      "id": "676bea6138ac1d4b",
-      "symbol": "BAC",
-      "title": "34 ETFs Add to Bank of America (BAC) on Nov. 19",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/34-etfs-add-bank-america-110137334.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 11:01 UTC",
+      "published": "2026-11-24 18:16 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 25.2,
+      "impact": 25.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.95,
-        "composite": 62.2
+        "vol_ratio": 0.74,
+        "composite": 63.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.75
+        "kebaruan": 0.87
       }
     },
     {
-      "id": "e1ab09a96c6771c1",
-      "symbol": "V",
-      "title": "ETFs Are Net Sellers of Visa (V) on Thursday",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-visa-v-110300948.html?.tsrc=rss",
+      "id": "c27133630622636e",
+      "symbol": "SNDK",
+      "title": "Why Sandisk Stock Plunged Today",
+      "url": "https://www.fool.com/investing/2026/11/24/why-sandisk-stock-plunged-today/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 11:03 UTC",
+      "published": "2026-11-24 18:05 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 25.2,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 25.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
+        "vol_ratio": 1.14,
+        "composite": 64.6
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.75
+        "kebaruan": 0.86
       }
     },
     {
-      "id": "d7ad1a0ffd8f8e6a",
-      "symbol": "NOW",
-      "title": "Ondaro Unites Federal and SLED Under One Public Sector Leader",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ondaro-unites-federal-sled-under-182800073.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 18:28 UTC",
+      "id": "3ac1ad70bbaebddd",
+      "symbol": null,
+      "title": "Consumer confidence shoots up after Democrats' midterm victories \u2014 though inflation worries persist",
+      "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+      "source": "CNBC Markets",
+      "published": "2026-11-24 18:34 UTC",
       "event_type": "makro/suku bunga",
       "event_weight": 0.55,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 25.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.72,
-        "composite": 65.4
-      },
-      "heuristik": {
-        "kategori": "makro/suku bunga",
-        "bobot_kategori": 0.55,
-        "sentimen": 0.0,
-        "kebaruan": 0.85
-      }
-    },
-    {
-      "id": "3d56628b096f1701",
-      "symbol": null,
-      "title": "Tech outages are fueling a new doomsday economy",
-      "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
-      "source": "CNBC Markets",
-      "published": "2026-11-21 15:04 UTC",
-      "event_type": "suplai/operasional",
-      "event_weight": 0.5,
-      "sentiment": -0.586,
+      "sentiment": 0.128,
       "relevansi": "pasar",
       "judul_menyebut_emiten": null,
-      "impact": 25.0,
+      "impact": 25.4,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": null,
         "composite": null
       },
       "heuristik": {
-        "kategori": "suplai/operasional",
-        "bobot_kategori": 0.5,
-        "sentimen": -0.586,
-        "kebaruan": 0.14
+        "kategori": "makro/suku bunga",
+        "bobot_kategori": 0.55,
+        "sentimen": 0.128,
+        "kebaruan": 0.87
       }
     },
     {
-      "id": "ca467d73e3b838fa",
-      "symbol": "COF",
-      "title": "Dan Loeb and 8 Other Big Funds Bought Capital One Financial. Berkshire Hathaway and 14 Others Sold. Who\u2019s Right?",
-      "url": "https://www.tikr.com/blog/dan-loeb-and-8-other-big-funds-bought-capital-one-financial-berkshire-hathaway-and-14-others-sold-whos-right?ref=yahoofinance&tlnk=yf-261122-7jjqjrjj&.tsrc=rss",
+      "id": "673bb1b1fadccaa2",
+      "symbol": "WMB",
+      "title": "Williams (WMB) Stock Could Be Rich Despite Fresh Capital Spending News",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/williams-wmb-stock-could-rich-091126654.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-22 11:07 UTC",
+      "published": "2026-11-19 09:11 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.39,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 25.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.81,
+        "composite": 63.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.39,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "4099c4f76738806f",
+      "symbol": "V",
+      "title": "ETFs Are Buying Visa (V) on Nov. 20",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/etfs-buying-visa-v-nov-110157000.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 11:01 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
       "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 23.6,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 25.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.1,
-        "composite": 67.0
+        "vol_ratio": 0.85,
+        "composite": 67.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
-        "kebaruan": 0.42
-      }
-    },
-    {
-      "id": "e62be9c47d3b2db7",
-      "symbol": "BAC",
-      "title": "BofA spots opportunities in these nine consumer staples stocks for 2027",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bofa-spots-opportunities-nine-consumer-030406689.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-24 03:04 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.382,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 23.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.95,
-        "composite": 62.2
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.382,
-        "kebaruan": 0.97
-      }
-    },
-    {
-      "id": "678f2e847a1c7b37",
-      "symbol": "V",
-      "title": "JPMorgan, Visa Warn of Cyberattack That Hit Outside Vendor",
-      "url": "https://finance.yahoo.com/video/jpmorgan-visa-warn-cyberattack-hit-175529831.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-20 17:55 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.103,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 22.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.16,
-        "composite": 68.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.103,
-        "kebaruan": 0.0
+        "kebaruan": 0.76
       }
     }
   ]
