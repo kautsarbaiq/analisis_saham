@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26",
+  "as_of": "2026-11-27",
   "validated_engines": {},
   "top_us": [
     {
@@ -92,19 +92,6 @@
       },
       "confidence": "normal",
       "as_of": "2026-11-25"
-    },
-    {
-      "symbol": "SNDK",
-      "score": 64.7,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 30.34,
-        "insider": 0.0,
-        "shortvol_level": 34.37
-      },
-      "confidence": "normal",
-      "as_of": "2026-11-19"
     },
     {
       "symbol": "CVS",
@@ -276,19 +263,6 @@
       "as_of": "2026-11-25"
     },
     {
-      "symbol": "PANW",
-      "score": 61.3,
-      "breakdown": {
-        "technical": 0.0,
-        "mean_reversion": 0.0,
-        "event_drift": 40.81,
-        "insider": 0.0,
-        "shortvol_level": 20.44
-      },
-      "confidence": "normal",
-      "as_of": "2026-11-25"
-    },
-    {
       "symbol": "BA",
       "score": 61.3,
       "breakdown": {
@@ -297,6 +271,19 @@
         "event_drift": 23.22,
         "insider": 0.0,
         "shortvol_level": 38.05
+      },
+      "confidence": "normal",
+      "as_of": "2026-11-25"
+    },
+    {
+      "symbol": "PANW",
+      "score": 61.3,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 40.81,
+        "insider": 0.0,
+        "shortvol_level": 20.44
       },
       "confidence": "normal",
       "as_of": "2026-11-25"
@@ -648,6 +635,19 @@
         "event_drift": 23.76,
         "insider": 0.0,
         "shortvol_level": 35.62
+      },
+      "confidence": "normal",
+      "as_of": "2026-11-25"
+    },
+    {
+      "symbol": "GOOGL",
+      "score": 59.0,
+      "breakdown": {
+        "technical": 0.0,
+        "mean_reversion": 0.0,
+        "event_drift": 24.4,
+        "insider": 0.0,
+        "shortvol_level": 34.6
       },
       "confidence": "normal",
       "as_of": "2026-11-25"
