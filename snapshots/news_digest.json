@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-11-27 02:20:00+00:00",
+  "as_of": "2026-11-28 01:11:20+00:00",
   "portofolio": {
     "holdings": [],
     "watch": [
-      "AES",
       "COF",
+      "CVS",
       "DVN",
       "NOW",
       "NVDA"
@@ -12,49 +12,74 @@
     "sektor": [
       "Energy",
       "Financials",
-      "Information Technology",
-      "Utilities"
+      "Health Care",
+      "Information Technology"
     ],
     "peers": [
+      "MRK",
+      "WMB",
+      "DHR",
+      "GPN",
       "V",
       "FIS",
-      "WMB",
+      "FLEX",
+      "IQV",
       "MRVL",
-      "WRB",
-      "VST",
-      "PANW",
       "APH",
-      "NRG",
-      "PCG",
-      "SLB",
+      "EOG",
       "XOM"
     ]
   },
   "status_validasi": "Konteks 'event aktif' & composite = TERUKUR dari harga (engine tervalidasi). Kategori berita & sentimen = heuristik DESKRIPTIF, belum di-backtest \u2014 urutan tampilan, bukan prediksi.",
   "items": [
     {
-      "id": "c8f4865e7a06ee51",
-      "symbol": "AES",
-      "title": "AES Receives Final Regulatory Approval for Acquisition by Consortium Led by Global Infrastructure Partners and EQT; Closing Expected December 2, 2026",
-      "url": "https://finance.yahoo.com/energy/articles/aes-receives-final-regulatory-approval-221500837.html?.tsrc=rss",
+      "id": "1ba8bcacc70c7a82",
+      "symbol": "CVS",
+      "title": "Global Retail Pharmacy Market Report 2026: Size, Trends, and Forecast to 2030 | Capitalize on AI and Automation as Walmart, Amazon, CVS Health, and Costco Scale Digital Care",
+      "url": "https://finance.yahoo.com/healthcare/articles/global-retail-pharmacy-market-report-143600337.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-17 22:15 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.477,
+      "published": "2026-11-25 14:36 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.599,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 56.5,
+      "impact": 57.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.49,
-        "composite": 66.5
+        "vol_ratio": 0.44,
+        "composite": 66.3
       },
       "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.477,
-        "kebaruan": 0.0
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.599,
+        "kebaruan": 0.16
+      }
+    },
+    {
+      "id": "734b6631afe350d4",
+      "symbol": "NVDA",
+      "title": "Unstoppable NVDA Stock? Jensen Huang is Back, and Nvidia Is Eyeing 75% Revenue Growth in FY 2028.",
+      "url": "https://www.barchart.com/story/news/9037026/unstoppable-nvda-stock-jensen-huang-is-back-and-nvidia-is-eyeing-75-revenue-growth-in-fy-2028?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 20:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.202,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 57.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.52,
+        "composite": 74.9
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.202,
+        "kebaruan": 0.91
       }
     },
     {
@@ -69,17 +94,42 @@
       "sentiment": 0.382,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 56.4,
+      "impact": 55.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 67.1
+        "vol_ratio": 0.32,
+        "composite": 65.7
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
         "sentimen": 0.382,
-        "kebaruan": 0.16
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "09cdefff3b40399c",
+      "symbol": "NOW",
+      "title": "ServiceNow (NOW) Down 16% Since Last Earnings Report: Can It Rebound?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-now-down-16-since-153017193.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 15:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 54.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.41,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.84
       }
     },
     {
@@ -94,17 +144,17 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 56.0,
+      "impact": 54.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "merger/akuisisi",
         "bobot_kategori": 0.95,
         "sentimen": 0.0,
-        "kebaruan": 0.84
+        "kebaruan": 0.52
       }
     },
     {
@@ -119,17 +169,17 @@
       "sentiment": -0.25,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 55.4,
+      "impact": 53.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.74,
+        "vol_ratio": 0.41,
         "composite": 66.3
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": -0.25,
-        "kebaruan": 0.49
+        "kebaruan": 0.16
       }
     },
     {
@@ -147,13 +197,38 @@
       "impact": 53.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.273,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "b1e790ec29e24f4d",
+      "symbol": "CVS",
+      "title": "CVS Has Beaten Earnings Estimates 6 Quarters Straight. Why Is the Stock Under $90?",
+      "url": "https://www.fool.com/investing/2026/11/24/cvs-has-beaten-earnings-estimates-6-quarters-straight-why-is-the-stock-under-90/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 09:50 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": -0.226,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 52.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.44,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": -0.226,
         "kebaruan": 0.0
       }
     },
@@ -169,85 +244,10 @@
       "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 51.3,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.74,
-        "composite": 66.3
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.15
-      }
-    },
-    {
-      "id": "1f5919c1747f9697",
-      "symbol": "AES",
-      "title": "AES Corporation Stock Outlook: Is Wall Street Bullish or Bearish?",
-      "url": "https://www.barchart.com/story/news/8584735/aes-corporation-stock-outlook-is-wall-street-bullish-or-bearish?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-02 06:15 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.49,
-        "composite": 66.5
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "43767e66501dd7cf",
-      "symbol": "AES",
-      "title": "AES: Q3 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/aes-q3-earnings-snapshot-100348858.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-04 10:03 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 50.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.49,
-        "composite": 66.5
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "c5cdc87b3b5270bd",
-      "symbol": "NOW",
-      "title": "ServiceNow stock: catalysts, technicals, and outlook after the selloff",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-stock-catalysts-technicals-outlook-212029012.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 21:20 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 50.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.74,
+        "vol_ratio": 0.41,
         "composite": 66.3
       },
       "heuristik": {
@@ -272,39 +272,14 @@
       "impact": 50.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 67.1
+        "vol_ratio": 0.32,
+        "composite": 65.7
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
         "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "07a7a642b84d9dc5",
-      "symbol": "NVDA",
-      "title": "1 Incredibly Cheap Artificial Intelligence (AI) Stock to Buy Before It Doubles in 2027",
-      "url": "https://www.fool.com/investing/2026/11/26/1-incredibly-cheap-artificial-intelligence-ai-stock-to-buy-before-it-doubles-in-2027/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-27 00:28 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.521,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 47.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.521,
-        "kebaruan": 0.96
       }
     },
     {
@@ -322,8 +297,8 @@
       "impact": 47.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "aksi korporasi",
@@ -333,128 +308,53 @@
       }
     },
     {
-      "id": "193a676c651d9c2d",
+      "id": "c0142041aec6aa3c",
       "symbol": "NVDA",
-      "title": "Nvidia Is the Worst-Performing \"Magnificent Seven\" Stock This Year. Is It a Buy Before 2027?",
-      "url": "https://www.fool.com/investing/2026/11/26/nvidia-is-the-worst-performing-magnificent-seven-stock-this-year-is-it-a-buy-before-2027/?.tsrc=rss",
+      "title": "Nvidia chips on sale for $3M in China \u2014 as Jensen Huang scandal and US crackdown chokes supply",
+      "url": "https://nypost.com/2026/11/27/tech/chinese-ads-selling-banned-nvidia-servers-for-3m-as-jensen-huang-scandal-chokes-supply-market-is-crazy/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 22:50 UTC",
+      "published": "2026-11-27 21:18 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.599,
+      "sentiment": -0.71,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 46.2,
+      "impact": 47.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 69.5
+        "vol_ratio": 0.52,
+        "composite": 74.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.599,
-        "kebaruan": 0.94
+        "sentimen": -0.71,
+        "kebaruan": 0.92
       }
     },
     {
-      "id": "3a249b0bbc71223e",
-      "symbol": "PANW",
-      "title": "Palo Alto Networks Stock Falls After Former Executive Sues, Alleging Accounting Fraud Pressure",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-networks-stock-falls-180810188.html?.tsrc=rss",
+      "id": "cd67e266c242cb2f",
+      "symbol": "MRK",
+      "title": "Veterinary Oral Liquid Stability Systems Market Size, Trends, and Forecast 2026-2030 | Capitalize on 6.7% CAGR and Smart Excipients with Merck, Evonik, DuPont, Lonza, and Clariant",
+      "url": "https://finance.yahoo.com/healthcare/articles/veterinary-oral-liquid-stability-systems-143900243.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 18:08 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": -0.718,
+      "published": "2026-11-27 14:39 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.402,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 45.5,
+      "impact": 44.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.82,
-        "composite": 61.3
+        "vol_ratio": 0.64,
+        "composite": 64.6
       },
       "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": -0.718,
-        "kebaruan": 0.87
-      }
-    },
-    {
-      "id": "b4a968229a5ffba3",
-      "symbol": "NVDA",
-      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (AI) Semiconductor Stock Through 2030, This Would Be It.",
-      "url": "https://www.fool.com/investing/2026/11/26/not-nvidia-not-micron-if-i-could-buy-and-hold-only-1-artificial-intelligence-ai-semiconductor-stock-through-2030-this-would-be-it/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-26 23:14 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.477,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 45.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.477,
-        "kebaruan": 0.94
-      }
-    },
-    {
-      "id": "0892020413eacf72",
-      "symbol": "PANW",
-      "title": "Palo Alto Networks (PANW) Hit With Fraud Lawsuit After $4.5 Billion AI Deal",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-networks-panw-hit-121515548.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-26 12:15 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": -0.691,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 44.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.82,
-        "composite": 61.3
-      },
-      "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": -0.691,
-        "kebaruan": 0.79
-      }
-    },
-    {
-      "id": "9b5694962868fd95",
-      "symbol": "MRVL",
-      "title": "Credo Technology Group Holding (CRDO) Could Be 50% Below Fair Value After Marvell Settlement",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/credo-technology-group-holding-crdo-012531407.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-27 01:25 UTC",
-      "event_type": "regulasi/hukum",
-      "event_weight": 0.8,
-      "sentiment": 0.572,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 44.6,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 61.6
-      },
-      "heuristik": {
-        "kategori": "regulasi/hukum",
-        "bobot_kategori": 0.8,
-        "sentimen": 0.572,
-        "kebaruan": 0.97
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.402,
+        "kebaruan": 0.83
       }
     },
     {
@@ -472,8 +372,8 @@
       "impact": 44.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "makro/suku bunga",
@@ -483,103 +383,103 @@
       }
     },
     {
-      "id": "f9dbf9e06445afad",
+      "id": "8fa56d248470e6e4",
+      "symbol": "NOW",
+      "title": "Baron Fund Reestablishes Position in ServiceNow (NOW) Following Attractive Valuation Pullback",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/baron-fund-reestablishes-position-servicenow-164101736.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 16:41 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 44.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.41,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.86
+      }
+    },
+    {
+      "id": "6c7bd75fe3d97e5b",
+      "symbol": "NOW",
+      "title": "ServiceNow vs. Synopsys: Which Technology Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/27/servicenow-vs-synopsys-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 15:56 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 44.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.41,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.84
+      }
+    },
+    {
+      "id": "8c00306c8fce5b82",
       "symbol": "NVDA",
-      "title": "Trump Says Huang Is Excited About His \u2018Second Term\u2019 at Nvidia",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-says-huang-excited-second-003925008.html?.tsrc=rss",
+      "title": "Nvidia Stock Is Still Down 38% From Its Peak Despite Jensen Huang's Return. History Suggests a $10,000 Investment Today Will Be Worth This Much by Year-End 2027.",
+      "url": "https://www.fool.com/investing/2026/11/27/nvidia-stock-is-still-down-38-from-its-peak-despite-jensen-huang-s-return-history-suggests-a-usd10-000-investment-today-will-be-worth-this-much-by-year-end-2027/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-27 00:39 UTC",
+      "published": "2026-11-28 01:11 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.34,
+      "sentiment": 0.226,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 43.7,
+      "impact": 42.6,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 69.5
+        "vol_ratio": 0.52,
+        "composite": 74.9
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.34,
-        "kebaruan": 0.96
+        "sentimen": 0.226,
+        "kebaruan": 0.97
       }
     },
     {
-      "id": "9ce4e8e19c9bd8d8",
-      "symbol": "NRG",
-      "title": "Strong Earnings Outlook Keeps NRG Energy Stock In Focus",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/strong-earnings-outlook-keeps-nrg-141022676.html?.tsrc=rss",
+      "id": "746c96e73b5cd6b7",
+      "symbol": "NOW",
+      "title": "ServiceNow (NOW) Stock May Be Fully Priced As AI Risks Hit Software",
+      "url": "https://finance.yahoo.com/technology/ai/articles/servicenow-now-stock-may-fully-090902140.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 14:10 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.66,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 43.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.78,
-        "composite": 58.7
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.66,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "5b2eb8cde1e805d5",
-      "symbol": "AES",
-      "title": "AES Announces Stub Period Dividend",
-      "url": "https://finance.yahoo.com/energy/articles/aes-announces-stub-period-dividend-120000712.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-18 12:00 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 43.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.49,
-        "composite": 66.5
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "7310c37c0547cd8b",
-      "symbol": "AES",
-      "title": "NextEra Energy Vs. AES Corporation: Utility Scale Energy Production Just Got a Major Blue Boost",
-      "url": "https://247wallst.com/investing/2026/11/06/nextera-energy-vs-aes-corporation-utility-scale-energy-production-just-got-a-major-blue-boost/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-06 17:45 UTC",
+      "published": "2026-11-27 09:09 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.733,
+      "sentiment": -0.273,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 42.8,
+      "impact": 42.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.49,
-        "composite": 66.5
+        "vol_ratio": 0.41,
+        "composite": 66.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.733,
-        "kebaruan": 0.0
+        "sentimen": -0.273,
+        "kebaruan": 0.75
       }
     },
     {
@@ -597,8 +497,8 @@
       "impact": 41.9,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -608,78 +508,203 @@
       }
     },
     {
-      "id": "dc3a7df244f96e17",
-      "symbol": "NVDA",
-      "title": "Did Jensen Huang\u2019s Alleged Chinese Spy Get Him to Do Anything Nvidia Didn\u2019t Want?",
-      "url": "https://unchainedcrypto.com/did-jensen-huangs-alleged-chinese-spy-get-him-to-do-anything-nvidia-didnt-want/?.tsrc=rss",
+      "id": "fa947cd045ec238a",
+      "symbol": "MRVL",
+      "title": "MRVL to Post Q3 Earnings: Time to Buy, Sell or Hold the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mrvl-post-q3-earnings-time-142700413.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 23:00 UTC",
+      "published": "2026-11-27 14:27 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.54,
+        "composite": 61.1
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.82
+      }
+    },
+    {
+      "id": "b04e017b05c0638c",
+      "symbol": "NOW",
+      "title": "Down 26% This Year, Is It Time to Buy Salesforce Stock Before Earnings?",
+      "url": "https://247wallst.com/investing/2026/11/27/down-26-this-year-is-it-time-to-buy-salesforce-stock-before-earnings/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 12:57 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 41.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.41,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.8
+      }
+    },
+    {
+      "id": "a0a0744dbf025a49",
+      "symbol": "GPN",
+      "title": "Global Payments Soars 10% as GTCR Revives Buyout Talk With $50 Billion Takeover Bid",
+      "url": "https://www.tikr.com/blog/global-payments-soars-10-as-gtcr-revives-buyout-talk-with-50-billion-takeover-bid?ref=yahoofinance&tlnk=yf-261120-frxg9pv4&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-20 21:44 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 41.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.27,
+        "composite": 62.7
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.382,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "a280a63f8e2ad8a2",
+      "symbol": "CVS",
+      "title": "CVS is open on Thanksgiving, but customers should check one important detail",
+      "url": "https://www.thestreet.com/retail/cvs-thanksgiving-2026-store-pharmacy-hours?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-26 15:17 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.077,
+      "sentiment": 0.296,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
       "impact": 41.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 69.5
+        "vol_ratio": 0.44,
+        "composite": 66.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.077,
-        "kebaruan": 0.94
+        "sentimen": 0.296,
+        "kebaruan": 0.5
       }
     },
     {
-      "id": "d908f3011b1f655c",
-      "symbol": "MRVL",
-      "title": "Marvell Options Price In 16% Earnings-Day Stock Swing",
-      "url": "https://finance.yahoo.com/markets/options/articles/marvell-options-price-16-earnings-174309753.html?.tsrc=rss",
+      "id": "083cd881113bd290",
+      "symbol": "CVS",
+      "title": "CVS Health (CVS) Stock Looks Reasonable After A 30% Three Year Gain",
+      "url": "https://finance.yahoo.com/healthcare/articles/cvs-health-cvs-stock-looks-121235616.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 17:43 UTC",
+      "published": "2026-11-24 12:12 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.527,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.8,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.44,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.527,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "bb8dee6a04ba0996",
+      "symbol": "APH",
+      "title": "Amphenol (APH) Down 11% Since Last Earnings Report: Can It Rebound?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amphenol-aph-down-11-since-153012320.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 15:30 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.8,
+      "impact": 40.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 61.6
+        "vol_ratio": 0.59,
+        "composite": 61.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.86
+        "kebaruan": 0.84
       }
     },
     {
-      "id": "f55a7971f9e6f860",
-      "symbol": "FIS",
-      "title": "A 70-Year-Old With $1,000,000 in RLI, Four Corners Property Trust and Fidelity National Information Services Collects $5,405 a Month in Dividends. How Safe Is Each Check?",
-      "url": "https://www.tikr.com/blog/a-70-year-old-with-1000000-in-rli-four-corners-property-trust-and-fidelity-national-information-services-collects-5508-a-month-in-dividends-how-safe-is-each-check?ref=yahoofinancedividend&tlnk=yf-261126-933rw7gf&.tsrc=rss",
+      "id": "e357e608386cf196",
+      "symbol": "FLEX",
+      "title": "Flex (FLEX) Down 27.8% Since Last Earnings Report: Can It Rebound?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/flex-flex-down-27-8-153025612.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 12:21 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.735,
+      "published": "2026-11-27 15:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 40.3,
+      "impact": 40.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.68,
-        "composite": 63.5
+        "vol_ratio": 0.38,
+        "composite": 61.4
       },
       "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.735,
-        "kebaruan": 0.79
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.0,
+        "kebaruan": 0.84
+      }
+    },
+    {
+      "id": "06407e8c51c7bd1e",
+      "symbol": "NVDA",
+      "title": "3 Reasons I Might Buy More Nvidia in December",
+      "url": "https://www.fool.com/investing/2026/11/27/3-reasons-i-might-buy-more-nvidia-in-december/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-28 00:58 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.52,
+        "composite": 74.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.97
       }
     },
     {
@@ -697,8 +722,8 @@
       "impact": 40.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.68,
-        "composite": 63.5
+        "vol_ratio": 0.24,
+        "composite": 61.9
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -708,18 +733,68 @@
       }
     },
     {
-      "id": "e27ddc500ff424ba",
+      "id": "0496b840c09278a2",
+      "symbol": "NVDA",
+      "title": "Plot Twist: Nvidia\u2019s Vera Rubin Gets 2-6.5x GB300\u2019s Tokens per Dollar. Amazon\u2019s Trainium Edge Was Against the Old Chip",
+      "url": "https://www.tikr.com/blog/plot-twist-nvidias-vera-rubin-gets-2-6-5x-gb300s-tokens-per-dollar-amazons-trainium-edge-was-against-the-old-chip?ref=yahoofinance&tlnk=yf-261127-2mxwqf36&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 23:23 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 40.2,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.52,
+        "composite": 74.9
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.95
+      }
+    },
+    {
+      "id": "f311ec6aab54c93e",
+      "symbol": "CVS",
+      "title": "CVS Health Study Highlights GLP-1 Benefits and the Affordability Challenge",
+      "url": "https://finance.yahoo.com/healthcare/articles/cvs-health-study-highlights-glp-133000918.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-24 13:30 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.44,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 39.9,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.44,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.44,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "52f3487c8d013e23",
       "symbol": null,
-      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
+      "title": "China\u2019s factories are growing profits again, but the AI boom is picking the winners",
       "url": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
       "source": "CNBC Markets",
-      "published": "2026-11-27 02:04 UTC",
+      "published": "2026-11-27 06:09 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
-      "sentiment": 0.67,
+      "sentiment": 0.754,
       "relevansi": "pasar",
       "judul_menyebut_emiten": null,
-      "impact": 40.1,
+      "impact": 39.6,
       "terukur": {
         "event_aktif": false,
         "vol_ratio": null,
@@ -728,58 +803,8 @@
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.67,
-        "kebaruan": 0.98
-      }
-    },
-    {
-      "id": "db0472b4d5524c8e",
-      "symbol": "VST",
-      "title": "Vistra Underperforms Industry in the Past Year: Time to Buy or Wait?",
-      "url": "https://finance.yahoo.com/energy/articles/vistra-underperforms-industry-past-time-134200801.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-25 13:42 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.0,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 40.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.71,
-        "composite": 61.5
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.0,
-        "kebaruan": 0.47
-      }
-    },
-    {
-      "id": "f87d490bc8a244fc",
-      "symbol": "V",
-      "title": "The Best Dividend Stocks to Buy With $5,000 in November",
-      "url": "https://www.fool.com/investing/2026/11/25/the-best-dividend-stocks-to-buy-with-5000-in-november/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-25 21:21 UTC",
-      "event_type": "merger/akuisisi",
-      "event_weight": 0.95,
-      "sentiment": 0.637,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 40.0,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 65.9
-      },
-      "heuristik": {
-        "kategori": "merger/akuisisi",
-        "bobot_kategori": 0.95,
-        "sentimen": 0.637,
-        "kebaruan": 0.58
+        "sentimen": 0.754,
+        "kebaruan": 0.71
       }
     },
     {
@@ -797,8 +822,8 @@
       "impact": 39.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 67.1
+        "vol_ratio": 0.32,
+        "composite": 65.7
       },
       "heuristik": {
         "kategori": "umum",
@@ -808,53 +833,78 @@
       }
     },
     {
-      "id": "2cb4b7636128366c",
-      "symbol": "COF",
-      "title": "Capital One Financial (COF), What Is Behind The Latest Attention?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/capital-one-financial-cof-behind-051455793.html?.tsrc=rss",
+      "id": "5eaea93b679447fc",
+      "symbol": "IQV",
+      "title": "IQVIA (IQV) Down 10% Since Last Earnings Report: Can It Rebound?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/iqvia-iqv-down-10-since-153013751.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 05:14 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
+      "published": "2026-11-26 15:30 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
       "sentiment": 0.0,
-      "relevansi": "dipantau",
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
       "impact": 39.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 67.1
+        "vol_ratio": 0.67,
+        "composite": 61.1
       },
       "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
         "sentimen": 0.0,
-        "kebaruan": 0.69
+        "kebaruan": 0.51
       }
     },
     {
-      "id": "98375081fdf1ee98",
-      "symbol": "NOW",
-      "title": "Palantir Rips 10% to Lead Software Stocks. Cloudflare and ServiceNow Also Join \u2018Jensen Rally\u2019",
-      "url": "https://247wallst.com/videos/palantir-rips-10-to-lead-software-stocks-cloudflare-and-servicenow-also-join-jensen-rally/?.tsrc=rss",
+      "id": "f55a7971f9e6f860",
+      "symbol": "FIS",
+      "title": "A 70-Year-Old With $1,000,000 in RLI, Four Corners Property Trust and Fidelity National Information Services Collects $5,405 a Month in Dividends. How Safe Is Each Check?",
+      "url": "https://www.tikr.com/blog/a-70-year-old-with-1000000-in-rli-four-corners-property-trust-and-fidelity-national-information-services-collects-5508-a-month-in-dividends-how-safe-is-each-check?ref=yahoofinancedividend&tlnk=yf-261126-933rw7gf&.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-23 20:08 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.296,
-      "relevansi": "dipantau",
+      "published": "2026-11-26 12:21 UTC",
+      "event_type": "aksi korporasi",
+      "event_weight": 0.6,
+      "sentiment": 0.735,
+      "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 38.5,
+      "impact": 38.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.74,
+        "vol_ratio": 0.24,
+        "composite": 61.9
+      },
+      "heuristik": {
+        "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.735,
+        "kebaruan": 0.46
+      }
+    },
+    {
+      "id": "91bcef2833afc817",
+      "symbol": "CVS",
+      "title": "Segment-Specific Concerns Dragged CVS Health Corporation (CVS) in Q3",
+      "url": "https://finance.yahoo.com/healthcare/articles/segment-specific-concerns-dragged-cvs-155553118.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-26 15:55 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": -0.052,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 38.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.44,
         "composite": 66.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.0
+        "sentimen": -0.052,
+        "kebaruan": 0.51
       }
     },
     {
@@ -872,8 +922,8 @@
       "impact": 38.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "umum",
@@ -883,37 +933,112 @@
       }
     },
     {
-      "id": "b02976be4478a55e",
-      "symbol": "PANW",
-      "title": "Palo Alto Stock Faces Fresh Threat After Strong Earnings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-stock-faces-fresh-180335399.html?.tsrc=rss",
+      "id": "f4617498cc8e325a",
+      "symbol": "GPN",
+      "title": "GTCR considers potential takeover of Global Payments",
+      "url": "https://www.electronicpaymentsinternational.com/news/gtcr-considers-potential-takeover-of-global-payments/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 18:03 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.296,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 36.8,
+      "published": "2026-11-23 09:02 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 37.7,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.82,
-        "composite": 61.3
+        "vol_ratio": 0.27,
+        "composite": 62.7
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "e274284d6cf43d15",
+      "symbol": "GPN",
+      "title": "Global Payments (GPN) Gets a Potential Lifeline as New Takeover Buzz Heats Up",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/global-payments-gpn-gets-potential-065105957.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-21 06:51 UTC",
+      "event_type": "merger/akuisisi",
+      "event_weight": 0.95,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 37.7,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.27,
+        "composite": 62.7
+      },
+      "heuristik": {
+        "kategori": "merger/akuisisi",
+        "bobot_kategori": 0.95,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "2cb4b7636128366c",
+      "symbol": "COF",
+      "title": "Capital One Financial (COF), What Is Behind The Latest Attention?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/capital-one-financial-cof-behind-051455793.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-26 05:14 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 37.3,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.32,
+        "composite": 65.7
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.36
+      }
+    },
+    {
+      "id": "ff5d86ab75bc8b06",
+      "symbol": "IQV",
+      "title": "Learn Why The Bull Case For IQVIA Stock Could Change Following Earnings Beat",
+      "url": "https://finance.yahoo.com/healthcare/articles/learn-why-bull-case-iqvia-042111791.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 04:21 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 36.6,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.67,
+        "composite": 61.1
       },
       "heuristik": {
         "kategori": "laba/guidance",
         "bobot_kategori": 0.9,
-        "sentimen": 0.296,
-        "kebaruan": 0.87
+        "sentimen": 0.0,
+        "kebaruan": 0.02
       }
     },
     {
-      "id": "4f0e4afb253419f3",
-      "symbol": "WRB",
-      "title": "Why Is W.R. Berkley (WRB) Up 6% Since Last Earnings Report?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-w-r-berkley-wrb-153005851.html?.tsrc=rss",
+      "id": "7658207a63b8a4fb",
+      "symbol": "EOG",
+      "title": "Earnings Upgrades Could Be A Big Deal For EOG Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-upgrades-could-big-deal-001549758.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-18 15:30 UTC",
+      "published": "2026-11-25 00:15 UTC",
       "event_type": "laba/guidance",
       "event_weight": 0.9,
       "sentiment": 0.0,
@@ -922,8 +1047,8 @@
       "impact": 36.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.96,
-        "composite": 61.5
+        "vol_ratio": 0.51,
+        "composite": 58.0
       },
       "heuristik": {
         "kategori": "laba/guidance",
@@ -933,28 +1058,53 @@
       }
     },
     {
-      "id": "8f49cc095838bde3",
-      "symbol": "DVN",
-      "title": "Devon Energy (DVN) Loses 13.4% in 4 Weeks, Here's Why a Trend Reversal May be Around the Corner",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/devon-energy-dvn-loses-13-133501348.html?.tsrc=rss",
+      "id": "298f5c0bc36fad2d",
+      "symbol": "CVS",
+      "title": "Investors Heavily Search CVS Health Corporation (CVS): Here is What You Need to Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-cvs-health-130005990.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-10 13:35 UTC",
+      "published": "2026-11-25 13:00 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": -0.052,
+      "sentiment": 0.0,
       "relevansi": "dipantau",
       "judul_menyebut_emiten": true,
-      "impact": 36.0,
+      "impact": 36.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.44,
+        "composite": 66.3
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": -0.052,
-        "kebaruan": 0.0
+        "sentimen": 0.0,
+        "kebaruan": 0.14
+      }
+    },
+    {
+      "id": "a6ac33c28349bd97",
+      "symbol": "CVS",
+      "title": "Can CVS Stock Rise 30% From Here?",
+      "url": "https://www.trefis.com/stock/cvs/articles/628910/can-cvs-stock-rise-30-from-here/2026-11-25?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-25 12:01 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.0,
+      "relevansi": "dipantau",
+      "judul_menyebut_emiten": true,
+      "impact": 36.1,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.44,
+        "composite": 66.3
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.0,
+        "kebaruan": 0.12
       }
     },
     {
@@ -972,33 +1122,8 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 67.1
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "6b594ad73766ff9a",
-      "symbol": "NOW",
-      "title": "Leading CHROs and Business Executives to Convene at i4cp's 2027 Next Practices Now Conference",
-      "url": "https://finance.yahoo.com/small-business/articles/leading-chros-business-executives-convene-212500658.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 21:25 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau",
-      "judul_menyebut_emiten": true,
-      "impact": 35.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.74,
-        "composite": 66.3
+        "vol_ratio": 0.32,
+        "composite": 65.7
       },
       "heuristik": {
         "kategori": "umum",
@@ -1022,14 +1147,39 @@
       "impact": 35.5,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.79,
-        "composite": 67.2
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
         "sentimen": 0.0,
         "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "da132694dae3a0c4",
+      "symbol": null,
+      "title": "\u2018Ready for any storm\u2019: UAE minister optimistic on economy as IMF lifts forecast",
+      "url": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
+      "source": "CNBC Markets",
+      "published": "2026-11-27 08:47 UTC",
+      "event_type": "laba/guidance",
+      "event_weight": 0.9,
+      "sentiment": 0.318,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 35.4,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": null,
+        "composite": null
+      },
+      "heuristik": {
+        "kategori": "laba/guidance",
+        "bobot_kategori": 0.9,
+        "sentimen": 0.318,
+        "kebaruan": 0.75
       }
     },
     {
@@ -1044,117 +1194,17 @@
       "sentiment": 0.0,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 35.3,
+      "impact": 34.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 67.1
+        "vol_ratio": 0.32,
+        "composite": 65.7
       },
       "heuristik": {
         "kategori": "regulasi/hukum",
         "bobot_kategori": 0.8,
         "sentimen": 0.0,
-        "kebaruan": 0.26
-      }
-    },
-    {
-      "id": "ce3b7352f37a35c8",
-      "symbol": "V",
-      "title": "Visa (V) Up 5.9% Since Last Earnings Report: Can It Continue?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/visa-v-5-9-since-153019522.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-26 15:30 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 33.7,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 65.9
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.83
-      }
-    },
-    {
-      "id": "47a2291750f0c17d",
-      "symbol": "PANW",
-      "title": "Own Palo Alto Stock? Watch Its Deferred Revenue",
-      "url": "https://www.trefis.com/stock/panw/articles/629187/own-palo-alto-stock-watch-its-deferred-revenue/2026-11-26?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-26 11:15 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.0,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 33.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.82,
-        "composite": 61.3
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.0,
-        "kebaruan": 0.77
-      }
-    },
-    {
-      "id": "da132694dae3a0c4",
-      "symbol": null,
-      "title": "\u2018Ready for any storm\u2019: UAE minister optimistic on economy as IMF lifts forecast",
-      "url": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
-      "source": "CNBC Markets",
-      "published": "2026-11-25 04:06 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": 0.318,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 33.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": 0.318,
-        "kebaruan": 0.34
-      }
-    },
-    {
-      "id": "45fb1b1c25343445",
-      "symbol": "XOM",
-      "title": "Global Ethyl Derivatives Market Report 2026: Executive Strategy and Forecast to 2030 | Capitalize on Bio-Based and Pharma Demand with BASF, Dow, Arkema, Clariant, and Exxon Mobil",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/global-ethyl-derivatives-market-report-143100666.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-25 14:31 UTC",
-      "event_type": "laba/guidance",
-      "event_weight": 0.9,
-      "sentiment": -0.128,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 33.2,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.39,
-        "composite": 57.0
-      },
-      "heuristik": {
-        "kategori": "laba/guidance",
-        "bobot_kategori": 0.9,
-        "sentimen": -0.128,
-        "kebaruan": 0.49
+        "kebaruan": 0.0
       }
     },
     {
@@ -1169,92 +1219,117 @@
       "sentiment": -0.296,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 33.1,
+      "impact": 32.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.68,
-        "composite": 63.5
+        "vol_ratio": 0.24,
+        "composite": 61.9
       },
       "heuristik": {
         "kategori": "aksi korporasi",
         "bobot_kategori": 0.6,
         "sentimen": -0.296,
-        "kebaruan": 0.24
+        "kebaruan": 0.0
       }
     },
     {
-      "id": "d8787afe0f283321",
-      "symbol": "MRVL",
-      "title": "Is Marvell Technology, Inc. (MRVL) a Hidden AI Infrastructure Winner for 2027?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/marvell-technology-inc-mrvl-hidden-194807832.html?.tsrc=rss",
+      "id": "8e26d2fe3f024190",
+      "symbol": "XOM",
+      "title": "XOM Boosts Angola Prospects With Kizomba Redevelopment & New Discovery",
+      "url": "https://finance.yahoo.com/energy/articles/xom-boosts-angola-prospects-kizomba-171600732.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 19:48 UTC",
+      "published": "2026-11-27 17:16 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.586,
+      "sentiment": 0.542,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 31.8,
+      "impact": 31.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.81,
-        "composite": 61.6
+        "vol_ratio": 0.55,
+        "composite": 57.0
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.586,
-        "kebaruan": 0.89
+        "sentimen": 0.542,
+        "kebaruan": 0.86
       }
     },
     {
-      "id": "bd61fe61e60e1464",
-      "symbol": "V",
-      "title": "The Nasdaq Composite Is in a Correction, but These 3 Dividend Stocks Are Near 52-Week Highs. Here's Why They're Still Worth Buying Right Now.",
-      "url": "https://www.fool.com/investing/2026/11/26/the-nasdaq-composite-is-in-a-correction-but-these-3-dividend-stocks-are-near-52-week-highs-here-s-why-they-re-still-worth-buying-right-now/?.tsrc=rss",
+      "id": "111f2ddc8b1ad357",
+      "symbol": "XOM",
+      "title": "ExxonMobil Holdings Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/exxonmobil-holdings-corporation-xom-attracting-130003011.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 21:33 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.329,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 29.9,
+      "published": "2026-11-27 13:00 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.477,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 30.3,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.9,
-        "composite": 65.9
+        "vol_ratio": 0.55,
+        "composite": 57.0
       },
       "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.329,
-        "kebaruan": 0.92
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.477,
+        "kebaruan": 0.8
       }
     },
     {
-      "id": "588bf471b631cf6d",
-      "symbol": null,
-      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
-      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
-      "source": "CNBC Markets",
-      "published": "2026-11-26 12:46 UTC",
-      "event_type": "makro/suku bunga",
-      "event_weight": 0.55,
-      "sentiment": -0.612,
-      "relevansi": "pasar",
-      "judul_menyebut_emiten": null,
-      "impact": 29.8,
+      "id": "d0a7e1947af13031",
+      "symbol": "NVDA",
+      "title": "Vanguard's Growth ETF Has 3 Stocks Making Up More Than a Third of It. Only 1 Has Held Up in the Tech Sell-Off.",
+      "url": "https://www.fool.com/investing/2026/11/27/vanguard-s-growth-etf-has-3-stocks-making-up-more-than-a-third-of-it-only-1-has-held-up-in-the-tech-sell-off/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-28 01:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "dipantau?",
+      "judul_menyebut_emiten": false,
+      "impact": 30.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": null,
-        "composite": null
+        "vol_ratio": 0.52,
+        "composite": 74.9
       },
       "heuristik": {
-        "kategori": "makro/suku bunga",
-        "bobot_kategori": 0.55,
-        "sentimen": -0.612,
-        "kebaruan": 0.8
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.97
+      }
+    },
+    {
+      "id": "f4d8e28c3fed5b62",
+      "symbol": "MRK",
+      "title": "Rapid Micro Biosystems (RPID) Stock Sees Fair Value Cut After Merck Deal Reframes Analyst Views",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rapid-micro-biosystems-rpid-stock-150905372.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-27 15:09 UTC",
+      "event_type": "umum",
+      "event_weight": 0.3,
+      "sentiment": 0.382,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.5,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.64,
+        "composite": 64.6
+      },
+      "heuristik": {
+        "kategori": "umum",
+        "bobot_kategori": 0.3,
+        "sentimen": 0.382,
+        "kebaruan": 0.83
       }
     },
     {
@@ -1272,11 +1347,36 @@
       "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.68,
-        "composite": 63.5
+        "vol_ratio": 0.24,
+        "composite": 61.9
       },
       "heuristik": {
         "kategori": "aksi korporasi",
+        "bobot_kategori": 0.6,
+        "sentimen": 0.0,
+        "kebaruan": 0.0
+      }
+    },
+    {
+      "id": "2e9e63516a517a79",
+      "symbol": "FLEX",
+      "title": "Flex (FLEX) Stock Is Up 14.2% Today: AI Hardware Rally After Nvidia CEO News",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/flex-flex-stock-14-2-173105907.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published": "2026-11-23 17:31 UTC",
+      "event_type": "manajemen",
+      "event_weight": 0.6,
+      "sentiment": 0.0,
+      "relevansi": "sesektor",
+      "judul_menyebut_emiten": true,
+      "impact": 29.0,
+      "terukur": {
+        "event_aktif": false,
+        "vol_ratio": 0.38,
+        "composite": 61.4
+      },
+      "heuristik": {
+        "kategori": "manajemen",
         "bobot_kategori": 0.6,
         "sentimen": 0.0,
         "kebaruan": 0.0
@@ -1297,8 +1397,8 @@
       "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 63.5
+        "vol_ratio": 0.33,
+        "composite": 64.6
       },
       "heuristik": {
         "kategori": "manajemen",
@@ -1322,8 +1422,8 @@
       "impact": 29.0,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 63.5
+        "vol_ratio": 0.33,
+        "composite": 64.6
       },
       "heuristik": {
         "kategori": "aksi korporasi",
@@ -1333,28 +1433,28 @@
       }
     },
     {
-      "id": "c66f06ed71166ad7",
-      "symbol": "SLB",
-      "title": "SLB Limited (SLB) is Attracting Investor Attention: Here is What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/slb-limited-slb-attracting-investor-130005400.html?.tsrc=rss",
+      "id": "8206ac6574b952fb",
+      "symbol": "APH",
+      "title": "Why Jim Cramer Favors Corning Over Amphenol for Fiber",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-jim-cramer-favors-corning-185006111.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 13:00 UTC",
+      "published": "2026-11-27 18:50 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.296,
+      "sentiment": 0.25,
       "relevansi": "sesektor",
       "judul_menyebut_emiten": true,
-      "impact": 28.5,
+      "impact": 28.4,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.86,
-        "composite": 57.9
+        "vol_ratio": 0.59,
+        "composite": 61.0
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.296,
-        "kebaruan": 0.8
+        "sentimen": 0.25,
+        "kebaruan": 0.88
       }
     },
     {
@@ -1372,8 +1472,8 @@
       "impact": 28.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 67.1
+        "vol_ratio": 0.32,
+        "composite": 65.7
       },
       "heuristik": {
         "kategori": "umum",
@@ -1383,153 +1483,53 @@
       }
     },
     {
-      "id": "3723577cea0a1331",
-      "symbol": "WMB",
-      "title": "Invesco S&P 500 Low Volatility ETF (SPLV) Sells Williams and Equinix on Nov. 24",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-p-500-low-volatility-110549769.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-26 11:05 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": -0.273,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 28.1,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.87,
-        "composite": 63.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": -0.273,
-        "kebaruan": 0.77
-      }
-    },
-    {
-      "id": "92fcb856cbf3b6ea",
-      "symbol": "NRG",
-      "title": "NRG Energy, Inc. (NRG) is Attracting Investor Attention: Here is What You Should Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nrg-energy-inc-nrg-attracting-130002191.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-17 13:00 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.637,
-      "relevansi": "sesektor",
-      "judul_menyebut_emiten": true,
-      "impact": 27.9,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 0.78,
-        "composite": 58.7
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.637,
-        "kebaruan": 0.0
-      }
-    },
-    {
-      "id": "d7ad1a0ffd8f8e6a",
-      "symbol": "NOW",
-      "title": "Ondaro Unites Federal and SLED Under One Public Sector Leader",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ondaro-unites-federal-sled-under-182800073.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-23 18:28 UTC",
+      "id": "588bf471b631cf6d",
+      "symbol": null,
+      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+      "source": "CNBC Markets",
+      "published": "2026-11-26 12:46 UTC",
       "event_type": "makro/suku bunga",
       "event_weight": 0.55,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 27.7,
+      "sentiment": -0.612,
+      "relevansi": "pasar",
+      "judul_menyebut_emiten": null,
+      "impact": 28.2,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 0.74,
-        "composite": 66.3
+        "vol_ratio": null,
+        "composite": null
       },
       "heuristik": {
         "kategori": "makro/suku bunga",
         "bobot_kategori": 0.55,
-        "sentimen": 0.0,
-        "kebaruan": 0.0
+        "sentimen": -0.612,
+        "kebaruan": 0.47
       }
     },
     {
-      "id": "a6d693ed1f4a0842",
-      "symbol": "NVDA",
-      "title": "Loonie weakens amid Thanksgiving holiday lull, Canadian labor market data",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/loonie-weakens-amid-thanksgiving-holiday-222803240.html?.tsrc=rss",
+      "id": "50278d7c9b1b40bc",
+      "symbol": "DVN",
+      "title": "Expand Energy (EXE) Stock Is Up 5.1% Today Without Company News",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/expand-energy-exe-stock-5-180017828.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "published": "2026-11-26 22:28 UTC",
+      "published": "2026-11-25 18:00 UTC",
       "event_type": "umum",
       "event_weight": 0.3,
-      "sentiment": 0.103,
+      "sentiment": 0.527,
       "relevansi": "dipantau?",
       "judul_menyebut_emiten": false,
-      "impact": 27.2,
+      "impact": 27.8,
       "terukur": {
         "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 69.5
+        "vol_ratio": 0.66,
+        "composite": 65.5
       },
       "heuristik": {
         "kategori": "umum",
         "bobot_kategori": 0.3,
-        "sentimen": 0.103,
-        "kebaruan": 0.93
-      }
-    },
-    {
-      "id": "9229cb6e5965c79d",
-      "symbol": "XOM",
-      "title": "Turn $100,000 Into Lifetime Paychecks With These \u201cForever\u201d Passive Income Dividend Stocks",
-      "url": "https://247wallst.com/investing/2026/11/25/turn-100000-into-lifetime-paychecks-with-these-forever-passive-income-dividend-stocks/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-25 15:02 UTC",
-      "event_type": "aksi korporasi",
-      "event_weight": 0.6,
-      "sentiment": 0.202,
-      "relevansi": "sesektor?",
-      "judul_menyebut_emiten": false,
-      "impact": 26.5,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.39,
-        "composite": 57.0
-      },
-      "heuristik": {
-        "kategori": "aksi korporasi",
-        "bobot_kategori": 0.6,
-        "sentimen": 0.202,
-        "kebaruan": 0.49
-      }
-    },
-    {
-      "id": "0fa7ba963a8354ab",
-      "symbol": "NVDA",
-      "title": "Stocks Are Plunging Right Now. Here's What History Says Investors Should Do.",
-      "url": "https://www.fool.com/investing/2026/11/26/stocks-are-plunging-right-now-heres-what-history-s/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "published": "2026-11-27 02:20 UTC",
-      "event_type": "umum",
-      "event_weight": 0.3,
-      "sentiment": 0.0,
-      "relevansi": "dipantau?",
-      "judul_menyebut_emiten": false,
-      "impact": 26.4,
-      "terukur": {
-        "event_aktif": false,
-        "vol_ratio": 1.04,
-        "composite": 69.5
-      },
-      "heuristik": {
-        "kategori": "umum",
-        "bobot_kategori": 0.3,
-        "sentimen": 0.0,
-        "kebaruan": 0.98
+        "sentimen": 0.527,
+        "kebaruan": 0.21
       }
     }
   ]
